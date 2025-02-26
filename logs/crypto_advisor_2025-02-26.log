@@ -593,3 +593,1257 @@ For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/St
 2025-02-26 12:06:14,974 - crypto_advisor.news - INFO - Generated market context summary
 2025-02-26 12:06:50,420 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
 2025-02-26 12:06:50,422 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-02-26 12:17:07,606 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 12:17:07,828 - database - INFO - Created MongoDB indexes
+2025-02-26 12:17:08,824 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 12:17:08,828 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 12:17:09,164 - main - INFO - Application started
+2025-02-26 12:17:09,164 - main - INFO - Database initialized: walletTracker
+2025-02-26 12:17:09,165 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 12:17:09,166 - main - INFO - Initializing database connection...
+2025-02-26 12:17:09,166 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 12:17:09,167 - main - INFO - Initializing data providers...
+2025-02-26 12:17:11,950 - main - INFO - Prefetched market data for BTC
+2025-02-26 12:17:12,301 - main - INFO - Prefetched market data for ETH
+2025-02-26 12:17:12,364 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 12:17:12,397 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 12:17:12,481 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 12:17:12,504 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 12:17:12,505 - main - INFO - Prefetched market context
+2025-02-26 12:17:12,535 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 12:17:12,583 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 12:17:12,584 - main - INFO - Prefetched news for BTC
+2025-02-26 12:17:12,612 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 12:17:12,661 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 12:17:12,662 - main - INFO - Prefetched news for ETH
+2025-02-26 12:17:12,662 - main - INFO - Data initialization complete
+2025-02-26 12:17:12,663 - main - INFO - Running in PRODUCTION mode
+2025-02-26 12:17:12,663 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 12:17:19,702 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 12:17:20,388 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 12:17:20,590 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 12:17:20,772 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 12:17:20,791 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 12:17:20,825 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 12:17:20,877 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 12:17:20,877 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 12:17:20,878 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 12:17:20,878 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 12:17:20,881 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 12:18:01,162 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 12:18:01,166 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 13:18:41,746 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 13:18:42,010 - database - INFO - Created MongoDB indexes
+2025-02-26 13:18:43,334 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 13:18:43,338 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 13:18:43,712 - main - INFO - Application started
+2025-02-26 13:18:43,713 - main - INFO - Database initialized: walletTracker
+2025-02-26 13:18:43,714 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 13:18:43,715 - main - INFO - Initializing database connection...
+2025-02-26 13:18:43,716 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 13:18:43,717 - main - INFO - Initializing data providers...
+2025-02-26 13:18:46,266 - main - INFO - Prefetched market data for BTC
+2025-02-26 13:18:46,651 - main - INFO - Prefetched market data for ETH
+2025-02-26 13:18:46,731 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 13:18:46,756 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 13:18:46,840 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 13:18:46,871 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 13:18:46,872 - main - INFO - Prefetched market context
+2025-02-26 13:18:46,896 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 13:18:46,950 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 13:18:46,951 - main - INFO - Prefetched news for BTC
+2025-02-26 13:18:46,976 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 13:18:47,028 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 13:18:47,028 - main - INFO - Prefetched news for ETH
+2025-02-26 13:18:47,028 - main - INFO - Data initialization complete
+2025-02-26 13:18:47,029 - main - INFO - Running in PRODUCTION mode
+2025-02-26 13:18:47,029 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 13:20:14,640 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 13:35:51,129 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 13:35:51,659 - database - INFO - Created MongoDB indexes
+2025-02-26 13:35:52,664 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 13:35:52,668 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 13:35:52,996 - main - INFO - Application started
+2025-02-26 13:35:52,996 - main - INFO - Database initialized: walletTracker
+2025-02-26 13:35:52,996 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 13:35:52,998 - main - INFO - Initializing database connection...
+2025-02-26 13:35:52,998 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 13:35:53,021 - main - INFO - Initializing data providers...
+2025-02-26 13:35:56,160 - main - INFO - Prefetched market data for BTC
+2025-02-26 13:35:56,510 - main - INFO - Prefetched market data for ETH
+2025-02-26 13:35:56,827 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 13:35:56,848 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 13:35:56,921 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 13:35:56,945 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 13:35:56,945 - main - INFO - Prefetched market context
+2025-02-26 13:35:56,964 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 13:35:57,010 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 13:35:57,010 - main - INFO - Prefetched news for BTC
+2025-02-26 13:35:57,032 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 13:35:57,082 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 13:35:57,082 - main - INFO - Prefetched news for ETH
+2025-02-26 13:35:57,083 - main - INFO - Data initialization complete
+2025-02-26 13:35:57,083 - main - INFO - Running in PRODUCTION mode
+2025-02-26 13:35:57,083 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 13:37:04,558 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 13:37:04,750 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 13:37:04,959 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 13:37:04,982 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 13:37:05,002 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 13:37:05,062 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 13:37:05,063 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 13:37:05,063 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 13:37:05,063 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 13:37:05,066 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 13:37:05,085 - recommendation_engine - INFO - Generating new recommendation for SOL (spot)
+2025-02-26 13:37:05,104 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 13:37:05,105 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 13:37:05,107 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 13:37:05,107 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 13:37:05,107 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 13:37:05,108 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 13:37:05,110 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 13:37:43,506 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 13:37:43,507 - crypto_advisor.llm - INFO - Generated spot recommendation for SOL: BUY (Low confidence)
+2025-02-26 13:39:03,105 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 14:08:45,782 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 14:08:46,041 - database - INFO - Created MongoDB indexes
+2025-02-26 14:08:47,087 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 14:08:47,091 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 14:08:47,422 - main - INFO - Application started
+2025-02-26 14:08:47,423 - main - INFO - Database initialized: walletTracker
+2025-02-26 14:08:47,423 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 14:08:47,425 - main - INFO - Initializing database connection...
+2025-02-26 14:08:47,425 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 14:08:47,443 - main - INFO - Initializing data providers...
+2025-02-26 14:08:51,278 - main - INFO - Prefetched market data for BTC
+2025-02-26 14:08:51,653 - main - INFO - Prefetched market data for ETH
+2025-02-26 14:08:51,731 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 14:08:51,755 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 14:08:51,841 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 14:08:51,871 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 14:08:51,871 - main - INFO - Prefetched market context
+2025-02-26 14:08:51,894 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 14:08:51,947 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 14:08:51,947 - main - INFO - Prefetched news for BTC
+2025-02-26 14:08:51,969 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 14:08:52,018 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 14:08:52,018 - main - INFO - Prefetched news for ETH
+2025-02-26 14:08:52,018 - main - INFO - Data initialization complete
+2025-02-26 14:08:52,019 - main - INFO - Running in PRODUCTION mode
+2025-02-26 14:08:52,019 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 14:08:58,620 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 14:08:58,807 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 14:08:58,996 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 14:08:59,022 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 14:08:59,052 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 14:08:59,106 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 14:08:59,107 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 14:08:59,107 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 14:08:59,107 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 14:08:59,110 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 14:09:21,169 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 14:15:59,031 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 14:15:59,283 - database - INFO - Created MongoDB indexes
+2025-02-26 14:16:00,279 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 14:16:00,283 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 14:16:00,613 - main - INFO - Application started
+2025-02-26 14:16:00,613 - main - INFO - Database initialized: walletTracker
+2025-02-26 14:16:00,613 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 14:16:00,614 - main - INFO - Initializing database connection...
+2025-02-26 14:16:00,615 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 14:16:00,633 - main - INFO - Initializing data providers...
+2025-02-26 14:16:00,678 - main - INFO - Prefetched market data for BTC
+2025-02-26 14:16:00,720 - main - INFO - Prefetched market data for ETH
+2025-02-26 14:16:00,782 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 14:16:00,802 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 14:16:00,884 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 14:16:00,909 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 14:16:00,910 - main - INFO - Prefetched market context
+2025-02-26 14:16:00,928 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 14:16:00,980 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 14:16:00,981 - main - INFO - Prefetched news for BTC
+2025-02-26 14:16:00,999 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 14:16:01,056 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 14:16:01,056 - main - INFO - Prefetched news for ETH
+2025-02-26 14:16:01,057 - main - INFO - Data initialization complete
+2025-02-26 14:16:01,057 - main - INFO - Running in PRODUCTION mode
+2025-02-26 14:16:01,057 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 14:17:10,402 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 14:17:10,431 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 14:17:10,505 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 14:17:10,506 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 14:17:10,507 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 14:17:10,507 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 14:17:10,517 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 14:17:35,693 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 14:21:10,037 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 14:21:10,268 - database - INFO - Created MongoDB indexes
+2025-02-26 14:21:11,381 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 14:21:11,385 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 14:21:11,728 - main - INFO - Application started
+2025-02-26 14:21:11,729 - main - INFO - Database initialized: walletTracker
+2025-02-26 14:21:11,730 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 14:21:11,732 - main - INFO - Initializing database connection...
+2025-02-26 14:21:11,732 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 14:21:11,733 - main - INFO - Initializing data providers...
+2025-02-26 14:21:11,789 - main - INFO - Prefetched market data for BTC
+2025-02-26 14:21:11,843 - main - INFO - Prefetched market data for ETH
+2025-02-26 14:21:11,944 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 14:21:11,965 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 14:21:12,048 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 14:21:12,074 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 14:21:12,075 - main - INFO - Prefetched market context
+2025-02-26 14:21:12,095 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 14:21:12,152 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 14:21:12,153 - main - INFO - Prefetched news for BTC
+2025-02-26 14:21:12,173 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 14:21:12,231 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 14:21:12,231 - main - INFO - Prefetched news for ETH
+2025-02-26 14:21:12,232 - main - INFO - Data initialization complete
+2025-02-26 14:21:12,233 - main - INFO - Running in PRODUCTION mode
+2025-02-26 14:21:12,233 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 14:21:17,617 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 14:21:17,638 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 14:21:17,700 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 14:21:17,700 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 14:21:17,701 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 14:21:17,701 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 14:21:17,703 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 14:21:43,549 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 15:41:52,409 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 15:41:52,929 - database - INFO - Created MongoDB indexes
+2025-02-26 15:41:54,062 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 15:41:54,066 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 15:41:54,402 - main - INFO - Application started
+2025-02-26 15:41:54,403 - main - INFO - Database initialized: walletTracker
+2025-02-26 15:41:54,403 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 15:41:54,405 - main - INFO - Initializing database connection...
+2025-02-26 15:41:54,405 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 15:41:54,406 - main - INFO - Initializing data providers...
+2025-02-26 15:41:57,503 - main - INFO - Prefetched market data for BTC
+2025-02-26 15:41:57,864 - main - INFO - Prefetched market data for ETH
+2025-02-26 15:41:58,933 - crypto_advisor.news - INFO - Fetched 100 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 15:41:59,549 - crypto_advisor.news - INFO - Fetched 92 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 15:42:00,374 - crypto_advisor.news - INFO - Fetched 20 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 15:42:00,377 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 15:42:00,377 - main - INFO - Prefetched market context
+2025-02-26 15:42:01,036 - crypto_advisor.news - INFO - Fetched 97 news articles for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 15:42:01,037 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 15:42:01,037 - main - INFO - Prefetched news for BTC
+2025-02-26 15:42:01,712 - crypto_advisor.news - INFO - Fetched 97 news articles for query: Ethereum OR ETH cryptocurrency
+2025-02-26 15:42:01,713 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 15:42:01,714 - main - INFO - Prefetched news for ETH
+2025-02-26 15:42:01,714 - main - INFO - Data initialization complete
+2025-02-26 15:42:01,714 - main - INFO - Running in PRODUCTION mode
+2025-02-26 15:42:01,715 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 15:42:11,095 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 15:42:11,302 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 15:42:11,499 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 15:42:11,525 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 15:42:12,196 - crypto_advisor.news - INFO - Fetched 97 news articles for query: Solana OR SOL cryptocurrency
+2025-02-26 15:42:12,198 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 15:42:12,199 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 15:42:12,199 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 15:42:12,199 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 15:42:12,202 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 15:42:46,146 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 15:50:23,359 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 15:50:23,360 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 15:50:23,361 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 15:50:23,368 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 15:50:23,368 - crypto_advisor.api - WARNING - Error fetching market data for BTC: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,405 - crypto_advisor.api - WARNING - Error fetching market data for ETH: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,405 - crypto_advisor.api - WARNING - Error fetching market data for BNB: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,405 - crypto_advisor.api - WARNING - Error fetching market data for SOL: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,406 - crypto_advisor.api - WARNING - Error fetching market data for XRP: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,406 - crypto_advisor.api - WARNING - Error fetching market data for ADA: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,406 - crypto_advisor.api - WARNING - Error fetching market data for DOGE: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,406 - crypto_advisor.api - WARNING - Error fetching market data for SHIB: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,407 - crypto_advisor.api - WARNING - Error fetching market data for DOT: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,407 - crypto_advisor.api - WARNING - Error fetching market data for MATIC: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,407 - crypto_advisor.api - WARNING - Error fetching market data for AVAX: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,407 - crypto_advisor.api - WARNING - Error fetching market data for LINK: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,408 - crypto_advisor.api - WARNING - Error fetching market data for UNI: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,408 - crypto_advisor.api - WARNING - Error fetching market data for LTC: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,408 - crypto_advisor.api - WARNING - Error fetching market data for ATOM: 'coroutine' object has no attribute 'get'
+2025-02-26 15:50:23,409 - crypto_advisor.api - ERROR - Error getting market indicators: 'MarketDataProvider' object has no attribute 'get_global_market_summary'
+2025-02-26 15:51:09,019 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 15:58:18,723 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 15:58:18,992 - database - INFO - Created MongoDB indexes
+2025-02-26 15:58:19,999 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 15:58:20,003 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 15:58:20,316 - main - INFO - Application started
+2025-02-26 15:58:20,316 - main - INFO - Database initialized: walletTracker
+2025-02-26 15:58:20,316 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 15:58:20,318 - main - INFO - Initializing database connection...
+2025-02-26 15:58:20,318 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 15:58:20,319 - main - INFO - Initializing data providers...
+2025-02-26 15:58:22,878 - main - INFO - Prefetched market data for BTC
+2025-02-26 15:58:23,247 - main - INFO - Prefetched market data for ETH
+2025-02-26 15:58:23,335 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 15:58:23,378 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 15:58:23,607 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 15:58:23,642 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 15:58:23,643 - main - INFO - Prefetched market context
+2025-02-26 15:58:23,678 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 15:58:23,728 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 15:58:23,728 - main - INFO - Prefetched news for BTC
+2025-02-26 15:58:23,763 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 15:58:23,812 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 15:58:23,813 - main - INFO - Prefetched news for ETH
+2025-02-26 15:58:23,813 - main - INFO - Data initialization complete
+2025-02-26 15:58:23,814 - main - INFO - Running in PRODUCTION mode
+2025-02-26 15:58:23,814 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 15:58:41,338 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 15:58:41,539 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 15:58:41,744 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 15:58:41,774 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 15:58:41,822 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 15:58:41,902 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 15:58:41,903 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 15:58:41,903 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 15:58:41,903 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 15:58:41,906 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 15:59:02,502 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 15:59:19,750 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 15:59:19,751 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 15:59:19,751 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 15:59:19,753 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 15:59:19,753 - crypto_advisor.api - WARNING - Error fetching market data for BTC: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,756 - crypto_advisor.api - WARNING - Error fetching market data for ETH: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,757 - crypto_advisor.api - WARNING - Error fetching market data for BNB: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,757 - crypto_advisor.api - WARNING - Error fetching market data for SOL: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,757 - crypto_advisor.api - WARNING - Error fetching market data for XRP: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,757 - crypto_advisor.api - WARNING - Error fetching market data for ADA: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,757 - crypto_advisor.api - WARNING - Error fetching market data for DOGE: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,758 - crypto_advisor.api - WARNING - Error fetching market data for SHIB: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,758 - crypto_advisor.api - WARNING - Error fetching market data for DOT: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,758 - crypto_advisor.api - WARNING - Error fetching market data for MATIC: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,758 - crypto_advisor.api - WARNING - Error fetching market data for AVAX: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,758 - crypto_advisor.api - WARNING - Error fetching market data for LINK: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,758 - crypto_advisor.api - WARNING - Error fetching market data for UNI: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,759 - crypto_advisor.api - WARNING - Error fetching market data for LTC: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,759 - crypto_advisor.api - WARNING - Error fetching market data for ATOM: 'coroutine' object has no attribute 'get'
+2025-02-26 15:59:19,759 - crypto_advisor.api - ERROR - Error getting market indicators: 'MarketDataProvider' object has no attribute 'get_global_market_summary'
+2025-02-26 16:00:07,400 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:02:09,862 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:02:10,123 - database - INFO - Created MongoDB indexes
+2025-02-26 16:02:11,257 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:02:11,262 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:02:11,634 - main - INFO - Application started
+2025-02-26 16:02:11,635 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:02:11,635 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:02:11,637 - main - INFO - Initializing database connection...
+2025-02-26 16:02:11,637 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:02:11,638 - main - INFO - Initializing data providers...
+2025-02-26 16:02:11,696 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:02:11,766 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:02:11,847 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:02:11,873 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:02:11,978 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:02:12,009 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:02:12,009 - main - INFO - Prefetched market context
+2025-02-26 16:02:12,033 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:02:12,088 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:02:12,089 - main - INFO - Prefetched news for BTC
+2025-02-26 16:02:12,113 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:02:12,162 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:02:12,163 - main - INFO - Prefetched news for ETH
+2025-02-26 16:02:12,163 - main - INFO - Data initialization complete
+2025-02-26 16:02:12,164 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:02:12,164 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:02:22,413 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 16:02:22,445 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:02:22,507 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:02:22,508 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:02:22,509 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:02:22,510 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:02:22,516 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:02:46,259 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:02:58,250 - crypto_advisor.api - ERROR - Error analyzing custom query: name 'market_context' is not defined
+2025-02-26 16:04:17,644 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:04:17,909 - database - INFO - Created MongoDB indexes
+2025-02-26 16:04:18,916 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:04:18,920 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:04:19,246 - main - INFO - Application started
+2025-02-26 16:04:19,246 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:04:19,247 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:04:19,248 - main - INFO - Initializing database connection...
+2025-02-26 16:04:19,248 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:04:19,249 - main - INFO - Initializing data providers...
+2025-02-26 16:04:19,314 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:04:19,377 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:04:19,460 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:04:19,487 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:04:19,593 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:04:19,641 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:04:19,642 - main - INFO - Prefetched market context
+2025-02-26 16:04:19,668 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:04:19,722 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:04:19,722 - main - INFO - Prefetched news for BTC
+2025-02-26 16:04:19,747 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:04:19,804 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:04:19,804 - main - INFO - Prefetched news for ETH
+2025-02-26 16:04:19,804 - main - INFO - Data initialization complete
+2025-02-26 16:04:19,805 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:04:19,805 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:04:30,515 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 16:04:30,541 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:04:30,599 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:04:30,600 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:04:30,600 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:04:30,601 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:04:30,603 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:04:56,902 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:05:04,245 - crypto_advisor.api - ERROR - Error analyzing custom query: name 'market_context' is not defined
+2025-02-26 16:06:33,010 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:06:33,277 - database - INFO - Created MongoDB indexes
+2025-02-26 16:06:34,270 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:06:34,274 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:06:34,600 - main - INFO - Application started
+2025-02-26 16:06:34,601 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:06:34,601 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:06:34,626 - main - INFO - Initializing database connection...
+2025-02-26 16:06:34,626 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:06:34,628 - main - INFO - Initializing data providers...
+2025-02-26 16:06:34,700 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:06:35,122 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:06:35,411 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:06:35,452 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:06:35,866 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:06:36,046 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:06:36,046 - main - INFO - Prefetched market context
+2025-02-26 16:06:36,072 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:06:36,401 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:06:36,402 - main - INFO - Prefetched news for BTC
+2025-02-26 16:06:36,420 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:06:36,719 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:06:36,719 - main - INFO - Prefetched news for ETH
+2025-02-26 16:06:36,720 - main - INFO - Data initialization complete
+2025-02-26 16:06:36,720 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:06:36,721 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:07:16,831 - crypto_advisor.api - ERROR - Error analyzing custom query: name 'market_context' is not defined
+2025-02-26 16:10:29,335 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:10:29,633 - database - INFO - Created MongoDB indexes
+2025-02-26 16:10:30,624 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:10:30,628 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:11:01,374 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:11:01,728 - database - INFO - Created MongoDB indexes
+2025-02-26 16:11:02,734 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:11:02,738 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:11:03,070 - main - INFO - Application started
+2025-02-26 16:11:03,070 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:11:03,071 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:11:03,072 - main - INFO - Initializing database connection...
+2025-02-26 16:11:03,073 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:11:03,074 - main - INFO - Initializing data providers...
+2025-02-26 16:11:03,141 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:11:03,237 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:11:03,368 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:11:03,394 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:11:03,848 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:11:04,011 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:11:04,012 - main - INFO - Prefetched market context
+2025-02-26 16:11:04,042 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:11:04,275 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:11:04,276 - main - INFO - Prefetched news for BTC
+2025-02-26 16:11:04,303 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:11:04,551 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:11:04,552 - main - INFO - Prefetched news for ETH
+2025-02-26 16:11:04,552 - main - INFO - Data initialization complete
+2025-02-26 16:11:04,553 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:11:04,553 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:11:16,606 - crypto_advisor.api - ERROR - Error analyzing custom query: name 'market_context' is not defined
+2025-02-26 16:12:01,420 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:12:01,750 - database - INFO - Created MongoDB indexes
+2025-02-26 16:12:02,772 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:12:02,777 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:12:03,107 - main - INFO - Application started
+2025-02-26 16:12:03,108 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:12:03,108 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:12:03,109 - main - INFO - Initializing database connection...
+2025-02-26 16:12:03,109 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:12:03,110 - main - INFO - Initializing data providers...
+2025-02-26 16:12:03,168 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:12:03,259 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:12:03,341 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:12:03,366 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:12:03,477 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:12:03,510 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:12:03,510 - main - INFO - Prefetched market context
+2025-02-26 16:12:03,533 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:12:03,593 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:12:03,594 - main - INFO - Prefetched news for BTC
+2025-02-26 16:12:03,617 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:12:03,683 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:12:03,684 - main - INFO - Prefetched news for ETH
+2025-02-26 16:12:03,684 - main - INFO - Data initialization complete
+2025-02-26 16:12:03,685 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:12:03,685 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:12:24,718 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-26 16:12:24,747 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-26 16:12:24,953 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-26 16:12:24,981 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-02-26 16:12:24,981 - crypto_advisor.news - INFO - Using memory-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:12:24,982 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:12:24,983 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:12:24,983 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:12:24,983 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:12:24,986 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:12:50,776 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:14:10,403 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:14:10,403 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:14:10,404 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:14:10,406 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:14:10,406 - crypto_advisor.api - WARNING - Error fetching market data for BTC: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,409 - crypto_advisor.api - WARNING - Error fetching market data for ETH: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,410 - crypto_advisor.api - WARNING - Error fetching market data for BNB: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,410 - crypto_advisor.api - WARNING - Error fetching market data for SOL: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,410 - crypto_advisor.api - WARNING - Error fetching market data for XRP: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,410 - crypto_advisor.api - WARNING - Error fetching market data for ADA: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,410 - crypto_advisor.api - WARNING - Error fetching market data for DOGE: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,411 - crypto_advisor.api - WARNING - Error fetching market data for SHIB: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,411 - crypto_advisor.api - WARNING - Error fetching market data for DOT: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,411 - crypto_advisor.api - WARNING - Error fetching market data for MATIC: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,411 - crypto_advisor.api - WARNING - Error fetching market data for AVAX: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,412 - crypto_advisor.api - WARNING - Error fetching market data for LINK: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,412 - crypto_advisor.api - WARNING - Error fetching market data for UNI: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,412 - crypto_advisor.api - WARNING - Error fetching market data for LTC: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,412 - crypto_advisor.api - WARNING - Error fetching market data for ATOM: 'coroutine' object has no attribute 'get'
+2025-02-26 16:14:10,412 - crypto_advisor.api - ERROR - Error getting market indicators: 'MarketDataProvider' object has no attribute 'get_global_market_summary'
+2025-02-26 16:15:15,434 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:19:43,471 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:19:43,735 - database - INFO - Created MongoDB indexes
+2025-02-26 16:19:45,092 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:19:45,096 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:19:45,504 - main - INFO - Application started
+2025-02-26 16:19:45,505 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:19:45,505 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:19:45,508 - main - INFO - Initializing database connection...
+2025-02-26 16:19:45,509 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:19:45,512 - main - INFO - Initializing data providers...
+2025-02-26 16:19:49,378 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:19:49,779 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:19:49,860 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:19:49,888 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:19:49,964 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:19:50,027 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:19:50,027 - main - INFO - Prefetched market context
+2025-02-26 16:19:50,290 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:19:50,355 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:19:50,356 - main - INFO - Prefetched news for BTC
+2025-02-26 16:19:50,379 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:19:50,434 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:19:50,434 - main - INFO - Prefetched news for ETH
+2025-02-26 16:19:50,434 - main - INFO - Data initialization complete
+2025-02-26 16:19:50,435 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:19:50,435 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:19:52,878 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:19:52,879 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:19:52,879 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:19:52,883 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:20:36,097 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:21:23,330 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 16:21:23,536 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 16:21:23,735 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 16:21:23,765 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 16:21:23,791 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:21:23,847 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:21:23,848 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:21:23,849 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:21:23,850 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:21:23,861 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:21:59,320 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:22:11,176 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 16:22:11,177 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:22:11,181 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:22:11,181 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:22:11,182 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:22:11,182 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:22:11,184 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:22:43,804 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:27:59,915 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:28:00,167 - database - INFO - Created MongoDB indexes
+2025-02-26 16:28:01,249 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:28:01,254 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:28:01,690 - main - INFO - Application started
+2025-02-26 16:28:01,691 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:28:01,691 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:28:01,693 - main - INFO - Initializing database connection...
+2025-02-26 16:28:01,693 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:28:01,694 - main - INFO - Initializing data providers...
+2025-02-26 16:28:01,746 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:28:01,801 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:28:01,887 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:28:01,915 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:28:02,011 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:28:02,040 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:28:02,041 - main - INFO - Prefetched market context
+2025-02-26 16:28:02,063 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:28:02,119 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:28:02,119 - main - INFO - Prefetched news for BTC
+2025-02-26 16:28:02,141 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:28:02,230 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:28:02,230 - main - INFO - Prefetched news for ETH
+2025-02-26 16:28:02,230 - main - INFO - Data initialization complete
+2025-02-26 16:28:02,231 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:28:02,232 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:28:10,946 - crypto_advisor.api - ERROR - Error analyzing custom query: name 'extract_coin_from_message' is not defined
+2025-02-26 16:30:09,240 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:30:09,475 - database - INFO - Created MongoDB indexes
+2025-02-26 16:30:10,476 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:30:10,480 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:30:10,808 - main - INFO - Application started
+2025-02-26 16:30:10,809 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:30:10,809 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:30:10,810 - main - INFO - Initializing database connection...
+2025-02-26 16:30:10,811 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:30:10,832 - main - INFO - Initializing data providers...
+2025-02-26 16:30:10,877 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:30:10,944 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:30:11,014 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:30:11,036 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:30:11,125 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:30:11,152 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:30:11,153 - main - INFO - Prefetched market context
+2025-02-26 16:30:11,170 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:30:11,222 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:30:11,222 - main - INFO - Prefetched news for BTC
+2025-02-26 16:30:11,243 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:30:11,297 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:30:11,297 - main - INFO - Prefetched news for ETH
+2025-02-26 16:30:11,297 - main - INFO - Data initialization complete
+2025-02-26 16:30:11,298 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:30:11,298 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:30:46,012 - crypto_advisor.api - ERROR - Error analyzing custom query: name 're' is not defined
+2025-02-26 16:32:26,692 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:32:26,944 - database - INFO - Created MongoDB indexes
+2025-02-26 16:32:27,945 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 16:32:27,949 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 16:32:28,271 - main - INFO - Application started
+2025-02-26 16:32:28,272 - main - INFO - Database initialized: walletTracker
+2025-02-26 16:32:28,272 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 16:32:28,273 - main - INFO - Initializing database connection...
+2025-02-26 16:32:28,273 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 16:32:28,274 - main - INFO - Initializing data providers...
+2025-02-26 16:32:28,336 - main - INFO - Prefetched market data for BTC
+2025-02-26 16:32:28,385 - main - INFO - Prefetched market data for ETH
+2025-02-26 16:32:28,460 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:32:28,500 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:32:28,590 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:32:28,619 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:32:28,619 - main - INFO - Prefetched market context
+2025-02-26 16:32:28,640 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:32:28,689 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:32:28,690 - main - INFO - Prefetched news for BTC
+2025-02-26 16:32:28,710 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 16:32:28,762 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 16:32:28,763 - main - INFO - Prefetched news for ETH
+2025-02-26 16:32:28,763 - main - INFO - Data initialization complete
+2025-02-26 16:32:28,764 - main - INFO - Running in PRODUCTION mode
+2025-02-26 16:32:28,764 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 16:32:45,207 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 16:32:45,233 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:32:45,303 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:32:45,303 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:32:45,303 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:32:45,303 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:32:45,305 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:33:21,211 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:33:34,429 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 16:33:34,464 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 16:33:34,650 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 16:33:34,675 - crypto_advisor.market - INFO - Generated market summary for BTC
+2025-02-26 16:33:34,676 - crypto_advisor.news - INFO - Using memory-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 16:33:34,677 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 16:33:34,677 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:33:34,677 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:33:34,678 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:33:34,680 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:34:06,355 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:34:43,894 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-26 16:34:44,093 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-26 16:34:44,292 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-26 16:34:44,320 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-02-26 16:34:45,054 - crypto_advisor.news - INFO - Fetched 97 news articles for query: Ripple OR XRP cryptocurrency
+2025-02-26 16:34:45,056 - crypto_advisor.news - INFO - Generated news summary for XRP
+2025-02-26 16:34:45,058 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:34:45,059 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:34:45,060 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:34:45,071 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:35:08,346 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:56:34,607 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 16:56:34,790 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 16:56:34,970 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 16:56:34,995 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 16:56:34,996 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:56:34,997 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:56:34,997 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:56:34,998 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:56:34,998 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:56:35,000 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:56:58,839 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:57:14,944 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 16:57:14,945 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:57:14,946 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:57:14,947 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:57:14,947 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:57:14,947 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:57:14,949 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:57:50,512 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 16:58:02,642 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 16:58:02,643 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 16:58:02,650 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 16:58:02,651 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 16:58:02,652 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 16:58:02,653 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 16:58:02,661 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 16:58:28,517 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:02:18,846 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 17:02:19,065 - database - INFO - Created MongoDB indexes
+2025-02-26 17:02:20,193 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 17:02:20,197 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 17:02:20,552 - main - INFO - Application started
+2025-02-26 17:02:20,552 - main - INFO - Database initialized: walletTracker
+2025-02-26 17:02:20,553 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 17:02:20,554 - main - INFO - Initializing database connection...
+2025-02-26 17:02:20,554 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 17:02:20,555 - main - INFO - Initializing data providers...
+2025-02-26 17:02:23,566 - main - INFO - Prefetched market data for BTC
+2025-02-26 17:02:23,920 - main - INFO - Prefetched market data for ETH
+2025-02-26 17:02:23,985 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:02:24,008 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:02:24,073 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:02:24,099 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:02:24,100 - main - INFO - Prefetched market context
+2025-02-26 17:02:24,125 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 17:02:24,172 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 17:02:24,172 - main - INFO - Prefetched news for BTC
+2025-02-26 17:02:24,190 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 17:02:24,237 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 17:02:24,237 - main - INFO - Prefetched news for ETH
+2025-02-26 17:02:24,238 - main - INFO - Data initialization complete
+2025-02-26 17:02:24,238 - main - INFO - Running in PRODUCTION mode
+2025-02-26 17:02:24,239 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 17:02:32,244 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:02:32,271 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:02:32,336 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:02:32,337 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:02:32,339 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:02:32,340 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:02:32,351 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:02:56,786 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:03:19,846 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:03:19,847 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:03:19,849 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:03:19,849 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:03:19,849 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:03:19,850 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:03:19,852 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:03:45,727 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:12:04,379 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:12:04,563 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:12:04,754 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:12:04,775 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 17:12:04,776 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:12:04,779 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:12:04,779 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:12:04,780 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:12:04,780 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:12:04,786 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:12:27,798 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:12:38,841 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:12:38,842 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:12:38,844 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:12:38,844 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:12:38,844 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:12:38,845 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:12:38,851 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:13:01,035 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:13:56,222 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:13:56,223 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:13:56,224 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:13:56,225 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:13:56,225 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:13:56,225 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:13:56,233 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:14:22,967 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:16:05,040 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:16:05,040 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:16:05,041 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:16:05,042 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:16:05,042 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:16:05,042 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:16:05,044 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:16:49,723 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:22:02,692 - crypto_advisor.api - INFO - Returning cached recommendation for SOL
+2025-02-26 17:22:21,964 - crypto_advisor.api - INFO - Returning cached recommendation for SOL
+2025-02-26 17:24:03,474 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:24:03,493 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:24:03,494 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:24:03,495 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:24:03,495 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:24:03,495 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:24:03,496 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:24:03,498 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:24:35,023 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:24:35,025 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 17:24:51,075 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:24:51,095 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:24:51,096 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:24:51,098 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:24:51,098 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:24:51,099 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:24:51,099 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:24:51,101 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:25:16,678 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:25:16,680 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 17:25:52,126 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:25:52,145 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:25:52,146 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:25:52,150 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:25:52,151 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:25:52,151 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:25:52,152 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:25:52,155 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:26:19,424 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:26:19,424 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 17:28:56,421 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:28:56,877 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:28:57,060 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:28:57,249 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:28:57,270 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 17:28:57,270 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:28:57,276 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:28:57,278 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:28:57,279 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:28:57,279 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:28:57,290 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:29:24,032 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:29:24,033 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 17:29:47,260 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:29:47,277 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:29:47,278 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:29:47,279 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:29:47,280 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:29:47,280 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:29:47,280 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:29:47,283 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:30:14,124 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:30:14,125 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 17:31:55,217 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:31:55,218 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:31:55,220 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:31:55,220 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:31:55,220 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:31:55,220 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:31:55,222 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:32:49,881 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:35:47,373 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 17:35:47,622 - database - INFO - Created MongoDB indexes
+2025-02-26 17:35:48,995 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 17:35:49,001 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 17:35:49,441 - main - INFO - Application started
+2025-02-26 17:35:49,441 - main - INFO - Database initialized: walletTracker
+2025-02-26 17:35:49,442 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 17:35:49,444 - main - INFO - Initializing database connection...
+2025-02-26 17:35:49,444 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 17:35:49,462 - main - INFO - Initializing data providers...
+2025-02-26 17:35:52,738 - main - INFO - Prefetched market data for BTC
+2025-02-26 17:35:53,358 - main - INFO - Prefetched market data for ETH
+2025-02-26 17:35:53,444 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:35:53,472 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:35:53,552 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:35:53,584 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:35:53,585 - main - INFO - Prefetched market context
+2025-02-26 17:35:53,609 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 17:35:53,661 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 17:35:53,661 - main - INFO - Prefetched news for BTC
+2025-02-26 17:35:53,686 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 17:35:53,737 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 17:35:53,737 - main - INFO - Prefetched news for ETH
+2025-02-26 17:35:53,738 - main - INFO - Data initialization complete
+2025-02-26 17:35:53,741 - main - INFO - Running in PRODUCTION mode
+2025-02-26 17:35:53,742 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 17:38:47,648 - crypto_advisor.api - INFO - Analysis query - Message: 'Should I buy Solana now?', Coin: SOL, Intent: buy
+2025-02-26 17:38:47,650 - crypto_advisor.api - INFO - User context - Risk: medium, Horizon: medium, Portfolio: []
+2025-02-26 17:38:47,681 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:38:47,707 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:38:47,781 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:38:47,782 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:38:47,783 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:38:47,784 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:38:47,789 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:39:35,274 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:40:14,272 - crypto_advisor.api - INFO - Analysis query - Message: 'should I sell sol now?', Coin: SOL, Intent: sell
+2025-02-26 17:40:14,273 - crypto_advisor.api - INFO - User context - Risk: medium, Horizon: medium, Portfolio: []
+2025-02-26 17:40:14,299 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:40:14,300 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:40:14,303 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:40:14,303 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:40:14,304 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:40:14,304 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:40:14,315 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:40:40,586 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:41:08,009 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:41:08,039 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:41:08,039 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:41:08,041 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:41:08,042 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:41:08,042 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:41:08,042 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:41:08,045 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:41:34,552 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:41:34,553 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-26 17:41:55,926 - crypto_advisor.api - INFO - Analysis query - Message: 'give me suggestion for solana long or short?', Coin: SOL, Intent: buy
+2025-02-26 17:41:55,926 - crypto_advisor.api - INFO - User context - Risk: medium, Horizon: medium, Portfolio: []
+2025-02-26 17:41:55,951 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:41:55,951 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:41:55,953 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:41:55,954 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:41:55,954 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:41:55,954 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:41:55,958 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:42:17,543 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:43:44,423 - crypto_advisor.api - INFO - Analysis query - Message: 'give me suggestion for solana long or short for short term', Coin: SOL, Intent: buy
+2025-02-26 17:43:44,424 - crypto_advisor.api - INFO - User context - Risk: medium, Horizon: medium, Portfolio: []
+2025-02-26 17:43:44,449 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:43:44,450 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:43:44,452 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:43:44,452 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:43:44,453 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:43:44,453 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:43:44,458 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:44:09,888 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:45:02,903 - crypto_advisor.api - INFO - Analysis query - Message: 'give me suggestion for solana long or short for short term holding and my risk tolerance is short', Coin: SOL, Intent: buy
+2025-02-26 17:45:02,904 - crypto_advisor.api - INFO - User context - Risk: medium, Horizon: medium, Portfolio: []
+2025-02-26 17:45:03,410 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:45:03,610 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:45:03,807 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 17:45:03,837 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 17:45:03,837 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:45:03,838 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:45:03,839 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:45:03,839 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:45:03,839 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:45:03,841 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:45:33,826 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:46:17,085 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-02-26 17:46:17,086 - crypto_advisor.api - INFO - User context - Risk: medium, Horizon: medium, Portfolio: []
+2025-02-26 17:46:17,111 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:46:17,112 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:46:17,113 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:46:17,114 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:46:17,114 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:46:17,115 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:46:17,118 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:46:42,317 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:49:13,835 - crypto_advisor.api - INFO - Analysis query - Message: 'give me suggestion for solana long or short for short term holding and my risk tolerance is short', Coin: SOL, Intent: buy
+2025-02-26 17:49:13,836 - crypto_advisor.api - INFO - User context - Risk: medium, Horizon: short, Portfolio: []
+2025-02-26 17:49:13,860 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:49:13,860 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:49:13,861 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:49:13,862 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:49:13,862 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:49:13,862 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:49:13,865 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:49:37,369 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:53:13,893 - crypto_advisor.api - INFO - Analysis query - Message: 'give me suggestion for solana long or short for short term holding and my risk tolerance is short', Coin: SOL, Intent: buy
+2025-02-26 17:53:13,894 - crypto_advisor.api - INFO - User context - Risk: low, Horizon: short, Portfolio: []
+2025-02-26 17:53:13,918 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:53:13,918 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:53:13,921 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:53:13,921 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:53:13,922 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:53:13,922 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:53:13,924 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:53:50,194 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:55:31,600 - crypto_advisor.api - INFO - Analysis query - Message: 'give me suggestion for solana long or short for short term holding and my risk tolerance is short', Coin: SOL, Intent: buy
+2025-02-26 17:55:31,601 - crypto_advisor.api - INFO - User context - Risk: low, Horizon: short, Portfolio: []
+2025-02-26 17:55:31,626 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:55:31,628 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:55:31,632 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:55:31,633 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:55:31,634 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:55:31,635 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:55:31,641 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:55:57,341 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:56:15,800 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:56:15,824 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:56:15,825 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:56:15,827 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:56:15,827 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:56:15,828 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:56:15,828 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:56:15,831 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:57:06,457 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:57:06,457 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 17:58:52,666 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 17:58:52,692 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 17:58:52,692 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 17:58:52,694 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 17:58:52,695 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 17:58:52,695 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 17:58:52,695 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 17:58:52,698 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 17:59:16,716 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 17:59:16,718 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 18:05:48,185 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 18:05:48,443 - database - INFO - Created MongoDB indexes
+2025-02-26 18:05:49,599 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 18:05:49,603 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 18:05:49,943 - main - INFO - Application started
+2025-02-26 18:05:49,944 - main - INFO - Database initialized: walletTracker
+2025-02-26 18:05:49,944 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 18:05:49,946 - main - INFO - Initializing database connection...
+2025-02-26 18:05:49,946 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 18:05:49,947 - main - INFO - Initializing data providers...
+2025-02-26 18:05:52,732 - main - INFO - Prefetched market data for BTC
+2025-02-26 18:05:53,112 - main - INFO - Prefetched market data for ETH
+2025-02-26 18:05:53,190 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 18:05:53,217 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 18:05:53,305 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 18:05:53,337 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 18:05:53,338 - main - INFO - Prefetched market context
+2025-02-26 18:05:53,362 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 18:05:53,428 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 18:05:53,429 - main - INFO - Prefetched news for BTC
+2025-02-26 18:05:53,457 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-26 18:05:53,520 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 18:05:53,521 - main - INFO - Prefetched news for ETH
+2025-02-26 18:05:53,522 - main - INFO - Data initialization complete
+2025-02-26 18:05:53,524 - main - INFO - Running in PRODUCTION mode
+2025-02-26 18:05:53,524 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 18:05:55,761 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 18:05:56,151 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 18:05:56,345 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 18:05:56,531 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 18:05:56,556 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 18:05:56,580 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 18:05:56,652 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 18:05:56,654 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 18:05:56,655 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 18:05:56,656 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 18:05:56,665 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 18:06:26,985 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 18:06:26,986 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 18:06:39,760 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 18:06:39,784 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 18:06:39,785 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 18:06:39,786 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 18:06:39,786 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 18:06:39,787 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 18:06:39,787 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 18:06:39,790 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 18:07:09,913 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 18:07:09,914 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 18:38:00,486 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 18:38:00,769 - crypto_advisor.market - ERROR - Error fetching ticker for SOL from binance: binance GET https://api.binance.com/api/v3/ticker/24hr?symbol=SOLUSDT
+2025-02-26 18:38:01,098 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 18:38:01,307 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 18:38:01,489 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 18:38:01,515 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 18:38:01,540 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 18:38:01,603 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 18:38:01,671 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 18:38:01,696 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 18:38:01,772 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 18:38:01,806 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 18:38:48,503 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 18:38:48,504 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 18:39:43,818 - crypto_advisor.api - INFO - No context provided by user
+2025-02-26 18:39:43,821 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy pepe now?', Coin: None, Intent: buy
+2025-02-26 18:39:43,822 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 18:39:43,823 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 18:39:43,824 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 18:39:43,830 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 18:39:44,232 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 18:39:44,424 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 18:39:44,611 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 18:39:44,637 - crypto_advisor.market - INFO - Generated market summary for BTC
+2025-02-26 18:39:44,660 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-26 18:39:44,683 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-26 18:39:45,091 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-26 18:39:45,282 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-26 18:39:45,501 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-26 18:39:45,528 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-02-26 18:39:45,959 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-26 18:39:46,174 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-26 18:39:46,389 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-26 18:39:46,416 - crypto_advisor.market - INFO - Generated market summary for BNB
+2025-02-26 18:39:46,439 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 18:39:46,831 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-26 18:39:47,022 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-26 18:39:47,225 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-26 18:39:47,251 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-02-26 18:39:47,650 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-26 18:39:47,845 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-26 18:39:48,031 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-26 18:39:48,057 - crypto_advisor.market - INFO - Generated market summary for ADA
+2025-02-26 18:39:48,444 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-26 18:39:48,635 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-26 18:39:48,821 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-26 18:39:48,847 - crypto_advisor.market - INFO - Generated market summary for DOGE
+2025-02-26 18:39:49,232 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-26 18:39:49,419 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-26 18:39:49,611 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-26 18:39:49,637 - crypto_advisor.market - INFO - Generated market summary for SHIB
+2025-02-26 18:39:50,249 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-26 18:39:50,668 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-26 18:39:50,855 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-26 18:39:50,880 - crypto_advisor.market - INFO - Generated market summary for DOT
+2025-02-26 18:39:51,288 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-26 18:39:51,477 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-26 18:39:51,663 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-26 18:39:51,690 - crypto_advisor.market - INFO - Generated market summary for MATIC
+2025-02-26 18:39:52,354 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-26 18:39:52,542 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-26 18:39:52,727 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-26 18:39:52,754 - crypto_advisor.market - INFO - Generated market summary for AVAX
+2025-02-26 18:39:53,175 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-26 18:39:53,364 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-26 18:39:53,553 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-26 18:39:53,579 - crypto_advisor.market - INFO - Generated market summary for LINK
+2025-02-26 18:39:54,223 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-26 18:39:54,419 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-26 18:39:54,614 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-26 18:39:54,640 - crypto_advisor.market - INFO - Generated market summary for UNI
+2025-02-26 18:39:55,027 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-26 18:39:55,473 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-26 18:39:55,671 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-26 18:39:55,698 - crypto_advisor.market - INFO - Generated market summary for LTC
+2025-02-26 18:39:56,111 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-26 18:39:56,346 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-26 18:39:56,798 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-26 18:39:56,824 - crypto_advisor.market - INFO - Generated market summary for ATOM
+2025-02-26 18:39:56,825 - crypto_advisor.api - ERROR - Error getting top performers: '<' not supported between instances of 'NoneType' and 'float'
+2025-02-26 18:40:17,676 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:13:03,664 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-26 20:13:03,905 - database - INFO - Created MongoDB indexes
+2025-02-26 20:13:11,115 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-26 20:13:11,119 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-26 20:13:12,435 - main - INFO - Application started
+2025-02-26 20:13:12,435 - main - INFO - Database initialized: walletTracker
+2025-02-26 20:13:12,435 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-26 20:13:12,437 - main - INFO - Initializing database connection...
+2025-02-26 20:13:12,437 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-26 20:13:12,463 - main - INFO - Initializing data providers...
+2025-02-26 20:13:15,115 - main - INFO - Prefetched market data for BTC
+2025-02-26 20:13:15,472 - main - INFO - Prefetched market data for ETH
+2025-02-26 20:13:16,230 - crypto_advisor.news - INFO - Fetched 97 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:13:18,857 - crypto_advisor.news - INFO - Fetched 96 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:13:19,358 - crypto_advisor.news - INFO - Fetched 22 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:13:19,364 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:13:19,365 - main - INFO - Prefetched market context
+2025-02-26 20:13:22,237 - crypto_advisor.news - INFO - Fetched 96 news articles for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 20:13:22,239 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 20:13:22,239 - main - INFO - Prefetched news for BTC
+2025-02-26 20:13:23,174 - crypto_advisor.news - INFO - Fetched 96 news articles for query: Ethereum OR ETH cryptocurrency
+2025-02-26 20:13:23,178 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-26 20:13:23,178 - main - INFO - Prefetched news for ETH
+2025-02-26 20:13:23,178 - main - INFO - Data initialization complete
+2025-02-26 20:13:23,179 - main - INFO - Running in PRODUCTION mode
+2025-02-26 20:13:23,180 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-26 20:13:35,634 - crypto_advisor.api - INFO - No context provided by user
+2025-02-26 20:13:35,635 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-02-26 20:13:36,021 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 20:13:36,207 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 20:13:36,395 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 20:13:36,417 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 20:13:37,606 - crypto_advisor.news - INFO - Fetched 96 news articles for query: Solana OR SOL cryptocurrency
+2025-02-26 20:13:37,609 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 20:13:37,610 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:13:37,610 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:13:37,610 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:13:37,613 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:14:01,276 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:14:32,325 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-26 20:14:32,344 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 20:14:32,345 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 20:14:32,347 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 20:14:32,347 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:14:32,347 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:14:32,348 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:14:32,351 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:15:03,528 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:15:03,529 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-26 20:16:39,157 - crypto_advisor.api - INFO - No context provided by user
+2025-02-26 20:16:39,158 - crypto_advisor.api - INFO - Analysis query - Message: 'should I sellsol now?', Coin: SOL, Intent: general
+2025-02-26 20:16:39,176 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 20:16:39,177 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 20:16:39,178 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 20:16:39,179 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:16:39,179 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:16:39,180 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:16:39,188 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:17:03,001 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:17:19,675 - crypto_advisor.api - INFO - No context provided by user
+2025-02-26 20:17:19,675 - crypto_advisor.api - INFO - Analysis query - Message: 'should I sell sol now?', Coin: SOL, Intent: sell
+2025-02-26 20:17:19,694 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 20:17:19,695 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 20:17:19,696 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 20:17:19,697 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:17:19,697 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:17:19,697 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:17:19,700 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:17:53,740 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:26:30,787 - crypto_advisor.api - INFO - User provided context: {'investment_horizon': 'long'}
+2025-02-26 20:26:30,787 - crypto_advisor.api - INFO - Analysis query - Message: 'Analyze Cardano's price movement for long-term investment', Coin: ADA, Intent: buy
+2025-02-26 20:26:31,214 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-26 20:26:31,396 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-26 20:26:31,577 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-26 20:26:31,600 - crypto_advisor.market - INFO - Generated market summary for ADA
+2025-02-26 20:26:32,937 - crypto_advisor.news - INFO - Fetched 96 news articles for query: Cardano OR ADA cryptocurrency
+2025-02-26 20:26:32,939 - crypto_advisor.news - INFO - Generated news summary for ADA
+2025-02-26 20:26:32,939 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:26:32,940 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:26:32,940 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:26:32,943 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:26:58,396 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:28:12,242 - crypto_advisor.api - INFO - No context provided by user
+2025-02-26 20:28:12,244 - crypto_advisor.api - INFO - Analysis query - Message: 'why should I buy solana?', Coin: SOL, Intent: buy
+2025-02-26 20:28:12,265 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-26 20:28:12,266 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 20:28:12,273 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 20:28:12,274 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:28:12,275 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:28:12,276 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:28:12,285 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:28:39,918 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:29:33,983 - crypto_advisor.api - INFO - No context provided by user
+2025-02-26 20:29:33,985 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy solana now?', Coin: SOL, Intent: buy
+2025-02-26 20:29:34,392 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 20:29:34,580 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 20:29:34,763 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-26 20:29:34,784 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-26 20:29:34,785 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-26 20:29:34,786 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-26 20:29:34,786 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:29:34,787 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:29:34,787 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:29:34,792 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:29:55,942 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:32:03,719 - crypto_advisor.api - INFO - No context provided by user
+2025-02-26 20:32:03,720 - crypto_advisor.api - INFO - Analysis query - Message: 'Is Bitcoin a good short right now?', Coin: BTC, Intent: sell
+2025-02-26 20:32:04,094 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 20:32:04,280 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 20:32:04,467 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-26 20:32:04,489 - crypto_advisor.market - INFO - Generated market summary for BTC
+2025-02-26 20:32:04,489 - crypto_advisor.news - INFO - Using memory-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 20:32:04,491 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 20:32:04,492 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:32:04,492 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:32:04,492 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:32:04,495 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:32:26,701 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:34:14,720 - recommendation_engine - INFO - Generating new recommendation for BTC (futures)
+2025-02-26 20:34:14,739 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-26 20:34:14,740 - crypto_advisor.news - INFO - Using memory-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-26 20:34:14,747 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-26 20:34:14,748 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-26 20:34:14,749 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-26 20:34:14,750 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-26 20:34:14,752 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-26 20:34:43,510 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-26 20:34:43,513 - crypto_advisor.llm - INFO - Generated futures recommendation for BTC: BUY (Medium confidence)

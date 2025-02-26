@@ -1,0 +1,38 @@
+# Core dependencies
+python-dotenv==1.0.0
+fastapi==0.109.2
+uvicorn==0.27.1
+pydantic==2.5.2
+
+# Data fetching and processing
+requests==2.31.0
+pandas==2.1.4
+numpy==1.26.3
+pytz==2023.3.post1
+
+# Database
+pymongo==4.6.2
+dnspython==2.4.2  # For MongoDB SRV connection strings
+certifi==2024.2.2  # For SSL certificate verification
+
+# Crypto market data
+ccxt==4.1.75
+
+# News and sentiment analysis
+newsapi-python==0.2.7
+tweepy==4.14.0
+textblob==0.17.1
+nltk==3.8.1
+
+# LLM integration
+openai==1.12.0  # For DeepSeek API (if they use OpenAI-compatible endpoints)
+langchain==0.1.9
+langchain-community==0.0.20
+langchain-openai==0.0.5
+
+# Vector database for RAG
+chromadb==0.4.22
+
+# Utilities
+python-jose==3.3.0  # For JWT
+pytest==7.4.3  # For testing

@@ -1,0 +1,631 @@
+2025-02-25 19:00:39,078 - database - ERROR - Failed to connect to MongoDB: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67bdc5e01c1c2f5cceae16c6, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-02-25 19:08:50,076 - database - ERROR - Failed to connect to MongoDB: localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms), Timeout: 30s, Topology Description: <TopologyDescription id: 67bdc7ccbda3df3f08ad53ab, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [WinError 10061] No connection could be made because the target machine actively refused it (configured timeouts: socketTimeoutMS: 20000.0ms, connectTimeoutMS: 20000.0ms)')>]>
+2025-02-25 19:12:58,561 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:12:58,984 - database - INFO - Created MongoDB indexes
+2025-02-25 19:14:38,753 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:14:39,052 - database - INFO - Created MongoDB indexes
+2025-02-25 19:15:19,234 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:15:19,495 - database - INFO - Created MongoDB indexes
+2025-02-25 19:18:58,387 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:18:58,652 - database - INFO - Created MongoDB indexes
+2025-02-25 19:19:25,317 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:19:25,317 - crypto_advisor.market - ERROR - Error initializing exchanges: module 'ccxt' has no attribute 'coinbasepro'
+2025-02-25 19:22:58,661 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:22:58,966 - database - INFO - Created MongoDB indexes
+2025-02-25 19:22:59,995 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:22:59,998 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:26:12,010 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:26:12,290 - database - INFO - Created MongoDB indexes
+2025-02-25 19:26:13,305 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:26:13,308 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:26:13,338 - crypto_advisor.news - INFO - Created cache directory at C:\Users\satya\Cabalprojects\crypto_advisor\data\cache
+2025-02-25 19:27:00,723 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:27:01,116 - database - INFO - Created MongoDB indexes
+2025-02-25 19:27:02,109 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:27:02,113 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:27:33,084 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:27:33,404 - database - INFO - Created MongoDB indexes
+2025-02-25 19:27:34,410 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:27:34,414 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:27:58,946 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:27:59,215 - database - INFO - Created MongoDB indexes
+2025-02-25 19:28:00,190 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:28:00,193 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:29:58,778 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:29:59,117 - database - INFO - Created MongoDB indexes
+2025-02-25 19:30:00,154 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:30:00,158 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:30:27,867 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:30:28,142 - database - INFO - Created MongoDB indexes
+2025-02-25 19:30:29,135 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:30:29,139 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:31:16,766 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:31:17,105 - database - INFO - Created MongoDB indexes
+2025-02-25 19:31:18,108 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:31:18,113 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:31:18,458 - main - INFO - Application started
+2025-02-25 19:31:18,458 - main - INFO - Database initialized: walletTracker
+2025-02-25 19:31:18,460 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 19:31:18,461 - main - INFO - Created directory: C:\Users\satya\Cabalprojects\crypto_advisor\data/vector_db
+2025-02-25 19:31:18,462 - main - INFO - Initializing database connection...
+2025-02-25 19:31:18,462 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:31:18,463 - main - INFO - Initializing data providers...
+2025-02-25 19:31:18,709 - crypto_advisor.market - ERROR - Error fetching OHLCV for BTC (1d) from binance: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-02-25 19:31:18,883 - crypto_advisor.market - ERROR - Error fetching OHLCV for BTC (4h) from binance: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-02-25 19:31:18,884 - main - INFO - Prefetched market data for BTC
+2025-02-25 19:31:19,044 - crypto_advisor.market - ERROR - Error fetching OHLCV for ETH (1d) from binance: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-02-25 19:31:19,208 - crypto_advisor.market - ERROR - Error fetching OHLCV for ETH (4h) from binance: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-02-25 19:31:19,209 - main - INFO - Prefetched market data for ETH
+2025-02-25 19:31:19,209 - main - ERROR - Error initializing data: 'NewsDataProvider' object has no attribute 'get_market_context'
+2025-02-25 19:31:19,210 - main - INFO - Running in PRODUCTION mode
+2025-02-25 19:31:19,211 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 19:50:56,720 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:50:57,097 - database - INFO - Created MongoDB indexes
+2025-02-25 19:50:58,165 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:50:58,170 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:50:58,500 - main - INFO - Application started
+2025-02-25 19:50:58,500 - main - INFO - Database initialized: walletTracker
+2025-02-25 19:50:58,501 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 19:50:58,502 - main - INFO - Initializing database connection...
+2025-02-25 19:50:58,502 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:50:58,503 - main - INFO - Initializing data providers...
+2025-02-25 19:51:02,025 - main - INFO - Prefetched market data for BTC
+2025-02-25 19:51:02,460 - main - INFO - Prefetched market data for ETH
+2025-02-25 19:51:02,462 - main - ERROR - Error initializing data: 'NewsDataProvider' object has no attribute 'get_market_context'
+2025-02-25 19:51:02,464 - main - INFO - Running in PRODUCTION mode
+2025-02-25 19:51:02,465 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 19:53:24,072 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:53:24,475 - database - INFO - Created MongoDB indexes
+2025-02-25 19:53:25,482 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:53:25,486 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:53:25,802 - main - INFO - Application started
+2025-02-25 19:53:25,803 - main - INFO - Database initialized: walletTracker
+2025-02-25 19:53:25,804 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 19:53:25,805 - main - INFO - Initializing database connection...
+2025-02-25 19:53:25,805 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:53:25,805 - main - INFO - Initializing data providers...
+2025-02-25 19:53:25,881 - main - INFO - Prefetched market data for BTC
+2025-02-25 19:53:25,952 - main - INFO - Prefetched market data for ETH
+2025-02-25 19:53:25,952 - main - ERROR - Error initializing data: 'NewsDataProvider' object has no attribute 'get_market_context'
+2025-02-25 19:53:25,953 - main - INFO - Running in PRODUCTION mode
+2025-02-25 19:53:25,953 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 19:58:28,069 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:58:28,331 - database - INFO - Created MongoDB indexes
+2025-02-25 19:58:29,413 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:58:29,416 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:58:29,759 - main - INFO - Application started
+2025-02-25 19:58:29,760 - main - INFO - Database initialized: walletTracker
+2025-02-25 19:58:29,760 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 19:58:29,762 - main - INFO - Initializing database connection...
+2025-02-25 19:58:29,762 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:58:29,763 - main - INFO - Initializing data providers...
+2025-02-25 19:58:29,810 - main - INFO - Prefetched market data for BTC
+2025-02-25 19:58:29,856 - main - INFO - Prefetched market data for ETH
+2025-02-25 19:58:29,857 - main - ERROR - Error initializing data: 'NewsDataProvider' object has no attribute 'get_market_context'
+2025-02-25 19:58:29,857 - main - INFO - Running in PRODUCTION mode
+2025-02-25 19:58:29,858 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 19:59:15,905 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:59:16,315 - database - INFO - Created MongoDB indexes
+2025-02-25 19:59:17,405 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 19:59:17,409 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 19:59:17,755 - main - INFO - Application started
+2025-02-25 19:59:17,756 - main - INFO - Database initialized: walletTracker
+2025-02-25 19:59:17,757 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 19:59:17,758 - main - INFO - Initializing database connection...
+2025-02-25 19:59:17,759 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 19:59:17,760 - main - INFO - Initializing data providers...
+2025-02-25 19:59:17,838 - main - INFO - Prefetched market data for BTC
+2025-02-25 19:59:17,916 - main - INFO - Prefetched market data for ETH
+2025-02-25 19:59:17,917 - main - ERROR - Error initializing data: 'NewsDataProvider' object has no attribute 'get_market_context'
+2025-02-25 19:59:17,918 - main - INFO - Running in PRODUCTION mode
+2025-02-25 19:59:17,918 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:03:55,810 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:03:56,060 - database - INFO - Created MongoDB indexes
+2025-02-25 20:03:57,119 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:03:57,124 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:03:57,469 - main - INFO - Application started
+2025-02-25 20:03:57,469 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:03:57,470 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:03:57,471 - main - INFO - Initializing database connection...
+2025-02-25 20:03:57,472 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:03:57,473 - main - INFO - Initializing data providers...
+2025-02-25 20:03:57,517 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:03:57,560 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:03:58,524 - crypto_advisor.news - INFO - Fetched 95 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:03:59,118 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:03:59,121 - crypto_advisor.news - INFO - Fetched 97 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:04:00,804 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:04:00,809 - crypto_advisor.news - INFO - Fetched 23 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:04:00,812 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:04:00,812 - main - INFO - Prefetched market context
+2025-02-25 20:04:01,443 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:04:01,447 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:04:01,448 - crypto_advisor.news - ERROR - Error analyzing news sentiment: 'NoneType' object has no attribute 'lower'
+2025-02-25 20:04:01,448 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:04:01,448 - main - INFO - Prefetched news for BTC
+2025-02-25 20:04:03,081 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:04:03,084 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:04:03,085 - crypto_advisor.news - ERROR - Error analyzing news sentiment: 'NoneType' object has no attribute 'lower'
+2025-02-25 20:04:03,085 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:04:03,086 - main - INFO - Prefetched news for ETH
+2025-02-25 20:04:03,086 - main - INFO - Data initialization complete
+2025-02-25 20:04:03,086 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:04:03,087 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:06:43,718 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:06:44,068 - database - INFO - Created MongoDB indexes
+2025-02-25 20:06:45,064 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:06:45,067 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:06:45,391 - main - INFO - Application started
+2025-02-25 20:06:45,392 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:06:45,392 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:06:45,393 - main - INFO - Initializing database connection...
+2025-02-25 20:06:45,393 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:06:45,394 - main - INFO - Initializing data providers...
+2025-02-25 20:06:47,970 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:06:48,376 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:06:48,481 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:06:48,524 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:06:48,596 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:06:48,635 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:06:48,670 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:06:48,673 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:06:48,673 - main - INFO - Prefetched market context
+2025-02-25 20:06:48,713 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:06:48,770 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:06:48,771 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:06:48,772 - main - INFO - Prefetched news for BTC
+2025-02-25 20:06:48,813 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:06:48,871 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:06:48,872 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:06:48,873 - main - INFO - Prefetched news for ETH
+2025-02-25 20:06:48,873 - main - INFO - Data initialization complete
+2025-02-25 20:06:48,873 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:06:48,873 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:08:12,211 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:08:12,802 - database - INFO - Created MongoDB indexes
+2025-02-25 20:08:13,857 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:08:13,862 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:08:14,200 - main - INFO - Application started
+2025-02-25 20:08:14,201 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:08:14,202 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:08:14,203 - main - INFO - Initializing database connection...
+2025-02-25 20:08:14,203 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:08:14,204 - main - INFO - Initializing data providers...
+2025-02-25 20:08:14,268 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:08:14,332 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:08:14,563 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:08:14,593 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:08:14,699 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:08:14,728 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:08:14,763 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:08:14,766 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:08:14,766 - main - INFO - Prefetched market context
+2025-02-25 20:08:14,800 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:08:14,866 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:08:14,867 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:08:14,868 - main - INFO - Prefetched news for BTC
+2025-02-25 20:08:14,896 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:08:14,967 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:08:14,968 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:08:14,969 - main - INFO - Prefetched news for ETH
+2025-02-25 20:08:14,969 - main - INFO - Data initialization complete
+2025-02-25 20:08:14,969 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:08:14,970 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:09:11,882 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:09:12,151 - database - INFO - Created MongoDB indexes
+2025-02-25 20:09:13,140 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:09:13,144 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:09:13,479 - main - INFO - Application started
+2025-02-25 20:09:13,479 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:09:13,479 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:09:13,482 - main - INFO - Initializing database connection...
+2025-02-25 20:09:13,482 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:09:13,483 - main - INFO - Initializing data providers...
+2025-02-25 20:09:13,549 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:09:13,603 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:09:13,765 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:09:13,787 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:09:13,861 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:09:13,881 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:09:14,152 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:09:14,155 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:09:14,155 - main - INFO - Prefetched market context
+2025-02-25 20:09:14,175 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:09:14,231 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:09:14,232 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:09:14,233 - main - INFO - Prefetched news for BTC
+2025-02-25 20:09:14,252 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:09:14,302 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:09:14,304 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:09:14,304 - main - INFO - Prefetched news for ETH
+2025-02-25 20:09:14,305 - main - INFO - Data initialization complete
+2025-02-25 20:09:14,305 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:09:14,306 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:13:34,981 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:13:35,356 - database - INFO - Created MongoDB indexes
+2025-02-25 20:13:36,403 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:13:36,408 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:13:36,786 - main - INFO - Application started
+2025-02-25 20:13:36,786 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:13:36,788 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:13:36,789 - main - INFO - Initializing database connection...
+2025-02-25 20:13:36,789 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:13:36,809 - main - INFO - Initializing data providers...
+2025-02-25 20:13:36,854 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:13:36,899 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:13:36,983 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:13:37,003 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:13:37,072 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:13:37,090 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:13:37,116 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:13:37,118 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:13:37,118 - main - INFO - Prefetched market context
+2025-02-25 20:13:37,138 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:13:37,205 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:13:37,206 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:13:37,206 - main - INFO - Prefetched news for BTC
+2025-02-25 20:13:37,225 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:13:37,279 - database - ERROR - Error updating document in news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-25 20:13:37,281 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:13:37,281 - main - INFO - Prefetched news for ETH
+2025-02-25 20:13:37,281 - main - INFO - Data initialization complete
+2025-02-25 20:13:37,281 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:13:37,282 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:17:49,861 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:17:50,168 - database - INFO - Created MongoDB indexes
+2025-02-25 20:17:51,217 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:17:51,221 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:17:51,545 - main - INFO - Application started
+2025-02-25 20:17:51,546 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:17:51,546 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:17:51,547 - main - INFO - Initializing database connection...
+2025-02-25 20:17:51,548 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:17:51,549 - main - INFO - Initializing data providers...
+2025-02-25 20:17:51,618 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:17:51,688 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:17:51,782 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:17:51,813 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:17:51,942 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:17:51,979 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:17:51,980 - main - INFO - Prefetched market context
+2025-02-25 20:17:52,009 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:17:52,076 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:17:52,076 - main - INFO - Prefetched news for BTC
+2025-02-25 20:17:52,105 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:17:52,166 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:17:52,166 - main - INFO - Prefetched news for ETH
+2025-02-25 20:17:52,166 - main - INFO - Data initialization complete
+2025-02-25 20:17:52,166 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:17:52,167 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:23:40,860 - recommendation_engine - INFO - Generating new recommendation for SOL (spot)
+2025-02-25 20:23:40,890 - crypto_advisor.market - ERROR - Error generating market summary for SOL: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:23:41,970 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Solana OR SOL cryptocurrency
+2025-02-25 20:23:41,972 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-25 20:23:41,973 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:23:41,973 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:23:41,973 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:23:41,982 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:23:42,545 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:23:42,547 - crypto_advisor.llm - ERROR - Error generating recommendation for SOL: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:38:33,710 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:38:33,943 - database - INFO - Created MongoDB indexes
+2025-02-25 20:38:35,020 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:38:35,024 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:38:35,335 - main - INFO - Application started
+2025-02-25 20:38:35,336 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:38:35,337 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:38:35,338 - main - INFO - Initializing database connection...
+2025-02-25 20:38:35,338 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:38:35,339 - main - INFO - Initializing data providers...
+2025-02-25 20:38:38,157 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:38:38,524 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:38:38,590 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:38:38,610 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:38:38,700 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:38:38,732 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:38:38,732 - main - INFO - Prefetched market context
+2025-02-25 20:38:38,751 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:38:38,813 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:38:38,814 - main - INFO - Prefetched news for BTC
+2025-02-25 20:38:38,833 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:38:38,884 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:38:38,884 - main - INFO - Prefetched news for ETH
+2025-02-25 20:38:38,884 - main - INFO - Data initialization complete
+2025-02-25 20:38:38,885 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:38:38,886 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:38:55,118 - crypto_advisor.api - INFO - Returning cached recommendation for SOL
+2025-02-25 20:53:11,428 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:53:11,724 - database - INFO - Created MongoDB indexes
+2025-02-25 20:53:22,191 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 20:53:22,196 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 20:53:24,024 - main - INFO - Application started
+2025-02-25 20:53:24,025 - main - INFO - Database initialized: walletTracker
+2025-02-25 20:53:24,025 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 20:53:24,026 - main - INFO - Initializing database connection...
+2025-02-25 20:53:24,027 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 20:53:24,029 - main - INFO - Initializing data providers...
+2025-02-25 20:53:24,097 - main - INFO - Prefetched market data for BTC
+2025-02-25 20:53:24,166 - main - INFO - Prefetched market data for ETH
+2025-02-25 20:53:24,264 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:53:24,305 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:53:24,439 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:53:24,481 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:53:24,481 - main - INFO - Prefetched market context
+2025-02-25 20:53:24,521 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:53:24,587 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:53:24,587 - main - INFO - Prefetched news for BTC
+2025-02-25 20:53:24,627 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:53:24,697 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:53:24,698 - main - INFO - Prefetched news for ETH
+2025-02-25 20:53:24,699 - main - INFO - Data initialization complete
+2025-02-25 20:53:24,701 - main - INFO - Running in PRODUCTION mode
+2025-02-25 20:53:24,701 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 20:53:39,740 - recommendation_engine - INFO - Generating new recommendation for ETH (spot)
+2025-02-25 20:53:39,771 - crypto_advisor.market - ERROR - Error generating market summary for ETH: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:53:39,814 - crypto_advisor.news - INFO - Using memory-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 20:53:39,817 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 20:53:39,817 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:53:39,817 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:53:39,817 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:53:39,823 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:53:41,308 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:53:41,308 - crypto_advisor.llm - ERROR - Error generating recommendation for ETH: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:13,543 - recommendation_engine - INFO - Generating new recommendation for BTC (spot)
+2025-02-25 20:54:13,576 - crypto_advisor.market - ERROR - Error generating market summary for BTC: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:13,577 - crypto_advisor.news - INFO - Using memory-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 20:54:13,579 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 20:54:13,579 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:13,580 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:13,581 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:13,583 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:14,716 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:14,717 - crypto_advisor.llm - ERROR - Error generating recommendation for BTC: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:14,754 - recommendation_engine - ERROR - Error generating recommendation for ETH: unsupported operand type(s) for -: 'float' and 'datetime.datetime'
+2025-02-25 20:54:14,784 - recommendation_engine - INFO - Generating new recommendation for BNB (spot)
+2025-02-25 20:54:14,814 - crypto_advisor.market - ERROR - Error generating market summary for BNB: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:16,837 - crypto_advisor.news - INFO - Fetched 17 news articles for query: Binance Coin OR BNB cryptocurrency
+2025-02-25 20:54:16,838 - crypto_advisor.news - INFO - Generated news summary for BNB
+2025-02-25 20:54:16,839 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:16,840 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:16,841 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:16,847 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:17,716 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:17,717 - crypto_advisor.llm - ERROR - Error generating recommendation for BNB: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:17,783 - recommendation_engine - INFO - Generating new recommendation for SOL (spot)
+2025-02-25 20:54:17,814 - crypto_advisor.market - ERROR - Error generating market summary for SOL: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:17,859 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-25 20:54:17,930 - crypto_advisor.news - INFO - Generated news summary for SOL
+2025-02-25 20:54:17,930 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:17,931 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:17,931 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:17,933 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:18,527 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:18,528 - crypto_advisor.llm - ERROR - Error generating recommendation for SOL: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:18,588 - recommendation_engine - INFO - Generating new recommendation for XRP (spot)
+2025-02-25 20:54:18,617 - crypto_advisor.market - ERROR - Error generating market summary for XRP: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:22,588 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Ripple OR XRP cryptocurrency
+2025-02-25 20:54:22,590 - crypto_advisor.news - INFO - Generated news summary for XRP
+2025-02-25 20:54:22,591 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:22,592 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:22,592 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:22,594 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:44,308 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:44,310 - crypto_advisor.llm - ERROR - Error generating recommendation for XRP: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:44,374 - recommendation_engine - INFO - Generating new recommendation for ADA (spot)
+2025-02-25 20:54:44,406 - crypto_advisor.market - ERROR - Error generating market summary for ADA: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:45,467 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Cardano OR ADA cryptocurrency
+2025-02-25 20:54:45,469 - crypto_advisor.news - INFO - Generated news summary for ADA
+2025-02-25 20:54:45,469 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:45,470 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:45,470 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:45,473 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:46,241 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:46,241 - crypto_advisor.llm - ERROR - Error generating recommendation for ADA: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:46,301 - recommendation_engine - INFO - Generating new recommendation for DOGE (spot)
+2025-02-25 20:54:46,331 - crypto_advisor.market - ERROR - Error generating market summary for DOGE: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:48,622 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Dogecoin OR DOGE cryptocurrency
+2025-02-25 20:54:48,624 - crypto_advisor.news - INFO - Generated news summary for DOGE
+2025-02-25 20:54:48,625 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:48,625 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:48,626 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:48,628 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:49,264 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:49,265 - crypto_advisor.llm - ERROR - Error generating recommendation for DOGE: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:49,325 - recommendation_engine - INFO - Generating new recommendation for SHIB (spot)
+2025-02-25 20:54:49,353 - crypto_advisor.market - ERROR - Error generating market summary for SHIB: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:49,895 - crypto_advisor.news - INFO - Fetched 5 news articles for query: Shiba Inu OR SHIB cryptocurrency
+2025-02-25 20:54:49,895 - crypto_advisor.news - INFO - Generated news summary for SHIB
+2025-02-25 20:54:49,896 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:49,896 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:49,896 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:49,898 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:51,513 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:51,514 - crypto_advisor.llm - ERROR - Error generating recommendation for SHIB: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:51,574 - recommendation_engine - INFO - Generating new recommendation for DOT (spot)
+2025-02-25 20:54:51,602 - crypto_advisor.market - ERROR - Error generating market summary for DOT: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:54,262 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Polkadot OR DOT cryptocurrency
+2025-02-25 20:54:54,264 - crypto_advisor.news - INFO - Generated news summary for DOT
+2025-02-25 20:54:54,264 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:54,265 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:54,265 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:54,267 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:55,028 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:55,029 - crypto_advisor.llm - ERROR - Error generating recommendation for DOT: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:55,093 - recommendation_engine - INFO - Generating new recommendation for MATIC (spot)
+2025-02-25 20:54:55,122 - crypto_advisor.market - ERROR - Error generating market summary for MATIC: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:54:58,134 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Polygon OR MATIC cryptocurrency
+2025-02-25 20:54:58,136 - crypto_advisor.news - INFO - Generated news summary for MATIC
+2025-02-25 20:54:58,137 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:54:58,138 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:54:58,139 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:54:58,146 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:54:58,713 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:58,713 - crypto_advisor.llm - ERROR - Error generating recommendation for MATIC: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:54:58,773 - recommendation_engine - INFO - Generating new recommendation for AVAX (spot)
+2025-02-25 20:54:58,803 - crypto_advisor.market - ERROR - Error generating market summary for AVAX: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:55:00,864 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Avalanche OR AVAX cryptocurrency
+2025-02-25 20:55:00,866 - crypto_advisor.news - INFO - Generated news summary for AVAX
+2025-02-25 20:55:00,866 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:55:00,866 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:55:00,867 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:55:00,868 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:55:01,626 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:01,627 - crypto_advisor.llm - ERROR - Error generating recommendation for AVAX: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:01,689 - recommendation_engine - INFO - Generating new recommendation for LINK (spot)
+2025-02-25 20:55:01,719 - crypto_advisor.market - ERROR - Error generating market summary for LINK: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:55:05,791 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Chainlink OR LINK cryptocurrency
+2025-02-25 20:55:05,792 - crypto_advisor.news - INFO - Generated news summary for LINK
+2025-02-25 20:55:05,792 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:55:05,793 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:55:05,793 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:55:05,795 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:55:06,438 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:06,439 - crypto_advisor.llm - ERROR - Error generating recommendation for LINK: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:06,501 - recommendation_engine - INFO - Generating new recommendation for UNI (spot)
+2025-02-25 20:55:06,529 - crypto_advisor.market - ERROR - Error generating market summary for UNI: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:55:07,458 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Uniswap OR UNI cryptocurrency
+2025-02-25 20:55:07,461 - crypto_advisor.news - INFO - Generated news summary for UNI
+2025-02-25 20:55:07,461 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:55:07,462 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:55:07,462 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:55:07,465 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:55:08,108 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:08,109 - crypto_advisor.llm - ERROR - Error generating recommendation for UNI: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:08,168 - recommendation_engine - INFO - Generating new recommendation for LTC (spot)
+2025-02-25 20:55:08,198 - crypto_advisor.market - ERROR - Error generating market summary for LTC: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:55:20,240 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Litecoin OR LTC cryptocurrency
+2025-02-25 20:55:20,246 - crypto_advisor.news - INFO - Generated news summary for LTC
+2025-02-25 20:55:20,246 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:55:20,247 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:55:20,247 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:55:20,257 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:55:21,748 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:21,749 - crypto_advisor.llm - ERROR - Error generating recommendation for LTC: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:21,840 - recommendation_engine - INFO - Generating new recommendation for ATOM (spot)
+2025-02-25 20:55:21,902 - crypto_advisor.market - ERROR - Error generating market summary for ATOM: asyncio.run() cannot be called from a running event loop
+2025-02-25 20:55:23,458 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Cosmos OR ATOM cryptocurrency
+2025-02-25 20:55:23,459 - crypto_advisor.news - INFO - Generated news summary for ATOM
+2025-02-25 20:55:23,460 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 20:55:23,460 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 20:55:23,461 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 20:55:23,465 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 20:55:24,233 - crypto_advisor.llm - ERROR - Error communicating with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:24,234 - crypto_advisor.llm - ERROR - Error generating recommendation for ATOM: Failed to communicate with DeepSeek API: 404 Client Error: Not Found for url: https://api.deepseek.com/api/v1/generate
+2025-02-25 20:55:24,267 - recommendation_engine - INFO - Generated recommendations for 15 coins
+2025-02-25 22:08:47,519 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:08:47,740 - database - INFO - Created MongoDB indexes
+2025-02-25 22:08:49,153 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 22:08:49,156 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 22:08:49,543 - main - INFO - Application started
+2025-02-25 22:08:49,543 - main - INFO - Database initialized: walletTracker
+2025-02-25 22:08:49,545 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 22:08:49,546 - main - INFO - Initializing database connection...
+2025-02-25 22:08:49,546 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:08:49,546 - main - INFO - Initializing data providers...
+2025-02-25 22:08:53,603 - main - INFO - Prefetched market data for BTC
+2025-02-25 22:08:53,952 - main - INFO - Prefetched market data for ETH
+2025-02-25 22:08:54,021 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 22:08:54,043 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 22:08:54,103 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 22:08:54,126 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 22:08:54,126 - main - INFO - Prefetched market context
+2025-02-25 22:08:54,146 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 22:08:54,173 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 22:08:54,174 - main - INFO - Prefetched news for BTC
+2025-02-25 22:08:54,194 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 22:08:54,226 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 22:08:54,227 - main - INFO - Prefetched news for ETH
+2025-02-25 22:08:54,227 - main - INFO - Data initialization complete
+2025-02-25 22:08:54,228 - main - INFO - Running in PRODUCTION mode
+2025-02-25 22:08:54,228 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 22:09:31,521 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:09:31,835 - database - INFO - Created MongoDB indexes
+2025-02-25 22:09:32,836 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 22:09:32,840 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 22:09:33,142 - main - INFO - Application started
+2025-02-25 22:09:33,142 - main - INFO - Database initialized: walletTracker
+2025-02-25 22:09:33,142 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 22:09:33,144 - main - INFO - Initializing database connection...
+2025-02-25 22:09:33,144 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:09:33,145 - main - INFO - Initializing data providers...
+2025-02-25 22:09:33,212 - main - INFO - Prefetched market data for BTC
+2025-02-25 22:09:33,281 - main - INFO - Prefetched market data for ETH
+2025-02-25 22:09:33,374 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 22:09:33,406 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 22:09:33,533 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 22:09:33,567 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 22:09:33,568 - main - INFO - Prefetched market context
+2025-02-25 22:09:33,597 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 22:09:33,663 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 22:09:33,663 - main - INFO - Prefetched news for BTC
+2025-02-25 22:09:33,692 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 22:09:33,731 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 22:09:33,731 - main - INFO - Prefetched news for ETH
+2025-02-25 22:09:33,732 - main - INFO - Data initialization complete
+2025-02-25 22:09:33,732 - main - INFO - Running in PRODUCTION mode
+2025-02-25 22:09:33,732 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 22:10:22,810 - crypto_advisor.api - INFO - Returning cached recommendation for BTC
+2025-02-25 22:13:24,071 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:13:24,356 - database - INFO - Created MongoDB indexes
+2025-02-25 22:13:25,382 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 22:13:25,387 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 22:13:25,696 - main - INFO - Application started
+2025-02-25 22:13:25,697 - main - INFO - Database initialized: walletTracker
+2025-02-25 22:13:25,697 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 22:13:25,698 - main - INFO - Initializing database connection...
+2025-02-25 22:13:25,699 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:13:25,700 - main - INFO - Initializing data providers...
+2025-02-25 22:13:25,779 - main - INFO - Prefetched market data for BTC
+2025-02-25 22:13:25,841 - main - INFO - Prefetched market data for ETH
+2025-02-25 22:13:25,930 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 22:13:25,959 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 22:13:26,079 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 22:13:26,116 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 22:13:26,117 - main - INFO - Prefetched market context
+2025-02-25 22:13:26,145 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 22:13:26,207 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 22:13:26,207 - main - INFO - Prefetched news for BTC
+2025-02-25 22:13:26,236 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 22:13:26,292 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 22:13:26,293 - main - INFO - Prefetched news for ETH
+2025-02-25 22:13:26,293 - main - INFO - Data initialization complete
+2025-02-25 22:13:26,294 - main - INFO - Running in PRODUCTION mode
+2025-02-25 22:13:26,294 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 22:21:57,336 - crypto_advisor.api - INFO - Returning cached recommendation for BTC
+2025-02-25 22:31:59,822 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:32:00,154 - database - INFO - Created MongoDB indexes
+2025-02-25 22:32:01,185 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-25 22:32:01,189 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-25 22:32:05,720 - crypto_advisor.llm - INFO - Claude API client initialized successfully
+2025-02-25 22:32:05,725 - main - INFO - Application started
+2025-02-25 22:32:05,725 - main - INFO - Database initialized: walletTracker
+2025-02-25 22:32:05,726 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-25 22:32:05,727 - main - INFO - Initializing database connection...
+2025-02-25 22:32:05,728 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-25 22:32:05,729 - main - INFO - Initializing data providers...
+2025-02-25 22:32:08,398 - main - INFO - Prefetched market data for BTC
+2025-02-25 22:32:08,809 - main - INFO - Prefetched market data for ETH
+2025-02-25 22:32:08,946 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 22:32:08,980 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 22:32:09,109 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 22:32:09,150 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 22:32:09,151 - main - INFO - Prefetched market context
+2025-02-25 22:32:09,185 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-25 22:32:09,269 - crypto_advisor.news - INFO - Generated news summary for BTC
+2025-02-25 22:32:09,269 - main - INFO - Prefetched news for BTC
+2025-02-25 22:32:09,304 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 22:32:09,379 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 22:32:09,379 - main - INFO - Prefetched news for ETH
+2025-02-25 22:32:09,380 - main - INFO - Data initialization complete
+2025-02-25 22:32:09,380 - main - INFO - Running in PRODUCTION mode
+2025-02-25 22:32:09,380 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-25 22:32:27,327 - recommendation_engine - INFO - Generating new recommendation for ETH (futures)
+2025-02-25 22:32:27,364 - crypto_advisor.market - ERROR - Error generating market summary for ETH: asyncio.run() cannot be called from a running event loop
+2025-02-25 22:32:27,370 - crypto_advisor.news - INFO - Using memory-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-25 22:32:27,371 - crypto_advisor.news - INFO - Generated news summary for ETH
+2025-02-25 22:32:27,371 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-25 22:32:27,372 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-25 22:32:27,372 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-25 22:32:27,375 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-25 22:32:28,025 - crypto_advisor.llm - ERROR - Error communicating with Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}
+2025-02-25 22:32:28,026 - crypto_advisor.llm - ERROR - Error generating recommendation for ETH: Failed to communicate with Claude API: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}}

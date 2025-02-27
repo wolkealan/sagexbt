@@ -372,14 +372,13 @@ const CryptoAnalyzerChat = () => {
   };
 
   const handleSubmit = async (e) => {
-    // Existing function remains the same
     e?.preventDefault();
     
     if (!query.trim()) return;
     
     console.log("===============================");
     console.log("Processing query:", query);
-
+  
     // Add user message
     const userMessage = { 
       type: 'user', 
@@ -387,7 +386,7 @@ const CryptoAnalyzerChat = () => {
       timestamp: new Date().toLocaleString()
     };
     setMessages(prev => [...prev, userMessage]);
-
+  
     // Extract any context information from the message
     const contextOverride = extractContextFromMessage(query);
     
@@ -401,7 +400,7 @@ const CryptoAnalyzerChat = () => {
     } else {
       console.log("No context mentioned in message, not sending any context information");
     }
-
+  
     // Merge context for display purposes
     const messageContext = {
       ...userContext,
@@ -411,12 +410,10 @@ const CryptoAnalyzerChat = () => {
     console.log("Profile context:", userContext);
     console.log("Message context override:", contextOverride);
     console.log("Final context for request:", messageContext);
-
-    // API call logic remains the same
+  
+    // Determine if this is a futures trading query
     const isFutures = isFuturesQuery(query);
     let apiEndpoint, requestOptions, messageType;
-    
-    // ... rest of the function ...
     
     if (isFutures) {
       // Extract coin and direction for futures trading
@@ -463,55 +460,99 @@ const CryptoAnalyzerChat = () => {
       };
       messageType = 'analysis';
     }
-
+  
     setIsLoading(true);
     setQuery('');
-
+  
     try {
       const response = await fetch(apiEndpoint, requestOptions);
-
+  
       if (!response.ok) {
         throw new Error('Request failed');
       }
-
+  
       const data = await response.json();
       console.log("API Response:", JSON.stringify(data, null, 2));
       
-      // ... response handling ...
-      
+      // Check if the context in the response matches what we sent
+      if (data.context) {
+        console.log("Context match check:");
+        console.log("- Expected risk_tolerance:", messageContext.risk_tolerance);
+        console.log("- Received risk_tolerance:", data.context.risk_tolerance);
+        console.log("- Expected investment_horizon:", messageContext.investment_horizon);
+        console.log("- Received investment_horizon:", data.context.investment_horizon);
+      }
+  
       // Format response based on endpoint type
       let aiMessage;
       
       if (isFutures) {
-        // Enhanced recommendation content formatting
+        // Extract coin and direction for futures trading
+        const coin = extractCoin(query);
         const direction = extractFuturesDirection(query);
-        const directionText = direction === 'long' ? 'LONG' : 'SHORT';
         
-        // Custom summary based on direction
-        let summary;
-        if (data.action === 'BUY' && direction === 'long') {
-          summary = `ENTER LONG position for ${data.coin}`;
-        } else if (data.action === 'SELL' && direction === 'short') {
-          summary = `ENTER SHORT position for ${data.coin}`;
-        } else if (data.action === 'BUY' && direction === 'short') {
-          summary = `NOT RECOMMENDED to short ${data.coin} at this time`;
-        } else if (data.action === 'SELL' && direction === 'long') {
-          summary = `NOT RECOMMENDED to go long on ${data.coin} at this time`;
-        } else {
-          summary = `NEUTRAL outlook for ${data.coin} ${directionText} position`;
-        }
+        // Format recommendation using the new helper function
+        const formatFuturesRecommendation = (data, direction) => {
+          // Get the appropriate action label based on direction and API's action recommendation
+          let actionLabel;
+          let summary;
+          let recommendationColor;
+          
+          // For LONG positions
+          if (direction === 'long') {
+            if (data.action === 'BUY') {
+              actionLabel = 'ENTER LONG';
+              summary = `RECOMMENDED to enter a long position on ${data.coin}`;
+              recommendationColor = 'green';
+            } else if (data.action === 'SELL') {
+              actionLabel = 'AVOID LONG';
+              summary = `NOT RECOMMENDED to go long on ${data.coin} at this time`;
+              recommendationColor = 'yellow';
+            } else {
+              actionLabel = 'NEUTRAL';
+              summary = `NEUTRAL outlook for ${data.coin} long position`;
+              recommendationColor = 'gray';
+            }
+          } 
+          // For SHORT positions
+          else if (direction === 'short') {
+            if (data.action === 'SELL') {
+              actionLabel = 'ENTER SHORT';
+              summary = `RECOMMENDED to enter a short position on ${data.coin}`;
+              recommendationColor = 'red';
+            } else if (data.action === 'BUY') {
+              actionLabel = 'AVOID SHORT';
+              summary = `NOT RECOMMENDED to short ${data.coin} at this time`;
+              recommendationColor = 'yellow';
+            } else {
+              actionLabel = 'NEUTRAL';
+              summary = `NEUTRAL outlook for ${data.coin} short position`;
+              recommendationColor = 'gray';
+            }
+          }
+          
+          // Get explanation from available fields
+          const explanation = data.explanation || data.analysis || data.summary || "No detailed analysis available.";
+          
+          // Format the content for display
+          return {
+            label: actionLabel,
+            content: `**${actionLabel}** - ${summary}\n\n${explanation}`,
+            color: recommendationColor
+          };
+        };
         
-        // Get the explanation - check all possible field names
-        const explanation = data.explanation || data.analysis || data.summary || "No detailed analysis available.";
+        const recommendation = formatFuturesRecommendation(data, direction);
         
         // Format recommendation response
         aiMessage = {
           type: 'ai',
-          content: `**${data.action || 'NEUTRAL'}** - ${summary}\n\n${explanation}`,
+          content: recommendation.content,
           coin: data.coin || extractCoin(query),
           intent: messageType,
           direction: direction,
-          action: data.action || 'NEUTRAL',
+          action: recommendation.label,
+          actionColor: recommendation.color,
           context: messageContext,
           timestamp: new Date().toLocaleString()
         };
@@ -523,7 +564,8 @@ const CryptoAnalyzerChat = () => {
           coin: data.detected_coin || 'Market',
           intent: data.detected_intent || 'Analysis',
           // Use the context from the API response if available, otherwise use our calculated context
-          context: data.context || messageContext, 
+          context: data.context || messageContext,
+          actionColor: 'blue', 
           timestamp: new Date(data.timestamp * 1000).toLocaleString()
         };
       }
@@ -619,23 +661,27 @@ const CryptoAnalyzerChat = () => {
                       ? 'bg-orange-600 text-white'
                       : message.type === 'error'
                       ? 'bg-red-900 text-red-100'
-                      : message.intent === 'LONG' && message.action === 'BUY'
+                      : message.actionColor === 'green'
                       ? 'bg-green-900 border border-green-700'
-                      : message.intent === 'SHORT' && message.action === 'SELL'
+                      : message.actionColor === 'red'
                       ? 'bg-red-900 border border-red-700'
-                      : message.intent === 'LONG' || message.intent === 'SHORT'
+                      : message.actionColor === 'yellow'
                       ? 'bg-yellow-900 border border-yellow-700'
+                      : message.actionColor === 'gray'
+                      ? 'bg-gray-800 border border-gray-600'
                       : 'bg-gray-800 border border-gray-700'
                   }`}
                 >
                   {message.type === 'ai' && (
                     <div className={`text-sm font-semibold mb-1 ${
-                      message.intent === 'LONG' && message.action === 'BUY'
+                      message.actionColor === 'green'
                         ? 'text-green-400' 
-                        : message.intent === 'SHORT' && message.action === 'SELL'
+                        : message.actionColor === 'red'
                         ? 'text-red-400'
-                        : message.intent === 'LONG' || message.intent === 'SHORT'
+                        : message.actionColor === 'yellow'
                         ? 'text-yellow-400'
+                        : message.actionColor === 'gray'
+                        ? 'text-gray-400'
                         : 'text-orange-400'
                     }`}>
                       {message.coin} {message.intent === 'LONG' || message.intent === 'SHORT' 
@@ -662,6 +708,7 @@ const CryptoAnalyzerChat = () => {
                   </div>
                 </div>
               </div>
+          
             ))
           )}
           

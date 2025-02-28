@@ -3,7 +3,7 @@ import time
 import asyncio
 from datetime import datetime, timedelta
 import pymongo
-
+import json
 from config.config import TradingConfig, DatabaseConfig
 from utils.logger import get_logger
 from utils.database import get_database
@@ -26,59 +26,38 @@ class RecommendationEngine:
         self.recommendations_cache = {}
     
     async def generate_recommendation(self, coin: str, action_type: str = "spot",
-                                     force_refresh: bool = False) -> Dict[str, Any]:
-        """
-        Generate a trading recommendation for a specific coin
-        
-        Args:
-            coin: Cryptocurrency symbol
-            action_type: 'spot' or 'futures' trading
-            force_refresh: Force refresh of data and recommendation
-            
-        Returns:
-            Trading recommendation dictionary
-        """
+                                 force_refresh: bool = False) -> Dict[str, Any]:
         try:
-            cache_key = f"{coin}_{action_type}"
-            
-            # Check if we have a recent recommendation cached
-            if not force_refresh and cache_key in self.recommendations_cache:
-                cached_rec = self.recommendations_cache[cache_key]
-                # Check if the cached recommendation is still fresh (less than 15 minutes old)
-                if time.time() - cached_rec.get('timestamp', 0) < 900:  # 15 minutes
-                    logger.info(f"Using cached recommendation for {coin} ({action_type})")
-                    return cached_rec
-            
-            # Check if we have a recent recommendation in the database
-            if not force_refresh:
-                db_rec = self.db.find_one(
-                    DatabaseConfig.RECOMMENDATIONS_COLLECTION,
-                    {"coin": coin, "action_type": action_type}
-                )
-                
-                if db_rec and "timestamp" in db_rec:
-                    rec_time = db_rec["timestamp"]
-                    # Check if recommendation is less than 15 minutes old
-                    if isinstance(rec_time, datetime):
-                        age = datetime.now() - rec_time
-                        if age.total_seconds() < 900:  # 15 minutes
-                            logger.info(f"Using database recommendation for {coin} ({action_type})")
-                            # Update the cache
-                            self.recommendations_cache[cache_key] = db_rec
-                            return db_rec
-            
-            logger.info(f"Generating new recommendation for {coin} ({action_type})")
-            
             # Fetch market data
             market_summary = await self.market_data.get_market_summary(coin)
             
-            # Fetch news data
-            news_summary = self.news_provider.get_coin_news_summary(coin)
+            # Fetch news summary (with robust error handling)
+            try:
+                news_summary = self.news_provider.get_coin_news_summary(coin)
+            except Exception as e:
+                logger.warning(f"Error fetching news summary for {coin}: {e}")
+                news_summary = {
+                    'coin': coin,
+                    'sentiment': {'sentiment': 'neutral', 'sentiment_score': 0},
+                    'recent_articles': [],
+                    'total_articles_found': 0
+                }
             
-            # Fetch overall market context
-            market_context = self.news_provider.get_market_context()
+            # Fetch market context with more detailed logging
+            try:
+                market_context = self.news_provider.get_market_context()
+                logger.info(f"Market Context Retrieved: {json.dumps(market_context, indent=2)}")
+            except Exception as e:
+                logger.warning(f"Error fetching market context: {e}")
+                market_context = {
+                    'market': {'sentiment': {'sentiment': 'neutral'}},
+                    'geopolitical': {'sentiment': {'sentiment': 'neutral'}},
+                    'regulatory': {'sentiment': {'sentiment': 'neutral'}},
+                    'insights': [],
+                    'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                }
             
-            # Generate recommendation using the LLM
+            # Generate recommendation using LLM
             recommendation = self.llm.generate_recommendation(
                 coin=coin,
                 market_data=market_summary,
@@ -87,27 +66,8 @@ class RecommendationEngine:
                 action_type=action_type
             )
             
-            # Add context data to the recommendation
-            recommendation['context'] = {
-                'market_data': self._extract_key_market_data(market_summary),
-                'news_sentiment': news_summary.get('sentiment', {}),
-                'market_context': self._extract_key_context(market_context)
-            }
-            
-            # Use current datetime for MongoDB
-            if 'timestamp' in recommendation:
-                recommendation['timestamp'] = datetime.fromtimestamp(recommendation['timestamp'])
-            else:
-                recommendation['timestamp'] = datetime.now()
-            
-            # Cache the recommendation
-            self.recommendations_cache[cache_key] = recommendation
-            
-            # Save to MongoDB
-            self._save_recommendation(recommendation)
-            
             return recommendation
-            
+                
         except Exception as e:
             logger.error(f"Error generating recommendation for {coin}: {e}")
             return {
@@ -115,9 +75,8 @@ class RecommendationEngine:
                 'action': 'HOLD',
                 'confidence': 'Low',
                 'action_type': action_type,
-                'explanation': f"Error generating recommendation: {str(e)}",
-                'timestamp': datetime.now(),
-                'error': str(e)
+                'explanation': f"Unexpected error: {str(e)}",
+                'timestamp': datetime.now()
             }
     
     async def generate_all_recommendations(self, action_type: str = "spot") -> Dict[str, Dict[str, Any]]:
@@ -181,12 +140,21 @@ class RecommendationEngine:
         }
     
     def _extract_key_context(self, market_context: Dict[str, Any]) -> Dict[str, Any]:
-        """Extract key market context data"""
-        return {
+        """Extract key market context data with news titles"""
+        context = {
             'market_sentiment': market_context.get('market', {}).get('sentiment', {}).get('sentiment', 'neutral'),
             'geo_sentiment': market_context.get('geopolitical', {}).get('sentiment', {}).get('sentiment', 'neutral'),
             'regulatory_sentiment': market_context.get('regulatory', {}).get('sentiment', {}).get('sentiment', 'neutral')
         }
+        
+        # Extract news titles from insights
+        context['market_news_titles'] = [
+            insight.get('title', '') 
+            for insight in market_context.get('insights', [])
+            if insight.get('title')
+        ][:3]  # Limit to top 3 titles
+        
+        return context
     
     def _save_recommendation(self, recommendation: Dict[str, Any]) -> bool:
         """Save recommendation to MongoDB"""

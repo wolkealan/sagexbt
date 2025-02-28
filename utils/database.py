@@ -52,10 +52,10 @@ class MongoDB:
             market_collection.create_index([("timeframe", pymongo.ASCENDING)])
             market_collection.create_index([("timestamp", pymongo.DESCENDING)], expireAfterSeconds=DatabaseConfig.MARKET_DATA_TTL)
             
-            # News data indexes
-            news_collection = self.db[DatabaseConfig.NEWS_COLLECTION]
-            news_collection.create_index([("query_hash", pymongo.ASCENDING)])
-            news_collection.create_index([("timestamp", pymongo.DESCENDING)], expireAfterSeconds=DatabaseConfig.NEWS_DATA_TTL)
+            # # News data indexes
+            # news_collection = self.db[DatabaseConfig.NEWS_COLLECTION]
+            # news_collection.create_index([("query_hash", pymongo.ASCENDING)])
+            # news_collection.create_index([("timestamp", pymongo.DESCENDING)], expireAfterSeconds=DatabaseConfig.NEWS_DATA_TTL)
             
             # Recommendations indexes
             rec_collection = self.db[DatabaseConfig.RECOMMENDATIONS_COLLECTION]

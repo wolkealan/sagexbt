@@ -7414,3 +7414,1204 @@
 2025-02-28 19:29:36,236 - crypto_advisor.news - INFO - Generated market context summary
 2025-02-28 19:29:58,337 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
 2025-02-28 19:29:58,339 - crypto_advisor.llm - INFO - Generated futures recommendation for ETH: BUY (High confidence)
+2025-02-28 19:33:20,217 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 19:33:23,107 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 19:33:23,302 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 19:33:23,497 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 19:33:23,693 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 19:33:23,877 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 19:33:24,054 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 19:33:24,076 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 19:33:24,165 - crypto_advisor.news - INFO - Fetched 23 Telegram news articles for specific coin
+2025-02-28 19:33:24,165 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-28 19:33:24,165 - crypto_advisor.news - INFO - Telegram News count: 23
+2025-02-28 19:33:24,169 - crypto_advisor.news - INFO - Generated news summary for SOL with 23 articles
+2025-02-28 19:33:24,170 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 19:33:24,170 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 19:33:24,171 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 19:33:24,173 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 19:33:56,768 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 19:33:56,769 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-28 19:35:06,499 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:35:06,502 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:35:06,503 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Pi Network and XRP Whales Flock To XRPTurbo Presa...
+2025-02-28 21:23:20,688 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:20,688 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:20,688 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [JUST IN: CME Group, the world's largest futures e...
+2025-02-28 21:23:20,798 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:20,799 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:23:20,800 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Ten things Trump and his team did this week](http...
+2025-02-28 21:23:20,877 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:20,878 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:20,878 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [JUST IN: Trump Organization files trademark for '...
+2025-02-28 21:23:21,486 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:21,487 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:23:21,487 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: https://t.co/pMrQbtxsyj...
+2025-02-28 21:23:21,613 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:21,613 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:21,691 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:21,692 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:21,775 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:21,775 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:21,892 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:21,893 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:21,894 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Pluto’s exit comes after THORChain validator “TCB...
+2025-02-28 21:23:21,977 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:21,977 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:22,098 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,099 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:22,100 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Explore the top strategies and risks to watch out...
+2025-02-28 21:23:22,252 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,252 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:22,373 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,374 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:22,510 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,510 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:23:22,511 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Dozens arrested in global hit against AI-generate...
+2025-02-28 21:23:22,605 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,605 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:23:22,606 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [US judge says mass firings of some federal worker...
+2025-02-28 21:23:22,719 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,719 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:22,720 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: https://t.co/YzztOlwJg2...
+2025-02-28 21:23:22,804 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,804 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:23:22,805 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: https://t.co/E3m7TbNMXA...
+2025-02-28 21:23:22,930 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,931 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:23:22,931 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Watch: Demolition takes down record-breaking roll...
+2025-02-28 21:23:22,980 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:22,981 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:23,071 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:23,071 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:23,072 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [JUST IN: BlackRock adds its own Bitcoin ETF into ...
+2025-02-28 21:23:23,192 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:23,193 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:23,194 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @Cointelegraph: “The rise of the Bitcoin St...
+2025-02-28 21:23:23,277 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:23,278 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:23,397 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:23,398 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:23,398 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Bybit exploiters aren't sitting still—$497M in st...
+2025-02-28 21:23:23,483 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:23,483 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:23:23,483 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [US HIV funding cut is 'wake-up call' for S Africa...
+2025-02-28 21:23:23,604 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:23:23,606 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:23:23,607 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @Cointelegraph: If @elonmusk @DOGE succeeds...
+2025-02-28 21:29:52,375 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:29:52,376 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:29:52,376 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: https://t.co/V6HZec4i6F...
+2025-02-28 21:31:26,788 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:31:26,790 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 21:31:26,792 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Legends and newborns: Africa's top shots](https:/...
+2025-02-28 21:31:28,321 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:31:28,323 - news_provider - WARNING - Failed to store geopolitical message in news_data
+2025-02-28 21:31:28,326 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Faisal Islam: Any Starmer deal with Trump is all ...
+2025-02-28 21:35:28,477 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:35:28,478 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:37:47,885 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 21:37:48,140 - database - INFO - Created MongoDB indexes
+2025-02-28 21:37:49,097 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 21:37:49,100 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 21:37:49,532 - main - INFO - Application started
+2025-02-28 21:37:49,533 - main - INFO - Database initialized: walletTracker
+2025-02-28 21:37:49,533 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 21:37:49,534 - main - INFO - Initializing database connection...
+2025-02-28 21:37:49,534 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 21:37:49,535 - main - INFO - Initializing data providers...
+2025-02-28 21:37:52,217 - main - INFO - Prefetched market data for BTC
+2025-02-28 21:37:52,578 - main - INFO - Prefetched market data for ETH
+2025-02-28 21:37:52,645 - crypto_advisor.news - INFO - Generated market context summary from news_data collection
+2025-02-28 21:37:52,645 - main - INFO - Prefetched market context
+2025-02-28 21:37:52,747 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 21:37:52,770 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 21:37:52,771 - main - INFO - Prefetched news for BTC
+2025-02-28 21:37:52,820 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 21:37:52,865 - crypto_advisor.news - INFO - Generated news summary for ETH with 25 Telegram articles and 0 market articles
+2025-02-28 21:37:52,865 - main - INFO - Prefetched news for ETH
+2025-02-28 21:37:52,865 - main - INFO - Data initialization complete
+2025-02-28 21:37:52,866 - main - INFO - Running in PRODUCTION mode
+2025-02-28 21:37:52,866 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 21:37:59,495 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 21:37:59,890 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:38:00,079 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:38:00,274 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:38:00,467 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:38:00,663 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:38:00,862 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:38:00,887 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 21:38:00,958 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 21:38:00,984 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 21:38:01,052 - crypto_advisor.news - INFO - Generated market context summary from news_data collection
+2025-02-28 21:38:21,655 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 21:38:21,656 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 21:41:49,512 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 21:41:49,737 - database - INFO - Created MongoDB indexes
+2025-02-28 21:41:50,455 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 21:41:50,458 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 21:41:50,877 - main - INFO - Application started
+2025-02-28 21:41:50,877 - main - INFO - Database initialized: walletTracker
+2025-02-28 21:41:50,878 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 21:41:50,879 - main - INFO - Initializing database connection...
+2025-02-28 21:41:50,879 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 21:41:50,880 - main - INFO - Initializing data providers...
+2025-02-28 21:41:50,926 - main - INFO - Prefetched market data for BTC
+2025-02-28 21:41:50,976 - main - INFO - Prefetched market data for ETH
+2025-02-28 21:41:51,035 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 21:41:51,035 - main - INFO - Prefetched market context
+2025-02-28 21:41:51,117 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 21:41:51,136 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 21:41:51,137 - main - INFO - Prefetched news for BTC
+2025-02-28 21:41:51,178 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 21:41:51,197 - crypto_advisor.news - INFO - Generated news summary for ETH with 25 Telegram articles and 0 market articles
+2025-02-28 21:41:51,197 - main - INFO - Prefetched news for ETH
+2025-02-28 21:41:51,197 - main - INFO - Data initialization complete
+2025-02-28 21:41:51,198 - main - INFO - Running in PRODUCTION mode
+2025-02-28 21:41:51,198 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 21:41:56,398 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 21:41:56,420 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 21:41:56,483 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 21:41:56,503 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 21:41:56,561 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 21:42:24,140 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 21:42:24,141 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 21:55:50,127 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 21:55:50,345 - database - INFO - Created MongoDB indexes
+2025-02-28 21:55:51,175 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 21:55:51,179 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 21:55:51,583 - main - INFO - Application started
+2025-02-28 21:55:51,583 - main - INFO - Database initialized: walletTracker
+2025-02-28 21:55:51,584 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 21:55:51,585 - main - INFO - Initializing database connection...
+2025-02-28 21:55:51,585 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 21:55:51,586 - main - INFO - Initializing data providers...
+2025-02-28 21:55:54,293 - main - INFO - Prefetched market data for BTC
+2025-02-28 21:55:54,646 - main - INFO - Prefetched market data for ETH
+2025-02-28 21:55:54,702 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 21:55:54,703 - main - INFO - Prefetched market context
+2025-02-28 21:55:54,788 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 21:55:54,811 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 21:55:54,812 - main - INFO - Prefetched news for BTC
+2025-02-28 21:55:54,852 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 21:55:54,874 - crypto_advisor.news - INFO - Generated news summary for ETH with 25 Telegram articles and 0 market articles
+2025-02-28 21:55:54,875 - main - INFO - Prefetched news for ETH
+2025-02-28 21:55:54,876 - main - INFO - Data initialization complete
+2025-02-28 21:55:54,878 - main - INFO - Running in PRODUCTION mode
+2025-02-28 21:55:54,878 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 21:55:57,094 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 21:55:57,902 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:55:58,091 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:55:58,287 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:55:58,502 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:55:58,699 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:55:58,881 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 21:55:58,903 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 21:55:58,971 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 21:55:58,989 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 21:55:59,039 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 21:56:23,672 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 21:56:23,673 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 21:57:05,235 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 21:57:05,235 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 21:57:05,236 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: Trump in talks about worsening geo politics with C...
+2025-02-28 22:06:39,367 - news_provider - INFO - Stored geopolitical message in news_data
+2025-02-28 22:06:39,368 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Can Europe deter Russia in Ukraine without US mil...
+2025-02-28 22:06:40,847 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:06:40,848 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 22:06:40,848 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Watch: Firefighters seen tackling Czech train fir...
+2025-02-28 22:06:41,295 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:06:41,296 - news_provider - WARNING - Failed to store geopolitical message in news_data
+2025-02-28 22:06:41,297 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @BBCWorld: Ukrainian President Volodymyr Ze...
+2025-02-28 22:06:41,852 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:06:41,852 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 22:06:41,853 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Skype announces it will close in May](https://x.c...
+2025-02-28 22:06:50,368 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:06:50,531 - database - INFO - Created MongoDB indexes
+2025-02-28 22:06:51,274 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 22:06:51,278 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 22:06:51,654 - main - INFO - Application started
+2025-02-28 22:06:51,655 - main - INFO - Database initialized: walletTracker
+2025-02-28 22:06:51,655 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 22:06:51,656 - main - INFO - Initializing database connection...
+2025-02-28 22:06:51,657 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:06:51,658 - main - INFO - Initializing data providers...
+2025-02-28 22:06:51,704 - main - INFO - Prefetched market data for BTC
+2025-02-28 22:06:51,753 - main - INFO - Prefetched market data for ETH
+2025-02-28 22:06:51,811 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 22:06:51,812 - main - INFO - Prefetched market context
+2025-02-28 22:06:51,893 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 22:06:51,914 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 22:06:51,914 - main - INFO - Prefetched news for BTC
+2025-02-28 22:06:51,954 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:06:51,973 - crypto_advisor.news - INFO - Generated news summary for ETH with 25 Telegram articles and 0 market articles
+2025-02-28 22:06:51,973 - main - INFO - Prefetched news for ETH
+2025-02-28 22:06:51,975 - main - INFO - Data initialization complete
+2025-02-28 22:06:51,976 - main - INFO - Running in PRODUCTION mode
+2025-02-28 22:06:51,976 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 22:08:49,422 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:08:49,423 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 22:08:50,984 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:08:50,985 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 22:11:18,715 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:11:18,716 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 22:11:18,716 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [The recent #Bybit exploit resulted in the calcula...
+2025-02-28 22:12:53,241 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:12:53,242 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 22:12:53,243 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: Trump in talks about worsening geo politics with C...
+2025-02-28 22:13:25,125 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 22:13:25,125 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 22:13:25,126 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: Trump imposes tariffcs on china...
+2025-02-28 22:14:03,816 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 22:14:25,951 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:14:26,136 - database - INFO - Created MongoDB indexes
+2025-02-28 22:14:26,149 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 22:14:26,153 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 22:14:27,251 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 22:14:27,371 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 22:14:27,372 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-02-28 22:14:35,587 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:14:35,749 - database - INFO - Created MongoDB indexes
+2025-02-28 22:14:36,420 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 22:14:36,423 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 22:14:36,768 - main - INFO - Application started
+2025-02-28 22:14:36,769 - main - INFO - Database initialized: walletTracker
+2025-02-28 22:14:36,770 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 22:14:36,771 - main - INFO - Initializing database connection...
+2025-02-28 22:14:36,771 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:14:36,772 - main - INFO - Initializing data providers...
+2025-02-28 22:14:40,080 - main - INFO - Prefetched market data for BTC
+2025-02-28 22:14:40,666 - main - INFO - Prefetched market data for ETH
+2025-02-28 22:14:40,722 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 22:14:40,722 - main - INFO - Prefetched market context
+2025-02-28 22:14:40,811 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 22:14:40,829 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 22:14:40,830 - main - INFO - Prefetched news for BTC
+2025-02-28 22:14:40,871 - crypto_advisor.news - INFO - Fetched 27 Telegram news articles for specific coin
+2025-02-28 22:14:40,891 - crypto_advisor.news - INFO - Generated news summary for ETH with 27 Telegram articles and 0 market articles
+2025-02-28 22:14:40,891 - main - INFO - Prefetched news for ETH
+2025-02-28 22:14:40,892 - main - INFO - Data initialization complete
+2025-02-28 22:14:40,892 - main - INFO - Running in PRODUCTION mode
+2025-02-28 22:14:40,893 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 22:15:13,485 - news_provider - INFO - Stored general message in news_data
+2025-02-28 22:15:13,487 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: Trump imposes tariffcs on china...
+2025-02-28 22:15:41,598 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 22:15:41,600 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: Trump in talks about worsening geo politics with C...
+2025-02-28 22:16:01,765 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 22:16:02,141 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:16:02,339 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:16:02,573 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:16:02,753 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:16:02,939 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:16:03,362 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:16:03,389 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 22:16:03,457 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:16:03,483 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 22:16:03,540 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 22:16:26,670 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 22:16:26,671 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-28 22:24:07,807 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:24:07,985 - database - INFO - Created MongoDB indexes
+2025-02-28 22:24:08,719 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 22:24:08,722 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 22:24:09,147 - main - INFO - Application started
+2025-02-28 22:24:09,147 - main - INFO - Database initialized: walletTracker
+2025-02-28 22:24:09,148 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 22:24:09,149 - main - INFO - Initializing database connection...
+2025-02-28 22:24:09,149 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:24:09,150 - main - INFO - Initializing data providers...
+2025-02-28 22:24:09,204 - main - INFO - Prefetched market data for BTC
+2025-02-28 22:24:09,257 - main - INFO - Prefetched market data for ETH
+2025-02-28 22:24:09,280 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 22:24:09,281 - main - INFO - Prefetched market context
+2025-02-28 22:24:09,388 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 22:24:09,412 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 22:24:09,413 - main - INFO - Prefetched news for BTC
+2025-02-28 22:24:09,466 - crypto_advisor.news - INFO - Fetched 27 Telegram news articles for specific coin
+2025-02-28 22:24:09,489 - crypto_advisor.news - INFO - Generated news summary for ETH with 27 Telegram articles and 0 market articles
+2025-02-28 22:24:09,489 - main - INFO - Prefetched news for ETH
+2025-02-28 22:24:09,490 - main - INFO - Data initialization complete
+2025-02-28 22:24:09,491 - main - INFO - Running in PRODUCTION mode
+2025-02-28 22:24:09,491 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 22:24:14,991 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 22:24:15,016 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 22:24:15,095 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:24:15,118 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 22:24:15,141 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 22:24:37,998 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 22:24:37,999 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-02-28 22:25:15,526 - news_provider - INFO - Stored general message in news_data
+2025-02-28 22:25:15,527 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Trump to order English as official US language](h...
+2025-02-28 22:25:17,079 - news_provider - INFO - Stored general message in news_data
+2025-02-28 22:25:17,080 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Czech firefighters tackle large toxic train fire]...
+2025-02-28 22:26:23,406 - news_provider - INFO - Stored mixed message in news_data
+2025-02-28 22:26:23,406 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @Cointelegraph: “What are the odds that the...
+2025-02-28 22:28:26,558 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 22:28:26,559 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [The Trump Organization’s “TRUMP” trademark filing...
+2025-02-28 22:30:43,250 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:30:43,449 - database - INFO - Created MongoDB indexes
+2025-02-28 22:30:44,271 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 22:30:44,275 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 22:30:44,695 - main - INFO - Application started
+2025-02-28 22:30:44,696 - main - INFO - Database initialized: walletTracker
+2025-02-28 22:30:44,696 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 22:30:44,697 - main - INFO - Initializing database connection...
+2025-02-28 22:30:44,697 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:30:44,698 - main - INFO - Initializing data providers...
+2025-02-28 22:30:47,494 - main - INFO - Prefetched market data for BTC
+2025-02-28 22:30:47,851 - main - INFO - Prefetched market data for ETH
+2025-02-28 22:30:47,872 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 22:30:47,873 - main - INFO - Prefetched market context
+2025-02-28 22:30:47,953 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 22:30:47,975 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 22:30:47,976 - main - INFO - Prefetched news for BTC
+2025-02-28 22:30:48,015 - crypto_advisor.news - INFO - Fetched 27 Telegram news articles for specific coin
+2025-02-28 22:30:48,033 - crypto_advisor.news - INFO - Generated news summary for ETH with 27 Telegram articles and 0 market articles
+2025-02-28 22:30:48,034 - main - INFO - Prefetched news for ETH
+2025-02-28 22:30:48,034 - main - INFO - Data initialization complete
+2025-02-28 22:30:48,034 - main - INFO - Running in PRODUCTION mode
+2025-02-28 22:30:48,035 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 22:30:52,955 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 22:30:53,013 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:30:53,035 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 22:30:53,057 - crypto_advisor.news - INFO - Generated comprehensive market context from news_data collection
+2025-02-28 22:30:53,058 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.17
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    }
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    }
+  },
+  "overall_sentiment": 0.17,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "[Czech firefighters tackle large toxic train fire](https://x.com/BBCWorld/status/1895517430820020...",
+      "description": "[Czech firefighters tackle large toxic train fire](https://x.com/BBCWorld/status/1895517430820020643)\n\n Czech firefighters tackle large toxic train fire https://t.co/oLxd6JWlKF\n \n \u2014 BBC News (World) (@BBCWorld) February 28, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:55:17+00:00",
+      "content_type": "general"
+    },
+    {
+      "title": "[Trump to order English as official US language](https://x.com/BBCWorld/status/1895515022069047331)",
+      "description": "[Trump to order English as official US language](https://x.com/BBCWorld/status/1895515022069047331)\n\n Trump to order English as official US language https://t.co/WlHA8Mbx1F\n \n \u2014 BBC News (World) (@BBCWorld) February 28, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:55:15+00:00",
+      "content_type": "general"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 6,
+  "last_updated": "2025-02-28 22:30:53"
+}
+2025-02-28 22:31:15,270 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 22:31:15,271 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-02-28 22:34:45,858 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:34:46,045 - database - INFO - Created MongoDB indexes
+2025-02-28 22:34:46,997 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 22:34:47,000 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 22:34:47,414 - main - INFO - Application started
+2025-02-28 22:34:47,415 - main - INFO - Database initialized: walletTracker
+2025-02-28 22:34:47,415 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 22:34:47,416 - main - INFO - Initializing database connection...
+2025-02-28 22:34:47,417 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:34:47,418 - main - INFO - Initializing data providers...
+2025-02-28 22:34:47,464 - main - INFO - Prefetched market data for BTC
+2025-02-28 22:34:47,514 - main - INFO - Prefetched market data for ETH
+2025-02-28 22:34:47,537 - crypto_advisor.news - INFO - Found 3 news documents for market context
+2025-02-28 22:34:47,537 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:34:47"
+}
+2025-02-28 22:34:47,538 - main - INFO - Prefetched market context
+2025-02-28 22:34:47,621 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 22:34:47,644 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 22:34:47,644 - main - INFO - Prefetched news for BTC
+2025-02-28 22:34:47,686 - crypto_advisor.news - INFO - Fetched 27 Telegram news articles for specific coin
+2025-02-28 22:34:47,705 - crypto_advisor.news - INFO - Generated news summary for ETH with 27 Telegram articles and 0 market articles
+2025-02-28 22:34:47,705 - main - INFO - Prefetched news for ETH
+2025-02-28 22:34:47,705 - main - INFO - Data initialization complete
+2025-02-28 22:34:47,706 - main - INFO - Running in PRODUCTION mode
+2025-02-28 22:34:47,706 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 22:35:01,986 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:35:02,184 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:35:02,372 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:35:02,559 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:35:02,740 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:35:02,935 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 22:35:02,959 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 22:35:03,021 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:35:03,043 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 22:35:03,063 - crypto_advisor.news - INFO - Found 3 news documents for market context
+2025-02-28 22:35:03,064 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:35:03"
+}
+2025-02-28 22:35:03,064 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:35:03"
+}
+2025-02-28 22:35:27,721 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 22:35:27,722 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 22:35:45,999 - news_provider - INFO - Stored general message in news_data
+2025-02-28 22:35:46,000 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: Trump imposes tariff on china...
+2025-02-28 22:36:10,170 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 22:36:10,239 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:36:10,263 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 22:36:10,285 - crypto_advisor.news - INFO - Found 3 news documents for market context
+2025-02-28 22:36:10,286 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:36:10"
+}
+2025-02-28 22:36:10,287 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:36:10"
+}
+2025-02-28 22:36:33,419 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 22:36:33,419 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-02-28 22:37:18,833 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 22:37:18,903 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:37:18,923 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 22:37:18,945 - crypto_advisor.news - INFO - Found 3 news documents for market context
+2025-02-28 22:37:18,945 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:37:18"
+}
+2025-02-28 22:37:18,946 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:37:18"
+}
+2025-02-28 22:37:41,210 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 22:37:41,210 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 22:37:55,751 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:37:55,924 - database - INFO - Created MongoDB indexes
+2025-02-28 22:37:56,654 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 22:37:56,658 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 22:37:57,031 - main - INFO - Application started
+2025-02-28 22:37:57,031 - main - INFO - Database initialized: walletTracker
+2025-02-28 22:37:57,032 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 22:37:57,033 - main - INFO - Initializing database connection...
+2025-02-28 22:37:57,033 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 22:37:57,034 - main - INFO - Initializing data providers...
+2025-02-28 22:37:57,082 - main - INFO - Prefetched market data for BTC
+2025-02-28 22:37:57,129 - main - INFO - Prefetched market data for ETH
+2025-02-28 22:37:57,151 - crypto_advisor.news - INFO - Found 3 news documents for market context
+2025-02-28 22:37:57,152 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:37:57"
+}
+2025-02-28 22:37:57,152 - main - INFO - Prefetched market context
+2025-02-28 22:37:57,257 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 22:37:57,280 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 22:37:57,280 - main - INFO - Prefetched news for BTC
+2025-02-28 22:37:57,321 - crypto_advisor.news - INFO - Fetched 27 Telegram news articles for specific coin
+2025-02-28 22:37:57,341 - crypto_advisor.news - INFO - Generated news summary for ETH with 27 Telegram articles and 0 market articles
+2025-02-28 22:37:57,342 - main - INFO - Prefetched news for ETH
+2025-02-28 22:37:57,342 - main - INFO - Data initialization complete
+2025-02-28 22:37:57,342 - main - INFO - Running in PRODUCTION mode
+2025-02-28 22:37:57,344 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 22:38:06,722 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 22:38:06,783 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 22:38:06,804 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 22:38:06,825 - crypto_advisor.news - INFO - Found 3 news documents for market context
+2025-02-28 22:38:06,826 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:38:06"
+}
+2025-02-28 22:38:06,826 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.33
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.33,
+  "insights": [
+    {
+      "title": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc...",
+      "description": "[The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say filings often hint at future moves. - Trademark application signals possible metaverse/NFT platform, but approval and development\u2026](https://x.com/BTCTN/status/1895514905685492118)\n\n The Trump Organization\u2019s \u201cTRUMP\u201d trademark filing points to potential\n metaverse and NFT plans \ud83c\udf10\ud83d\uddbc\ufe0f. No launch confirmed yet, but onlookers say\n filings often hint at future moves.\n \n - Trademark application signals possible metaverse/NFT platform, but approval\n and development\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:58:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @Cynth...",
+      "description": "[RT by @Cointelegraph: \u201cWhat are the odds that the US adopts a strategic Bitcoin Reserve?\u201d @CynthiaMLummis says that it\u2019s more likely that US states will begin to acquire Bitcoin before the US government does at a federal level. She also said that the US already holds Bitcoin through asset\u2026](https://x.com/gazza_jenks/status/1895517288813428815)\n\n \u201cWhat are the odds that the US adopts a strategic Bitcoin\n Reserve?\u201d@CynthiaMLummis says that it\u2019s more likely that US states will begin\n to acquire Bitcoin before the US government does at a federal level.\n \n She also said that the US already holds Bitcoin through asset\u2026\n pic.twitter.com/CSyObEDUW0\n \n \u2014 Gareth Jenkinson (@gazza_jenks) February 28, 2025\n\n**@gazza_jenks**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:56:23+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "Trump in talks about worsening geo politics with China which can impact market",
+      "description": "Trump in talks about worsening geo politics with China which can impact market",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T16:45:41+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 3,
+  "last_updated": "2025-02-28 22:38:06"
+}
+2025-02-28 22:38:31,544 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 22:38:31,546 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 22:39:52,368 - news_provider - INFO - Stored geopolitical message in news_data
+2025-02-28 22:42:35,486 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 22:57:58,273 - news_provider - INFO - Stored general message in news_data
+2025-02-28 22:57:58,275 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Thousands of users report WhatsApp technical issu...
+2025-02-28 22:57:59,786 - news_provider - INFO - Stored general message in news_data
+2025-02-28 22:57:59,787 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Thousands of speeding fines quashed over camera e...
+2025-02-28 23:40:04,834 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:04,910 - news_provider - INFO - Stored geopolitical message in news_data
+2025-02-28 23:40:04,911 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @BBCWorld: US President Donald Trump tells ...
+2025-02-28 23:40:04,981 - news_provider - INFO - Stored mixed message in news_data
+2025-02-28 23:40:05,052 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,156 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,269 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,344 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,445 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,517 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,587 - news_provider - INFO - Stored general message in news_data
+2025-02-28 23:40:05,588 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Six killed in blast at Pakistan's 'University of ...
+2025-02-28 23:40:05,664 - news_provider - INFO - Stored mixed message in news_data
+2025-02-28 23:40:05,769 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,886 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:40:05,887 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [LBank Announces New Trading Keywords to Empower G...
+2025-02-28 23:41:39,700 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 23:41:39,858 - database - INFO - Created MongoDB indexes
+2025-02-28 23:41:41,016 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 23:41:41,019 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 23:41:41,477 - main - INFO - Application started
+2025-02-28 23:41:41,477 - main - INFO - Database initialized: walletTracker
+2025-02-28 23:41:41,478 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 23:41:41,479 - main - INFO - Initializing database connection...
+2025-02-28 23:41:41,479 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 23:41:41,480 - main - INFO - Initializing data providers...
+2025-02-28 23:41:44,747 - main - INFO - Prefetched market data for BTC
+2025-02-28 23:41:45,101 - main - INFO - Prefetched market data for ETH
+2025-02-28 23:41:45,143 - crypto_advisor.news - INFO - Found 17 news documents for market context
+2025-02-28 23:41:45,146 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.0
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.0,
+  "insights": [
+    {
+      "title": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-annou...",
+      "description": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-announce\u2026](https://x.com/BTCTN/status/1895534771289120841)\n\n LBank Announces New Trading Keywords to Empower Global Market Reach\n https://t.co/g0TNoEERcH\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/18955330772...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/1895533077298102676)\n\n Read more about it here\ud83d\udc47https://t.co/0liFY0Dy1G\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel...",
+      "description": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K in February. - Starmer advocates a fair and balanced approach. - Investors split: some see BTC as inflation hedge, others fear\u2026](https://x.com/BTCTN/status/1895531781165641952)\n\n \ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10\n \n - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K\n in February.\n - Starmer advocates a fair and balanced approach.\n - Investors split: some see BTC as inflation hedge, others fear\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:43+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "trade",
+      "impact_level": "low"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895523453773689125)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895523453773689125)\n\n Read more about it here\ud83d\udc47https://t.co/tufzSrQibO\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T17:48:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895501827111825579)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895501827111825579)\n\n Read more about it here\ud83d\udc47https://t.co/bfJCsYwrdF\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T17:48:36+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 17,
+  "last_updated": "2025-02-28 23:41:45"
+}
+2025-02-28 23:41:45,147 - main - INFO - Prefetched market context
+2025-02-28 23:41:45,217 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 23:41:45,236 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-02-28 23:41:45,236 - main - INFO - Prefetched news for BTC
+2025-02-28 23:41:45,281 - crypto_advisor.news - INFO - Fetched 27 Telegram news articles for specific coin
+2025-02-28 23:41:45,301 - crypto_advisor.news - INFO - Generated news summary for ETH with 27 Telegram articles and 0 market articles
+2025-02-28 23:41:45,301 - main - INFO - Prefetched news for ETH
+2025-02-28 23:41:45,302 - main - INFO - Data initialization complete
+2025-02-28 23:41:45,302 - main - INFO - Running in PRODUCTION mode
+2025-02-28 23:41:45,302 - main - INFO - Starting API server on 0.0.0.0:8000

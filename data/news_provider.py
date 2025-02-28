@@ -467,16 +467,33 @@ class NewsDataProvider:
     # Override the existing method
     def get_coin_news_summary(self, coin: str) -> Dict[str, Any]:
         try:
-            # Fetch combined news from different sources
-            coin_news = self.get_combined_news(coin)
+            # Fetch Telegram news for News Sentiment
+            telegram_news = self.fetch_telegram_news(coin)
             
-            # Analyze sentiment
-            sentiment = self.analyze_news_sentiment(coin_news)
+            # Fetch news from news_data collection for broader context
+            market_query = {
+                "$or": [
+                    {"coins_mentioned": coin},
+                    {"description": {"$regex": f"\\b{coin}\\b", "$options": "i"}},
+                    {"title": {"$regex": f"\\b{coin}\\b", "$options": "i"}}
+                ],
+                "source_type": {"$ne": "telegram"}  # Exclude Telegram sources
+            }
+            
+            market_news = self.db.find_many(
+                DatabaseConfig.NEWS_COLLECTION,
+                market_query,
+                sort=[("publishedAt", -1)],
+                limit=20
+            )
+            
+            # Analyze sentiment using Telegram news
+            sentiment = self.analyze_news_sentiment(telegram_news)
             
             # Get the most recent articles (top 5)
             recent_articles = []
-            for article in coin_news[:5]:
-                source_type = article.get('source_type', 'news_api')
+            for article in telegram_news[:5]:
+                source_type = article.get('source_type', 'telegram')
                 source_name = article.get('source', {}).get('name', 'Unknown')
                 
                 # Add an indicator for Telegram sources
@@ -493,16 +510,27 @@ class NewsDataProvider:
                 }
                 recent_articles.append(recent_article)
             
+            # Prepare market news context
+            market_context = []
+            for news in market_news[:5]:
+                market_context.append({
+                    'title': news.get('title', ''),
+                    'source': news.get('source', {}).get('name', 'Unknown'),
+                    'publishedAt': news.get('publishedAt', '')
+                })
+            
             # Create news summary
             summary = {
                 'coin': coin,
-                'sentiment': sentiment,
-                'recent_articles': recent_articles,
-                'total_articles_found': len(coin_news),
+                'sentiment': sentiment,  # From Telegram news
+                'recent_articles': recent_articles,  # Telegram articles
+                'market_context': market_context,  # Broader market news from news_data
+                'total_telegram_articles': len(telegram_news),
+                'total_market_articles': len(market_news),
                 'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
             
-            logger.info(f"Generated news summary for {coin} with {len(coin_news)} articles")
+            logger.info(f"Generated news summary for {coin} with {len(telegram_news)} Telegram articles and {len(market_news)} market articles")
             return summary
         
         except Exception as e:
@@ -515,51 +543,108 @@ class NewsDataProvider:
                     'article_count': 0
                 },
                 'recent_articles': [],
-                'total_articles_found': 0,
+                'market_context': [],
+                'total_telegram_articles': 0,
+                'total_market_articles': 0,
                 'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
-    
+
     def get_market_context(self) -> Dict[str, Any]:
-        """Get overall market context from various news sources"""
+        """Get comprehensive market context from news_data collection"""
         try:
-            # Fetch different types of news
-            market_news = self.fetch_market_news()
-            geo_news = self.fetch_geopolitical_news()
-            regulatory_news = self.fetch_regulatory_news()
+            # Fetch recent news from news_data collection with more specific criteria
+            news_results = self.db.find_many(
+                DatabaseConfig.NEWS_COLLECTION,
+                {
+                    "$or": [
+                        {"content_type": {"$in": ["crypto", "geopolitical", "economic", "regulatory", "mixed", "tariff"]}},
+                        {"description": {"$regex": "market|economy|politics|trade|regulation", "$options": "i"}},
+                        {"title": {"$regex": "market|economy|politics|trade|regulation", "$options": "i"}}
+                    ]
+                },
+                sort=[("publishedAt", -1)],
+                limit=50  # Adjust limit as needed
+            )
             
-            # Analyze sentiment for each category
-            market_sentiment = self.analyze_news_sentiment(market_news)
-            geo_sentiment = self.analyze_news_sentiment(geo_news)
-            regulatory_sentiment = self.analyze_news_sentiment(regulatory_news)
+            # Log the number of documents found
+            logger.info(f"Found {len(news_results)} news documents for market context")
             
-            # Create market context summary
-            context = {
+            # Analyze sentiment for news
+            sentiment = self.analyze_news_sentiment(news_results)
+            
+            # Extract key insights
+            insights = []
+            for news in news_results[:5]:
+                insight = {
+                    'title': news.get('title', ''),
+                    'description': news.get('description', ''),
+                    'source': news.get('source', {}).get('name', 'Unknown'),
+                    'publishedAt': news.get('publishedAt', ''),
+                    'content_type': news.get('content_type', 'unknown')
+                }
+                
+                # Add optional contextual information if available
+                for optional_key in ['region', 'event_type', 'impact_level']:
+                    if optional_key in news:
+                        insight[optional_key] = news[optional_key]
+                
+                insights.append(insight)
+            
+            # Categorize insights
+            categories = {
+                'crypto': [i for i in insights if i['content_type'] == 'crypto'],
+                'geopolitical': [i for i in insights if i.get('content_type') == 'geopolitical'],
+                'economic': [i for i in insights if i.get('content_type') == 'economic'],
+                'regulatory': [i for i in insights if i.get('content_type') == 'regulatory']
+            }
+            
+            # Construct final context with detailed sentiment and insights
+            market_context = {
                 'market': {
-                    'sentiment': market_sentiment,
-                    'recent_headline': market_news[0].get('title', '') if market_news else ''
+                    'sentiment': {
+                        'sentiment': sentiment.get('sentiment', 'neutral'),
+                        'sentiment_score': sentiment.get('sentiment_score', 0)
+                    }
                 },
                 'geopolitical': {
-                    'sentiment': geo_sentiment,
-                    'recent_headline': geo_news[0].get('title', '') if geo_news else ''
+                    'sentiment': {
+                        'sentiment': 'neutral',
+                        'sentiment_score': 0
+                    },
+                    'insights': categories.get('geopolitical', [])
                 },
                 'regulatory': {
-                    'sentiment': regulatory_sentiment,
-                    'recent_headline': regulatory_news[0].get('title', '') if regulatory_news else ''
+                    'sentiment': {
+                        'sentiment': 'neutral',
+                        'sentiment_score': 0
+                    },
+                    'insights': categories.get('regulatory', [])
                 },
-                'overall_sentiment': (
-                    market_sentiment.get('sentiment_score', 0) * 0.5 +
-                    geo_sentiment.get('sentiment_score', 0) * 0.3 +
-                    regulatory_sentiment.get('sentiment_score', 0) * 0.2
-                ),
+                'economic': {
+                    'sentiment': {
+                        'sentiment': 'neutral',
+                        'sentiment_score': 0
+                    },
+                    'insights': categories.get('economic', [])
+                },
+                'overall_sentiment': sentiment.get('sentiment_score', 0),
+                'insights': insights,
+                'total_news_count': len(news_results),
                 'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
             
-            logger.info("Generated market context summary")
-            return context
+            # Log the market context for debugging
+            logger.info(f"Market Context Details: {json.dumps(market_context, indent=2)}")
+            
+            return market_context
         
         except Exception as e:
             logger.error(f"Error generating market context: {e}")
             return {
+                'market': {'sentiment': {'sentiment': 'neutral', 'sentiment_score': 0}},
+                'geopolitical': {'sentiment': {'sentiment': 'neutral', 'sentiment_score': 0}},
+                'regulatory': {'sentiment': {'sentiment': 'neutral', 'sentiment_score': 0}},
+                'economic': {'sentiment': {'sentiment': 'neutral', 'sentiment_score': 0}},
                 'error': str(e),
                 'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }

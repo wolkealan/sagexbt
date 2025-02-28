@@ -375,6 +375,61 @@ const CryptoAnalyzerChat = () => {
     e?.preventDefault();
     
     if (!query.trim()) return;
+
+    // New function to check if query is crypto-related
+  const isCryptoRelatedQuery = (queryText) => {
+    const cryptoKeywords = [
+      'bitcoin', 'crypto', 'blockchain', 'ethereum', 
+      'trading', 'market', 'coin', 'investment', 
+      'solana', 'xrp', 'buy', 'sell', 'portfolio',
+      'futures', 'long', 'short', 'price', 'trend'
+    ];
+    
+    const queryLower = queryText.toLowerCase();
+    
+    return cryptoKeywords.some(keyword => queryLower.includes(keyword));
+  };
+
+  // Check if query is crypto-related
+  if (!isCryptoRelatedQuery(query)) {
+    // Add a clarification message
+    const clarificationMessage = {
+      type: 'ai',
+      content: `I'm an AI specialized in cryptocurrency and market analysis. Could you rephrase your query to be about crypto markets, trading, or specific cryptocurrencies? 
+
+Some example queries:
+- Should I buy Bitcoin?
+- What's happening with Ethereum?
+- Analyze Solana's price movement
+- Give me a futures trading recommendation
+
+I can help you with:
+✓ Cryptocurrency analysis
+✓ Trading recommendations
+✓ Market sentiment
+✓ Futures trading insights`,
+      coin: 'Assistant',
+      intent: 'Clarification',
+      actionColor: 'blue',
+      timestamp: new Date().toLocaleString()
+    };
+
+    // Add user and AI messages
+    setMessages(prev => [
+      ...prev, 
+      { 
+        type: 'user', 
+        content: query,
+        timestamp: new Date().toLocaleString()
+      },
+      clarificationMessage
+    ]);
+
+    // Reset query and loading state
+    setQuery('');
+    setIsLoading(false);
+    return;
+  }
     
     console.log("===============================");
     console.log("Processing query:", query);
@@ -646,70 +701,52 @@ const CryptoAnalyzerChat = () => {
               }} />
             </>
           ) : (
-            messages.map((message, index) => (
-              <div 
-                key={index} 
-                className={`flex ${
-                  message.type === 'user' 
-                    ? 'justify-end' 
-                    : 'justify-start'
-                }`}
-              >
-                <div 
-                  className={`max-w-[85%] p-3 rounded-lg ${
-                    message.type === 'user'
-                      ? 'bg-orange-600 text-white'
-                      : message.type === 'error'
-                      ? 'bg-red-900 text-red-100'
-                      : message.actionColor === 'green'
-                      ? 'bg-green-900 border border-green-700'
-                      : message.actionColor === 'red'
-                      ? 'bg-red-900 border border-red-700'
-                      : message.actionColor === 'yellow'
-                      ? 'bg-yellow-900 border border-yellow-700'
-                      : message.actionColor === 'gray'
-                      ? 'bg-gray-800 border border-gray-600'
-                      : 'bg-gray-800 border border-gray-700'
-                  }`}
-                >
-                  {message.type === 'ai' && (
-                    <div className={`text-sm font-semibold mb-1 ${
-                      message.actionColor === 'green'
-                        ? 'text-green-400' 
-                        : message.actionColor === 'red'
-                        ? 'text-red-400'
-                        : message.actionColor === 'yellow'
-                        ? 'text-yellow-400'
-                        : message.actionColor === 'gray'
-                        ? 'text-gray-400'
-                        : 'text-orange-400'
-                    }`}>
-                      {message.coin} {message.intent === 'LONG' || message.intent === 'SHORT' 
-                        ? `${message.intent} Recommendation` 
-                        : message.intent && message.intent !== 'general' 
-                        ? message.intent.toUpperCase() 
-                        : 'Analysis'}
-                      {message.context && (
-                        <span className="text-xs text-gray-500 ml-2">
-                          {formatContext(message.context)}
-                        </span>
-                      )}
-                    </div>
-                  )}
-                  
-                  <div className="text-sm whitespace-pre-wrap">
-                    {message.type === 'ai' 
-                      ? formatMessage(message.content) 
-                      : message.content}
-                  </div>
-                  
-                  <div className="text-xs text-gray-500 mt-2 text-right">
-                    {message.timestamp}
-                  </div>
-                </div>
-              </div>
-          
-            ))
+            // In the messages mapping section of the render method
+messages.map((message, index) => (
+  <div 
+    key={index} 
+    className={`flex ${
+      message.type === 'user' 
+        ? 'justify-end' 
+        : 'justify-start'
+    }`}
+  >
+    <div 
+      className={`max-w-[85%] p-3 rounded-lg ${
+        message.type === 'user'
+          ? 'bg-gray-800 border border-gray-700 text-white'
+          : message.type === 'error'
+          ? 'bg-gray-800 border border-gray-700 text-red-400'
+          : 'bg-gray-800 border border-gray-700'
+      }`}
+    >
+      {message.type === 'ai' && (
+        <div className="text-sm font-semibold mb-1 text-white">
+          {message.coin} {message.intent === 'LONG' || message.intent === 'SHORT' 
+            ? `${message.intent} Recommendation` 
+            : message.intent && message.intent !== 'general' 
+            ? message.intent.toUpperCase() 
+            : 'Analysis'}
+          {message.context && (
+            <span className="text-xs text-gray-500 ml-2">
+              {formatContext(message.context)}
+            </span>
+          )}
+        </div>
+      )}
+      
+      <div className="text-sm whitespace-pre-wrap">
+        {message.type === 'ai' 
+          ? formatMessage(message.content) 
+          : message.content}
+      </div>
+      
+      <div className="text-xs text-gray-500 mt-2 text-right">
+        {message.timestamp}
+      </div>
+    </div>
+  </div>
+))
           )}
           
           {/* Loading indicator */}

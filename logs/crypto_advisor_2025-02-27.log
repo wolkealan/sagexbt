@@ -93,3 +93,986 @@
 2025-02-27 12:02:01,467 - crypto_advisor.news - INFO - Generated market context summary
 2025-02-27 12:02:37,534 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
 2025-02-27 12:02:37,536 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-27 12:57:49,097 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 12:57:49,413 - database - INFO - Created MongoDB indexes
+2025-02-27 12:57:49,422 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 12:57:49,427 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:00:18,910 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:00:19,194 - database - INFO - Created MongoDB indexes
+2025-02-27 13:00:19,215 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:00:19,219 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:00:37,868 - telegram_scraper - INFO - Telegram client started
+2025-02-27 13:00:37,995 - telegram_scraper - ERROR - Failed to join channel cointelegraph: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by JoinChannelRequest)
+2025-02-27 13:00:37,996 - telegram_scraper - INFO - Monitoring 1 Telegram channels
+2025-02-27 13:04:26,973 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:04:38,752 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:04:39,028 - database - INFO - Created MongoDB indexes
+2025-02-27 13:04:39,049 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:04:39,050 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:04:39,937 - telegram_scraper - INFO - Telegram client started
+2025-02-27 13:04:39,997 - telegram_scraper - ERROR - Failed to join channel cointelegraph: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by JoinChannelRequest)
+2025-02-27 13:04:39,997 - telegram_scraper - INFO - Monitoring 1 Telegram channels
+2025-02-27 13:05:49,365 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:06:01,287 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:06:01,587 - database - INFO - Created MongoDB indexes
+2025-02-27 13:06:01,603 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:06:01,614 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:06:49,188 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:06:49,493 - database - INFO - Created MongoDB indexes
+2025-02-27 13:06:49,511 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:06:49,515 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:07:50,617 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:07:50,911 - database - INFO - Created MongoDB indexes
+2025-02-27 13:07:50,926 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:07:50,929 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:08:18,782 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:08:19,076 - database - INFO - Created MongoDB indexes
+2025-02-27 13:08:19,088 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:08:19,091 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:08:19,877 - telegram_scraper - INFO - Telegram client started
+2025-02-27 13:08:19,934 - telegram_scraper - ERROR - Failed to join channel cointelegraph: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by JoinChannelRequest)
+2025-02-27 13:08:19,935 - telegram_scraper - INFO - Monitoring 1 Telegram channels
+2025-02-27 13:11:00,842 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:11:06,766 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:11:07,059 - database - INFO - Created MongoDB indexes
+2025-02-27 13:11:07,059 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:11:07,076 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:11:07,907 - telegram_scraper - INFO - Telegram client started
+2025-02-27 13:11:07,907 - telegram_scraper - INFO - Monitoring 1 Telegram channels
+2025-02-27 13:19:26,015 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:19:35,030 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:19:35,313 - database - INFO - Created MongoDB indexes
+2025-02-27 13:19:35,332 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:19:35,334 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:19:36,176 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:19:36,177 - telegram_scraper - INFO - Monitoring 1 Telegram channels
+2025-02-27 13:23:24,073 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:23:30,182 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:23:30,506 - database - INFO - Created MongoDB indexes
+2025-02-27 13:23:30,516 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:23:30,520 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:23:31,340 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:23:31,472 - telegram_scraper - ERROR - Error fetching historical messages: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by GetHistoryRequest)
+2025-02-27 13:23:41,491 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:26:00,983 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:26:01,303 - database - INFO - Created MongoDB indexes
+2025-02-27 13:26:01,313 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:26:01,317 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:26:03,359 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:26:03,433 - telegram_scraper - INFO - Logged in as: telegramnews 
+2025-02-27 13:26:03,578 - telegram_scraper - ERROR - Error processing channel cointelegraph: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by GetHistoryRequest)
+2025-02-27 13:26:13,589 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:29:14,829 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:29:15,127 - database - INFO - Created MongoDB indexes
+2025-02-27 13:29:15,136 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:29:15,140 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:30:08,471 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:30:08,782 - database - INFO - Created MongoDB indexes
+2025-02-27 13:30:08,792 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:30:08,796 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:33:28,949 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:33:29,239 - database - INFO - Created MongoDB indexes
+2025-02-27 13:33:29,250 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:33:29,253 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:34:05,145 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:34:05,520 - database - INFO - Created MongoDB indexes
+2025-02-27 13:34:05,538 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:34:05,541 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:34:06,353 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:34:06,410 - telegram_scraper - INFO - Logged in as: telegramnews 
+2025-02-27 13:34:06,552 - telegram_scraper - ERROR - Error processing channel cointelegraph: The API access for bot users is restricted. The method you tried to invoke cannot be executed as a bot (caused by GetHistoryRequest)
+2025-02-27 13:34:16,574 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:36:01,203 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:36:01,493 - database - INFO - Created MongoDB indexes
+2025-02-27 13:36:01,502 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:36:01,505 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:36:22,024 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:36:22,082 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 13:36:22,628 - telegram_scraper - ERROR - Error processing channel cointelegraph: can't compare offset-naive and offset-aware datetimes
+2025-02-27 13:36:32,648 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:42:04,112 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:42:04,436 - database - INFO - Created MongoDB indexes
+2025-02-27 13:42:04,455 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:42:04,459 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:42:05,301 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:42:05,369 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 13:42:05,472 - telegram_scraper - INFO - Channel Details for cointelegraph:
+2025-02-27 13:42:05,472 - telegram_scraper - INFO - Channel ID: 1072723547
+2025-02-27 13:42:05,472 - telegram_scraper - INFO - Channel Title: Cointelegraph
+2025-02-27 13:42:05,472 - telegram_scraper - INFO - Username: cointelegraph
+2025-02-27 13:42:06,042 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,089 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,127 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,161 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,197 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,232 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,266 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,301 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,343 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,377 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,412 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,445 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,480 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,521 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,566 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,607 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 13:42:06,613 - telegram_scraper - INFO - Processed 19 messages from cointelegraph
+2025-02-27 13:42:16,624 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:46:41,401 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:46:41,687 - database - INFO - Created MongoDB indexes
+2025-02-27 13:46:41,699 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:46:41,703 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:46:42,715 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:46:42,779 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 13:46:42,863 - telegram_scraper - INFO - Channel Details for cointelegraph:
+2025-02-27 13:46:42,863 - telegram_scraper - INFO - Channel ID: 1072723547
+2025-02-27 13:46:42,863 - telegram_scraper - INFO - Channel Title: Cointelegraph
+2025-02-27 13:46:42,863 - telegram_scraper - INFO - Username: cointelegraph
+2025-02-27 13:46:43,453 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,453 - telegram_scraper - INFO - Processed message from Cointelegraph: LATEST: The resolution to repeal the [IRS crypto t...
+2025-02-27 13:46:43,455 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,455 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: First Solana ETFs are now registered on t...
+2025-02-27 13:46:43,455 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,455 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: FBI released a public service announcemen...
+2025-02-27 13:46:43,456 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,456 - telegram_scraper - INFO - Processed message from Cointelegraph: BREAKING: Gemini Co-founder Cameron Winklevoss has...
+2025-02-27 13:46:43,457 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,458 - telegram_scraper - INFO - Processed message from Cointelegraph:  Catch up on the news over the last 24 hours!...
+2025-02-27 13:46:43,458 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,458 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: Elon Musk says hes receiving threats ove...
+2025-02-27 13:46:43,459 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,459 - telegram_scraper - INFO - Processed message from Cointelegraph: INSIGHT: Gamers often struggle with Web3s complex...
+2025-02-27 13:46:43,459 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,460 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: Senator Gallego challenges the hype aroun...
+2025-02-27 13:46:43,460 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,460 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Gotbits founder has been extradited to the U...
+2025-02-27 13:46:43,461 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,461 - telegram_scraper - INFO - Processed message from Cointelegraph: NOW: Trump sets 25% tariffs on EU imports....
+2025-02-27 13:46:43,461 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,461 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: President Trump claims Im not stopping the ...
+2025-02-27 13:46:43,462 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,462 - telegram_scraper - INFO - Processed message from Cointelegraph: BREAKING: Bybit hack was caused by a compromise of...
+2025-02-27 13:46:43,462 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,462 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Oklahoma advances bill to invest up to 10% of...
+2025-02-27 13:46:43,462 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,462 - telegram_scraper - INFO - Processed message from Cointelegraph: LATEST: Binance CEO Richard Teng said the crypto m...
+2025-02-27 13:46:43,463 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,463 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Bitcoin is only at 3% adoption in 2025 - just...
+2025-02-27 13:46:43,463 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 13:46:43,463 - telegram_scraper - INFO - Processed message from Cointelegraph: ETF FLOWS: Around 10,250 BTC and 19,940 ETH were s...
+2025-02-27 13:46:43,463 - telegram_scraper - INFO - Processed 19 messages from cointelegraph
+2025-02-27 13:46:53,478 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 13:53:56,364 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 13:53:56,738 - database - INFO - Created MongoDB indexes
+2025-02-27 13:53:56,749 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 13:53:56,753 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 13:53:57,673 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 13:53:57,745 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 13:53:57,745 - telegram_scraper - INFO - Monitoring channels: cointelegraph
+2025-02-27 14:03:12,082 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:03:12,374 - database - INFO - Created MongoDB indexes
+2025-02-27 14:03:13,420 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:03:13,420 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:03:13,758 - main - INFO - Application started
+2025-02-27 14:03:13,758 - main - INFO - Database initialized: walletTracker
+2025-02-27 14:03:13,758 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-27 14:03:13,759 - main - INFO - Initializing database connection...
+2025-02-27 14:03:13,760 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:03:13,781 - main - INFO - Initializing data providers...
+2025-02-27 14:03:16,369 - main - INFO - Prefetched market data for BTC
+2025-02-27 14:03:16,756 - main - INFO - Prefetched market data for ETH
+2025-02-27 14:03:16,935 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 14:03:17,028 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 14:03:17,242 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 14:03:17,282 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 14:03:17,283 - main - INFO - Prefetched market context
+2025-02-27 14:03:17,322 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-27 14:03:17,377 - crypto_advisor.news - ERROR - Error fetching Telegram news: 'MongoDB' object has no attribute 'find'
+2025-02-27 14:03:17,377 - crypto_advisor.news - INFO - Generated news summary for BTC with 100 articles
+2025-02-27 14:03:17,377 - main - INFO - Prefetched news for BTC
+2025-02-27 14:03:17,437 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-27 14:03:17,503 - crypto_advisor.news - ERROR - Error fetching Telegram news: 'MongoDB' object has no attribute 'find'
+2025-02-27 14:03:17,503 - crypto_advisor.news - INFO - Generated news summary for ETH with 100 articles
+2025-02-27 14:03:17,503 - main - INFO - Prefetched news for ETH
+2025-02-27 14:03:17,503 - main - INFO - Data initialization complete
+2025-02-27 14:03:17,514 - main - INFO - Running in PRODUCTION mode
+2025-02-27 14:03:17,515 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-27 14:03:31,707 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 14:03:31,707 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-02-27 14:03:32,158 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 14:03:32,386 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 14:03:32,588 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 14:03:32,634 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-27 14:03:32,679 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-27 14:03:32,741 - crypto_advisor.news - ERROR - Error fetching Telegram news: 'MongoDB' object has no attribute 'find'
+2025-02-27 14:03:32,743 - crypto_advisor.news - INFO - Generated news summary for SOL with 100 articles
+2025-02-27 14:03:32,743 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 14:03:32,744 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 14:03:32,744 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 14:03:32,746 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 14:03:58,146 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 14:04:58,486 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:04:58,487 - telegram_scraper - INFO - Processed real-time message from Cointelegraph: UPDATE: BlackRocks spot Bitcoin ETF recorded its ...
+2025-02-27 14:07:41,568 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 14:07:46,182 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:07:46,480 - database - INFO - Created MongoDB indexes
+2025-02-27 14:07:46,492 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:07:46,495 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:07:47,381 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 14:07:47,449 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 14:07:47,520 - telegram_scraper - INFO - Channel Details for cointelegraph:
+2025-02-27 14:07:47,520 - telegram_scraper - INFO - Channel ID: 1072723547
+2025-02-27 14:07:47,520 - telegram_scraper - INFO - Channel Title: Cointelegraph
+2025-02-27 14:07:47,521 - telegram_scraper - INFO - Username: cointelegraph
+2025-02-27 14:07:48,004 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,004 - telegram_scraper - INFO - Processed message from Cointelegraph: UPDATE: BlackRocks spot Bitcoin ETF recorded its ...
+2025-02-27 14:07:48,005 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,005 - telegram_scraper - INFO - Processed message from Cointelegraph: LATEST: The resolution to repeal the [IRS crypto t...
+2025-02-27 14:07:48,006 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,006 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: First Solana ETFs are now registered on t...
+2025-02-27 14:07:48,007 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,007 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: FBI released a public service announcemen...
+2025-02-27 14:07:48,007 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,007 - telegram_scraper - INFO - Processed message from Cointelegraph: BREAKING: Gemini Co-founder Cameron Winklevoss has...
+2025-02-27 14:07:48,008 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,008 - telegram_scraper - INFO - Processed message from Cointelegraph:  Catch up on the news over the last 24 hours!...
+2025-02-27 14:07:48,010 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,010 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: Elon Musk says hes receiving threats ove...
+2025-02-27 14:07:48,010 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,011 - telegram_scraper - INFO - Processed message from Cointelegraph: INSIGHT: Gamers often struggle with Web3s complex...
+2025-02-27 14:07:48,011 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,011 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: Senator Gallego challenges the hype aroun...
+2025-02-27 14:07:48,012 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,012 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Gotbits founder has been extradited to the U...
+2025-02-27 14:07:48,012 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,012 - telegram_scraper - INFO - Processed message from Cointelegraph: NOW: Trump sets 25% tariffs on EU imports....
+2025-02-27 14:07:48,013 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,013 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: President Trump claims Im not stopping the ...
+2025-02-27 14:07:48,013 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,013 - telegram_scraper - INFO - Processed message from Cointelegraph: BREAKING: Bybit hack was caused by a compromise of...
+2025-02-27 14:07:48,013 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,013 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Oklahoma advances bill to invest up to 10% of...
+2025-02-27 14:07:48,014 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,014 - telegram_scraper - INFO - Processed message from Cointelegraph: LATEST: Binance CEO Richard Teng said the crypto m...
+2025-02-27 14:07:48,015 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:07:48,015 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Bitcoin is only at 3% adoption in 2025 - just...
+2025-02-27 14:07:48,015 - telegram_scraper - INFO - Processed 19 messages from cointelegraph
+2025-02-27 14:07:58,046 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 14:11:36,039 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:11:36,324 - database - INFO - Created MongoDB indexes
+2025-02-27 14:11:36,347 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:11:36,349 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:11:37,321 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 14:11:37,473 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 14:11:38,093 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,133 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,168 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,211 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,251 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,286 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,320 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,355 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,393 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,459 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,496 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,533 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,565 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,599 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,633 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,666 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 14:11:38,672 - telegram_scraper - INFO - Processed 19 messages from cointelegraph
+2025-02-27 14:11:48,684 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 14:13:48,394 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:13:48,696 - database - INFO - Created MongoDB indexes
+2025-02-27 14:13:48,702 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:13:48,711 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:13:49,552 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 14:13:49,614 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 14:13:49,692 - telegram_scraper - INFO - Channel Details for cointelegraph:
+2025-02-27 14:13:49,692 - telegram_scraper - INFO - Channel ID: 1072723547
+2025-02-27 14:13:49,693 - telegram_scraper - INFO - Channel Title: Cointelegraph
+2025-02-27 14:13:49,693 - telegram_scraper - INFO - Username: cointelegraph
+2025-02-27 14:13:50,166 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,166 - telegram_scraper - INFO - Processed message from Cointelegraph: UPDATE: BlackRocks spot Bitcoin ETF recorded its ...
+2025-02-27 14:13:50,167 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,167 - telegram_scraper - INFO - Processed message from Cointelegraph: LATEST: The resolution to repeal the [IRS crypto t...
+2025-02-27 14:13:50,167 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,168 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: First Solana ETFs are now registered on t...
+2025-02-27 14:13:50,168 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,168 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: FBI released a public service announcemen...
+2025-02-27 14:13:50,168 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,168 - telegram_scraper - INFO - Processed message from Cointelegraph: BREAKING: Gemini Co-founder Cameron Winklevoss has...
+2025-02-27 14:13:50,168 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,168 - telegram_scraper - INFO - Processed message from Cointelegraph:  Catch up on the news over the last 24 hours!...
+2025-02-27 14:13:50,168 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,168 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: Elon Musk says hes receiving threats ove...
+2025-02-27 14:13:50,168 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,168 - telegram_scraper - INFO - Processed message from Cointelegraph: INSIGHT: Gamers often struggle with Web3s complex...
+2025-02-27 14:13:50,168 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,168 - telegram_scraper - INFO - Processed message from Cointelegraph: JUST IN: Senator Gallego challenges the hype aroun...
+2025-02-27 14:13:50,168 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,173 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Gotbits founder has been extradited to the U...
+2025-02-27 14:13:50,173 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,174 - telegram_scraper - INFO - Processed message from Cointelegraph: NOW: Trump sets 25% tariffs on EU imports....
+2025-02-27 14:13:50,174 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,174 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: President Trump claims Im not stopping the ...
+2025-02-27 14:13:50,174 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,175 - telegram_scraper - INFO - Processed message from Cointelegraph: BREAKING: Bybit hack was caused by a compromise of...
+2025-02-27 14:13:50,175 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,175 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Oklahoma advances bill to invest up to 10% of...
+2025-02-27 14:13:50,175 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,175 - telegram_scraper - INFO - Processed message from Cointelegraph: LATEST: Binance CEO Richard Teng said the crypto m...
+2025-02-27 14:13:50,176 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 14:13:50,176 - telegram_scraper - INFO - Processed message from Cointelegraph: NEW: Bitcoin is only at 3% adoption in 2025 - just...
+2025-02-27 14:13:50,176 - telegram_scraper - INFO - Processed 19 messages from cointelegraph
+2025-02-27 14:14:00,188 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 14:14:56,123 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:14:56,422 - database - INFO - Created MongoDB indexes
+2025-02-27 14:14:56,433 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:14:56,436 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:14:57,279 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 14:14:57,335 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 14:14:57,335 - telegram_scraper - INFO - Monitoring channels: cointelegraph
+2025-02-27 14:21:32,178 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:21:32,472 - database - INFO - Created MongoDB indexes
+2025-02-27 14:21:33,533 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:21:33,533 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:21:33,862 - main - INFO - Application started
+2025-02-27 14:21:33,862 - main - INFO - Database initialized: walletTracker
+2025-02-27 14:21:33,862 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-27 14:21:33,862 - main - INFO - Initializing database connection...
+2025-02-27 14:21:33,862 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:21:33,862 - main - INFO - Initializing data providers...
+2025-02-27 14:21:36,629 - main - INFO - Prefetched market data for BTC
+2025-02-27 14:21:37,020 - main - INFO - Prefetched market data for ETH
+2025-02-27 14:21:37,121 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 14:21:37,155 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 14:21:37,243 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 14:21:37,287 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 14:21:37,287 - main - INFO - Prefetched market context
+2025-02-27 14:21:37,315 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-27 14:21:37,351 - crypto_advisor.news - ERROR - Error fetching Telegram news: 'MongoDB' object has no attribute 'find'
+2025-02-27 14:21:37,351 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 14:21:37,351 - crypto_advisor.news - INFO - Source: International Business Times, Coins Mentioned: []
+2025-02-27 14:21:37,351 - crypto_advisor.news - INFO - Source: Crikey, Coins Mentioned: []
+2025-02-27 14:21:37,351 - crypto_advisor.news - INFO - Source: Forbes, Coins Mentioned: []
+2025-02-27 14:21:37,351 - crypto_advisor.news - INFO - Source: newsBTC, Coins Mentioned: []
+2025-02-27 14:21:37,351 - crypto_advisor.news - INFO - Source: newsBTC, Coins Mentioned: []
+2025-02-27 14:21:37,351 - crypto_advisor.news - INFO - Generated news summary for BTC with 100 articles
+2025-02-27 14:21:37,351 - main - INFO - Prefetched news for BTC
+2025-02-27 14:21:37,383 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-27 14:21:37,427 - crypto_advisor.news - ERROR - Error fetching Telegram news: 'MongoDB' object has no attribute 'find'
+2025-02-27 14:21:37,427 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-27 14:21:37,427 - crypto_advisor.news - INFO - Source: International Business Times, Coins Mentioned: []
+2025-02-27 14:21:37,427 - crypto_advisor.news - INFO - Source: Crikey, Coins Mentioned: []
+2025-02-27 14:21:37,427 - crypto_advisor.news - INFO - Source: Forbes, Coins Mentioned: []
+2025-02-27 14:21:37,427 - crypto_advisor.news - INFO - Source: newsBTC, Coins Mentioned: []
+2025-02-27 14:21:37,427 - crypto_advisor.news - INFO - Source: newsBTC, Coins Mentioned: []
+2025-02-27 14:21:37,427 - crypto_advisor.news - INFO - Generated news summary for ETH with 100 articles
+2025-02-27 14:21:37,427 - main - INFO - Prefetched news for ETH
+2025-02-27 14:21:37,427 - main - INFO - Data initialization complete
+2025-02-27 14:21:37,427 - main - INFO - Running in PRODUCTION mode
+2025-02-27 14:21:37,427 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-27 14:26:24,109 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:26:24,393 - database - INFO - Created MongoDB indexes
+2025-02-27 14:26:25,413 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:26:25,413 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:26:25,750 - main - INFO - Application started
+2025-02-27 14:26:25,750 - main - INFO - Database initialized: walletTracker
+2025-02-27 14:26:25,750 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-27 14:26:25,750 - main - INFO - Initializing database connection...
+2025-02-27 14:26:25,750 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:26:25,750 - main - INFO - Initializing data providers...
+2025-02-27 14:26:25,854 - main - INFO - Prefetched market data for BTC
+2025-02-27 14:26:25,937 - main - INFO - Prefetched market data for ETH
+2025-02-27 14:26:26,052 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 14:26:26,096 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 14:26:26,200 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 14:26:26,245 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 14:26:26,246 - main - INFO - Prefetched market context
+2025-02-27 14:26:26,277 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-27 14:26:26,364 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 14:26:26,365 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 14:26:26,366 - crypto_advisor.news - INFO - Telegram News count: 5
+2025-02-27 14:26:26,366 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 14:26:26,367 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC']
+2025-02-27 14:26:26,367 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 14:26:26,367 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC']
+2025-02-27 14:26:26,368 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC']
+2025-02-27 14:26:26,368 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 14:26:26,369 - crypto_advisor.news - INFO - Generated news summary for BTC with 105 articles
+2025-02-27 14:26:26,369 - main - INFO - Prefetched news for BTC
+2025-02-27 14:26:26,398 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - Telegram News count: 3
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['ETH']
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - Source: International Business Times, Coins Mentioned: []
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - Source: Crikey, Coins Mentioned: []
+2025-02-27 14:26:26,466 - crypto_advisor.news - INFO - Generated news summary for ETH with 103 articles
+2025-02-27 14:26:26,466 - main - INFO - Prefetched news for ETH
+2025-02-27 14:26:26,466 - main - INFO - Data initialization complete
+2025-02-27 14:26:26,466 - main - INFO - Running in PRODUCTION mode
+2025-02-27 14:26:26,478 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-27 14:26:47,040 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 14:26:47,042 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-02-27 14:26:49,712 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 14:26:49,922 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 14:26:50,127 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 14:26:50,159 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-27 14:26:50,189 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-27 14:26:50,259 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 14:26:50,261 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 14:26:50,261 - crypto_advisor.news - INFO - Telegram News count: 1
+2025-02-27 14:26:50,262 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 14:26:50,263 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['SOL']
+2025-02-27 14:26:50,263 - crypto_advisor.news - INFO - Source: International Business Times, Coins Mentioned: []
+2025-02-27 14:26:50,263 - crypto_advisor.news - INFO - Source: Crikey, Coins Mentioned: []
+2025-02-27 14:26:50,264 - crypto_advisor.news - INFO - Source: Forbes, Coins Mentioned: []
+2025-02-27 14:26:50,266 - crypto_advisor.news - INFO - Source: newsBTC, Coins Mentioned: []
+2025-02-27 14:26:50,268 - crypto_advisor.news - INFO - Generated news summary for SOL with 101 articles
+2025-02-27 14:26:50,268 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 14:26:50,268 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 14:26:50,268 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 14:26:50,271 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 14:27:12,174 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 14:27:53,694 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-27 14:27:53,727 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-27 14:27:53,727 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-27 14:27:53,754 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 14:27:53,754 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 14:27:53,754 - crypto_advisor.news - INFO - Telegram News count: 1
+2025-02-27 14:27:53,760 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 14:27:53,760 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['SOL']
+2025-02-27 14:27:53,760 - crypto_advisor.news - INFO - Source: International Business Times, Coins Mentioned: []
+2025-02-27 14:27:53,760 - crypto_advisor.news - INFO - Source: Crikey, Coins Mentioned: []
+2025-02-27 14:27:53,760 - crypto_advisor.news - INFO - Source: Forbes, Coins Mentioned: []
+2025-02-27 14:27:53,760 - crypto_advisor.news - INFO - Source: newsBTC, Coins Mentioned: []
+2025-02-27 14:27:53,761 - crypto_advisor.news - INFO - Generated news summary for SOL with 101 articles
+2025-02-27 14:27:53,761 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 14:27:53,761 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 14:27:53,761 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 14:27:53,764 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 14:28:22,471 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 14:28:22,473 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-27 14:30:37,834 - recommendation_engine - INFO - Generating new recommendation for BTC (futures)
+2025-02-27 14:30:38,105 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-27 14:30:38,138 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-27 14:30:38,340 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-27 14:30:38,372 - crypto_advisor.market - INFO - Generated market summary for BTC
+2025-02-27 14:30:38,373 - crypto_advisor.news - INFO - Using memory-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-27 14:30:38,404 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 14:30:38,405 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 14:30:38,405 - crypto_advisor.news - INFO - Telegram News count: 5
+2025-02-27 14:30:38,405 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 14:30:38,405 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC']
+2025-02-27 14:30:38,406 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 14:30:38,406 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC']
+2025-02-27 14:30:38,406 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC']
+2025-02-27 14:30:38,406 - crypto_advisor.news - INFO - Source: Telegram: Cointelegraph, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 14:30:38,407 - crypto_advisor.news - INFO - Generated news summary for BTC with 105 articles
+2025-02-27 14:30:38,408 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 14:30:38,408 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 14:30:38,408 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 14:30:38,410 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 14:31:06,817 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 14:31:06,818 - crypto_advisor.llm - INFO - Generated futures recommendation for BTC: BUY (Medium confidence)
+2025-02-27 14:33:52,341 - telegram_scraper - ERROR - Telegram scraper error: Connection to Telegram failed 5 time(s)
+2025-02-27 14:33:52,358 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 14:45:15,356 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 14:45:15,653 - database - INFO - Created MongoDB indexes
+2025-02-27 14:45:15,671 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 14:45:15,674 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 14:45:16,494 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 14:45:16,553 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 14:45:16,553 - telegram_scraper - INFO - Monitoring channels: cointelegraph
+2025-02-27 15:10:13,670 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 15:10:22,090 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 15:10:22,531 - database - INFO - Created MongoDB indexes
+2025-02-27 15:10:22,552 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 15:10:22,565 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 15:10:23,591 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 15:10:23,673 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 15:10:23,673 - telegram_scraper - INFO - Monitoring channels: sagenewsss, news_sage, cointelegraph
+2025-02-27 15:14:45,212 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 15:14:45,213 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @SatyaS49621: Fuck it another giveaway?  F...
+2025-02-27 15:14:46,952 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 15:14:46,952 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @SatyaS49621: Next winner gets 0.3 sol Foll...
+2025-02-27 15:14:47,719 - telegram_scraper - ERROR - Error storing message in MongoDB: 'MongoDB' object is not subscriptable
+2025-02-27 15:14:47,720 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @SatyaS49621:  FARM ALERT  $GANG d4VVNc...
+2025-02-27 15:20:50,997 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 15:20:55,858 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 15:20:56,235 - database - INFO - Created MongoDB indexes
+2025-02-27 15:20:56,251 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 15:20:56,258 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 15:20:57,205 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 15:20:57,276 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 15:20:57,511 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,554 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,555 - telegram_scraper - INFO - Processed message from news_sage: [RT by @SatyaS49621: Next winner gets 0.3 sol Foll...
+2025-02-27 15:20:57,593 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,594 - telegram_scraper - INFO - Processed message from news_sage: [RT by @SatyaS49621: Fuck it another giveaway?...
+2025-02-27 15:20:57,636 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,679 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,718 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,760 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,761 - telegram_scraper - INFO - Processed message from news_sage: [Once again - there will never be a $BNB ETF](http...
+2025-02-27 15:20:57,802 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,802 - telegram_scraper - INFO - Processed message from news_sage: [Official Verification: The #FBI says North Korea ...
+2025-02-27 15:20:57,845 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,846 - telegram_scraper - INFO - Processed message from news_sage: [Whale Clips: @aave sends 30000 $ETH ($70m) to Mar...
+2025-02-27 15:20:57,894 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:57,894 - telegram_scraper - INFO - Processed message from news_sage: News bot activated....
+2025-02-27 15:20:57,894 - telegram_scraper - INFO - Processed 11 messages from sagenewsss
+2025-02-27 15:20:57,965 - telegram_scraper - ERROR - Error processing channel news_sage: No user has "news_sage" as username
+2025-02-27 15:20:58,527 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,580 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,625 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,675 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,717 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,762 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,808 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,860 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,905 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,949 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:58,991 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:59,048 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:59,096 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:59,140 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:59,184 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:59,229 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:20:59,233 - telegram_scraper - INFO - Processed 20 messages from cointelegraph
+2025-02-27 15:21:09,240 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 15:33:04,004 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 15:33:04,369 - database - INFO - Created MongoDB indexes
+2025-02-27 15:33:04,386 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 15:33:04,389 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 15:33:05,234 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 15:33:05,309 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 15:33:05,309 - telegram_scraper - INFO - Monitoring channels: sagenewsss, news_sage, cointelegraph
+2025-02-27 15:35:05,877 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:35:07,478 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:35:07,478 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @SatyaS49621: Next winner gets 0.3 sol Foll...
+2025-02-27 15:35:08,179 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:56:06,232 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:56:07,662 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:56:08,389 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 15:57:23,090 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 15:57:23,092 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy ripple now?', Coin: XRP, Intent: buy
+2025-02-27 15:57:24,294 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-27 15:57:24,507 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-27 15:57:24,740 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-27 15:57:24,776 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-02-27 15:57:25,562 - crypto_advisor.news - INFO - Fetched 100 news articles for query: Ripple OR XRP cryptocurrency
+2025-02-27 15:57:25,634 - crypto_advisor.news - INFO - News sources for XRP:
+2025-02-27 15:57:25,635 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 15:57:25,635 - crypto_advisor.news - INFO - Telegram News count: 1
+2025-02-27 15:57:25,635 - crypto_advisor.news - INFO - News sources for XRP:
+2025-02-27 15:57:25,636 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['XRP']
+2025-02-27 15:57:25,636 - crypto_advisor.news - INFO - Source: Finextra, Coins Mentioned: []
+2025-02-27 15:57:25,636 - crypto_advisor.news - INFO - Source: Crypto Briefing, Coins Mentioned: []
+2025-02-27 15:57:25,636 - crypto_advisor.news - INFO - Source: CoinDesk, Coins Mentioned: []
+2025-02-27 15:57:25,637 - crypto_advisor.news - INFO - Source: Securityaffairs.com, Coins Mentioned: []
+2025-02-27 15:57:25,643 - crypto_advisor.news - INFO - Generated news summary for XRP with 101 articles
+2025-02-27 15:57:26,441 - crypto_advisor.news - INFO - Fetched 93 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 15:57:27,406 - crypto_advisor.news - INFO - Fetched 99 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 15:57:28,002 - crypto_advisor.news - INFO - Fetched 35 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 15:57:28,005 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 15:57:48,513 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 16:21:17,620 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 16:47:15,535 - telegram_scraper - ERROR - Telegram scraper error: Connection to Telegram failed 5 time(s)
+2025-02-27 16:47:15,542 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 16:49:07,010 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 16:49:07,316 - database - INFO - Created MongoDB indexes
+2025-02-27 16:49:07,325 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 16:49:07,330 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 16:49:08,500 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 16:49:08,641 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 16:49:08,641 - telegram_scraper - INFO - Monitoring channels: sagenewsss, news_sage, cointelegraph
+2025-02-27 17:10:34,729 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 17:10:41,008 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 17:10:41,430 - database - INFO - Created MongoDB indexes
+2025-02-27 17:10:41,446 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 17:10:41,449 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 17:10:42,267 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 17:10:42,329 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 17:10:42,329 - telegram_scraper - INFO - Monitoring channels: sagenewsss, news_sage, cointelegraph, Cointelegraph
+2025-02-27 17:11:23,080 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 17:11:23,127 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 17:11:23,127 - telegram_scraper - INFO - Processed real-time message from news_sage: Sol is the best coin...
+2025-02-27 17:11:44,761 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 17:11:44,761 - telegram_scraper - INFO - Processed real-time message from news_sage: Sol is the coin...
+2025-02-27 17:15:23,920 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 17:33:04,260 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 17:43:39,198 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 17:43:39,200 - crypto_advisor.api - INFO - Analysis query - Message: 'sdfdsfs', Coin: None, Intent: general
+2025-02-27 17:43:39,535 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 17:43:39,596 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 17:43:39,741 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 17:43:39,787 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 17:43:40,306 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-27 17:43:40,515 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-27 17:43:40,716 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-27 17:43:40,749 - crypto_advisor.market - INFO - Generated market summary for BTC
+2025-02-27 17:43:40,777 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-27 17:43:40,809 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-27 17:43:41,238 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-27 17:43:41,442 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-27 17:43:41,649 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-27 17:43:41,682 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-02-27 17:43:42,101 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-27 17:43:42,298 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-27 17:43:42,506 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-27 17:43:42,537 - crypto_advisor.market - INFO - Generated market summary for BNB
+2025-02-27 17:43:43,225 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 17:43:43,424 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 17:43:43,623 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 17:43:43,658 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-27 17:43:44,082 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-27 17:43:44,278 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-27 17:43:44,497 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-27 17:43:44,530 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-02-27 17:43:44,966 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-27 17:43:45,170 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-27 17:43:45,382 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-27 17:43:45,417 - crypto_advisor.market - INFO - Generated market summary for ADA
+2025-02-27 17:43:45,870 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-27 17:43:46,087 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-27 17:43:46,303 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-27 17:43:46,334 - crypto_advisor.market - INFO - Generated market summary for DOGE
+2025-02-27 17:43:46,765 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-27 17:43:46,972 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-27 17:43:47,177 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-27 17:43:47,210 - crypto_advisor.market - INFO - Generated market summary for SHIB
+2025-02-27 17:43:47,646 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-27 17:43:47,861 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-27 17:43:48,064 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-27 17:43:48,096 - crypto_advisor.market - INFO - Generated market summary for DOT
+2025-02-27 17:43:48,532 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-27 17:43:48,730 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-27 17:43:48,932 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-27 17:43:49,013 - crypto_advisor.market - INFO - Generated market summary for MATIC
+2025-02-27 17:43:49,446 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-27 17:43:49,647 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-27 17:43:49,842 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-27 17:43:49,875 - crypto_advisor.market - INFO - Generated market summary for AVAX
+2025-02-27 17:43:50,294 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-27 17:43:50,505 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-27 17:43:50,713 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-27 17:43:50,750 - crypto_advisor.market - INFO - Generated market summary for LINK
+2025-02-27 17:43:51,180 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-27 17:43:51,380 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-27 17:43:51,578 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-27 17:43:51,611 - crypto_advisor.market - INFO - Generated market summary for UNI
+2025-02-27 17:43:52,038 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-27 17:43:52,475 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-27 17:43:52,678 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-27 17:43:52,711 - crypto_advisor.market - INFO - Generated market summary for LTC
+2025-02-27 17:43:53,139 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-27 17:43:53,576 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-27 17:43:53,775 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-27 17:43:53,807 - crypto_advisor.market - INFO - Generated market summary for ATOM
+2025-02-27 17:43:53,808 - crypto_advisor.api - ERROR - Error getting top performers: '<' not supported between instances of 'NoneType' and 'float'
+2025-02-27 17:44:16,781 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 17:49:31,712 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 17:49:31,712 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-02-27 17:49:31,752 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-27 17:49:32,516 - crypto_advisor.news - INFO - Fetched 100 news articles for query: Solana OR SOL cryptocurrency
+2025-02-27 17:49:32,550 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 17:49:32,551 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 17:49:32,552 - crypto_advisor.news - INFO - Telegram News count: 6
+2025-02-27 17:49:32,553 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 17:49:32,553 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 17:49:32,554 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 17:49:32,555 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 17:49:32,556 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 17:49:32,556 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 17:49:32,562 - crypto_advisor.news - INFO - Generated news summary for SOL with 106 articles
+2025-02-27 17:49:32,563 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 17:49:32,564 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 17:49:32,564 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 17:49:32,570 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 17:49:53,791 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 18:03:14,143 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 18:16:19,008 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 18:16:19,008 - crypto_advisor.api - INFO - Analysis query - Message: 'give me solana recommentdataion', Coin: SOL, Intent: general
+2025-02-27 18:16:19,539 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 18:16:19,758 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 18:16:19,996 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 18:16:20,050 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-27 18:16:20,050 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-27 18:16:20,099 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - Telegram News count: 6
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:16:20,106 - crypto_advisor.news - INFO - Generated news summary for SOL with 106 articles
+2025-02-27 18:16:20,279 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 18:16:20,349 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 18:16:20,487 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 18:16:20,563 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 18:16:49,588 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 18:46:23,974 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 18:46:25,440 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 18:46:25,974 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 18:58:36,083 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 18:58:36,083 - crypto_advisor.api - INFO - Analysis query - Message: 'should i long sol now?', Coin: SOL, Intent: buy
+2025-02-27 18:58:37,418 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 18:58:37,887 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 18:58:38,385 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 18:58:38,545 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-27 18:58:38,709 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-27 18:58:39,042 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 18:58:39,042 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 18:58:39,042 - crypto_advisor.news - INFO - Telegram News count: 6
+2025-02-27 18:58:39,043 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 18:58:39,043 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:58:39,043 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:58:39,043 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:58:39,043 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:58:39,044 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:58:39,045 - crypto_advisor.news - INFO - Generated news summary for SOL with 106 articles
+2025-02-27 18:58:40,763 - crypto_advisor.news - INFO - Fetched 94 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 18:58:42,313 - crypto_advisor.news - INFO - Fetched 95 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 18:58:43,866 - crypto_advisor.news - INFO - Fetched 38 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 18:58:43,869 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 18:59:09,121 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 18:59:35,935 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-27 18:59:36,086 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-27 18:59:36,087 - crypto_advisor.news - INFO - Using memory-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-27 18:59:36,572 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 18:59:36,572 - crypto_advisor.news - INFO - API News count: 100
+2025-02-27 18:59:36,572 - crypto_advisor.news - INFO - Telegram News count: 6
+2025-02-27 18:59:36,573 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 18:59:36,573 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:59:36,573 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:59:36,573 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:59:36,573 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:59:36,573 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 18:59:36,575 - crypto_advisor.news - INFO - Generated news summary for SOL with 106 articles
+2025-02-27 18:59:36,575 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 18:59:36,576 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 18:59:36,576 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 18:59:36,579 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 19:00:04,604 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 19:00:04,605 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-02-27 19:04:38,453 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 19:15:32,661 - telegram_scraper - ERROR - Telegram scraper error: Connection to Telegram failed 5 time(s)
+2025-02-27 19:15:32,673 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 21:19:17,917 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 21:19:18,225 - database - INFO - Created MongoDB indexes
+2025-02-27 21:19:18,244 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 21:19:18,276 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 21:19:20,384 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 21:19:20,450 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 21:19:20,450 - telegram_scraper - INFO - Monitoring channels: sagenewsss, news_sage, cointelegraph, Cointelegraph
+2025-02-27 21:23:47,232 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 21:23:47,233 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @Cointelegraph: Another powerful testimonia...
+2025-02-27 21:23:48,304 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 21:24:25,768 - crypto_advisor.api - INFO - No context provided by user
+2025-02-27 21:24:25,768 - crypto_advisor.api - INFO - Analysis query - Message: 'should I sell sol now/', Coin: SOL, Intent: sell
+2025-02-27 21:24:26,571 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 21:24:26,768 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 21:24:26,970 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 21:24:26,998 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-27 21:24:28,736 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Solana OR SOL cryptocurrency
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - API News count: 99
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - Telegram News count: 6
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 21:24:28,764 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 21:24:28,772 - crypto_advisor.news - INFO - Generated news summary for SOL with 105 articles
+2025-02-27 21:24:28,839 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 21:24:28,879 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 21:24:28,953 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 21:24:28,986 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 21:24:53,862 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 21:30:19,538 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 21:30:19,538 - telegram_scraper - INFO - Processed real-time message from news_sage: [5min Macro Overview Feb 27th - NASDAQ Futures dip...
+2025-02-27 21:30:21,025 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 21:30:21,026 - telegram_scraper - INFO - Processed real-time message from news_sage: [$ETH Dominance 10.05% I called 10% last year.](ht...
+2025-02-27 21:48:56,348 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 21:48:56,349 - telegram_scraper - INFO - Processed real-time message from news_sage: [ETF News: @CBOE Exchange, Inc. files proposed rul...
+2025-02-27 21:48:57,892 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 21:48:57,892 - telegram_scraper - INFO - Processed real-time message from news_sage: [Update: Followed by same filing proposed for @Wis...
+2025-02-27 21:48:58,527 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 21:48:58,528 - telegram_scraper - INFO - Processed real-time message from news_sage: [The Office $BTC $SOL $SUI $ZEUS](https://x.com/ma...
+2025-02-27 22:00:23,616 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:06:45,231 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:06:45,231 - telegram_scraper - INFO - Processed real-time message from news_sage: [In April 2015 I posted "An entrepreneurial US pre...
+2025-02-27 22:06:46,725 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:06:46,725 - telegram_scraper - INFO - Processed real-time message from news_sage: [And another one: This time the founder of Mask Ne...
+2025-02-27 22:09:00,485 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 22:09:00,718 - database - INFO - Created MongoDB indexes
+2025-02-27 22:09:08,038 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 22:09:08,042 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 22:09:09,562 - main - INFO - Application started
+2025-02-27 22:09:09,562 - main - INFO - Database initialized: walletTracker
+2025-02-27 22:09:09,562 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-27 22:09:09,563 - main - INFO - Initializing database connection...
+2025-02-27 22:09:09,563 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-27 22:09:09,564 - main - INFO - Initializing data providers...
+2025-02-27 22:09:13,047 - main - INFO - Prefetched market data for BTC
+2025-02-27 22:09:13,413 - main - INFO - Prefetched market data for ETH
+2025-02-27 22:09:14,920 - crypto_advisor.news - INFO - Fetched 95 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 22:09:15,866 - crypto_advisor.news - INFO - Fetched 98 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 22:09:16,397 - crypto_advisor.news - INFO - Fetched 38 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 22:09:16,402 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 22:09:16,403 - main - INFO - Prefetched market context
+2025-02-27 22:09:17,391 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Bitcoin OR BTC cryptocurrency
+2025-02-27 22:09:17,449 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 22:09:17,450 - crypto_advisor.news - INFO - API News count: 99
+2025-02-27 22:09:17,450 - crypto_advisor.news - INFO - Telegram News count: 18
+2025-02-27 22:09:17,450 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 22:09:17,450 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'SOL']
+2025-02-27 22:09:17,451 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC']
+2025-02-27 22:09:17,451 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 22:09:17,451 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC']
+2025-02-27 22:09:17,451 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC']
+2025-02-27 22:09:17,452 - crypto_advisor.news - INFO - Generated news summary for BTC with 117 articles
+2025-02-27 22:09:17,453 - main - INFO - Prefetched news for BTC
+2025-02-27 22:09:18,063 - crypto_advisor.news - INFO - Fetched 99 news articles for query: Ethereum OR ETH cryptocurrency
+2025-02-27 22:09:18,102 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-27 22:09:18,102 - crypto_advisor.news - INFO - API News count: 99
+2025-02-27 22:09:18,102 - crypto_advisor.news - INFO - Telegram News count: 9
+2025-02-27 22:09:18,103 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-27 22:09:18,103 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['ETH']
+2025-02-27 22:09:18,103 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 22:09:18,103 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['ETH']
+2025-02-27 22:09:18,104 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 22:09:18,104 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['ETH']
+2025-02-27 22:09:18,105 - crypto_advisor.news - INFO - Generated news summary for ETH with 108 articles
+2025-02-27 22:09:18,105 - main - INFO - Prefetched news for ETH
+2025-02-27 22:09:18,105 - main - INFO - Data initialization complete
+2025-02-27 22:09:18,106 - main - INFO - Running in PRODUCTION mode
+2025-02-27 22:09:18,106 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-27 22:09:53,990 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-27 22:10:00,183 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 22:10:00,510 - database - INFO - Created MongoDB indexes
+2025-02-27 22:10:00,523 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 22:10:00,527 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 22:10:03,061 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-27 22:10:03,154 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-27 22:10:03,154 - telegram_scraper - INFO - Monitoring channels: sagenewsss, news_sage, cointelegraph, Cointelegraph
+2025-02-27 22:10:09,247 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 22:10:09,553 - database - INFO - Created MongoDB indexes
+2025-02-27 22:10:10,619 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-27 22:10:10,623 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-27 22:10:10,949 - main - INFO - Application started
+2025-02-27 22:10:10,950 - main - INFO - Database initialized: walletTracker
+2025-02-27 22:10:10,950 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-27 22:10:10,952 - main - INFO - Initializing database connection...
+2025-02-27 22:10:10,952 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-27 22:10:10,975 - main - INFO - Initializing data providers...
+2025-02-27 22:10:11,435 - main - INFO - Prefetched market data for BTC
+2025-02-27 22:10:11,487 - main - INFO - Prefetched market data for ETH
+2025-02-27 22:10:11,657 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 22:10:11,691 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 22:10:11,798 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 22:10:11,825 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 22:10:11,825 - main - INFO - Prefetched market context
+2025-02-27 22:10:11,859 - crypto_advisor.news - INFO - Using local file-cached news data for query: Bitcoin OR BTC cryptocurrency
+2025-02-27 22:10:11,953 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 22:10:11,954 - crypto_advisor.news - INFO - API News count: 99
+2025-02-27 22:10:11,955 - crypto_advisor.news - INFO - Telegram News count: 18
+2025-02-27 22:10:11,955 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-27 22:10:11,955 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'SOL']
+2025-02-27 22:10:11,955 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC']
+2025-02-27 22:10:11,955 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 22:10:11,955 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC']
+2025-02-27 22:10:11,955 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC']
+2025-02-27 22:10:11,956 - crypto_advisor.news - INFO - Generated news summary for BTC with 117 articles
+2025-02-27 22:10:11,957 - main - INFO - Prefetched news for BTC
+2025-02-27 22:10:11,990 - crypto_advisor.news - INFO - Using local file-cached news data for query: Ethereum OR ETH cryptocurrency
+2025-02-27 22:10:12,046 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-27 22:10:12,047 - crypto_advisor.news - INFO - API News count: 99
+2025-02-27 22:10:12,047 - crypto_advisor.news - INFO - Telegram News count: 9
+2025-02-27 22:10:12,047 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-27 22:10:12,047 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['ETH']
+2025-02-27 22:10:12,048 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 22:10:12,048 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['ETH']
+2025-02-27 22:10:12,048 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'ETH']
+2025-02-27 22:10:12,048 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['ETH']
+2025-02-27 22:10:12,050 - crypto_advisor.news - INFO - Generated news summary for ETH with 108 articles
+2025-02-27 22:10:12,050 - main - INFO - Prefetched news for ETH
+2025-02-27 22:10:12,051 - main - INFO - Data initialization complete
+2025-02-27 22:10:12,052 - main - INFO - Running in PRODUCTION mode
+2025-02-27 22:10:12,053 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-27 22:18:54,477 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-27 22:18:58,323 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 22:18:58,760 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 22:18:58,948 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 22:18:59,136 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 22:18:59,651 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 22:19:00,066 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-27 22:19:00,091 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-27 22:19:00,134 - crypto_advisor.news - INFO - Using local file-cached news data for query: Solana OR SOL cryptocurrency
+2025-02-27 22:19:00,206 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 22:19:00,207 - crypto_advisor.news - INFO - API News count: 99
+2025-02-27 22:19:00,208 - crypto_advisor.news - INFO - Telegram News count: 7
+2025-02-27 22:19:00,209 - crypto_advisor.news - INFO - News sources for SOL:
+2025-02-27 22:19:00,210 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['BTC', 'SOL']
+2025-02-27 22:19:00,211 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 22:19:00,212 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 22:19:00,213 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 22:19:00,214 - crypto_advisor.news - INFO - Source: Telegram: news_sage, Coins Mentioned: ['SOL']
+2025-02-27 22:19:00,215 - crypto_advisor.news - INFO - Generated news summary for SOL with 106 articles
+2025-02-27 22:19:00,216 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-27 22:19:00,216 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-27 22:19:00,217 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-27 22:19:00,221 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-27 22:19:26,316 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-27 22:19:26,319 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-27 22:23:59,820 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:23:59,823 - telegram_scraper - INFO - Processed real-time message from news_sage: [Update; This is the person claiming their friends...
+2025-02-27 22:24:01,321 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:24:01,321 - telegram_scraper - INFO - Processed real-time message from news_sage: [MM Update: First time Ive seen this flash across ...
+2025-02-27 22:34:22,524 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:40:51,063 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:40:51,064 - telegram_scraper - INFO - Processed real-time message from news_sage: [#Bitcoin outflows are from new buyers that bought...
+2025-02-27 22:43:46,373 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:51:10,049 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:57:37,445 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 22:57:37,446 - telegram_scraper - INFO - Processed real-time message from news_sage: [#SEC ends investigation into @Consensys, parent c...
+2025-02-27 23:03:52,175 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 23:03:52,176 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @martypartymusic: Here’s what we learned fr...
+2025-02-27 23:15:06,529 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 23:15:06,530 - telegram_scraper - INFO - Processed real-time message from news_sage: [MM Update: Another thing Ive never seen on my MM ...
+2025-02-27 23:26:21,155 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 23:32:33,504 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 23:32:33,505 - telegram_scraper - INFO - Processed real-time message from news_sage: [Liquidation Levels](https://x.com/martypartymusic...
+2025-02-27 23:43:06,836 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 23:43:06,838 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @Cointelegraph: Just sat down for a fascina...
+2025-02-27 23:49:11,399 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 23:54:17,080 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 23:54:17,338 - database - INFO - Created MongoDB indexes
+2025-02-27 23:56:26,031 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 23:56:26,308 - database - INFO - Created MongoDB indexes
+2025-02-27 23:57:19,049 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 23:57:19,531 - database - INFO - Created MongoDB indexes
+2025-02-27 23:57:38,392 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 23:57:38,681 - database - INFO - Created MongoDB indexes
+2025-02-27 23:58:11,762 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 23:58:12,011 - database - INFO - Created MongoDB indexes
+2025-02-27 23:59:42,485 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-27 23:59:49,200 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-27 23:59:49,498 - database - INFO - Created MongoDB indexes
+2025-02-28 00:05:34,492 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 00:05:34,494 - telegram_scraper - INFO - Processed real-time message from news_sage: [#SEC has a closed meeting in 30 min. IMO: Issues ...
+2025-02-28 00:15:13,850 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 00:15:13,851 - telegram_scraper - INFO - Processed real-time message from news_sage: [CEX News: As Ive been speculating, there will be ...
+2025-02-28 00:22:43,855 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 00:22:43,856 - telegram_scraper - INFO - Processed real-time message from news_sage: [RT by @martypartymusic: I'm pleased to announce t...
+2025-02-28 00:33:16,877 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 00:55:54,878 - telegram_scraper - INFO - Telegram client disconnected

@@ -13,7 +13,7 @@ print("Loading config.py...")
 class DatabaseConfig:
     # MongoDB connection string
     MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/crypto_advisor")
-    
+    TELEGRAM_NEWS_COLLECTION = "telegram_news"
     # Database and collection names
     DB_NAME = os.getenv("DB_NAME", "walletTracker")
     
@@ -27,7 +27,12 @@ class DatabaseConfig:
     MARKET_DATA_TTL = 60 * 60  # 1 hour
     NEWS_DATA_TTL = 6 * 60 * 60  # 6 hours
     RECOMMENDATIONS_TTL = 1 * 60 * 60  # 1 hour
-
+class TelegramConfig:
+    API_ID = "20999811"  # You need to get this from my.telegram.org
+    API_HASH = "2d8df81a847d782316cefe4a7f4b373a" # You need to get this from my.telegram.org  
+    PHONE_NUMBER = "+919849929099"
+    CHANNELS = ["sagenewsss","news_sage","cointelegraph","Cointelegraph","sage_aut"]  # Add more channels as needed
+    
 # API Keys and credentials
 class APIConfig:
     # DeepSeek LLM API

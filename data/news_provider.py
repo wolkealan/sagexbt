@@ -357,14 +357,85 @@ class NewsDataProvider:
                 'article_count': len(articles),
                 'error': str(e)
             }
-    
+   
+    def fetch_telegram_news(self, coin: str = None, days: int = 3) -> List[Dict[str, Any]]:
+        """Fetch news from Telegram channels"""
+        try:
+            # Determine cutoff date
+            cutoff_date = datetime.now() - timedelta(days=days)
+            
+            # Build query
+            query = {"processed_date": {"$gte": cutoff_date.isoformat()}}
+            
+            # Improve coin-specific news filtering
+            if coin:
+                query["$or"] = [
+                    {"coins_mentioned": coin},
+                    {"text": {"$regex": f"\\b{coin}\\b", "$options": "i"}},
+                    {"title": {"$regex": f"\\b{coin}\\b", "$options": "i"}}
+                ]
+            
+            # Get the most recent messages
+            telegram_news = self.db.find_many(
+                DatabaseConfig.TELEGRAM_NEWS_COLLECTION,
+                query,
+                sort=[("date", -1)],
+                limit=50
+            )
+            
+            # Transform Telegram news to match NewsAPI structure
+            formatted_news = []
+            for news in telegram_news:
+                formatted_news.append({
+                    'title': news.get('title', ''),
+                    'description': news.get('text', ''),
+                    'publishedAt': news.get('date', ''),
+                    'url': news.get('url', ''),
+                    'source': {
+                        'name': 'Telegram: ' + news.get('channel_name', '')
+                    },
+                    'source_type': 'telegram',
+                    'coins_mentioned': news.get('coins_mentioned', [])
+                })
+            
+            return formatted_news
+        
+        except Exception as e:
+            logger.error(f"Error fetching Telegram news: {e}")
+            return []
+    def get_combined_news(self, coin: str = None) -> List[Dict[str, Any]]:
+        """Get news from both NewsAPI and Telegram"""
+        # Get traditional news
+        api_news = self.fetch_crypto_news(coin)
+        
+        # Get Telegram news
+        telegram_news = self.fetch_telegram_news(coin)
+        
+        # Log news sources for debugging
+        logger.info(f"News sources for {coin}:")
+        logger.info(f"API News count: {len(api_news)}")
+        logger.info(f"Telegram News count: {len(telegram_news)}")
+        
+        # Combine and sort by date
+        all_news = api_news + telegram_news
+        
+        # Sort by published date (newest first)
+        all_news.sort(key=lambda x: x.get('publishedAt', ''), reverse=True)
+        
+        return all_news
+    # Override the existing method
     def get_coin_news_summary(self, coin: str) -> Dict[str, Any]:
         """Get a summary of news and sentiment for a specific coin"""
         try:
-            # Fetch news for the specific coin
-            coin_news = self.fetch_crypto_news(coin)
+            # Fetch combined news (instead of just from NewsAPI)
+            coin_news = self.get_combined_news(coin)
             
-            # Analyze sentiment
+             # Log news sources for debugging
+            logger.info(f"News sources for {coin}:")
+            for news in coin_news[:5]:
+                logger.info(f"Source: {news.get('source', {}).get('name', 'Unknown')}, Coins Mentioned: {news.get('coins_mentioned', [])}")
+            
+            # Rest of the method remains the same
             sentiment = self.analyze_news_sentiment(coin_news)
             
             # Get the most recent articles (top 5)
@@ -373,9 +444,16 @@ class NewsDataProvider:
             # Extract key information from articles
             articles_summary = []
             for article in recent_articles:
+                source_type = article.get('source_type', 'news_api')
+                source_name = article.get('source', {}).get('name', 'Unknown')
+                
+                # Add an indicator for Telegram sources
+                if source_type == 'telegram':
+                    source_name = f"📱 {source_name}"
+                    
                 articles_summary.append({
                     'title': article.get('title', ''),
-                    'source': article.get('source', {}).get('name', 'Unknown'),
+                    'source': source_name,
                     'url': article.get('url', ''),
                     'published_at': article.get('publishedAt', '')
                 })
@@ -389,7 +467,7 @@ class NewsDataProvider:
                 'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
             
-            logger.info(f"Generated news summary for {coin}")
+            logger.info(f"Generated news summary for {coin} with {len(coin_news)} articles")
             return summary
         
         except Exception as e:

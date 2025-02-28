@@ -103,25 +103,37 @@ class DeepSeekLLM:
                 raise RuntimeError(f"Failed to communicate with DeepSeek API: {str(e2)}")
     
     def generate_recommendation(self, 
-                              coin: str, 
-                              market_data: Dict[str, Any],
-                              news_data: Dict[str, Any],
-                              market_context: Dict[str, Any],
-                              action_type: str = "spot") -> Dict[str, Any]:
-        """
-        Generate trading recommendation for a coin
-        
-        Args:
-            coin: Cryptocurrency symbol
-            market_data: Technical market data for the coin
-            news_data: News and sentiment data for the coin
-            market_context: Overall market context and sentiment
-            action_type: 'spot' or 'futures' trading
-            
-        Returns:
-            Recommendation with explanation
-        """
+                          coin: str, 
+                          market_data: Dict[str, Any],
+                          news_data: Dict[str, Any],
+                          market_context: Dict[str, Any],
+                          action_type: str = "spot") -> Dict[str, Any]:
         try:
+            # Prepare data for the prompt
+            current_price = market_data.get('current_price', 'Unknown')
+            daily_change = market_data.get('daily_change_pct', 'Unknown')
+            
+            # Get indicators from market data
+            rsi_1d = market_data.get('indicators', {}).get('1d', {}).get('rsi', 'Unknown')
+            
+            # Improved news sentiment extraction
+            news_sentiment = 'neutral'
+            sentiment_score = 0
+            headlines = "No recent headlines available"
+            
+            # More robust news sentiment extraction
+            if news_data and isinstance(news_data, dict):
+                news_sentiment = news_data.get('sentiment', {}).get('sentiment', 'neutral')
+                sentiment_score = news_data.get('sentiment', {}).get('sentiment_score', 0)
+                
+                # Extract headlines
+                recent_articles = news_data.get('recent_articles', [])
+                if recent_articles:
+                    headlines = "\n".join([
+                        f"  * {article.get('title', 'No title')} ({article.get('source', {}).get('name', 'Unknown')})" 
+                        for article in recent_articles[:3]
+                    ])
+       
             # Prepare data for the prompt
             current_price = market_data.get('current_price', 'Unknown')
             daily_change = market_data.get('daily_change_pct', 'Unknown')
@@ -161,7 +173,8 @@ MARKET DATA:
 
 NEWS SENTIMENT:
 - Overall sentiment: {news_sentiment} ({sentiment_score})
-- Recent headlines: {self._format_headlines(news_data)}
+- Recent headlines: 
+{headlines}
 
 MARKET CONTEXT:
 - General market sentiment: {market_context.get('market', {}).get('sentiment', {}).get('sentiment', 'neutral')}

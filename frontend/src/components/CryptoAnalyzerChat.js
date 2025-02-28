@@ -1,6 +1,248 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Send, Settings } from 'lucide-react';
 
+const COIN_NAME_MAPPING = {
+  // Major Cryptocurrencies
+  "bitcoin": "BTC",
+  "ethereum": "ETH",
+  "binance coin": "BNB",
+  "bnb": "BNB",
+  "solana": "SOL",
+  "ripple": "XRP",
+  "xrp": "XRP",
+  "cardano": "ADA",
+  "dogecoin": "DOGE",
+  "doge": "DOGE",
+  "shiba inu": "SHIB",
+  "shib": "SHIB",
+  "polkadot": "DOT",
+  "polygon": "MATIC",
+  "avalanche": "AVAX",
+  "chainlink": "LINK",
+  "uniswap": "UNI",
+  "litecoin": "LTC",
+  "cosmos": "ATOM",
+  "toncoin": "TON",
+  "ton": "TON",
+  "near protocol": "NEAR",
+  "near": "NEAR",
+  "internet computer": "ICP",
+  "aptos": "APT",
+  "bitcoin cash": "BCH",
+  
+  // Layer-1 & Layer-2 Solutions
+  "fantom": "FTM",
+  "algorand": "ALGO",
+  "optimism": "OP",
+  "arbitrum": "ARB",
+  "stacks": "STX",
+  "hedera": "HBAR",
+  "hbar": "HBAR",
+  "ethereum classic": "ETC",
+  "flow": "FLOW",
+  "multiversx": "EGLD",
+  "elrond": "EGLD",
+  "harmony": "ONE",
+  "celo": "CELO",
+  "kava": "KAVA",
+  "klaytn": "KLAY",
+  "zilliqa": "ZIL",
+  "kaspa": "KAS",
+  "sei network": "SEI",
+  "sei": "SEI",
+  "sui": "SUI",
+  "tron": "TRX",
+  "immutable x": "IMX",
+  "immutable": "IMX",
+  "astar": "ASTR",
+  
+  // DeFi Tokens
+  "maker": "MKR",
+  "aave": "AAVE",
+  "curve": "CRV",
+  "pancakeswap": "CAKE",
+  "cake": "CAKE",
+  "compound": "COMP",
+  "synthetix": "SNX",
+  "1inch": "1INCH",
+  "yearn.finance": "YFI",
+  "yearn": "YFI",
+  "sushiswap": "SUSHI",
+  "sushi": "SUSHI",
+  "convex finance": "CVX",
+  "convex": "CVX",
+  "lido dao": "LDO",
+  "lido": "LDO",
+  "balancer": "BAL",
+  "dydx": "DYDX",
+  "quant": "QNT",
+  "the graph": "GRT",
+  "graph": "GRT",
+  "vechain": "VET",
+  "injective": "INJ",
+  
+  // Stablecoins
+  "tether": "USDT",
+  "usd coin": "USDC",
+  "binance usd": "BUSD",
+  "dai": "DAI",
+  "trueusd": "TUSD",
+  "first digital usd": "FDUSD",
+  
+  // Gaming & Metaverse
+  "the sandbox": "SAND",
+  "sandbox": "SAND",
+  "decentraland": "MANA",
+  "axie infinity": "AXS",
+  "axie": "AXS",
+  "enjin coin": "ENJ",
+  "enjin": "ENJ",
+  "gala games": "GALA",
+  "gala": "GALA",
+  "illuvium": "ILV",
+  "blur": "BLUR",
+  "render": "RNDR",
+  "chiliz": "CHZ",
+  "dusk network": "DUSK",
+  "dusk": "DUSK",
+  "stepn": "GMT",
+  "apecoin": "APE",
+  "ape": "APE",
+  "thorchain": "RUNE",
+  
+  // Exchange Tokens
+  "crypto.com coin": "CRO",
+  "cronos": "CRO",
+  "okb": "OKB",
+  "kucoin token": "KCS",
+  "kucoin": "KCS",
+  "gatetoken": "GT",
+  "ftx token": "FTT",
+  "huobi token": "HT",
+  
+  // Privacy Coins
+  "monero": "XMR",
+  "zcash": "ZEC",
+  "dash": "DASH",
+  "oasis network": "ROSE",
+  "oasis": "ROSE",
+  
+  // Storage & Computing
+  "filecoin": "FIL",
+  "arweave": "AR",
+  
+  // Newer & Trending Tokens
+  "pyth network": "PYTH",
+  "pyth": "PYTH",
+  "jito": "JTO",
+  "bonk": "BONK",
+  "book of meme": "BOME",
+  "bome": "BOME",
+  "pepe": "PEPE",
+  "dogwifhat": "WIF",
+  "wif": "WIF",
+  "jupiter": "JUP",
+  "cyberconnect": "CYBER",
+  "cyber": "CYBER",
+  "celestia": "TIA",
+  "fetch.ai": "FET",
+  "fetch": "FET",
+  "ordinals": "ORDI",
+  "starknet": "STRK",
+  "beam": "BEAM",
+  "blast": "BLAST",
+  "mousepad": "MOUSE",
+  "singularitynet": "AGIX",
+  "space id": "ID",
+  "ace": "ACE",
+  
+  // Other Significant Coins
+  "airswap": "AST",
+  "ast": "AST",
+  "tezos": "XTZ",
+  "eos": "EOS",
+  "theta network": "THETA",
+  "theta": "THETA",
+  "neo": "NEO",
+  "iota": "IOTA",
+  "stellar": "XLM",
+  "0x": "ZRX",
+  "basic attention token": "BAT",
+  "basic attention": "BAT",
+  "bat": "BAT",
+  "ravencoin": "RVN",
+  "icon": "ICX",
+  "ontology": "ONT",
+  "waves": "WAVES",
+  "digibyte": "DGB",
+  "qtum": "QTUM",
+  "kusama": "KSM",
+  "decred": "DCR",
+  "horizen": "ZEN",
+  "siacoin": "SC",
+  "stargate finance": "STG",
+  "stargate": "STG",
+  "woo network": "WOO",
+  "woo": "WOO",
+  "conflux": "CFX",
+  "skale": "SKL",
+  "mask network": "MASK",
+  "mask": "MASK",
+  "api3": "API3",
+  "omg network": "OMG",
+  "omg": "OMG",
+  "ethereum name service": "ENS",
+  "ens": "ENS",
+  "magic": "MAGIC",
+  "ankr": "ANKR",
+  "ssv network": "SSV",
+  "ssv": "SSV",
+  "binaryx": "BNX",
+  "nem": "XEM",
+  "helium": "HNT",
+  "swipe": "SXP",
+  "linear": "LINA",
+  "loopring": "LRC",
+  "rocket pool": "RPL",
+  "origin protocol": "OGN",
+  "origin": "OGN",
+  "constitutiondao": "PEOPLE",
+  "people": "PEOPLE",
+  "pax gold": "PAXG",
+  "marlin": "POND",
+  "ethereumpow": "ETHW",
+  "trust wallet token": "TWT",
+  "trust wallet": "TWT",
+  "jasmy": "JASMY",
+  "jasmycoin": "JASMY",
+  "ocean protocol": "OCEAN",
+  "ocean": "OCEAN",
+  "alpha venture dao": "ALPHA",
+  "alpha": "ALPHA",
+  "dodo": "DODO",
+  "iotex": "IOTX",
+  "verge": "XVG",
+  "storj": "STORJ",
+  "bakerytoken": "BAKE",
+  "bakery": "BAKE",
+  "reserve rights": "RSR",
+  "rsk infrastructure framework": "RIF",
+  "certik": "CTK",
+  "bounce finance": "AUCTION",
+  "bounce": "AUCTION",
+  "safepal": "SFP",
+  "measurable data token": "MDT",
+  "mobox": "MBOX",
+  "bella protocol": "BEL",
+  "bella": "BEL",
+  "wing finance": "WING",
+  "wing": "WING",
+  "komodo": "KMD",
+  "iexec rlc": "RLC",
+  "iexec": "RLC",
+  "nkn": "NKN",
+  "arpa": "ARPA"
+};
 // Suggestions Component
 const Suggestions = ({ onSuggestionSelect }) => {
   const suggestions = [
@@ -67,24 +309,102 @@ const formatMessage = (content) => {
 };
 
 // User Context Form Component
+// UserContextForm Component with comprehensive coin support
 const UserContextForm = ({ userContext, setUserContext, onClose }) => {
   const [localContext, setLocalContext] = useState(userContext);
+  const [availableCoins, setAvailableCoins] = useState([]);
+  const [isLoadingCoins, setIsLoadingCoins] = useState(false);
+  const [coinSearchQuery, setCoinSearchQuery] = useState('');
   
   // Update local state when props change
   useEffect(() => {
     setLocalContext(userContext);
   }, [userContext]);
   
+  // Load available coins from the backend
+  useEffect(() => {
+    const fetchAvailableCoins = async () => {
+      setIsLoadingCoins(true);
+      try {
+        // Get list of supported coins from your backend
+        const response = await fetch('/api/supported-coins');
+        if (!response.ok) {
+          throw new Error('Failed to fetch supported coins');
+        }
+        
+        const data = await response.json();
+        
+        // If we have coins from API, use them
+        if (data.coins && Array.isArray(data.coins) && data.coins.length > 0) {
+          setAvailableCoins(data.coins);
+          console.log(`Loaded ${data.coins.length} coins from API`);
+        } else {
+          // Otherwise use our default comprehensive list
+          setAvailableCoins(defaultCoinList);
+          console.log("Using default coin list");
+        }
+      } catch (error) {
+        console.error('Error fetching supported coins:', error);
+        // Fallback to the most popular coins as a default
+        setAvailableCoins(defaultCoinList);
+        console.log("Using default coin list due to API error");
+      } finally {
+        setIsLoadingCoins(false);
+      }
+    };
+    
+    fetchAvailableCoins();
+  }, []);
+  
+  // Default comprehensive list of the most popular coins
+  const defaultCoinList = [
+    'BTC', 'ETH', 'BNB', 'SOL', 'XRP', 'ADA', 'DOGE', 'SHIB', 'DOT', 'MATIC',
+    'AVAX', 'LINK', 'UNI', 'LTC', 'ATOM', 'TON', 'NEAR', 'ICP', 'APT', 'BCH',
+    'FTM', 'ALGO', 'OP', 'ARB', 'STX', 'HBAR', 'ETC', 'FLOW', 'EGLD', 'ONE',
+    'AAVE', 'MKR', 'CRV', 'CAKE', 'COMP', 'SNX', '1INCH', 'YFI', 'SUSHI', 'LDO',
+    'SAND', 'MANA', 'AXS', 'ENJ', 'GALA', 'APE', 'RUNE', 'PEPE', 'TIA', 'SUI',
+    'FET', 'AST', 'XMR', 'DYDX', 'GRT', 'VET', 'INJ', 'XTZ', 'EOS', 'NEO'
+  ];
+  
   // Portfolio input field management
   const [portfolioInput, setPortfolioInput] = useState('');
   
-  const addPortfolioCoin = () => {
-    if (portfolioInput.trim() && !localContext.portfolio.includes(portfolioInput.trim().toUpperCase())) {
+  // Filter available coins based on search query
+  const filteredCoins = availableCoins.filter(coin => 
+    coin.includes(coinSearchQuery.toUpperCase())
+  ).slice(0, 20); // Limit to 20 results for better UI performance
+  
+  // Check if the input might be a coin name rather than a symbol
+  const getSymbolFromName = (name) => {
+    // Check if the input might be a coin name, using our mapping
+    const normalizedInput = name.trim().toLowerCase();
+    for (const [coinName, symbol] of Object.entries(COIN_NAME_MAPPING)) {
+      if (normalizedInput.includes(coinName)) {
+        return symbol;
+      }
+    }
+    return null;
+  };
+  
+  const addPortfolioCoin = (coin = null) => {
+    // Use either the selected coin or the input value
+    let coinToAdd = coin || portfolioInput.trim().toUpperCase();
+    
+    // If no coin was passed and the input might be a name rather than a symbol
+    if (!coin && coinToAdd.length > 5) {
+      const symbolFromName = getSymbolFromName(coinToAdd);
+      if (symbolFromName) {
+        coinToAdd = symbolFromName;
+      }
+    }
+    
+    if (coinToAdd && !localContext.portfolio.includes(coinToAdd)) {
       setLocalContext({
         ...localContext,
-        portfolio: [...localContext.portfolio, portfolioInput.trim().toUpperCase()]
+        portfolio: [...localContext.portfolio, coinToAdd]
       });
       setPortfolioInput('');
+      setCoinSearchQuery('');
     }
   };
   
@@ -133,24 +453,49 @@ const UserContextForm = ({ userContext, setUserContext, onClose }) => {
         
         <div className="mb-4">
           <label className="block text-sm font-medium mb-1 text-gray-300">Your Crypto Portfolio</label>
-          <div className="flex mb-2">
+          
+          <div className="relative">
             <input
               type="text"
-              placeholder="Add coin (e.g., BTC)"
-              className="flex-grow p-2 border border-gray-700 rounded-l bg-gray-800 text-white"
-              value={portfolioInput}
-              onChange={(e) => setPortfolioInput(e.target.value)}
+              placeholder="Search or add coin (e.g., BTC, Bitcoin, Ethereum)"
+              className="w-full p-2 border border-gray-700 rounded bg-gray-800 text-white"
+              value={coinSearchQuery || portfolioInput}
+              onChange={(e) => {
+                const value = e.target.value;
+                setCoinSearchQuery(value.toUpperCase());
+                setPortfolioInput(value);
+              }}
               onKeyPress={(e) => e.key === 'Enter' && addPortfolioCoin()}
             />
-            <button 
-              onClick={addPortfolioCoin}
-              className="bg-orange-600 text-white px-3 rounded-r hover:bg-orange-700"
-            >
-              Add
-            </button>
+            
+            {coinSearchQuery && filteredCoins.length > 0 && (
+              <div className="absolute z-10 mt-1 w-full max-h-40 overflow-y-auto bg-gray-800 border border-gray-700 rounded">
+                {filteredCoins.map((coin) => (
+                  <div 
+                    key={coin}
+                    className="p-2 hover:bg-gray-700 cursor-pointer"
+                    onClick={() => {
+                      addPortfolioCoin(coin);
+                    }}
+                  >
+                    <span className="font-medium">{coin}</span>
+                    {/* Show full name if available */}
+                    {getCoinFullName(coin) && (
+                      <span className="text-xs text-gray-400 ml-2">
+                        {getCoinFullName(coin)}
+                      </span>
+                    )}
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
           
-          <div className="flex flex-wrap gap-2">
+          {isLoadingCoins && (
+            <div className="text-sm text-gray-500 mt-1">Loading available coins...</div>
+          )}
+          
+          <div className="flex flex-wrap gap-2 mt-3">
             {localContext.portfolio.map((coin) => (
               <div key={coin} className="bg-gray-800 px-2 py-1 rounded flex items-center border border-gray-700">
                 <span className="mr-1">{coin}</span>
@@ -165,6 +510,29 @@ const UserContextForm = ({ userContext, setUserContext, onClose }) => {
             {localContext.portfolio.length === 0 && (
               <span className="text-gray-500 text-sm">No coins added yet</span>
             )}
+          </div>
+        </div>
+        
+        {/* Popular coins quick-add section */}
+        <div className="mb-4">
+          <label className="block text-sm font-medium mb-1 text-gray-300">Popular Coins</label>
+          <div className="flex flex-wrap gap-2">
+            {['BTC', 'ETH', 'SOL', 'BNB', 'XRP', 'DOGE', 'ADA', 'MATIC', 'AVAX', 'LINK'].map((coin) => (
+              <button
+                key={coin}
+                className="bg-gray-800 hover:bg-gray-700 text-xs px-2 py-1 rounded border border-gray-700"
+                onClick={() => {
+                  if (!localContext.portfolio.includes(coin)) {
+                    setLocalContext({
+                      ...localContext,
+                      portfolio: [...localContext.portfolio, coin]
+                    });
+                  }
+                }}
+              >
+                {coin}
+              </button>
+            ))}
           </div>
         </div>
         
@@ -185,6 +553,47 @@ const UserContextForm = ({ userContext, setUserContext, onClose }) => {
       </div>
     </div>
   );
+};
+
+// Helper function to get the full name of a coin from its symbol
+const getCoinFullName = (symbol) => {
+  // Create a reverse mapping from symbol to name
+  const symbolToName = {};
+  
+  // Populate the reverse mapping based on our COIN_NAME_MAPPING
+  Object.entries(COIN_NAME_MAPPING).forEach(([name, sym]) => {
+    // For each symbol, store the longest name (most descriptive)
+    if (!symbolToName[sym] || name.length > symbolToName[sym].length) {
+      symbolToName[sym] = name;
+    }
+  });
+  
+  // Mapping of common symbols to full names
+  const fullNames = {
+    'BTC': 'Bitcoin',
+    'ETH': 'Ethereum',
+    'BNB': 'Binance Coin',
+    'SOL': 'Solana',
+    'XRP': 'XRP (Ripple)',
+    'ADA': 'Cardano',
+    'DOGE': 'Dogecoin',
+    'SHIB': 'Shiba Inu',
+    'DOT': 'Polkadot',
+    'MATIC': 'Polygon',
+    'AVAX': 'Avalanche',
+    'LINK': 'Chainlink',
+    'UNI': 'Uniswap',
+    'LTC': 'Litecoin',
+    'ATOM': 'Cosmos',
+    'HBAR': 'Hedera',
+    'AST': 'AirSwap',
+    // Add more mappings as needed
+  };
+  
+  // Use either the reverse-engineered name from COIN_NAME_MAPPING or the hardcoded mapping
+  return symbolToName[symbol] ? 
+    symbolToName[symbol].charAt(0).toUpperCase() + symbolToName[symbol].slice(1) : 
+    fullNames[symbol] || '';
 };
 
 // Main Chat Component
@@ -318,40 +727,88 @@ const CryptoAnalyzerChat = () => {
     return futuresPatterns.some(pattern => pattern.test(queryText));
   };
 
+  // Comprehensive name-to-symbol mapping for improved user experience
+
+
   const extractCoin = (queryText) => {
-    // ... existing function ...
-    const coins = ['BTC', 'ETH', 'SOL', 'ADA', 'XRP', 'DOT', 'DOGE', 'AVAX', 'MATIC'];
-    
-    // Check for exact matches
-    for (const coin of coins) {
-      if (queryText.toUpperCase().includes(coin)) {
-        return coin;
-      }
-    }
-    
-    // Check for common names
-    const coinNames = {
-      'bitcoin': 'BTC',
-      'ethereum': 'ETH',
-      'solana': 'SOL',
-      'cardano': 'ADA',
-      'ripple': 'XRP',
-      'polkadot': 'DOT',
-      'dogecoin': 'DOGE',
-      'avalanche': 'AVAX',
-      'polygon': 'MATIC'
-    };
-    
+    /**
+     * Enhanced function to extract coin symbols from user messages
+     * @param {string} queryText - The user's query text
+     * @return {string} The extracted coin symbol or default "BTC"
+     */
+    // Normalize query text
     const queryLower = queryText.toLowerCase();
-    for (const [name, symbol] of Object.entries(coinNames)) {
-      if (queryLower.includes(name)) {
-        return symbol;
-      }
+    
+    // Import the comprehensive coin mapping defined above
+    // This is the same mapping we've defined in the COIN_NAME_MAPPING constant
+    
+    // First check for exact symbol matches (case insensitive)
+    for (const [name, symbol] of Object.entries(COIN_NAME_MAPPING)) {
+        // Check each name->symbol mapping
+        if (queryLower.includes(name)) {
+            console.log(`Detected coin ${symbol} from name "${name}"`);
+            return symbol;
+        }
     }
     
-    // Default to BTC if no coin detected
+    // Direct symbol detection for common coins
+    // This helps catch symbols not in our mapping
+    const commonCoins = [
+        'BTC', 'ETH', 'SOL', 'ADA', 'XRP', 'DOT', 'DOGE', 'AVAX', 'MATIC',
+        'LINK', 'UNI', 'LTC', 'ATOM', 'HBAR', 'AST', 'BNB', 'SHIB', 'NEAR',
+        'TON', 'SUI', 'TIA', 'FET', 'APT', 'ARB', 'OP', 'IMX', 'AAVE'
+    ];
+    
+    for (const coin of commonCoins) {
+        const regex = new RegExp(`\\b${coin.toLowerCase()}\\b`, 'i');
+        if (regex.test(queryLower)) {
+            console.log(`Detected coin ${coin} from direct symbol mention`);
+            return coin;
+        }
+    }
+    
+    // If we reach here and still don't have a match, use a more general context check
+    // This is for phrases like "current bitcoin price" where the coin is mentioned indirectly
+    const contextPatterns = [
+        { pattern: /\bbtc\b|\bbitcoin\b/i, symbol: 'BTC' },
+        { pattern: /\beth\b|\bethereum\b/i, symbol: 'ETH' },
+        { pattern: /\bsol\b|\bsolana\b/i, symbol: 'SOL' },
+        { pattern: /\bhbar\b|\bhedera\b/i, symbol: 'HBAR' },
+        { pattern: /\bast\b|\bairswap\b/i, symbol: 'AST' },
+        { pattern: /\bbnb\b|\bbinance\b/i, symbol: 'BNB' }
+    ];
+    
+    for (const { pattern, symbol } of contextPatterns) {
+        if (pattern.test(queryLower)) {
+            console.log(`Detected coin ${symbol} from context pattern`);
+            return symbol;
+        }
+    }
+
+    // Check for intent-based coin detection
+    // This helps with queries like "should I buy a good defi token"
+    const intentBasedPatterns = [
+        { intent: /\bdefi\b|\byield\b|\blending\b|\bliquidity\b/i, suggestions: ['AAVE', 'UNI', 'COMP', 'MKR', 'CRV'] },
+        { intent: /\bgaming\b|\bmetaverse\b|\bnft\b/i, suggestions: ['SAND', 'MANA', 'AXS', 'ENJ', 'GALA'] },
+        { intent: /\blayer\s*2\b|\bscaling\b|\bl2\b/i, suggestions: ['MATIC', 'ARB', 'OP', 'IMX'] },
+        { intent: /\bmeme\b|\bmemes\b/i, suggestions: ['DOGE', 'SHIB', 'PEPE', 'BONK', 'WIF'] },
+        { intent: /\bstablecoin\b/i, suggestions: ['USDT', 'USDC', 'DAI', 'BUSD'] },
+        { intent: /\bsmart\s*contract\b|\bplatform\b/i, suggestions: ['ETH', 'SOL', 'ADA', 'DOT', 'AVAX'] },
+        { intent: /\bprivacy\b|\banonymous\b/i, suggestions: ['XMR', 'ZEC', 'DASH'] }
+    ];
+
+    for (const { intent, suggestions } of intentBasedPatterns) {
+        if (intent.test(queryLower)) {
+            const selected = suggestions[0]; // Default to first suggestion
+            console.log(`Detected intent for ${selected} based on query context`);
+            return selected;
+        }
+    }
+
+    // If no specific coin detected, default to BTC
+    console.log("No specific coin detected, defaulting to BTC");
     return 'BTC';
-  };
+};
 
   const extractFuturesDirection = (queryText) => {
     // ... existing function ...

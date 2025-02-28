@@ -67,6 +67,33 @@ async def get_supported_coins():
         "count": len(TradingConfig.SUPPORTED_COINS)
     }
 
+# New endpoint for supported coins with refresh option
+@app.get("/api/supported-coins")
+async def get_supported_coins_api(refresh: bool = Query(False, description="Force refresh the coin list from Binance API")):
+    """
+    Get a list of supported cryptocurrency coins.
+    
+    Args:
+        refresh (bool): Force refresh the coin list from Binance API
+    
+    Returns:
+        Dict[str, List[str]]: Dictionary with list of supported coins
+    """
+    try:
+        # Create an instance of TradingConfig to access the property
+        trading_config = TradingConfig()
+        
+        # Get the supported coins, with optional refresh
+        if refresh:
+            coins = trading_config.get_supported_coins(refresh=True)
+        else:
+            coins = trading_config.SUPPORTED_COINS
+            
+        return {"coins": coins}
+    except Exception as e:
+        logger.error(f"Failed to fetch supported coins: {e}")
+        raise HTTPException(status_code=500, detail=f"Failed to fetch supported coins: {str(e)}")
+
 @app.get("/recommendation/{coin}")
 async def get_recommendation(
     coin: str,
@@ -82,7 +109,9 @@ async def get_recommendation(
     """
     # Validate coin
     coin = coin.upper()
-    if coin not in TradingConfig.SUPPORTED_COINS:
+    # Use dynamic coin list from TradingConfig
+    trading_config = TradingConfig()
+    if coin not in trading_config.SUPPORTED_COINS:
         raise HTTPException(status_code=404, detail=f"Coin {coin} not supported")
     
     try:
@@ -223,48 +252,278 @@ def extract_coin_from_message(msg: str) -> Optional[str]:
     # Normalize message
     msg_lower = msg.lower()
     
-    # Common name to symbol mapping (extend as needed)
+    # Get dynamic coin list from TradingConfig
+    trading_config = TradingConfig()
+    supported_coins = trading_config.SUPPORTED_COINS
+    
+    # Comprehensive name to symbol mapping (extending the COIN_NAME_MAPPING from frontend)
     name_to_symbol = {
+        # Major Cryptocurrencies
         "bitcoin": "BTC",
         "ethereum": "ETH",
-        "solana": "SOL",
-        "cardano": "ADA",
         "binance coin": "BNB",
         "bnb": "BNB",
+        "solana": "SOL",
         "ripple": "XRP",
+        "xrp": "XRP",
+        "cardano": "ADA",
         "dogecoin": "DOGE",
+        "doge": "DOGE",
+        "shiba inu": "SHIB",
+        "shib": "SHIB",
         "polkadot": "DOT",
+        "polygon": "MATIC",
+        "avalanche": "AVAX",
+        "chainlink": "LINK",
+        "uniswap": "UNI",
         "litecoin": "LTC",
-        # Add more mappings as needed
+        "cosmos": "ATOM",
+        "toncoin": "TON",
+        "ton": "TON",
+        "near protocol": "NEAR",
+        "near": "NEAR",
+        "internet computer": "ICP",
+        "aptos": "APT",
+        "bitcoin cash": "BCH",
+        
+        # Layer-1 & Layer-2 Solutions
+        "fantom": "FTM",
+        "algorand": "ALGO",
+        "optimism": "OP",
+        "arbitrum": "ARB",
+        "stacks": "STX",
+        "hedera": "HBAR",
+        "hbar": "HBAR",
+        "ethereum classic": "ETC",
+        "flow": "FLOW",
+        "multiversx": "EGLD",
+        "elrond": "EGLD",
+        "harmony": "ONE",
+        "celo": "CELO",
+        "kava": "KAVA",
+        "klaytn": "KLAY",
+        "zilliqa": "ZIL",
+        "kaspa": "KAS",
+        "sei network": "SEI",
+        "sei": "SEI",
+        "sui": "SUI",
+        "tron": "TRX",
+        "immutable x": "IMX",
+        "immutable": "IMX",
+        "astar": "ASTR",
+        
+        # DeFi Tokens
+        "maker": "MKR",
+        "aave": "AAVE",
+        "curve": "CRV",
+        "pancakeswap": "CAKE",
+        "cake": "CAKE",
+        "compound": "COMP",
+        "synthetix": "SNX",
+        "1inch": "1INCH",
+        "yearn.finance": "YFI",
+        "yearn": "YFI",
+        "sushiswap": "SUSHI",
+        "sushi": "SUSHI",
+        "convex finance": "CVX",
+        "convex": "CVX",
+        "lido dao": "LDO",
+        "lido": "LDO",
+        "balancer": "BAL",
+        "dydx": "DYDX",
+        "quant": "QNT",
+        "the graph": "GRT",
+        "graph": "GRT",
+        "vechain": "VET",
+        "injective": "INJ",
+        
+        # Stablecoins
+        "tether": "USDT",
+        "usd coin": "USDC",
+        "binance usd": "BUSD",
+        "dai": "DAI",
+        "trueusd": "TUSD",
+        "first digital usd": "FDUSD",
+        
+        # Gaming & Metaverse
+        "the sandbox": "SAND",
+        "sandbox": "SAND",
+        "decentraland": "MANA",
+        "axie infinity": "AXS",
+        "axie": "AXS",
+        "enjin coin": "ENJ",
+        "enjin": "ENJ",
+        "gala games": "GALA",
+        "gala": "GALA",
+        "illuvium": "ILV",
+        "blur": "BLUR",
+        "render": "RNDR",
+        "chiliz": "CHZ",
+        "dusk network": "DUSK",
+        "dusk": "DUSK",
+        "stepn": "GMT",
+        "apecoin": "APE",
+        "ape": "APE",
+        "thorchain": "RUNE",
+        
+        # Exchange Tokens
+        "crypto.com coin": "CRO",
+        "cronos": "CRO",
+        "okb": "OKB",
+        "kucoin token": "KCS",
+        "kucoin": "KCS",
+        "gatetoken": "GT",
+        "ftx token": "FTT",
+        "huobi token": "HT",
+        
+        # Privacy Coins
+        "monero": "XMR",
+        "zcash": "ZEC",
+        "dash": "DASH",
+        "oasis network": "ROSE",
+        "oasis": "ROSE",
+        
+        # Storage & Computing
+        "filecoin": "FIL",
+        "arweave": "AR",
+        
+        # Newer & Trending Tokens
+        "pyth network": "PYTH",
+        "pyth": "PYTH",
+        "jito": "JTO",
+        "bonk": "BONK",
+        "book of meme": "BOME",
+        "bome": "BOME",
+        "pepe": "PEPE",
+        "dogwifhat": "WIF",
+        "wif": "WIF",
+        "jupiter": "JUP",
+        "cyberconnect": "CYBER",
+        "cyber": "CYBER",
+        "celestia": "TIA",
+        "fetch.ai": "FET",
+        "fetch": "FET",
+        "ordinals": "ORDI",
+        "starknet": "STRK",
+        "beam": "BEAM",
+        "blast": "BLAST",
+        "mousepad": "MOUSE",
+        "singularitynet": "AGIX",
+        "space id": "ID",
+        "ace": "ACE",
+        
+        # Other Significant Coins
+        "airswap": "AST",
+        "ast": "AST",
+        "tezos": "XTZ",
+        "eos": "EOS",
+        "theta network": "THETA",
+        "theta": "THETA",
+        "neo": "NEO",
+        "iota": "IOTA",
+        "stellar": "XLM",
+        "0x": "ZRX",
+        "basic attention token": "BAT",
+        "basic attention": "BAT",
+        "bat": "BAT",
+        "ravencoin": "RVN",
+        "icon": "ICX",
+        "ontology": "ONT",
+        "waves": "WAVES",
+        "digibyte": "DGB",
+        "qtum": "QTUM",
+        "kusama": "KSM",
+        "decred": "DCR",
+        "horizen": "ZEN",
+        "siacoin": "SC",
+        "stargate finance": "STG",
+        "stargate": "STG",
+        "woo network": "WOO",
+        "woo": "WOO",
+        "conflux": "CFX",
+        "skale": "SKL",
+        "mask network": "MASK",
+        "mask": "MASK",
+        "api3": "API3",
+        "omg network": "OMG",
+        "omg": "OMG",
+        "ethereum name service": "ENS",
+        "ens": "ENS",
+        "magic": "MAGIC",
+        "ankr": "ANKR",
+        "ssv network": "SSV",
+        "ssv": "SSV",
+        "binaryx": "BNX",
+        "nem": "XEM",
+        "helium": "HNT",
+        "swipe": "SXP",
+        "linear": "LINA",
+        "loopring": "LRC",
+        "rocket pool": "RPL",
+        "origin protocol": "OGN",
+        "origin": "OGN",
+        "constitutiondao": "PEOPLE",
+        "people": "PEOPLE",
+        "pax gold": "PAXG",
+        "marlin": "POND",
+        "ethereumpow": "ETHW",
+        "trust wallet token": "TWT",
+        "trust wallet": "TWT",
+        "jasmy": "JASMY",
+        "jasmycoin": "JASMY",
+        "ocean protocol": "OCEAN",
+        "ocean": "OCEAN",
+        "alpha venture dao": "ALPHA",
+        "alpha": "ALPHA",
+        "dodo": "DODO",
+        "iotex": "IOTX",
+        "verge": "XVG",
+        "storj": "STORJ",
+        "bakerytoken": "BAKE",
+        "bakery": "BAKE",
+        "reserve rights": "RSR",
+        "rsk infrastructure framework": "RIF",
+        "certik": "CTK",
+        "bounce finance": "AUCTION",
+        "bounce": "AUCTION",
+        "safepal": "SFP",
+        "measurable data token": "MDT",
+        "mobox": "MBOX",
+        "bella protocol": "BEL",
+        "bella": "BEL",
+        "wing finance": "WING",
+        "wing": "WING",
+        "komodo": "KMD",
+        "iexec rlc": "RLC",
+        "iexec": "RLC",
+        "nkn": "NKN",
+        "arpa": "ARPA"
     }
     
-    # Check for symbol mentions (case-insensitive)
-    for coin in TradingConfig.SUPPORTED_COINS:
+    # First check for exact symbol mentions (case-insensitive)
+    for coin in supported_coins:
         # Check for the exact symbol with word boundaries
         symbol_pattern = r'\b' + coin.lower() + r'\b'
         if re.search(symbol_pattern, msg_lower):
             return coin
             
-    # Check for name mentions
+    # Next check for name mentions in our mapping
     for name, symbol in name_to_symbol.items():
-        if symbol in TradingConfig.SUPPORTED_COINS and name in msg_lower:
-            return symbol
+        if name in msg_lower:
+            # Verify this coin exists in our supported list or try to find it
+            if symbol in supported_coins:
+                return symbol
+            else:
+                # Try to find by fetching directly
+                try:
+                    # Check if this coin exists on Binance (cached check)
+                    exists = symbol in trading_config.SUPPORTED_COINS
+                    if exists:
+                        return symbol
+                except Exception:
+                    pass
     
-    # Look for mentions in context (e.g., "current bitcoin price")
-    context_indicators = [
-        ("btc", "BTC"), 
-        ("eth", "ETH"),
-        ("bitcoin", "BTC"),
-        ("ethereum", "ETH"),
-        ("sol", "SOL"),
-        ("solana", "SOL"),
-        # Add more as needed
-    ]
-    
-    for indicator, symbol in context_indicators:
-        if indicator in msg_lower and symbol in TradingConfig.SUPPORTED_COINS:
-            return symbol
-    
+    # No match found
     return None
 def format_news_headlines(news_data):
     """
@@ -560,10 +819,10 @@ Geopolitical Sentiment: {market_context.get('geopolitical', {}).get('sentiment',
 Regulatory Sentiment: {market_context.get('regulatory', {}).get('sentiment', {}).get('sentiment', 'Neutral')}
 
 Top Performing Cryptocurrencies:
-{_get_top_performers(recommendation_engine.market_data)}
+{await _get_top_performers(recommendation_engine.market_data)}
 
 Key Market Indicators:
-{_get_market_indicators(recommendation_engine.market_data)}
+{await _get_market_indicators(recommendation_engine.market_data)}
 
 Please provide a comprehensive market analysis that addresses the query, offering strategic insights, potential opportunities, and risk management advice."""
         
@@ -638,76 +897,14 @@ def _format_recent_headlines(articles: List[Dict[str, Any]], max_articles: int =
     
     return "\n" + "\n".join(headlines)
 
-# def _get_top_performers(market_data_provider) -> str:
-#     """
-#     Retrieve top performing cryptocurrencies using the market data provider
-#     """
-#     try:
-#         # Get market summaries for all supported coins
-#         top_coins = TradingConfig.SUPPORTED_COINS
-        
-#         # Fetch market data for each coin
-#         coin_performances = []
-#         for coin in top_coins:
-#             try:
-#                 market_summary = market_data_provider.get_market_summary(coin)
-#                 daily_change = market_summary.get('daily_change_pct', 0)
-#                 current_price = market_summary.get('current_price', 0)
-                
-#                 coin_performances.append({
-#                     'coin': coin,
-#                     'change': daily_change,
-#                     'price': current_price
-#                 })
-#             except Exception as e:
-#                 logger.warning(f"Error fetching market data for {coin}: {e}")
-        
-#         # Sort by daily change, descending
-#         sorted_performances = sorted(coin_performances, key=lambda x: x['change'], reverse=True)
-        
-#         # Format the output
-#         performance_str = []
-#         for perf in sorted_performances[:5]:  # Top 5 performers
-#             performance_str.append(
-#                 f"  - {perf['coin']}: Up {perf['change']:.1f}% (${perf['price']:.2f})"
-#             )
-        
-#         return "\n".join(performance_str) if performance_str else "No performance data available"
-    
-#     except Exception as e:
-#         logger.error(f"Error getting top performers: {e}")
-#         return "Unable to retrieve top performers"
-
-# def _get_market_indicators(market_data_provider) -> str:
-#     """
-#     Retrieve key market indicators using the market data provider
-#     """
-#     try:
-#         # Fetch market-wide indicators
-#         # Note: You might need to implement additional methods in your market data provider
-#         market_summary = market_data_provider.get_global_market_summary()
-        
-#         # Prepare market indicators string
-#         indicators = [
-#             f"  - Total Crypto Market Cap: ${market_summary.get('total_market_cap', 'N/A')} (±{market_summary.get('market_cap_change_pct', 0):.1f}%)",
-#             f"  - Bitcoin Dominance: {market_summary.get('bitcoin_dominance', 'N/A')}%",
-#             f"  - Market Sentiment: {market_summary.get('market_sentiment', 'Neutral')}",
-#             f"  - Total 24h Volume: ${market_summary.get('total_24h_volume', 'N/A')}",
-#             f"  - Number of Active Cryptocurrencies: {market_summary.get('active_cryptocurrencies', 'N/A')}"
-#         ]
-        
-#         return "\n".join(indicators)
-    
-#     except Exception as e:
-#         logger.error(f"Error getting market indicators: {e}")
-#         return "Unable to retrieve market indicators"
 async def _get_top_performers(market_data_provider) -> str:
     """
     Retrieve top performing cryptocurrencies using the market data provider
     """
     try:
-        # Get market summaries for all supported coins
-        top_coins = TradingConfig.SUPPORTED_COINS
+        # Get dynamic list of supported coins
+        trading_config = TradingConfig()
+        top_coins = trading_config.SUPPORTED_COINS
         
         # Fetch market data for each coin
         coin_performances = []
@@ -750,13 +947,16 @@ async def _get_market_indicators(market_data_provider) -> str:
         # Use a primary coin like BTC to get market-wide indicators
         market_summary = await market_data_provider.get_market_summary('BTC')
         
+        # Get dynamic count of active cryptocurrencies
+        trading_config = TradingConfig()
+        
         # Prepare market indicators string
         indicators = [
             f"  - Total Crypto Market Cap: ${market_summary.get('total_market_cap', 'N/A')} (±{market_summary.get('market_cap_change_pct', 0):.1f}%)",
             f"  - Bitcoin Dominance: {market_summary.get('bitcoin_dominance', 'N/A')}%",
             f"  - Market Sentiment: {market_summary.get('market_sentiment', 'Neutral')}",
             f"  - Total 24h Volume: ${market_summary.get('volume_24h', 'N/A')}",
-            f"  - Number of Active Cryptocurrencies: {len(TradingConfig.SUPPORTED_COINS)}"
+            f"  - Number of Active Cryptocurrencies: {len(trading_config.SUPPORTED_COINS)}"
         ]
         
         return "\n".join(indicators)

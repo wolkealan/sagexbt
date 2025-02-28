@@ -359,91 +359,123 @@ class NewsDataProvider:
             }
    
     def fetch_telegram_news(self, coin: str = None, days: int = 3) -> List[Dict[str, Any]]:
-        """Fetch news from Telegram channels"""
+        """
+        Fetch news from both news_data and telegram_news collections
+        
+        Args:
+            coin (str, optional): Specific coin to filter news for
+            days (int, default=3): Number of days to look back
+        
+        Returns:
+            List of news articles
+        """
         try:
             # Determine cutoff date
             cutoff_date = datetime.now() - timedelta(days=days)
             
-            # Build query
-            query = {"processed_date": {"$gte": cutoff_date.isoformat()}}
+            # Prepare base query for both collections
+            base_query = {
+                "date": {"$gte": cutoff_date.isoformat()}
+            }
             
-            # Improve coin-specific news filtering
+            # Coin-specific filtering
             if coin:
-                query["$or"] = [
+                coin_filters = [
                     {"coins_mentioned": coin},
                     {"text": {"$regex": f"\\b{coin}\\b", "$options": "i"}},
                     {"title": {"$regex": f"\\b{coin}\\b", "$options": "i"}}
                 ]
+                base_query["$or"] = coin_filters
             
-            # Get the most recent messages
-            telegram_news = self.db.find_many(
-                DatabaseConfig.TELEGRAM_NEWS_COLLECTION,
-                query,
+            # Query news_data collection first (prioritized)
+            news_data_query = base_query.copy()
+            news_data_query["source_type"] = "telegram"
+            
+            news_data_results = self.db.find_many(
+                DatabaseConfig.NEWS_COLLECTION,
+                news_data_query,
                 sort=[("date", -1)],
                 limit=50
             )
             
-            # Transform Telegram news to match NewsAPI structure
-            formatted_news = []
-            for news in telegram_news:
-                formatted_news.append({
+            # If not enough results, query telegram_news collection
+            telegram_news_results = []
+            if len(news_data_results) < 20:
+                telegram_news_results = self.db.find_many(
+                    DatabaseConfig.TELEGRAM_NEWS_COLLECTION,
+                    base_query,
+                    sort=[("date", -1)],
+                    limit=50 - len(news_data_results)
+                )
+            
+            # Combine and format results
+            combined_news = []
+            
+            # Process news_data results
+            for news in news_data_results:
+                combined_news.append({
+                    'title': news.get('title', ''),
+                    'description': news.get('description', news.get('text', '')),
+                    'publishedAt': news.get('publishedAt', news.get('date', '')),
+                    'url': news.get('url', f"telegram://{news.get('channel_name', 'unknown')}"),
+                    'source': {
+                        'name': f"Telegram: {news.get('channel_name', 'Unknown')}"
+                    },
+                    'source_type': 'telegram',
+                    'coins_mentioned': news.get('coins_mentioned', []),
+                    'content_type': news.get('content_type', 'telegram')
+                })
+            
+            # Process telegram_news results (if needed)
+            for news in telegram_news_results:
+                combined_news.append({
                     'title': news.get('title', ''),
                     'description': news.get('text', ''),
                     'publishedAt': news.get('date', ''),
-                    'url': news.get('url', ''),
+                    'url': f"https://t.me/{news.get('username', 'unknown')}/{news.get('message_id', '')}",
                     'source': {
-                        'name': 'Telegram: ' + news.get('channel_name', '')
+                        'name': f"Telegram: {news.get('channel_name', 'Unknown')}"
                     },
                     'source_type': 'telegram',
-                    'coins_mentioned': news.get('coins_mentioned', [])
+                    'coins_mentioned': news.get('coins_mentioned', []),
+                    'content_type': 'telegram'
                 })
             
-            return formatted_news
+            # Sort combined results by date
+            combined_news.sort(key=lambda x: x.get('publishedAt', ''), reverse=True)
+            
+            logger.info(f"Fetched {len(combined_news)} Telegram news articles for {'specific coin' if coin else 'all coins'}")
+            return combined_news
         
         except Exception as e:
-            logger.error(f"Error fetching Telegram news: {e}")
+            logger.error(f"Error fetching Telegram news from multiple sources: {e}")
             return []
+
     def get_combined_news(self, coin: str = None) -> List[Dict[str, Any]]:
-        """Get news from both NewsAPI and Telegram"""
-        # Get traditional news
-        api_news = self.fetch_crypto_news(coin)
-        
-        # Get Telegram news
+        """Get news from Telegram channels (no NewsAPI)"""
+        # Get Telegram news from both collections
         telegram_news = self.fetch_telegram_news(coin)
         
         # Log news sources for debugging
-        logger.info(f"News sources for {coin}:")
-        logger.info(f"API News count: {len(api_news)}")
+        logger.info(f"News sources for {coin or 'all'}:")
         logger.info(f"Telegram News count: {len(telegram_news)}")
         
-        # Combine and sort by date
-        all_news = api_news + telegram_news
-        
         # Sort by published date (newest first)
-        all_news.sort(key=lambda x: x.get('publishedAt', ''), reverse=True)
+        telegram_news.sort(key=lambda x: x.get('publishedAt', ''), reverse=True)
         
-        return all_news
+        return telegram_news
     # Override the existing method
     def get_coin_news_summary(self, coin: str) -> Dict[str, Any]:
-        """Get a summary of news and sentiment for a specific coin"""
         try:
-            # Fetch combined news (instead of just from NewsAPI)
+            # Fetch combined news from different sources
             coin_news = self.get_combined_news(coin)
             
-             # Log news sources for debugging
-            logger.info(f"News sources for {coin}:")
-            for news in coin_news[:5]:
-                logger.info(f"Source: {news.get('source', {}).get('name', 'Unknown')}, Coins Mentioned: {news.get('coins_mentioned', [])}")
-            
-            # Rest of the method remains the same
+            # Analyze sentiment
             sentiment = self.analyze_news_sentiment(coin_news)
             
             # Get the most recent articles (top 5)
-            recent_articles = coin_news[:5]
-            
-            # Extract key information from articles
-            articles_summary = []
-            for article in recent_articles:
+            recent_articles = []
+            for article in coin_news[:5]:
                 source_type = article.get('source_type', 'news_api')
                 source_name = article.get('source', {}).get('name', 'Unknown')
                 
@@ -451,18 +483,21 @@ class NewsDataProvider:
                 if source_type == 'telegram':
                     source_name = f"📱 {source_name}"
                     
-                articles_summary.append({
+                recent_article = {
                     'title': article.get('title', ''),
-                    'source': source_name,
+                    'source': {
+                        'name': source_name
+                    },
                     'url': article.get('url', ''),
-                    'published_at': article.get('publishedAt', '')
-                })
+                    'publishedAt': article.get('publishedAt', '')
+                }
+                recent_articles.append(recent_article)
             
             # Create news summary
             summary = {
                 'coin': coin,
                 'sentiment': sentiment,
-                'recent_articles': articles_summary,
+                'recent_articles': recent_articles,
                 'total_articles_found': len(coin_news),
                 'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
@@ -474,7 +509,13 @@ class NewsDataProvider:
             logger.error(f"Error generating news summary for {coin}: {e}")
             return {
                 'coin': coin,
-                'error': str(e),
+                'sentiment': {
+                    'sentiment': 'neutral', 
+                    'sentiment_score': 0,
+                    'article_count': 0
+                },
+                'recent_articles': [],
+                'total_articles_found': 0,
                 'last_updated': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
             }
     

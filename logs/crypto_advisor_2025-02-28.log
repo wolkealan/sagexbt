@@ -6679,3 +6679,738 @@
 2025-02-28 12:59:53,293 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
 2025-02-28 12:59:53,293 - telegram_scraper - INFO - Processed real-time message from news_sage: [Polymarket predicts that the probability of #Sola...
 2025-02-28 12:59:53,702 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 13:23:50,496 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 13:31:41,254 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 13:31:41,254 - telegram_scraper - INFO - Processed real-time message from Cointelegraph: LATEST: Metamask released its latest development r...
+2025-02-28 13:58:42,136 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 15:10:12,165 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 15:10:12,166 - telegram_scraper - INFO - Processed real-time message from Cointelegraph: UPDATE: The Bybit hacker has moved 270,000 $ETH wo...
+2025-02-28 15:10:12,516 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 15:22:59,433 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 15:32:25,975 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 15:32:26,249 - database - INFO - Created MongoDB indexes
+2025-02-28 15:32:27,681 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 15:32:27,685 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 15:32:28,099 - main - INFO - Application started
+2025-02-28 15:32:28,100 - main - INFO - Database initialized: walletTracker
+2025-02-28 15:32:28,101 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 15:32:28,102 - main - INFO - Initializing database connection...
+2025-02-28 15:32:28,102 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 15:32:28,120 - main - INFO - Initializing data providers...
+2025-02-28 15:32:30,820 - main - INFO - Prefetched market data for BTC
+2025-02-28 15:32:31,209 - main - INFO - Prefetched market data for ETH
+2025-02-28 15:32:32,370 - crypto_advisor.news - INFO - Fetched 97 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:32:33,639 - crypto_advisor.news - INFO - Fetched 97 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:32:34,163 - crypto_advisor.news - INFO - Fetched 39 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:32:34,171 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:32:34,171 - main - INFO - Prefetched market context
+2025-02-28 15:34:32,723 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 15:34:32,984 - database - INFO - Created MongoDB indexes
+2025-02-28 15:34:33,731 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 15:34:33,734 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 15:34:34,069 - main - INFO - Application started
+2025-02-28 15:34:34,069 - main - INFO - Database initialized: walletTracker
+2025-02-28 15:34:34,070 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 15:34:34,072 - main - INFO - Initializing database connection...
+2025-02-28 15:34:34,072 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 15:34:34,073 - main - INFO - Initializing data providers...
+2025-02-28 15:34:34,132 - main - INFO - Prefetched market data for BTC
+2025-02-28 15:34:34,190 - main - INFO - Prefetched market data for ETH
+2025-02-28 15:34:34,273 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:34:34,313 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:34:34,431 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:34:34,461 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:34:34,461 - main - INFO - Prefetched market context
+2025-02-28 15:34:34,462 - crypto_advisor.news - ERROR - Error generating news summary for BTC: argument of type 'property' is not iterable
+2025-02-28 15:34:34,462 - main - INFO - Prefetched news for BTC
+2025-02-28 15:34:34,462 - crypto_advisor.news - ERROR - Error generating news summary for ETH: argument of type 'property' is not iterable
+2025-02-28 15:34:34,463 - main - INFO - Prefetched news for ETH
+2025-02-28 15:34:34,463 - main - INFO - Data initialization complete
+2025-02-28 15:34:34,463 - main - INFO - Running in PRODUCTION mode
+2025-02-28 15:34:34,463 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 15:34:58,951 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 15:34:58,952 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy hbar now?', Coin: HBAR, Intent: buy
+2025-02-28 15:35:09,017 - crypto_advisor.market - ERROR - Error fetching ticker for HBAR from binance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1740737099005&recvWindow=10000&signature=dc68f277fafff761452acb11832f908c9571fb1834d89ac04550596dd8280841
+2025-02-28 15:35:11,466 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-02-28 15:35:11,657 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-02-28 15:35:11,847 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-02-28 15:35:11,878 - crypto_advisor.market - INFO - Generated market summary for HBAR
+2025-02-28 15:35:11,879 - crypto_advisor.news - ERROR - Error generating news summary for HBAR: argument of type 'property' is not iterable
+2025-02-28 15:35:11,882 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:35:11,883 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:35:11,883 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:35:11,886 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:35:32,071 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 15:36:18,810 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 15:39:29,716 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 15:39:29,935 - database - INFO - Created MongoDB indexes
+2025-02-28 15:39:30,693 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 15:39:30,696 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 15:39:31,081 - main - INFO - Application started
+2025-02-28 15:39:31,081 - main - INFO - Database initialized: walletTracker
+2025-02-28 15:39:31,082 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 15:39:31,083 - main - INFO - Initializing database connection...
+2025-02-28 15:39:31,083 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 15:39:31,084 - main - INFO - Initializing data providers...
+2025-02-28 15:39:31,129 - main - INFO - Prefetched market data for BTC
+2025-02-28 15:39:31,173 - main - INFO - Prefetched market data for ETH
+2025-02-28 15:39:31,234 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:39:31,253 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:39:31,329 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:39:31,353 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:39:31,354 - main - INFO - Prefetched market context
+2025-02-28 15:39:31,354 - crypto_advisor.news - ERROR - Error generating news summary for BTC: argument of type 'property' is not iterable
+2025-02-28 15:39:31,354 - main - INFO - Prefetched news for BTC
+2025-02-28 15:39:31,354 - crypto_advisor.news - ERROR - Error generating news summary for ETH: argument of type 'property' is not iterable
+2025-02-28 15:39:31,354 - main - INFO - Prefetched news for ETH
+2025-02-28 15:39:31,355 - main - INFO - Data initialization complete
+2025-02-28 15:39:31,355 - main - INFO - Running in PRODUCTION mode
+2025-02-28 15:39:31,355 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 15:39:41,556 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 15:39:41,557 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy hbar now?', Coin: None, Intent: buy
+2025-02-28 15:39:41,558 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:39:41,558 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:39:41,558 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:39:41,560 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:39:44,460 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-28 15:39:44,485 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-28 15:39:44,673 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-28 15:39:44,861 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-28 15:39:45,270 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-28 15:39:45,453 - crypto_advisor.market - WARNING - No data available for MA calculation for BTC
+2025-02-28 15:39:45,474 - crypto_advisor.market - INFO - Generated market summary for BTC
+2025-02-28 15:39:45,493 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:39:45,511 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:39:45,715 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 15:39:45,737 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 15:39:45,931 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 15:39:46,125 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 15:39:46,534 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 15:39:46,720 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 15:39:46,742 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-02-28 15:39:47,107 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-28 15:39:47,291 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-28 15:39:47,470 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-28 15:39:47,897 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-28 15:39:48,495 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-28 15:39:48,854 - crypto_advisor.market - WARNING - No data available for MA calculation for BNB
+2025-02-28 15:39:48,878 - crypto_advisor.market - INFO - Generated market summary for BNB
+2025-02-28 15:39:49,728 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 15:39:49,944 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 15:39:50,140 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 15:39:50,348 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 15:39:50,554 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 15:39:50,760 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 15:39:50,784 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 15:39:51,559 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 15:39:51,815 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 15:39:52,074 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 15:39:52,265 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 15:39:52,446 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 15:39:52,628 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 15:39:52,650 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-02-28 15:39:53,014 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-28 15:39:53,425 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-28 15:39:53,601 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-28 15:39:53,786 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-28 15:39:53,962 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-28 15:39:54,368 - crypto_advisor.market - WARNING - No data available for MA calculation for ADA
+2025-02-28 15:39:54,390 - crypto_advisor.market - INFO - Generated market summary for ADA
+2025-02-28 15:39:54,752 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-28 15:39:54,970 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-28 15:39:55,183 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-28 15:39:55,619 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-28 15:39:55,807 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-28 15:39:56,217 - crypto_advisor.market - WARNING - No data available for MA calculation for DOGE
+2025-02-28 15:39:56,240 - crypto_advisor.market - INFO - Generated market summary for DOGE
+2025-02-28 15:39:56,605 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-28 15:39:56,780 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-28 15:39:56,960 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-28 15:39:57,376 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-28 15:39:57,553 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-28 15:39:57,732 - crypto_advisor.market - WARNING - No data available for MA calculation for SHIB
+2025-02-28 15:39:57,755 - crypto_advisor.market - INFO - Generated market summary for SHIB
+2025-02-28 15:39:58,594 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-28 15:39:58,779 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-28 15:39:59,208 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-28 15:39:59,405 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-28 15:39:59,860 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-28 15:40:00,125 - crypto_advisor.market - WARNING - No data available for MA calculation for DOT
+2025-02-28 15:40:00,147 - crypto_advisor.market - INFO - Generated market summary for DOT
+2025-02-28 15:40:00,527 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-28 15:40:00,718 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-28 15:40:01,139 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-28 15:40:01,317 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-28 15:40:01,492 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-28 15:40:01,901 - crypto_advisor.market - WARNING - No data available for MA calculation for MATIC
+2025-02-28 15:40:01,924 - crypto_advisor.market - INFO - Generated market summary for MATIC
+2025-02-28 15:40:02,515 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-28 15:40:02,686 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-28 15:40:02,856 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-28 15:40:03,027 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-28 15:40:03,197 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-28 15:40:03,371 - crypto_advisor.market - WARNING - No data available for MA calculation for AVAX
+2025-02-28 15:40:03,392 - crypto_advisor.market - INFO - Generated market summary for AVAX
+2025-02-28 15:40:03,754 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-28 15:40:03,930 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-28 15:40:04,101 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-28 15:40:04,641 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-28 15:40:04,812 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-28 15:40:04,987 - crypto_advisor.market - WARNING - No data available for MA calculation for LINK
+2025-02-28 15:40:05,009 - crypto_advisor.market - INFO - Generated market summary for LINK
+2025-02-28 15:40:05,855 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-28 15:40:06,037 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-28 15:40:06,214 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-28 15:40:06,386 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-28 15:40:06,574 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-28 15:40:06,750 - crypto_advisor.market - WARNING - No data available for MA calculation for UNI
+2025-02-28 15:40:06,773 - crypto_advisor.market - INFO - Generated market summary for UNI
+2025-02-28 15:40:07,378 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-28 15:40:07,780 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-28 15:40:08,188 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-28 15:40:08,605 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-28 15:40:08,780 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-28 15:40:08,956 - crypto_advisor.market - WARNING - No data available for MA calculation for LTC
+2025-02-28 15:40:08,979 - crypto_advisor.market - INFO - Generated market summary for LTC
+2025-02-28 15:40:09,334 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-28 15:40:09,506 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-28 15:40:09,680 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-28 15:40:09,850 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-28 15:40:10,366 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-28 15:40:10,548 - crypto_advisor.market - WARNING - No data available for MA calculation for ATOM
+2025-02-28 15:40:10,570 - crypto_advisor.market - INFO - Generated market summary for ATOM
+2025-02-28 15:40:10,570 - crypto_advisor.api - ERROR - Error getting top performers: '<' not supported between instances of 'NoneType' and 'float'
+2025-02-28 15:40:30,819 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 15:41:02,095 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 15:41:02,095 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy aave?', Coin: None, Intent: buy
+2025-02-28 15:41:02,095 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:41:02,095 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:41:02,096 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:41:02,098 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:41:02,116 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:41:02,138 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:41:02,165 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:41:02,185 - crypto_advisor.market - INFO - Using cached market summary for ETH
+2025-02-28 15:41:02,212 - crypto_advisor.market - INFO - Using cached market summary for BNB
+2025-02-28 15:41:02,232 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 15:41:02,252 - crypto_advisor.market - INFO - Using cached market summary for XRP
+2025-02-28 15:41:02,272 - crypto_advisor.market - INFO - Using cached market summary for ADA
+2025-02-28 15:41:02,291 - crypto_advisor.market - INFO - Using cached market summary for DOGE
+2025-02-28 15:41:02,311 - crypto_advisor.market - INFO - Using cached market summary for SHIB
+2025-02-28 15:41:02,330 - crypto_advisor.market - INFO - Using cached market summary for DOT
+2025-02-28 15:41:02,353 - crypto_advisor.market - INFO - Using cached market summary for MATIC
+2025-02-28 15:41:02,372 - crypto_advisor.market - INFO - Using cached market summary for AVAX
+2025-02-28 15:41:02,391 - crypto_advisor.market - INFO - Using cached market summary for LINK
+2025-02-28 15:41:02,410 - crypto_advisor.market - INFO - Using cached market summary for UNI
+2025-02-28 15:41:02,428 - crypto_advisor.market - INFO - Using cached market summary for LTC
+2025-02-28 15:41:02,448 - crypto_advisor.market - INFO - Using cached market summary for ATOM
+2025-02-28 15:41:02,449 - crypto_advisor.api - ERROR - Error getting top performers: '<' not supported between instances of 'NoneType' and 'float'
+2025-02-28 15:41:25,309 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 15:41:47,022 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 15:41:47,022 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy ast?', Coin: None, Intent: buy
+2025-02-28 15:41:47,023 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:41:47,023 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:41:47,023 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:41:47,025 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:41:47,045 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:41:47,065 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:41:47,086 - crypto_advisor.market - INFO - Using cached market summary for BTC
+2025-02-28 15:41:47,107 - crypto_advisor.market - INFO - Using cached market summary for ETH
+2025-02-28 15:41:47,126 - crypto_advisor.market - INFO - Using cached market summary for BNB
+2025-02-28 15:41:47,148 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 15:41:47,167 - crypto_advisor.market - INFO - Using cached market summary for XRP
+2025-02-28 15:41:47,186 - crypto_advisor.market - INFO - Using cached market summary for ADA
+2025-02-28 15:41:47,206 - crypto_advisor.market - INFO - Using cached market summary for DOGE
+2025-02-28 15:41:47,227 - crypto_advisor.market - INFO - Using cached market summary for SHIB
+2025-02-28 15:41:47,251 - crypto_advisor.market - INFO - Using cached market summary for DOT
+2025-02-28 15:41:47,272 - crypto_advisor.market - INFO - Using cached market summary for MATIC
+2025-02-28 15:41:47,294 - crypto_advisor.market - INFO - Using cached market summary for AVAX
+2025-02-28 15:41:47,315 - crypto_advisor.market - INFO - Using cached market summary for LINK
+2025-02-28 15:41:47,333 - crypto_advisor.market - INFO - Using cached market summary for UNI
+2025-02-28 15:41:47,352 - crypto_advisor.market - INFO - Using cached market summary for LTC
+2025-02-28 15:41:47,371 - crypto_advisor.market - INFO - Using cached market summary for ATOM
+2025-02-28 15:41:47,372 - crypto_advisor.api - ERROR - Error getting top performers: '<' not supported between instances of 'NoneType' and 'float'
+2025-02-28 15:42:07,877 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 15:42:20,629 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 15:42:20,630 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-02-28 15:42:20,650 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 15:42:20,651 - crypto_advisor.news - ERROR - Error generating news summary for SOL: argument of type 'property' is not iterable
+2025-02-28 15:42:20,652 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 15:42:20,654 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 15:42:20,655 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 15:42:20,668 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 15:42:39,445 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 16:04:28,092 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 16:04:28,346 - database - INFO - Created MongoDB indexes
+2025-02-28 16:04:29,025 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 16:04:29,028 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 16:04:29,389 - main - INFO - Application started
+2025-02-28 16:04:29,389 - main - INFO - Database initialized: walletTracker
+2025-02-28 16:04:29,390 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 16:04:29,391 - main - INFO - Initializing database connection...
+2025-02-28 16:04:29,391 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 16:04:29,392 - main - INFO - Initializing data providers...
+2025-02-28 16:04:32,119 - main - INFO - Prefetched market data for BTC
+2025-02-28 16:04:32,495 - main - INFO - Prefetched market data for ETH
+2025-02-28 16:04:32,573 - crypto_advisor.news - INFO - Using MongoDB-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 16:04:32,596 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 16:04:32,667 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 16:04:32,694 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 16:04:32,695 - main - INFO - Prefetched market context
+2025-02-28 16:04:32,695 - crypto_advisor.news - ERROR - Error generating news summary for BTC: argument of type 'property' is not iterable
+2025-02-28 16:04:32,695 - main - INFO - Prefetched news for BTC
+2025-02-28 16:04:32,696 - crypto_advisor.news - ERROR - Error generating news summary for ETH: argument of type 'property' is not iterable
+2025-02-28 16:04:32,696 - main - INFO - Prefetched news for ETH
+2025-02-28 16:04:32,696 - main - INFO - Data initialization complete
+2025-02-28 16:04:32,698 - main - INFO - Running in PRODUCTION mode
+2025-02-28 16:04:32,698 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 16:04:43,596 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 16:04:43,597 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy ast?', Coin: AST, Intent: buy
+2025-02-28 16:04:43,992 - crypto_advisor.market - WARNING - No data available for MA calculation for AST
+2025-02-28 16:04:44,168 - crypto_advisor.market - WARNING - No data available for MA calculation for AST
+2025-02-28 16:04:44,353 - crypto_advisor.market - WARNING - No data available for MA calculation for AST
+2025-02-28 16:04:44,529 - crypto_advisor.market - WARNING - No data available for MA calculation for AST
+2025-02-28 16:04:44,719 - crypto_advisor.market - WARNING - No data available for MA calculation for AST
+2025-02-28 16:04:45,126 - crypto_advisor.market - WARNING - No data available for MA calculation for AST
+2025-02-28 16:04:45,152 - crypto_advisor.market - INFO - Generated market summary for AST
+2025-02-28 16:04:45,153 - crypto_advisor.news - ERROR - Error generating news summary for AST: argument of type 'property' is not iterable
+2025-02-28 16:04:45,154 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 16:04:45,154 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 16:04:45,154 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 16:04:45,157 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 16:05:03,864 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 16:05:18,535 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 16:05:18,535 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy aave?', Coin: AAVE, Intent: buy
+2025-02-28 16:05:18,926 - crypto_advisor.market - WARNING - No data available for MA calculation for AAVE
+2025-02-28 16:05:19,241 - crypto_advisor.market - WARNING - No data available for MA calculation for AAVE
+2025-02-28 16:05:19,436 - crypto_advisor.market - WARNING - No data available for MA calculation for AAVE
+2025-02-28 16:05:19,622 - crypto_advisor.market - WARNING - No data available for MA calculation for AAVE
+2025-02-28 16:05:19,816 - crypto_advisor.market - WARNING - No data available for MA calculation for AAVE
+2025-02-28 16:05:20,007 - crypto_advisor.market - WARNING - No data available for MA calculation for AAVE
+2025-02-28 16:05:20,032 - crypto_advisor.market - INFO - Generated market summary for AAVE
+2025-02-28 16:05:20,033 - crypto_advisor.news - ERROR - Error generating news summary for AAVE: argument of type 'property' is not iterable
+2025-02-28 16:05:20,034 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 16:05:20,034 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 16:05:20,035 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 16:05:20,044 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 16:05:39,884 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 16:20:17,784 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 16:32:40,794 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 16:32:40,795 - telegram_scraper - INFO - Processed real-time message from Cointelegraph: NEW: [Uniswap](https://cointelegraph.com/news/unis...
+2025-02-28 16:32:40,818 - telegram_scraper - ERROR - Error storing message in MongoDB: object bool can't be used in 'await' expression
+2025-02-28 16:32:40,819 - telegram_scraper - INFO - Processed real-time message from Cointelegraph: ETF FLOWS: Around 3,277 BTC and 30,426 ETH were so...
+2025-02-28 16:43:52,394 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 16:44:04,790 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 16:44:05,085 - database - INFO - Created MongoDB indexes
+2025-02-28 16:44:05,094 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 16:44:05,097 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 16:44:40,702 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 16:44:40,978 - database - INFO - Created MongoDB indexes
+2025-02-28 16:44:40,987 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 16:44:40,990 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 16:44:41,936 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 16:44:42,005 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 16:44:42,006 - telegram_scraper - INFO - Monitoring channels for REAL-TIME messages: sagenewsss, news_sage, cointelegraph, Cointelegraph, sage_aut
+2025-02-28 16:44:51,853 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 16:45:23,324 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 16:45:23,569 - database - INFO - Created MongoDB indexes
+2025-02-28 16:45:23,579 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 16:45:23,582 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 16:45:24,308 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 16:45:24,370 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 16:45:24,370 - telegram_scraper - INFO - Monitoring channels for REAL-TIME messages: sagenewsss, news_sage, cointelegraph, Cointelegraph, sage_aut
+2025-02-28 16:48:53,687 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:48:53,692 - telegram_scraper - ERROR - Error categorizing and storing message: 'EnhancedTelegramScraper' object has no attribute '_store_telegram_message'
+2025-02-28 16:50:55,107 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:50:55,108 - telegram_scraper - INFO - Processed real-time message from news_sage: Xrp is good coin...
+2025-02-28 16:54:00,840 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:42,456 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:42,457 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:43,001 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:43,003 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:43,999 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:44,000 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:44,988 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:44,989 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:46,068 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:46,068 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:50,216 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:50,218 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:50,415 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:50,415 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:50,463 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:50,464 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:50,527 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:50,529 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:51,053 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:51,054 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:55,241 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:55,242 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:55,437 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:55,438 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:55,490 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:55,491 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:55,537 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:55,538 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:55:56,102 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:55:56,104 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:00,275 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:00,276 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:00,479 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:00,479 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:00,542 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:00,543 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:00,597 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:00,598 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:44,949 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:44,950 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:46,060 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:46,062 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:46,955 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:46,956 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:47,980 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:47,980 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:49,041 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:49,041 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:50,037 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:50,038 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:51,003 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:51,005 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:52,161 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:52,163 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:53,175 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:53,177 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:54,277 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:54,278 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:58,196 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:58,197 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:58,397 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:58,398 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:58,440 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:58,442 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:58,500 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:58,501 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:56:59,098 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:56:59,098 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:57:03,747 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:57:03,748 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:57:03,956 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:57:03,957 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:57:04,057 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:57:04,058 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:57:04,099 - telegram_scraper - ERROR - Error categorizing and storing message: 'property' object is not iterable
+2025-02-28 16:57:04,100 - telegram_scraper - INFO - Processed real-time message from sage_aut: @Cointelegraph...
+2025-02-28 16:58:30,253 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 16:58:45,481 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 16:58:45,734 - database - INFO - Created MongoDB indexes
+2025-02-28 16:58:45,748 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 16:58:45,752 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 16:58:46,825 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 16:58:46,948 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 16:58:46,949 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sagenewsss, news_sage, cointelegraph, Cointelegraph, sage_aut
+2025-02-28 16:58:59,033 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 16:58:59,111 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 16:59:10,598 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 16:59:10,599 - telegram_scraper - INFO - Processed real-time message from news_sage: Xrp is good coin...
+2025-02-28 17:09:56,551 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 17:10:11,834 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 17:10:12,130 - database - INFO - Created MongoDB indexes
+2025-02-28 17:10:12,139 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 17:10:12,142 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 17:10:13,004 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 17:10:13,075 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 17:10:13,077 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sagenewsss, news_sage, cointelegraph, Cointelegraph, sage_aut
+2025-02-28 17:10:19,942 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 17:15:14,712 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 17:15:20,870 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 17:15:21,141 - database - INFO - Created MongoDB indexes
+2025-02-28 17:15:21,155 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 17:15:21,158 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 17:15:21,869 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 17:15:21,935 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 17:15:21,936 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sagenewsss, news_sage, cointelegraph, Cointelegraph, sage_aut
+2025-02-28 17:15:38,622 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 17:15:38,622 - telegram_scraper - ERROR - Error storing message in news_data: name 'json' is not defined
+2025-02-28 17:15:38,714 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 17:15:38,715 - telegram_scraper - ERROR - Error storing message in news_data: name 'json' is not defined
+2025-02-28 17:28:08,355 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 17:28:13,867 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 17:28:14,225 - database - INFO - Created MongoDB indexes
+2025-02-28 17:28:14,239 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 17:28:14,242 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 17:28:14,979 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 17:28:15,053 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 17:28:15,054 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sagenewsss, news_sage, cointelegraph, Cointelegraph, sage_aut
+2025-02-28 17:28:22,088 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 17:28:22,091 - telegram_scraper - ERROR - Error storing message in news_data: name 'json' is not defined
+2025-02-28 17:30:46,346 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 17:30:46,349 - telegram_scraper - ERROR - Error storing message in news_data: name 'json' is not defined
+2025-02-28 17:36:40,185 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 17:36:51,326 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 17:36:51,609 - database - INFO - Created MongoDB indexes
+2025-02-28 17:36:51,617 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 17:36:51,620 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 17:36:52,357 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 17:36:52,426 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 17:36:52,427 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sagenewsss, news_sage, cointelegraph, Cointelegraph, sage_aut
+2025-02-28 17:36:59,996 - news_provider - INFO - Stored geopolitical message in news_data
+2025-02-28 18:02:31,654 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 18:02:31,655 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 18:11:17,092 - crypto_advisor.api - INFO - No context provided by user
+2025-02-28 18:11:17,096 - crypto_advisor.api - INFO - Analysis query - Message: 'should I enter sol long now?', Coin: SOL, Intent: buy
+2025-02-28 18:11:17,618 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:11:17,829 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:11:18,046 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:11:18,276 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:11:18,497 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:11:18,721 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:11:18,762 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 18:11:18,763 - crypto_advisor.news - ERROR - Error generating news summary for SOL: argument of type 'property' is not iterable
+2025-02-28 18:11:18,818 - crypto_advisor.news - INFO - Using local file-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 18:11:18,918 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 18:11:19,007 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 18:11:19,047 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 18:11:44,976 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 18:19:40,319 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 18:19:40,354 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-02-28 18:19:40,355 - crypto_advisor.news - ERROR - Error generating news summary for SOL: argument of type 'property' is not iterable
+2025-02-28 18:19:40,355 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 18:19:40,355 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 18:19:40,356 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 18:19:40,358 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 18:20:04,755 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 18:20:04,756 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 18:25:23,989 - recommendation_engine - INFO - Generating new recommendation for XRP (futures)
+2025-02-28 18:25:24,489 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:25:24,692 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:25:24,896 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:25:25,104 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:25:25,307 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:25:25,509 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:25:25,545 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-02-28 18:25:25,545 - crypto_advisor.news - ERROR - Error generating news summary for XRP: argument of type 'property' is not iterable
+2025-02-28 18:25:25,545 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 18:25:25,546 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 18:25:25,546 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 18:25:25,548 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 18:25:48,176 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 18:25:48,177 - crypto_advisor.llm - INFO - Generated futures recommendation for XRP: BUY (Medium confidence)
+2025-02-28 18:43:39,659 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 18:44:03,229 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 18:44:03,511 - database - INFO - Created MongoDB indexes
+2025-02-28 18:44:03,520 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 18:44:03,523 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 18:44:05,784 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 18:44:05,918 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 18:44:05,919 - telegram_scraper - INFO - Fetching historical messages from the past 24 hours (since 2025-02-27 13:14:05.919965+00:00)
+2025-02-28 18:44:06,165 - telegram_scraper - INFO - Found 1 historical messages in sage_news_cg
+2025-02-28 18:44:06,166 - telegram_scraper - INFO - Completed historical message fetch
+2025-02-28 18:44:06,166 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-02-28 18:52:42,259 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 18:52:51,414 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 18:52:51,654 - database - INFO - Created MongoDB indexes
+2025-02-28 18:52:51,662 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 18:52:51,666 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 18:52:52,452 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 18:52:52,524 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 18:52:52,525 - telegram_scraper - INFO - Fetching historical messages from the past 24 hours (since 2025-02-27 13:22:52.525213+00:00)
+2025-02-28 18:52:52,693 - telegram_scraper - INFO - Found 1 historical messages in sage_news_cg
+2025-02-28 18:52:52,694 - telegram_scraper - INFO - Completed historical message fetch
+2025-02-28 18:52:52,695 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-02-28 18:54:59,388 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 18:55:05,296 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 18:55:05,577 - database - INFO - Created MongoDB indexes
+2025-02-28 18:55:05,590 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 18:55:05,593 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 18:55:06,320 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 18:55:06,380 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 18:55:06,381 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-02-28 18:55:16,326 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 18:55:16,328 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 18:55:16,329 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [JUST IN: $5,780,000,000 worth of Bitcoin & Ethere...
+2025-02-28 18:55:16,384 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 18:55:16,385 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 18:55:16,386 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: Sol will reach ath again...
+2025-02-28 18:55:36,520 - recommendation_engine - INFO - Generating new recommendation for XRP (futures)
+2025-02-28 18:55:37,025 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:55:37,234 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:55:37,523 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:55:37,730 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:55:37,929 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:55:38,116 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-02-28 18:55:38,143 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-02-28 18:55:38,144 - crypto_advisor.news - ERROR - Error generating news summary for XRP: argument of type 'property' is not iterable
+2025-02-28 18:55:40,168 - crypto_advisor.news - INFO - Fetched 96 news articles for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 18:55:42,283 - crypto_advisor.news - INFO - Fetched 90 news articles for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 18:55:43,866 - crypto_advisor.news - INFO - Fetched 39 news articles for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 18:55:43,875 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 18:56:06,456 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 18:56:06,457 - crypto_advisor.llm - INFO - Generated futures recommendation for XRP: BUY (Medium confidence)
+2025-02-28 18:56:19,473 - recommendation_engine - INFO - Generating new recommendation for SOL (futures)
+2025-02-28 18:56:19,892 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:56:20,105 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:56:20,310 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:56:20,506 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:56:20,707 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:56:20,904 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 18:56:20,934 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 18:56:20,934 - crypto_advisor.news - ERROR - Error generating news summary for SOL: argument of type 'property' is not iterable
+2025-02-28 18:56:20,934 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 18:56:20,935 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 18:56:20,935 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 18:56:20,937 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 18:56:47,775 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 18:56:47,777 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-02-28 18:57:26,598 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 18:57:26,600 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 18:57:40,684 - recommendation_engine - INFO - Generating new recommendation for ETH (futures)
+2025-02-28 18:57:41,250 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 18:57:41,444 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 18:57:41,642 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 18:57:41,837 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 18:57:42,028 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 18:57:42,222 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 18:57:42,248 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-02-28 18:57:42,249 - crypto_advisor.news - ERROR - Error generating news summary for ETH: argument of type 'property' is not iterable
+2025-02-28 18:57:42,249 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 18:57:42,249 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 18:57:42,249 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 18:57:42,252 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 18:58:04,208 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 18:58:04,209 - crypto_advisor.llm - INFO - Generated futures recommendation for ETH: BUY (Medium confidence)
+2025-02-28 19:00:33,266 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 19:00:40,653 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 19:00:40,898 - database - INFO - Created MongoDB indexes
+2025-02-28 19:00:40,907 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 19:00:40,910 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 19:00:41,808 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 19:00:41,925 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 19:00:41,926 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-02-28 19:00:42,296 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,297 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:42,355 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,355 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:42,356 - telegram_scraper - INFO - Processed historical message from sage_news_cg: Sol will reach ath again...
+2025-02-28 19:00:42,408 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,409 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:42,409 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: $5,780,000,000 worth of Bitcoin & Ethere...
+2025-02-28 19:00:42,467 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,467 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 19:00:42,468 - telegram_scraper - INFO - Processed historical message from sage_news_cg: ['Leave it to the imagination': Normal People star...
+2025-02-28 19:00:42,521 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,522 - news_provider - WARNING - Failed to store geopolitical message in news_data
+2025-02-28 19:00:42,522 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Ontario's Doug Ford projected to win rare third m...
+2025-02-28 19:00:42,576 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,577 - news_provider - WARNING - Failed to store geopolitical message in news_data
+2025-02-28 19:00:42,577 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Greeks hold mass protests demanding justice after...
+2025-02-28 19:00:42,636 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,637 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:42,694 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,695 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:42,695 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [HTX's USDD Earn Offers 20% APY Amidst Market Vola...
+2025-02-28 19:00:42,753 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:42,753 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:42,754 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Tether CEO Paolo Ardoino (@paoloardoino) is makin...
+2025-02-28 19:00:43,073 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,075 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:43,133 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,133 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:43,133 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Michael Saylor says "sell a kidney if yo...
+2025-02-28 19:00:43,186 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,186 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:43,187 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Bitcoin falls under $80,000](https://x.c...
+2025-02-28 19:00:43,240 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,242 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:43,242 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: $215 million liquidated from the cryptoc...
+2025-02-28 19:00:43,292 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,293 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:43,346 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,347 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:43,399 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,400 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:00:43,453 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:00:43,455 - news_provider - WARNING - Failed to store general message in news_data
+2025-02-28 19:00:43,456 - telegram_scraper - INFO - Processed historical message from sage_news_cg: News bot activated....
+2025-02-28 19:00:43,456 - telegram_scraper - INFO - Processed 18 historical messages from sage_news_cg
+2025-02-28 19:02:38,019 - telegram_scraper - INFO - Telegram client disconnected
+2025-02-28 19:02:45,341 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 19:02:45,592 - database - INFO - Created MongoDB indexes
+2025-02-28 19:02:45,601 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 19:02:45,604 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 19:02:46,532 - telegram_scraper - INFO - Telegram client started with user account
+2025-02-28 19:02:46,672 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-02-28 19:02:46,673 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-02-28 19:15:01,642 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:15:01,643 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:15:01,644 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Japan's MeToo icon is up for an Oscar - but the f...
+2025-02-28 19:16:00,674 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:16:00,674 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:18:47,074 - database - ERROR - Error inserting document to news_data: E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }, full error: {'index': 0, 'code': 11000, 'errmsg': 'E11000 duplicate key error collection: walletTracker.news_data index: url_1 dup key: { url: null }', 'keyPattern': {'url': 1}, 'keyValue': {'url': None}}
+2025-02-28 19:18:47,075 - news_provider - WARNING - Failed to store crypto message in news_data
+2025-02-28 19:18:47,075 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Controversy surrounds Thorchain as it faces criti...
+2025-02-28 19:26:51,007 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 19:26:51,241 - database - INFO - Created MongoDB indexes
+2025-02-28 19:26:51,941 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 19:26:51,944 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 19:26:53,682 - main - INFO - Application started
+2025-02-28 19:26:53,682 - main - INFO - Database initialized: walletTracker
+2025-02-28 19:26:53,683 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 19:26:53,684 - main - INFO - Initializing database connection...
+2025-02-28 19:26:53,685 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 19:26:53,685 - main - INFO - Initializing data providers...
+2025-02-28 19:26:56,679 - main - INFO - Prefetched market data for BTC
+2025-02-28 19:26:57,043 - main - INFO - Prefetched market data for ETH
+2025-02-28 19:26:57,043 - main - ERROR - Error initializing data: 'NewsDataProvider' object has no attribute 'get_market_context'
+2025-02-28 19:26:57,044 - main - INFO - Running in PRODUCTION mode
+2025-02-28 19:26:57,045 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 19:27:07,332 - recommendation_engine - INFO - Generating new recommendation for ETH (futures)
+2025-02-28 19:27:07,597 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 19:27:07,634 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 19:27:07,832 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 19:27:08,025 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 19:27:08,220 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 19:27:08,399 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-02-28 19:27:08,425 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-02-28 19:27:08,426 - recommendation_engine - ERROR - Error generating recommendation for ETH: 'NewsDataProvider' object has no attribute 'get_coin_news_summary'
+2025-02-28 19:29:31,090 - database - INFO - Connected to MongoDB: walletTracker
+2025-02-28 19:29:31,336 - database - INFO - Created MongoDB indexes
+2025-02-28 19:29:32,085 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-02-28 19:29:32,088 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-02-28 19:29:32,474 - main - INFO - Application started
+2025-02-28 19:29:32,475 - main - INFO - Database initialized: walletTracker
+2025-02-28 19:29:32,475 - main - INFO - Starting Crypto Trading Advisor application
+2025-02-28 19:29:32,476 - main - INFO - Initializing database connection...
+2025-02-28 19:29:32,476 - main - INFO - Connected to MongoDB: walletTracker
+2025-02-28 19:29:32,477 - main - INFO - Initializing data providers...
+2025-02-28 19:29:32,524 - main - INFO - Prefetched market data for BTC
+2025-02-28 19:29:32,569 - main - INFO - Prefetched market data for ETH
+2025-02-28 19:29:32,601 - crypto_advisor.news - INFO - Using local file-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 19:29:32,691 - crypto_advisor.news - INFO - Using local file-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 19:29:32,759 - crypto_advisor.news - INFO - Using local file-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 19:29:32,784 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 19:29:32,784 - main - INFO - Prefetched market context
+2025-02-28 19:29:32,857 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-02-28 19:29:32,857 - crypto_advisor.news - INFO - News sources for BTC:
+2025-02-28 19:29:32,858 - crypto_advisor.news - INFO - Telegram News count: 50
+2025-02-28 19:29:32,859 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 articles
+2025-02-28 19:29:32,859 - main - INFO - Prefetched news for BTC
+2025-02-28 19:29:32,899 - crypto_advisor.news - INFO - Fetched 24 Telegram news articles for specific coin
+2025-02-28 19:29:32,899 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-28 19:29:32,899 - crypto_advisor.news - INFO - Telegram News count: 24
+2025-02-28 19:29:32,900 - crypto_advisor.news - INFO - Generated news summary for ETH with 24 articles
+2025-02-28 19:29:32,900 - main - INFO - Prefetched news for ETH
+2025-02-28 19:29:32,901 - main - INFO - Data initialization complete
+2025-02-28 19:29:32,901 - main - INFO - Running in PRODUCTION mode
+2025-02-28 19:29:32,901 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 19:29:36,076 - recommendation_engine - INFO - Generating new recommendation for ETH (futures)
+2025-02-28 19:29:36,168 - crypto_advisor.market - INFO - Using cached market summary for ETH
+2025-02-28 19:29:36,228 - crypto_advisor.news - INFO - Fetched 24 Telegram news articles for specific coin
+2025-02-28 19:29:36,229 - crypto_advisor.news - INFO - News sources for ETH:
+2025-02-28 19:29:36,229 - crypto_advisor.news - INFO - Telegram News count: 24
+2025-02-28 19:29:36,230 - crypto_advisor.news - INFO - Generated news summary for ETH with 24 articles
+2025-02-28 19:29:36,231 - crypto_advisor.news - INFO - Using memory-cached news data for query: financial markets OR stock market OR economy OR federal reserve OR interest rates
+2025-02-28 19:29:36,232 - crypto_advisor.news - INFO - Using memory-cached news data for query: geopolitical OR international relations OR war OR sanctions OR trade war OR global economy
+2025-02-28 19:29:36,232 - crypto_advisor.news - INFO - Using memory-cached news data for query: cryptocurrency regulation OR bitcoin regulation OR SEC crypto OR crypto ban OR crypto tax
+2025-02-28 19:29:36,236 - crypto_advisor.news - INFO - Generated market context summary
+2025-02-28 19:29:58,337 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 19:29:58,339 - crypto_advisor.llm - INFO - Generated futures recommendation for ETH: BUY (High confidence)

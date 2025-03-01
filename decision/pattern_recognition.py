@@ -15,7 +15,7 @@ class PatternRecognition:
     def __init__(self):
         self.market_data = get_market_data_provider()
     
-    def identify_patterns(self, symbol: str, timeframe: str = '1d') -> Dict[str, Any]:
+    def identify_patterns(self, symbol: str, timeframe: str = '1h') -> Dict[str, Any]:
         """
         Identify various technical patterns in the price data
         

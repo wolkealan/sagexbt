@@ -411,17 +411,51 @@ class MarketDataProvider:
             return False
     
     def get_historical_data(self, symbol: str, timeframe: str = '1d', 
-                          days: int = 30, exchange_id: str = 'binance') -> pd.DataFrame:
+                      days: int = 30, exchange_id: str = 'binance') -> pd.DataFrame:
         """Get historical OHLCV data for a symbol"""
         try:
-            # Fetch the most recent data
-            df = asyncio.run(self.fetch_ohlcv(symbol, timeframe, limit=days, exchange_id=exchange_id))
+            # Check if we have the data in memory cache
+            cache_key = f"{exchange_id}_{symbol}_{timeframe}_ohlcv"
+            df = self.market_data.get(cache_key)
             
-            if df.empty:
-                logger.warning(f"No historical data available for {symbol}")
+            if df is not None and not df.empty:
+                logger.debug(f"Using cached historical data for {symbol}")
+                return df
+            
+            # If we're already in an event loop, we can't use asyncio.run()
+            # Instead, use an alternative approach to get data synchronously
+            
+            # First check if we have recent data in MongoDB
+            cached_data = self._get_from_db(cache_key, max_age_minutes=60)
+            
+            if cached_data:
+                # Convert to DataFrame
+                df = pd.DataFrame(cached_data['data'], 
+                                columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+                df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
+                df.set_index('timestamp', inplace=True)
+                return df
+            
+            # If no cached data, use exchange API directly (non-async)
+            exchange = self.exchanges.get(exchange_id)
+            if not exchange:
+                logger.warning(f"Exchange {exchange_id} not initialized")
                 return pd.DataFrame()
             
-            # Return the DataFrame
+            # Format symbol for the exchange
+            formatted_symbol = f"{symbol}/USDT" if not '/' in symbol else symbol
+            
+            # Fetch OHLCV data directly (this is synchronous, not async)
+            ohlcv = exchange.fetch_ohlcv(formatted_symbol, timeframe, limit=days)
+            
+            # Convert to DataFrame
+            df = pd.DataFrame(ohlcv, columns=['timestamp', 'open', 'high', 'low', 'close', 'volume'])
+            df['timestamp'] = pd.to_datetime(df['timestamp'], unit='ms')
+            df.set_index('timestamp', inplace=True)
+            
+            # Store in memory cache
+            self.market_data[cache_key] = df
+            
             return df
             
         except Exception as e:

@@ -12,7 +12,7 @@ from data.news_provider import get_news_provider
 from deepseek.llm_interface import get_deepseek_llm
 # from deepseek.llm_factory import get_llm_provider
 
-
+from decision.pattern_recognition import get_pattern_recognition
 logger = get_logger("recommendation_engine")
 
 class RecommendationEngine:
@@ -26,7 +26,7 @@ class RecommendationEngine:
         self.recommendations_cache = {}
     
     async def generate_recommendation(self, coin: str, action_type: str = "spot",
-                                 force_refresh: bool = False) -> Dict[str, Any]:
+                             force_refresh: bool = False) -> Dict[str, Any]:
         try:
             # Fetch market data
             market_summary = await self.market_data.get_market_summary(coin)
@@ -41,6 +41,20 @@ class RecommendationEngine:
                     'sentiment': {'sentiment': 'neutral', 'sentiment_score': 0},
                     'recent_articles': [],
                     'total_articles_found': 0
+                }
+            
+            # Get pattern recognition data
+            try:
+                pattern_recognizer = get_pattern_recognition()
+                pattern_data = pattern_recognizer.identify_patterns(coin)
+                logger.info(f"Pattern data retrieved for {coin}")
+            except Exception as e:
+                logger.warning(f"Error analyzing patterns for {coin}: {e}")
+                pattern_data = {
+                    "trend": {"overall": "neutral", "strength": 0},
+                    "support_resistance": {},
+                    "candlestick": {},
+                    "chart_patterns": {}
                 }
             
             # Fetch market context with more detailed logging
@@ -63,6 +77,7 @@ class RecommendationEngine:
                 market_data=market_summary,
                 news_data=news_summary,
                 market_context=market_context,
+                pattern_data=pattern_data,  # Add pattern data
                 action_type=action_type
             )
             

@@ -3,7 +3,8 @@ import json
 import time
 from typing import Dict, List, Any, Optional
 import os
-
+import math
+import numpy as np
 from config.config import APIConfig, AppConfig
 from utils.logger import get_llm_logger
 
@@ -101,13 +102,109 @@ class DeepSeekLLM:
             except requests.exceptions.RequestException as e2:
                 logger.error(f"Error communicating with DeepSeek API: {str(e2)}")
                 raise RuntimeError(f"Failed to communicate with DeepSeek API: {str(e2)}")
+            
+    # 3. Add helper method for formatting patterns in the DeepSeekLLM class
+
+    def _format_patterns(self, pattern_data: Dict[str, Any]) -> str:
+        """Format technical pattern data for the prompt - with robust handling of NaN values"""
+
+        
+        if not pattern_data or not isinstance(pattern_data, dict):
+            return "No pattern data available"
+        
+        # Helper function to check if a value is NaN
+        def is_not_nan(value):
+            if isinstance(value, (float, np.float64, np.float32)):
+                return not (math.isnan(value) or np.isnan(value))
+            return True
+        
+        # Helper function to safely get a numeric value
+        def safe_format(value, format_str="%.2f"):
+            if not is_not_nan(value):
+                return "N/A"
+            try:
+                return format_str % float(value)
+            except (ValueError, TypeError):
+                return "N/A"
+        
+        result = []
+        
+        # Format trend data
+        if "trend" in pattern_data and isinstance(pattern_data["trend"], dict) and "error" not in pattern_data["trend"]:
+            trend = pattern_data["trend"]
+            if "overall" in trend:
+                overall = trend.get("overall", "neutral")
+                result.append(f"- Overall Trend: {overall.replace('_', ' ').title()}")
+            if "short_term" in trend:
+                result.append(f"  * Short-term trend: {trend['short_term']}")
+            if "medium_term" in trend:
+                result.append(f"  * Medium-term trend: {trend['medium_term']}")
+            if "long_term" in trend:
+                result.append(f"  * Long-term trend: {trend['long_term']}")
+            if "special_event" in trend:
+                result.append(f"  * Special event: {trend['special_event']}")
+        
+        # Format support/resistance data
+        if "support_resistance" in pattern_data and isinstance(pattern_data["support_resistance"], dict) and "error" not in pattern_data["support_resistance"]:
+            sr = pattern_data["support_resistance"]
+            if "support" in sr and sr["support"]:
+                supports = sr["support"]
+                result.append("- Support Levels:")
+                for level in supports:
+                    if isinstance(level, dict) and "level" in level and is_not_nan(level['level']):
+                        try:
+                            strength = level.get('strength', 'N/A')
+                            strength_str = safe_format(strength) if strength != 'N/A' else 'N/A'
+                            result.append(f"  * ${float(level['level']):.2f} (strength: {strength_str})")
+                        except (ValueError, TypeError):
+                            pass
+            if "resistance" in sr and sr["resistance"]:
+                resistances = sr["resistance"]
+                result.append("- Resistance Levels:")
+                for level in resistances:
+                    if isinstance(level, dict) and "level" in level and is_not_nan(level['level']):
+                        try:
+                            strength = level.get('strength', 'N/A')
+                            strength_str = safe_format(strength) if strength != 'N/A' else 'N/A'
+                            result.append(f"  * ${float(level['level']):.2f} (strength: {strength_str})")
+                        except (ValueError, TypeError):
+                            pass
+        
+        # Format candlestick patterns
+        if "candlestick" in pattern_data and pattern_data["candlestick"] and "error" not in pattern_data["candlestick"]:
+            candles = pattern_data["candlestick"]
+            if candles and isinstance(candles, dict):
+                result.append("- Candlestick Patterns:")
+                for name, details in candles.items():
+                    if isinstance(details, dict) and "significance" in details and "description" in details:
+                        result.append(f"  * {details.get('type', name).replace('_', ' ').title()} ({details['significance']}): {details['description']}")
+        
+        # Format chart patterns
+        if "chart_patterns" in pattern_data and pattern_data["chart_patterns"] and "error" not in pattern_data["chart_patterns"]:
+            charts = pattern_data["chart_patterns"]
+            if charts and isinstance(charts, dict):
+                result.append("- Chart Patterns:")
+                for name, details in charts.items():
+                    if isinstance(details, dict) and "significance" in details and "description" in details:
+                        pattern_type = details.get('type', name).replace('_', ' ').title()
+                        if "level" in details and is_not_nan(details['level']):
+                            level_str = safe_format(details['level'])
+                            result.append(f"  * {pattern_type} ({details['significance']}): {details['description']} - Level: ${level_str}")
+                        elif "neckline" in details and is_not_nan(details['neckline']):
+                            neckline_str = safe_format(details['neckline'])
+                            result.append(f"  * {pattern_type} ({details['significance']}): {details['description']} - Neckline: ${neckline_str}")
+                        else:
+                            result.append(f"  * {pattern_type} ({details['significance']}): {details['description']}")
+        
+        return "\n".join(result) if result else "No significant technical patterns detected"
     
     def generate_recommendation(self, 
-                      coin: str, 
-                      market_data: Dict[str, Any],
-                      news_data: Dict[str, Any],
-                      market_context: Dict[str, Any],
-                      action_type: str = "spot") -> Dict[str, Any]:
+                  coin: str, 
+                  market_data: Dict[str, Any],
+                  news_data: Dict[str, Any],
+                  market_context: Dict[str, Any],
+                  pattern_data: Dict[str, Any] = None,  # Add this parameter
+                  action_type: str = "spot") -> Dict[str, Any]:
         try:
             # Prepare data for the prompt
             current_price = market_data.get('current_price', 'Unknown')
@@ -133,18 +230,25 @@ class DeepSeekLLM:
                         f"  * {article.get('title', 'No title')} ({article.get('source', {}).get('name', 'Unknown')})" 
                         for article in recent_articles[:3]
                     ])
+            
+            # Format pattern recognition data
+            pattern_analysis = self._format_patterns(pattern_data) if pattern_data else "No pattern data available"
         
-        # Build the prompt
+            # Build the prompt
             system_prompt = """You are a cryptocurrency trading advisor specialized in providing recommendations based on technical analysis, news sentiment, and market conditions.
 Your task is to analyze the provided data and give a clear recommendation for the specified cryptocurrency.
 
-IMPORTANT: Always include the current price in your recommendation near the beginning of your analysis.
+IMPORTANT: 
+1. Always include the current price in your recommendation near the beginning of your analysis.
+2. ALWAYS mention the specific technical patterns identified (support/resistance levels, chart patterns, trend direction)
+3. If support and resistance levels are provided, ALWAYS include them in your recommendation 
 
 Your recommendation should consider:
 1. Technical indicators (RSI, moving averages, etc.)
-2. Recent news sentiment
-3. Overall market context
-4. Current geopolitical and regulatory sentiment
+2. Technical chart patterns and trend analysis (ALWAYS mention these explicitly)
+3. Recent news sentiment
+4. Overall market context
+5. Support and resistance levels (ALWAYS mention these explicitly if available)
 
 For each recommendation:
 - Provide a clear BUY, SELL, or HOLD recommendation
@@ -154,6 +258,7 @@ For each recommendation:
 - Mention key factors influencing your decision
 - If recommending futures trading, specify long or short position
 - Include relevant risk warnings
+- Reference important support/resistance levels when available
 """
         
             user_prompt = f"""Please analyze the following data and provide a trading recommendation for {coin}:
@@ -163,6 +268,9 @@ MARKET DATA:
 - 24h change: {daily_change}%
 - RSI (1 day): {rsi_1d}
 {self._format_indicators(market_data.get('indicators', {}))}
+
+TECHNICAL PATTERNS:
+{pattern_analysis}
 
 NEWS SENTIMENT:
 - Overall sentiment: {news_sentiment} ({sentiment_score})
@@ -210,7 +318,8 @@ Make sure to include the current price (${current_price} USD) in your analysis.
                             'rsi_1d': rsi_1d
                         },
                         'news_sentiment': news_sentiment,
-                        'sentiment_score': sentiment_score
+                        'sentiment_score': sentiment_score,
+                        'patterns': pattern_data  # Add pattern data to the context
                     }
                 }
                 

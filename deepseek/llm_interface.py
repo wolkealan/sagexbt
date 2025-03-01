@@ -248,6 +248,19 @@ Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) wi
                 rsi_interpretation = "oversold" if rsi < 30 else "overbought" if rsi > 70 else "neutral"
                 result.append(f"  * RSI: {rsi:.1f} ({rsi_interpretation})")
             
+            # Add MACD if available
+            if 'macd' in data and data['macd']:
+                macd = data['macd']
+                macd_line = macd.get('macd_line', 0)
+                signal_line = macd.get('signal_line', 0)
+                histogram = macd.get('macd_histogram', 0)
+                
+                signal = "bullish" if macd_line > signal_line else "bearish"
+                trend_strength = "strengthening" if histogram > 0 else "weakening"
+                
+                result.append(f"  * MACD: Line {macd_line:.4f}, Signal {signal_line:.4f}, Histogram {histogram:.4f}")
+                result.append(f"    ({signal} signal, trend {trend_strength})")
+            
             # Add moving averages if available
             if 'moving_averages' in data and data['moving_averages']:
                 mas = data['moving_averages']

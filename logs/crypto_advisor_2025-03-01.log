@@ -1,0 +1,2627 @@
+2025-03-01 00:31:29,881 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 00:31:30,042 - database - INFO - Created MongoDB indexes
+2025-03-01 00:31:48,281 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 00:31:48,286 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 00:31:50,119 - main - INFO - Application started
+2025-03-01 00:31:50,120 - main - INFO - Database initialized: walletTracker
+2025-03-01 00:31:50,120 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 00:31:50,122 - main - INFO - Initializing database connection...
+2025-03-01 00:31:50,122 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 00:31:50,123 - main - INFO - Initializing data providers...
+2025-03-01 00:31:56,853 - main - INFO - Prefetched market data for BTC
+2025-03-01 00:31:57,216 - main - INFO - Prefetched market data for ETH
+2025-03-01 00:31:57,303 - crypto_advisor.news - INFO - Found 19 news documents for market context
+2025-03-01 00:31:57,335 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.05,
+  "insights": [
+    {
+      "title": "[Are we bouncing back/rebounding from here?](https://x.com/BTCTN/status/1895539065950519735)",
+      "description": "[Are we bouncing back/rebounding from here?](https://x.com/BTCTN/status/1895539065950519735)\n\n Are we bouncing back/rebounding from here?\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:21:50+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding oversight to issuers...",
+      "description": "[\ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding oversight to issuers and traders. Companies must disclose ownership, meet capital requirements, and follow anti-money laundering rules, while ICO procedures are simplified to reduce manipulation risks.](https://x.com/Cointelegraph/status/1895537174663123207)\n\n \ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding\n oversight to issuers and traders.\n \n Companies must disclose ownership, meet capital requirements, and follow\n anti-money laundering rules, while ICO procedures are simplified to reduce\n manipulation risks. pic.twitter.com/OrBWN7prUT\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:19:04+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-annou...",
+      "description": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-announce\u2026](https://x.com/BTCTN/status/1895534771289120841)\n\n LBank Announces New Trading Keywords to Empower Global Market Reach\n https://t.co/g0TNoEERcH\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/18955330772...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/1895533077298102676)\n\n Read more about it here\ud83d\udc47https://t.co/0liFY0Dy1G\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel...",
+      "description": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K in February. - Starmer advocates a fair and balanced approach. - Investors split: some see BTC as inflation hedge, others fear\u2026](https://x.com/BTCTN/status/1895531781165641952)\n\n \ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10\n \n - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K\n in February.\n - Starmer advocates a fair and balanced approach.\n - Investors split: some see BTC as inflation hedge, others fear\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:43+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "trade",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 19,
+  "last_updated": "2025-03-01 00:31:57"
+}
+2025-03-01 00:31:57,337 - main - INFO - Prefetched market context
+2025-03-01 00:31:57,456 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 00:31:57,477 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 00:31:57,478 - main - INFO - Prefetched news for BTC
+2025-03-01 00:31:57,571 - crypto_advisor.news - INFO - Fetched 27 Telegram news articles for specific coin
+2025-03-01 00:31:57,593 - crypto_advisor.news - INFO - Generated news summary for ETH with 27 Telegram articles and 0 market articles
+2025-03-01 00:31:57,594 - main - INFO - Prefetched news for ETH
+2025-03-01 00:31:57,594 - main - INFO - Data initialization complete
+2025-03-01 00:31:57,595 - main - INFO - Running in PRODUCTION mode
+2025-03-01 00:31:57,595 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 00:32:06,536 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 00:32:06,725 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 00:32:06,917 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 00:32:07,099 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 00:32:07,311 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 00:32:07,741 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 00:32:07,763 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-01 00:32:07,827 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-03-01 00:32:07,847 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-03-01 00:32:07,873 - crypto_advisor.news - INFO - Found 19 news documents for market context
+2025-03-01 00:32:07,875 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.05,
+  "insights": [
+    {
+      "title": "[Are we bouncing back/rebounding from here?](https://x.com/BTCTN/status/1895539065950519735)",
+      "description": "[Are we bouncing back/rebounding from here?](https://x.com/BTCTN/status/1895539065950519735)\n\n Are we bouncing back/rebounding from here?\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:21:50+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding oversight to issuers...",
+      "description": "[\ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding oversight to issuers and traders. Companies must disclose ownership, meet capital requirements, and follow anti-money laundering rules, while ICO procedures are simplified to reduce manipulation risks.](https://x.com/Cointelegraph/status/1895537174663123207)\n\n \ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding\n oversight to issuers and traders.\n \n Companies must disclose ownership, meet capital requirements, and follow\n anti-money laundering rules, while ICO procedures are simplified to reduce\n manipulation risks. pic.twitter.com/OrBWN7prUT\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:19:04+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-annou...",
+      "description": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-announce\u2026](https://x.com/BTCTN/status/1895534771289120841)\n\n LBank Announces New Trading Keywords to Empower Global Market Reach\n https://t.co/g0TNoEERcH\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/18955330772...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/1895533077298102676)\n\n Read more about it here\ud83d\udc47https://t.co/0liFY0Dy1G\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel...",
+      "description": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K in February. - Starmer advocates a fair and balanced approach. - Investors split: some see BTC as inflation hedge, others fear\u2026](https://x.com/BTCTN/status/1895531781165641952)\n\n \ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10\n \n - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K\n in February.\n - Starmer advocates a fair and balanced approach.\n - Investors split: some see BTC as inflation hedge, others fear\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:43+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "trade",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 19,
+  "last_updated": "2025-03-01 00:32:07"
+}
+2025-03-01 00:32:07,877 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.05,
+  "insights": [
+    {
+      "title": "[Are we bouncing back/rebounding from here?](https://x.com/BTCTN/status/1895539065950519735)",
+      "description": "[Are we bouncing back/rebounding from here?](https://x.com/BTCTN/status/1895539065950519735)\n\n Are we bouncing back/rebounding from here?\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:21:50+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding oversight to issuers...",
+      "description": "[\ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding oversight to issuers and traders. Companies must disclose ownership, meet capital requirements, and follow anti-money laundering rules, while ICO procedures are simplified to reduce manipulation risks.](https://x.com/Cointelegraph/status/1895537174663123207)\n\n \ud83c\udde6\ud83c\uddf2 NEW: Armenia has enacted a law regulating the crypto industry, expanding\n oversight to issuers and traders.\n \n Companies must disclose ownership, meet capital requirements, and follow\n anti-money laundering rules, while ICO procedures are simplified to reduce\n manipulation risks. pic.twitter.com/OrBWN7prUT\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:19:04+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-annou...",
+      "description": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-announce\u2026](https://x.com/BTCTN/status/1895534771289120841)\n\n LBank Announces New Trading Keywords to Empower Global Market Reach\n https://t.co/g0TNoEERcH\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/18955330772...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/1895533077298102676)\n\n Read more about it here\ud83d\udc47https://t.co/0liFY0Dy1G\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel...",
+      "description": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K in February. - Starmer advocates a fair and balanced approach. - Investors split: some see BTC as inflation hedge, others fear\u2026](https://x.com/BTCTN/status/1895531781165641952)\n\n \ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10\n \n - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K\n in February.\n - Starmer advocates a fair and balanced approach.\n - Investors split: some see BTC as inflation hedge, others fear\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:43+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "trade",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 19,
+  "last_updated": "2025-03-01 00:32:07"
+}
+2025-03-01 00:32:46,286 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 00:32:46,317 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-03-01 08:23:11,622 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 08:23:11,778 - database - INFO - Created MongoDB indexes
+2025-03-01 08:23:11,787 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 08:23:11,790 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 08:23:13,715 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-01 08:23:13,768 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-01 08:23:13,769 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-03-01 08:23:14,094 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:14,159 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:14,160 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Learn more here:](https://x.com/Cointelegraph/sta...
+2025-03-01 08:23:14,209 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:14,257 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:14,311 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:14,311 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Michael Saylor just took the crypto fight straigh...
+2025-03-01 08:23:14,357 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:14,358 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Colossal stakes for Starmer's summit on Ukraine](...
+2025-03-01 08:23:14,404 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:14,404 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Threat to Kashmir's iconic chinar trees - and the...
+2025-03-01 08:23:14,458 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:14,740 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:14,740 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Starmer speaks to Trump and Zelensky after White ...
+2025-03-01 08:23:14,789 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:14,789 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Chaos and unproven theories surround Tates' relea...
+2025-03-01 08:23:14,841 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:14,890 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:14,892 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Analysis: Trump-Zelensky row signals major crisis...
+2025-03-01 08:23:14,935 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:14,936 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Can the tide turn on the Channel migrant boat cro...
+2025-03-01 08:23:14,983 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:14,983 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [How the Trump-Zelensky talks collapsed in ten fie...
+2025-03-01 08:23:15,030 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:15,030 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Memecoin mania has begun to die down to December ...
+2025-03-01 08:23:15,079 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:15,081 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [On Feb. 21, North Korean hacker group Lazarus sto...
+2025-03-01 08:23:15,369 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:15,369 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Still, others go on undeterred. In February alone...
+2025-03-01 08:23:15,416 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:15,418 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Lawmakers in individual states have been introduc...
+2025-03-01 08:23:15,470 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:15,470 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Within Trump’s first 40 days in office, 15 new cr...
+2025-03-01 08:23:15,517 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:15,518 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Governments, financial institutions and even soft...
+2025-03-01 08:23:15,568 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:15,568 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [US and China’s share of global hashrate have decl...
+2025-03-01 08:23:15,614 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:15,614 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [SEC has taken a new approach in crypto regulation...
+2025-03-01 08:23:15,659 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:15,705 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:15,705 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Can Solana-native L2s solve scalability without c...
+2025-03-01 08:23:15,752 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:16,047 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:16,096 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:16,143 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:16,144 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [First British tourists allowed back into North Ko...
+2025-03-01 08:23:16,428 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:16,430 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Bitcoin miners saw a dip in February earnings, co...
+2025-03-01 08:23:16,476 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:16,533 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:16,868 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:16,869 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: UK Prime Minister Keir Starmer r...
+2025-03-01 08:23:16,914 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:16,915 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Watch: Rare planetary parade caught on camera by ...
+2025-03-01 08:23:16,959 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:17,006 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:17,055 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:17,056 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Elon Musk says it's "time to find out wh...
+2025-03-01 08:23:17,103 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:17,155 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:17,863 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:17,931 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:17,932 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [What it was like in the room during Oval Office s...
+2025-03-01 08:23:18,004 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:18,004 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Hundreds of mpox patients flee DR Congo clinics a...
+2025-03-01 08:23:18,053 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,100 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:18,145 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:18,146 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Search for missing six-year-old at Drogheda house...
+2025-03-01 08:23:18,190 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,239 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,285 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:18,287 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Moment Zelensky walks out of White House as press...
+2025-03-01 08:23:18,331 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,380 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:18,429 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,475 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,526 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:18,527 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Three dead as 'brutal' cyclone sweeps through Reu...
+2025-03-01 08:23:18,570 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:18,570 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Furious Trump accuses Zelensky of 'gambling with ...
+2025-03-01 08:23:18,614 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:18,614 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: Ukraine’s Zelensky leaves White ...
+2025-03-01 08:23:18,658 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,707 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:18,752 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,753 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Watch in full: Angry exchange between Trump and Z...
+2025-03-01 08:23:18,794 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:18,795 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Are we bouncing back/rebounding from here?](https...
+2025-03-01 08:23:18,843 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,349 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,349 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [LBank Announces New Trading Keywords to Empower G...
+2025-03-01 08:23:19,392 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,460 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:19,506 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:19,506 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Six killed in blast at Pakistan's 'University of ...
+2025-03-01 08:23:19,550 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,596 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,641 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,690 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,735 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,784 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,832 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:19,881 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:19,883 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: US President Donald Trump tells ...
+2025-03-01 08:23:19,928 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:19,975 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:19,976 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Thousands of speeding fines quashed over camera e...
+2025-03-01 08:23:20,018 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:20,018 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Thousands of users report WhatsApp technical issu...
+2025-03-01 08:23:20,063 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:20,112 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:20,158 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:20,159 - telegram_scraper - INFO - Processed historical message from sage_news_cg: Trump imposes tariff on china...
+2025-03-01 08:23:20,209 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:20,210 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [The Trump Organization’s “TRUMP” trademark filing...
+2025-03-01 08:23:20,489 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 08:23:20,490 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @Cointelegraph: “What are the odds that the...
+2025-03-01 08:23:20,562 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:20,563 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Czech firefighters tackle large toxic train fire]...
+2025-03-01 08:23:20,639 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:20,640 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Trump to order English as official US language](h...
+2025-03-01 08:23:20,684 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:20,686 - telegram_scraper - INFO - Processed historical message from sage_news_cg: Trump in talks about worsening geo politics with C...
+2025-03-01 08:23:20,728 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:20,728 - telegram_scraper - INFO - Processed historical message from sage_news_cg: Trump imposes tariffcs on china...
+2025-03-01 08:23:20,770 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:20,771 - telegram_scraper - INFO - Processed historical message from sage_news_cg: Trump imposes tariffcs on china...
+2025-03-01 08:23:20,810 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:20,811 - telegram_scraper - INFO - Processed historical message from sage_news_cg: Trump in talks about worsening geo politics with C...
+2025-03-01 08:23:20,858 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:20,859 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [The recent #Bybit exploit resulted in the calcula...
+2025-03-01 08:23:20,909 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:20,956 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:21,001 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:21,003 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Skype announces it will close in May](https://x.c...
+2025-03-01 08:23:21,275 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:21,276 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: Ukrainian President Volodymyr Ze...
+2025-03-01 08:23:21,319 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:21,319 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Watch: Firefighters seen tackling Czech train fir...
+2025-03-01 08:23:21,362 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:21,362 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Can Europe deter Russia in Ukraine without US mil...
+2025-03-01 08:23:21,404 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:21,405 - telegram_scraper - INFO - Processed historical message from sage_news_cg: Trump in talks about worsening geo politics with C...
+2025-03-01 08:23:21,450 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:21,500 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 08:23:21,501 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Faisal Islam: Any Starmer deal with Trump is all ...
+2025-03-01 08:23:21,544 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:21,544 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Legends and newborns: Africa's top shots](https:/...
+2025-03-01 08:23:21,585 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:21,586 - telegram_scraper - INFO - Processed historical message from sage_news_cg: https://t.co/V6HZec4i6F...
+2025-03-01 08:23:21,865 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:21,866 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @Cointelegraph: If @elonmusk @DOGE succeeds...
+2025-03-01 08:23:21,906 - news_provider - INFO - Stored general message in news_data
+2025-03-01 08:23:21,907 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [US HIV funding cut is 'wake-up call' for S Africa...
+2025-03-01 08:23:21,951 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:23:21,952 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Bybit exploiters aren't sitting still—$497M in st...
+2025-03-01 08:23:21,953 - telegram_scraper - INFO - Processed 100 historical messages from sage_news_cg
+2025-03-01 08:23:36,957 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-01 08:23:53,896 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 08:23:55,799 - database - INFO - Created MongoDB indexes
+2025-03-01 08:23:55,809 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 08:23:55,813 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 08:23:56,551 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-01 08:23:56,625 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-01 08:23:56,626 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-03-01 08:37:39,546 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-01 08:37:39,727 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-01 08:37:39,920 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-01 08:37:40,107 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-01 08:37:40,282 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-01 08:37:40,462 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-01 08:37:40,483 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-03-01 08:37:40,561 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 08:37:40,581 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 08:37:40,606 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 08:37:40,611 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.05,
+  "insights": [
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)",
+      "description": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)\n\n Learn more here:https://t.co/lB0V3EQ6yG\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome c...",
+      "description": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome compared to TradFi\u2019s seamless credit access. By bringing onchain credit to Web3 wallets, DeFi enables frictionless borrowing without complex approvals.@GearboxProtocol powers\u2026](https://x.com/Cointelegraph/status/1895621475819721059)\n\n \u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making\n borrowing cumbersome compared to TradFi\u2019s seamless credit access.\n By bringing onchain credit to Web3 wallets, DeFi enables frictionless\n borrowing without complex approvals.@GearboxProtocol powers\u2026\n pic.twitter.com/xVdiXcAJW3\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/sta...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/status/1895652553721000058)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.\n \n \u2014 Watcher.Guru (@WatcherGuru) March 1, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:52:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, ...",
+      "description": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, he laid out a digital asset framework designed to make the U.S. the global leader in crypto. His vision? A system that gives 400M businesses access to capital and empowers 8B people\u2026](https://x.com/BTCTN/status/1895648302948880493)\n\n Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25\n \n Meeting with top lawmakers, he laid out a digital asset framework designed to\n make the U.S. the global leader in crypto. His vision? A system that gives\n 400M businesses access to capital and empowers 8B people\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:42:22+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 08:37:40"
+}
+2025-03-01 08:37:40,615 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.05,
+  "insights": [
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)",
+      "description": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)\n\n Learn more here:https://t.co/lB0V3EQ6yG\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome c...",
+      "description": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome compared to TradFi\u2019s seamless credit access. By bringing onchain credit to Web3 wallets, DeFi enables frictionless borrowing without complex approvals.@GearboxProtocol powers\u2026](https://x.com/Cointelegraph/status/1895621475819721059)\n\n \u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making\n borrowing cumbersome compared to TradFi\u2019s seamless credit access.\n By bringing onchain credit to Web3 wallets, DeFi enables frictionless\n borrowing without complex approvals.@GearboxProtocol powers\u2026\n pic.twitter.com/xVdiXcAJW3\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/sta...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/status/1895652553721000058)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.\n \n \u2014 Watcher.Guru (@WatcherGuru) March 1, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:52:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, ...",
+      "description": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, he laid out a digital asset framework designed to make the U.S. the global leader in crypto. His vision? A system that gives 400M businesses access to capital and empowers 8B people\u2026](https://x.com/BTCTN/status/1895648302948880493)\n\n Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25\n \n Meeting with top lawmakers, he laid out a digital asset framework designed to\n make the U.S. the global leader in crypto. His vision? A system that gives\n 400M businesses access to capital and empowers 8B people\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:42:22+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 08:37:40"
+}
+2025-03-01 08:37:59,209 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 08:37:59,210 - crypto_advisor.llm - INFO - Generated futures recommendation for ETH: BUY (Medium confidence)
+2025-03-01 08:38:38,444 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:38:38,627 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:38:38,815 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:38:39,010 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:38:39,198 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:38:39,638 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:38:39,659 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-01 08:38:39,725 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 08:38:39,767 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 08:38:39,797 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 08:38:39,804 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.05,
+  "insights": [
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)",
+      "description": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)\n\n Learn more here:https://t.co/lB0V3EQ6yG\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome c...",
+      "description": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome compared to TradFi\u2019s seamless credit access. By bringing onchain credit to Web3 wallets, DeFi enables frictionless borrowing without complex approvals.@GearboxProtocol powers\u2026](https://x.com/Cointelegraph/status/1895621475819721059)\n\n \u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making\n borrowing cumbersome compared to TradFi\u2019s seamless credit access.\n By bringing onchain credit to Web3 wallets, DeFi enables frictionless\n borrowing without complex approvals.@GearboxProtocol powers\u2026\n pic.twitter.com/xVdiXcAJW3\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/sta...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/status/1895652553721000058)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.\n \n \u2014 Watcher.Guru (@WatcherGuru) March 1, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:52:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, ...",
+      "description": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, he laid out a digital asset framework designed to make the U.S. the global leader in crypto. His vision? A system that gives 400M businesses access to capital and empowers 8B people\u2026](https://x.com/BTCTN/status/1895648302948880493)\n\n Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25\n \n Meeting with top lawmakers, he laid out a digital asset framework designed to\n make the U.S. the global leader in crypto. His vision? A system that gives\n 400M businesses access to capital and empowers 8B people\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:42:22+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 08:38:39"
+}
+2025-03-01 08:38:39,805 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.05,
+  "insights": [
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)",
+      "description": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)\n\n Learn more here:https://t.co/lB0V3EQ6yG\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome c...",
+      "description": "[\u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making borrowing cumbersome compared to TradFi\u2019s seamless credit access. By bringing onchain credit to Web3 wallets, DeFi enables frictionless borrowing without complex approvals.@GearboxProtocol powers\u2026](https://x.com/Cointelegraph/status/1895621475819721059)\n\n \u26a1\ufe0f INSIGHT: Most DeFi lending relies on overcollateralized models, making\n borrowing cumbersome compared to TradFi\u2019s seamless credit access.\n By bringing onchain credit to Web3 wallets, DeFi enables frictionless\n borrowing without complex approvals.@GearboxProtocol powers\u2026\n pic.twitter.com/xVdiXcAJW3\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/sta...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.](https://x.com/WatcherGuru/status/1895652553721000058)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 White House to host crypto summit, Bloomberg reports.\n \n \u2014 Watcher.Guru (@WatcherGuru) March 1, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:52:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, ...",
+      "description": "[Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25 Meeting with top lawmakers, he laid out a digital asset framework designed to make the U.S. the global leader in crypto. His vision? A system that gives 400M businesses access to capital and empowers 8B people\u2026](https://x.com/BTCTN/status/1895648302948880493)\n\n Michael Saylor just took the crypto fight straight to Congress! \ud83c\uddfa\ud83c\uddf8\ud83d\udd25\n \n Meeting with top lawmakers, he laid out a digital asset framework designed to\n make the U.S. the global leader in crypto. His vision? A system that gives\n 400M businesses access to capital and empowers 8B people\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T01:42:22+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 08:38:39"
+}
+2025-03-01 08:38:59,888 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 08:38:59,890 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-03-01 08:42:36,308 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:42:36,379 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:42:37,429 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 08:54:35,172 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 08:54:35,373 - database - INFO - Created MongoDB indexes
+2025-03-01 08:54:44,333 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 08:54:44,346 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 08:54:46,358 - main - INFO - Application started
+2025-03-01 08:54:46,359 - main - INFO - Database initialized: walletTracker
+2025-03-01 08:54:46,359 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 08:54:46,361 - main - INFO - Initializing database connection...
+2025-03-01 08:54:46,361 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 08:54:46,362 - main - INFO - Initializing data providers...
+2025-03-01 08:54:49,524 - main - INFO - Prefetched market data for BTC
+2025-03-01 08:54:50,158 - main - INFO - Prefetched market data for ETH
+2025-03-01 08:54:50,236 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 08:54:50,244 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.01
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.01,
+  "insights": [
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)",
+      "description": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)\n\n Learn more here:https://t.co/lB0V3EQ6yG\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 08:54:50"
+}
+2025-03-01 08:54:50,247 - main - INFO - Prefetched market context
+2025-03-01 08:54:50,322 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 08:54:50,347 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 08:54:50,347 - main - INFO - Prefetched news for BTC
+2025-03-01 08:54:50,399 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 08:54:50,427 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 08:54:50,428 - main - INFO - Prefetched news for ETH
+2025-03-01 08:54:50,428 - main - INFO - Data initialization complete
+2025-03-01 08:54:50,429 - main - INFO - Running in PRODUCTION mode
+2025-03-01 08:54:50,429 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 08:54:56,165 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:54:56,361 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:54:56,557 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:54:56,755 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:54:57,194 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:54:57,379 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 08:54:57,405 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-01 08:54:57,476 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 08:54:57,499 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 08:54:57,526 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 08:54:57,528 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.01
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.01,
+  "insights": [
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)",
+      "description": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)\n\n Learn more here:https://t.co/lB0V3EQ6yG\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 08:54:57"
+}
+2025-03-01 08:54:57,530 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.01
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.01,
+  "insights": [
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)",
+      "description": "[Learn more here:](https://x.com/Cointelegraph/status/1895621477799465110)\n\n Learn more here:https://t.co/lB0V3EQ6yG\n \n \u2014 Cointelegraph (@Cointelegraph) February 28, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 08:54:57"
+}
+2025-03-01 08:55:20,614 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 08:55:20,617 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Medium confidence)
+2025-03-01 09:03:13,649 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 09:08:18,695 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:08:18,879 - database - INFO - Created MongoDB indexes
+2025-03-01 09:08:19,650 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 09:08:19,653 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 09:08:20,078 - main - INFO - Application started
+2025-03-01 09:08:20,078 - main - INFO - Database initialized: walletTracker
+2025-03-01 09:08:20,078 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 09:08:20,081 - main - INFO - Initializing database connection...
+2025-03-01 09:08:20,081 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:08:20,082 - main - INFO - Initializing data providers...
+2025-03-01 09:08:20,128 - main - INFO - Prefetched market data for BTC
+2025-03-01 09:08:20,169 - main - INFO - Prefetched market data for ETH
+2025-03-01 09:08:20,213 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:08:20,216 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:08:20"
+}
+2025-03-01 09:08:20,216 - main - INFO - Prefetched market context
+2025-03-01 09:08:20,280 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 09:08:20,304 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 09:08:20,306 - main - INFO - Prefetched news for BTC
+2025-03-01 09:08:20,349 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 09:08:20,368 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 09:08:20,368 - main - INFO - Prefetched news for ETH
+2025-03-01 09:08:20,369 - main - INFO - Data initialization complete
+2025-03-01 09:08:20,369 - main - INFO - Running in PRODUCTION mode
+2025-03-01 09:08:20,369 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 09:08:35,741 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:08:35,810 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:08:35,830 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:08:35,855 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:08:35,857 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:08:35"
+}
+2025-03-01 09:08:35,859 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:08:35"
+}
+2025-03-01 09:08:55,851 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:08:55,853 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-03-01 09:09:33,034 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 09:09:33,035 - crypto_advisor.api - INFO - Analysis query - Message: 'shoould I buy sol now?', Coin: SOL, Intent: buy
+2025-03-01 09:09:33,056 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:09:33,123 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:09:33,148 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:09:33,176 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:09:33,178 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:09:33"
+}
+2025-03-01 09:09:53,754 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:17:01,946 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:17:02,522 - database - INFO - Created MongoDB indexes
+2025-03-01 09:17:03,443 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 09:17:03,447 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 09:17:03,954 - main - INFO - Application started
+2025-03-01 09:17:03,954 - main - INFO - Database initialized: walletTracker
+2025-03-01 09:17:03,955 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 09:17:03,956 - main - INFO - Initializing database connection...
+2025-03-01 09:17:03,957 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:17:03,958 - main - INFO - Initializing data providers...
+2025-03-01 09:17:07,133 - main - INFO - Prefetched market data for BTC
+2025-03-01 09:17:07,499 - main - INFO - Prefetched market data for ETH
+2025-03-01 09:17:07,599 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:17:07,606 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:17:07"
+}
+2025-03-01 09:17:07,609 - main - INFO - Prefetched market context
+2025-03-01 09:17:07,739 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 09:17:07,761 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 09:17:07,762 - main - INFO - Prefetched news for BTC
+2025-03-01 09:17:07,855 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 09:17:07,877 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 09:17:07,878 - main - INFO - Prefetched news for ETH
+2025-03-01 09:17:07,879 - main - INFO - Data initialization complete
+2025-03-01 09:17:07,880 - main - INFO - Running in PRODUCTION mode
+2025-03-01 09:17:07,881 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 09:17:08,043 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 09:17:08,044 - crypto_advisor.api - INFO - Analysis query - Message: 'shoould I buy sol now?', Coin: SOL, Intent: buy
+2025-03-01 09:17:08,411 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 09:17:08,597 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 09:17:08,778 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 09:17:08,959 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 09:17:09,148 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 09:17:09,340 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 09:17:09,363 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-01 09:17:09,457 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:17:09,479 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:17:09,538 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:17:09,542 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:17:09"
+}
+2025-03-01 09:17:29,418 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:17:40,469 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 09:17:48,689 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:17:48,773 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:17:48,794 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:17:48,839 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:17:48,843 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:17:48"
+}
+2025-03-01 09:17:48,844 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:17:48"
+}
+2025-03-01 09:18:08,556 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:18:08,557 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-03-01 09:21:34,585 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:21:34,809 - database - INFO - Created MongoDB indexes
+2025-03-01 09:21:35,820 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 09:21:35,826 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 09:21:36,368 - main - INFO - Application started
+2025-03-01 09:21:36,368 - main - INFO - Database initialized: walletTracker
+2025-03-01 09:21:36,369 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 09:21:36,370 - main - INFO - Initializing database connection...
+2025-03-01 09:21:36,370 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:21:36,372 - main - INFO - Initializing data providers...
+2025-03-01 09:21:36,422 - main - INFO - Prefetched market data for BTC
+2025-03-01 09:21:36,469 - main - INFO - Prefetched market data for ETH
+2025-03-01 09:21:36,517 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:21:36,519 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:21:36"
+}
+2025-03-01 09:21:36,520 - main - INFO - Prefetched market context
+2025-03-01 09:21:36,591 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 09:21:36,612 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 09:21:36,613 - main - INFO - Prefetched news for BTC
+2025-03-01 09:21:36,660 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 09:21:36,681 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 09:21:36,682 - main - INFO - Prefetched news for ETH
+2025-03-01 09:21:36,682 - main - INFO - Data initialization complete
+2025-03-01 09:21:36,684 - main - INFO - Running in PRODUCTION mode
+2025-03-01 09:21:36,684 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 09:21:52,738 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 09:21:52,740 - crypto_advisor.api - INFO - Analysis query - Message: 'shoould I buy sol now?', Coin: SOL, Intent: buy
+2025-03-01 09:21:52,763 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:21:52,834 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:21:52,856 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:21:52,881 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:21:52,886 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:21:52"
+}
+2025-03-01 09:22:16,712 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:22:34,278 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:22:34,348 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:22:34,371 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:22:34,397 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:22:34,400 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:22:34"
+}
+2025-03-01 09:22:34,402 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:22:34"
+}
+2025-03-01 09:22:56,340 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:22:56,341 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-03-01 09:27:39,018 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:27:39,175 - database - INFO - Created MongoDB indexes
+2025-03-01 09:27:40,180 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 09:27:40,184 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 09:27:40,820 - main - INFO - Application started
+2025-03-01 09:27:40,821 - main - INFO - Database initialized: walletTracker
+2025-03-01 09:27:40,822 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 09:27:40,824 - main - INFO - Initializing database connection...
+2025-03-01 09:27:40,824 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:27:40,825 - main - INFO - Initializing data providers...
+2025-03-01 09:27:40,872 - main - INFO - Prefetched market data for BTC
+2025-03-01 09:27:40,916 - main - INFO - Prefetched market data for ETH
+2025-03-01 09:27:40,966 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:27:40,969 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:27:40"
+}
+2025-03-01 09:27:40,971 - main - INFO - Prefetched market context
+2025-03-01 09:27:41,030 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 09:27:41,052 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 09:27:41,053 - main - INFO - Prefetched news for BTC
+2025-03-01 09:27:41,095 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 09:27:41,116 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 09:27:41,116 - main - INFO - Prefetched news for ETH
+2025-03-01 09:27:41,117 - main - INFO - Data initialization complete
+2025-03-01 09:27:41,117 - main - INFO - Running in PRODUCTION mode
+2025-03-01 09:27:41,117 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 09:27:51,781 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:27:51,840 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:27:51,862 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:27:51,887 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:27:51,890 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:27:51"
+}
+2025-03-01 09:27:51,891 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin per...",
+      "description": "[\u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March. How will Bitcoin perform in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895655455331860825)\n\n \u26a1\ufe0fINSIGHT: Over the last 4 years, #Bitcoin has had positive gains in March.\n \n How will Bitcoin perform in March? \ud83d\udc47 pic.twitter.com/jMpgA888BP\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T02:03:40+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:27:51"
+}
+2025-03-01 09:28:20,643 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:28:20,645 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-03-01 09:30:07,725 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 09:30:07,726 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @BBCWorld: UK Prime Minister Keir Starmer r...
+2025-03-01 09:30:28,757 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:30:28,926 - database - INFO - Created MongoDB indexes
+2025-03-01 09:30:30,045 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 09:30:30,050 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 09:30:30,629 - main - INFO - Application started
+2025-03-01 09:30:30,630 - main - INFO - Database initialized: walletTracker
+2025-03-01 09:30:30,631 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 09:30:30,633 - main - INFO - Initializing database connection...
+2025-03-01 09:30:30,633 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:30:30,634 - main - INFO - Initializing data providers...
+2025-03-01 09:30:30,685 - main - INFO - Prefetched market data for BTC
+2025-03-01 09:30:30,734 - main - INFO - Prefetched market data for ETH
+2025-03-01 09:30:30,783 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:30:30,787 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+        "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T04:00:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "other",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.06,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+      "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T04:00:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:30:30"
+}
+2025-03-01 09:30:30,790 - main - INFO - Prefetched market context
+2025-03-01 09:30:30,862 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 09:30:30,885 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 09:30:30,886 - main - INFO - Prefetched news for BTC
+2025-03-01 09:30:30,932 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 09:30:30,955 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 09:30:30,955 - main - INFO - Prefetched news for ETH
+2025-03-01 09:30:30,955 - main - INFO - Data initialization complete
+2025-03-01 09:30:30,957 - main - INFO - Running in PRODUCTION mode
+2025-03-01 09:30:30,957 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 09:30:39,469 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:30:39,538 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:30:39,563 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:30:39,643 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:30:39,645 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+        "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T04:00:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "other",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.06,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+      "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T04:00:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:30:39"
+}
+2025-03-01 09:30:39,647 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+        "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T04:00:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "other",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.06,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+      "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T04:00:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:30:39"
+}
+2025-03-01 09:31:00,390 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:31:00,392 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-03-01 09:31:16,944 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 09:31:16,946 - crypto_advisor.api - INFO - Analysis query - Message: 'shoould I buy sol now?', Coin: SOL, Intent: buy
+2025-03-01 09:31:16,970 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 09:31:17,043 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 09:31:17,063 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 09:31:17,094 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:31:17,099 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+        "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T04:00:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "other",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.06,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+      "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T04:00:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620215175880758)\n\n Read more about it here\ud83d\udc47https://t.co/4qj4fhQpkz\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:36+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:31:17"
+}
+2025-03-01 09:31:37,108 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 09:34:58,308 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:34:58,472 - database - INFO - Created MongoDB indexes
+2025-03-01 09:34:59,676 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 09:34:59,682 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 09:35:00,308 - main - INFO - Application started
+2025-03-01 09:35:00,309 - main - INFO - Database initialized: walletTracker
+2025-03-01 09:35:00,310 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 09:35:00,312 - main - INFO - Initializing database connection...
+2025-03-01 09:35:00,312 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 09:35:00,313 - main - INFO - Initializing data providers...
+2025-03-01 09:35:03,494 - main - INFO - Prefetched market data for BTC
+2025-03-01 09:35:03,879 - main - INFO - Prefetched market data for ETH
+2025-03-01 09:35:03,880 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 09:35:03,949 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 09:35:03,953 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.04
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+        "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T04:00:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "other",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.04,
+  "insights": [
+    {
+      "title": "[\ud83d\udea8This Week in Crypto: Hacks, Crashes & a Regulatory Shift?\ud83d\udea8 \ud83d\udd25Markets Tumble! Trump\u2019s trade polic...",
+      "description": "[\ud83d\udea8This Week in Crypto: Hacks, Crashes & a Regulatory Shift?\ud83d\udea8 \ud83d\udd25Markets Tumble! Trump\u2019s trade policies shake the market\u2014Bitcoin drops below $90K & altcoins take a hit!\ud83d\udcc9 \ud83d\udcb0Bybit\u2019s $1.4B Heist\u2014Biggest crypto hack ever! Funds spread across 54 wallets. Can it be recovered?\ud83d\ude31 \u26a1FTX\u2026](https://x.com/BTCTN/status/1895685427408900236)\n\n \ud83d\udea8This Week in Crypto: Hacks, Crashes & a Regulatory Shift?\ud83d\udea8\n \n \ud83d\udd25Markets Tumble! Trump\u2019s trade policies shake the market\u2014Bitcoin drops below\n $90K & altcoins take a hit!\ud83d\udcc9\n \ud83d\udcb0Bybit\u2019s $1.4B Heist\u2014Biggest crypto hack ever! Funds spread across 54\n wallets. Can it be recovered?\ud83d\ude31\n \u26a1FTX\u2026 pic.twitter.com/9G2gMactEX\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T04:05:03+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has...",
+      "description": "[RT by @BBCWorld: UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White House clash bbc.in/43j39lH](https://x.com/BBCBreaking/status/1895599423419215977)\n\n UK Prime Minister Keir Starmer retains \"unwavering support for Ukraine\" and\n has spoken to Donald Trump and Volodymyr Zelensky, No 10 says after White\n House clash https://t.co/KHclscXsqE\n \n \u2014 BBC Breaking News (@BBCBreaking) February 28, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T04:00:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "other",
+      "impact_level": "low"
+    },
+    {
+      "title": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal th...",
+      "description": "[The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8 The House Ways and Means Committee voted to repeal the controversial \"DeFi Broker Rule,\" calling it a threat to innovation and a gift to foreign competitors. This rule would\u2019ve forced DeFi providers to collect and report user\u2026](https://x.com/BTCTN/status/1895678200207880577)\n\n The IRS' DeFi crackdown just got BLOCKED \ud83d\udea8\n \n The House Ways and Means Committee voted to repeal the controversial \"DeFi\n Broker Rule,\" calling it a threat to innovation and a gift to foreign\n competitors.\n \n This rule would\u2019ve forced DeFi providers to collect and report user\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:47:41+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Unisw...",
+      "description": "[\ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had against Robinhood, Uniswap, Gemini and Consensys. It\u2019s a new SEC without Gensler.](https://x.com/Cointelegraph/status/1895678100035260504)\n\n \ud83d\udd25 BULLISH: In the last week the SEC has officially dropped cases it had\n against Robinhood, Uniswap, Gemini and Consensys.\n \n It\u2019s a new SEC without Gensler. pic.twitter.com/4hUd6QDF54\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:33:14+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895620334155669833)\n\n Read more about it here\ud83d\udc47https://t.co/pFEx1oDc0C\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T03:12:38+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 09:35:03"
+}
+2025-03-01 09:35:03,958 - main - INFO - Prefetched market context
+2025-03-01 09:35:04,025 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 09:35:04,047 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 09:35:04,048 - main - INFO - Prefetched news for BTC
+2025-03-01 09:35:04,096 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 09:35:04,121 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 09:35:04,122 - main - INFO - Prefetched news for ETH
+2025-03-01 09:35:04,123 - main - INFO - Data initialization complete
+2025-03-01 09:35:04,124 - main - INFO - Running in PRODUCTION mode
+2025-03-01 09:35:04,125 - main - INFO - Starting API server on 0.0.0.0:8000

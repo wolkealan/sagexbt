@@ -229,6 +229,45 @@ class MarketDataProvider:
         except Exception as e:
             logger.error(f"Error calculating RSI for {symbol}: {e}")
             return 50  # Default neutral value
+        
+    def calculate_macd(self, symbol: str, timeframe: str = '1d', 
+                  fast_period: int = 12, slow_period: int = 26, 
+                  signal_period: int = 9, exchange_id: str = 'binance') -> Dict[str, float]:
+        """Calculate Moving Average Convergence Divergence (MACD) for a symbol"""
+        key = f"{exchange_id}_{symbol}_{timeframe}_ohlcv"  # Match key format with fetch_ohlcv
+        df = self.market_data.get(key)
+        
+        if df is None or df.empty:
+            logger.warning(f"No data available for MACD calculation for {symbol}")
+            return {}
+        
+        try:
+            # Calculate MACD components
+            df['ema_fast'] = df['close'].ewm(span=fast_period, adjust=False).mean()
+            df['ema_slow'] = df['close'].ewm(span=slow_period, adjust=False).mean()
+            
+            # MACD Line = Fast EMA - Slow EMA
+            df['macd_line'] = df['ema_fast'] - df['ema_slow']
+            
+            # Signal Line = 9-day EMA of MACD Line
+            df['signal_line'] = df['macd_line'].ewm(span=signal_period, adjust=False).mean()
+            
+            # MACD Histogram = MACD Line - Signal Line
+            df['macd_histogram'] = df['macd_line'] - df['signal_line']
+            
+            # Return the most recent values
+            result = {
+                'macd_line': df['macd_line'].iloc[-1],
+                'signal_line': df['signal_line'].iloc[-1],
+                'macd_histogram': df['macd_histogram'].iloc[-1]
+            }
+            
+            logger.debug(f"Calculated MACD for {symbol}: {result}")
+            return result
+        
+        except Exception as e:
+            logger.error(f"Error calculating MACD for {symbol}: {e}")
+            return {}
     
     def calculate_moving_averages(self, symbol: str, timeframe: str = '1d', 
                                 exchange_id: str = 'binance') -> Dict[str, float]:
@@ -289,10 +328,14 @@ class MarketDataProvider:
                 # Moving averages
                 mas = self.calculate_moving_averages(symbol, timeframe)
                 
+                # MACD (add this)
+                macd = self.calculate_macd(symbol, timeframe)
+                
                 # Add indicators for this timeframe
                 indicators[timeframe] = {
                     'rsi': rsi,
-                    'moving_averages': mas
+                    'moving_averages': mas,
+                    'macd': macd  # Add the MACD data
                 }
             
             # Create market summary

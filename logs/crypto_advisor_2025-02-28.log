@@ -8615,3 +8615,162 @@
 2025-02-28 23:41:45,302 - main - INFO - Data initialization complete
 2025-02-28 23:41:45,302 - main - INFO - Running in PRODUCTION mode
 2025-02-28 23:41:45,302 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-02-28 23:42:00,246 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 23:42:00,430 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 23:42:00,616 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 23:42:00,804 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 23:42:00,984 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 23:42:01,168 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-02-28 23:42:01,190 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-02-28 23:42:01,251 - crypto_advisor.news - INFO - Fetched 25 Telegram news articles for specific coin
+2025-02-28 23:42:01,272 - crypto_advisor.news - INFO - Generated news summary for SOL with 25 Telegram articles and 0 market articles
+2025-02-28 23:42:01,293 - crypto_advisor.news - INFO - Found 17 news documents for market context
+2025-02-28 23:42:01,294 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.0
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.0,
+  "insights": [
+    {
+      "title": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-annou...",
+      "description": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-announce\u2026](https://x.com/BTCTN/status/1895534771289120841)\n\n LBank Announces New Trading Keywords to Empower Global Market Reach\n https://t.co/g0TNoEERcH\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/18955330772...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/1895533077298102676)\n\n Read more about it here\ud83d\udc47https://t.co/0liFY0Dy1G\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel...",
+      "description": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K in February. - Starmer advocates a fair and balanced approach. - Investors split: some see BTC as inflation hedge, others fear\u2026](https://x.com/BTCTN/status/1895531781165641952)\n\n \ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10\n \n - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K\n in February.\n - Starmer advocates a fair and balanced approach.\n - Investors split: some see BTC as inflation hedge, others fear\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:43+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "trade",
+      "impact_level": "low"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895523453773689125)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895523453773689125)\n\n Read more about it here\ud83d\udc47https://t.co/tufzSrQibO\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T17:48:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895501827111825579)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895501827111825579)\n\n Read more about it here\ud83d\udc47https://t.co/bfJCsYwrdF\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T17:48:36+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 17,
+  "last_updated": "2025-02-28 23:42:01"
+}
+2025-02-28 23:42:01,295 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.0
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.0,
+  "insights": [
+    {
+      "title": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-annou...",
+      "description": "[LBank Announces New Trading Keywords to Empower Global Market Reach news.bitcoin.com/lbank-announce\u2026](https://x.com/BTCTN/status/1895534771289120841)\n\n LBank Announces New Trading Keywords to Empower Global Market Reach\n https://t.co/g0TNoEERcH\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/18955330772...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/trump-mulls-ta\u2026](https://x.com/BTCTN/status/1895533077298102676)\n\n Read more about it here\ud83d\udc47https://t.co/0liFY0Dy1G\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:45+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel...",
+      "description": "[\ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10 - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K in February. - Starmer advocates a fair and balanced approach. - Investors split: some see BTC as inflation hedge, others fear\u2026](https://x.com/BTCTN/status/1895531781165641952)\n\n \ud83c\uddec\ud83c\udde7Trump weighs UK tariffs, sparking BTC swings amid trade fears. \ud83c\udf10\n \n - Trump\u2019s tariff threats fuel BTC volatility, with prices dropping below $80K\n in February.\n - Starmer advocates a fair and balanced approach.\n - Investors split: some see BTC as inflation hedge, others fear\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T18:04:43+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "trade",
+      "impact_level": "low"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895523453773689125)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895523453773689125)\n\n Read more about it here\ud83d\udc47https://t.co/tufzSrQibO\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T17:48:40+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895501827111825579)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895501827111825579)\n\n Read more about it here\ud83d\udc47https://t.co/bfJCsYwrdF\n \n \u2014 Bitcoin.com News (@BTCTN) February 28, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Feb 28, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-02-28T17:48:36+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 17,
+  "last_updated": "2025-02-28 23:42:01"
+}
+2025-02-28 23:42:36,805 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-02-28 23:42:36,806 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-02-28 23:49:03,920 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:51:50,630 - news_provider - INFO - Stored crypto message in news_data
+2025-02-28 23:51:50,632 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Are we bouncing back/rebounding from here?](https...

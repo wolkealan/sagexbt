@@ -122,6 +122,14 @@ async def get_recommendation(
                 logger.info(f"Returning cached recommendation for {coin}")
                 # Convert any ObjectId to string
                 cached_rec = convert_objectid_to_str(cached_rec)
+                
+                # Ensure price is included in the explanation if not already there
+                if 'explanation' in cached_rec and 'context' in cached_rec and 'market_data' in cached_rec['context']:
+                    price = cached_rec['context']['market_data'].get('price', None)
+                    if price and 'current price' not in cached_rec['explanation'].lower() and 'price' not in cached_rec['explanation'].lower():
+                        # Add price info at the beginning of the explanation
+                        cached_rec['explanation'] = f"Current price: ${price}\n\n" + cached_rec['explanation']
+                
                 return cached_rec
         
         # Generate new recommendation
@@ -133,6 +141,14 @@ async def get_recommendation(
         
         # Convert any ObjectId to string
         recommendation = convert_objectid_to_str(recommendation)
+        
+        # Ensure price is included in the explanation
+        if 'explanation' in recommendation and 'context' in recommendation and 'market_data' in recommendation['context']:
+            price = recommendation['context']['market_data'].get('price', None)
+            if price and 'current price' not in recommendation['explanation'].lower() and 'price' not in recommendation['explanation'].lower():
+                # Add price info at the beginning of the explanation
+                recommendation['explanation'] = f"Current price: ${price}\n\n" + recommendation['explanation']
+        
         return recommendation
     
     except Exception as e:

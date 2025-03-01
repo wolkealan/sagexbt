@@ -103,11 +103,11 @@ class DeepSeekLLM:
                 raise RuntimeError(f"Failed to communicate with DeepSeek API: {str(e2)}")
     
     def generate_recommendation(self, 
-                          coin: str, 
-                          market_data: Dict[str, Any],
-                          news_data: Dict[str, Any],
-                          market_context: Dict[str, Any],
-                          action_type: str = "spot") -> Dict[str, Any]:
+                      coin: str, 
+                      market_data: Dict[str, Any],
+                      news_data: Dict[str, Any],
+                      market_context: Dict[str, Any],
+                      action_type: str = "spot") -> Dict[str, Any]:
         try:
             # Prepare data for the prompt
             current_price = market_data.get('current_price', 'Unknown')
@@ -133,21 +133,13 @@ class DeepSeekLLM:
                         f"  * {article.get('title', 'No title')} ({article.get('source', {}).get('name', 'Unknown')})" 
                         for article in recent_articles[:3]
                     ])
-       
-            # Prepare data for the prompt
-            current_price = market_data.get('current_price', 'Unknown')
-            daily_change = market_data.get('daily_change_pct', 'Unknown')
-            
-            # Get indicators from market data
-            rsi_1d = market_data.get('indicators', {}).get('1d', {}).get('rsi', 'Unknown')
-            
-            # Get sentiment from news data
-            news_sentiment = news_data.get('sentiment', {}).get('sentiment', 'neutral')
-            sentiment_score = news_data.get('sentiment', {}).get('sentiment_score', 0)
-            
-            # Build the prompt
+        
+        # Build the prompt
             system_prompt = """You are a cryptocurrency trading advisor specialized in providing recommendations based on technical analysis, news sentiment, and market conditions.
 Your task is to analyze the provided data and give a clear recommendation for the specified cryptocurrency.
+
+IMPORTANT: Always include the current price in your recommendation near the beginning of your analysis.
+
 Your recommendation should consider:
 1. Technical indicators (RSI, moving averages, etc.)
 2. Recent news sentiment
@@ -157,16 +149,17 @@ Your recommendation should consider:
 For each recommendation:
 - Provide a clear BUY, SELL, or HOLD recommendation
 - Include a confidence level (Low, Medium, High)
+- Explicitly mention the current price in your analysis
 - Explain your reasoning in a concise manner
 - Mention key factors influencing your decision
 - If recommending futures trading, specify long or short position
 - Include relevant risk warnings
 """
-            
+        
             user_prompt = f"""Please analyze the following data and provide a trading recommendation for {coin}:
 
 MARKET DATA:
-- Current price: {current_price} USD
+- Current price: ${current_price} USD
 - 24h change: {daily_change}%
 - RSI (1 day): {rsi_1d}
 {self._format_indicators(market_data.get('indicators', {}))}
@@ -182,9 +175,10 @@ MARKET CONTEXT:
 - Regulatory sentiment: {market_context.get('regulatory', {}).get('sentiment', {}).get('sentiment', 'neutral')}
 
 Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) with explanation.
+Make sure to include the current price (${current_price} USD) in your analysis.
 """
-            
-            # Prepare messages for the API
+        
+        # Prepare messages for the API
             messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
@@ -201,13 +195,23 @@ Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) wi
                 action = self._parse_recommendation_action(recommendation_text)
                 confidence = self._parse_recommendation_confidence(recommendation_text)
                 
+                # Create the recommendation structure
                 recommendation = {
                     'coin': coin,
                     'action': action,
                     'confidence': confidence,
                     'action_type': action_type,
                     'explanation': recommendation_text,
-                    'timestamp': time.time()
+                    'timestamp': time.time(),
+                    'context': {
+                        'market_data': {
+                            'price': current_price,
+                            'daily_change': daily_change,
+                            'rsi_1d': rsi_1d
+                        },
+                        'news_sentiment': news_sentiment,
+                        'sentiment_score': sentiment_score
+                    }
                 }
                 
                 logger.info(f"Generated {action_type} recommendation for {coin}: {action} ({confidence} confidence)")
@@ -221,7 +225,14 @@ Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) wi
                     'confidence': 'Low',
                     'action_type': action_type,
                     'explanation': "Unable to generate recommendation due to API response issue.",
-                    'timestamp': time.time()
+                    'timestamp': time.time(),
+                    'context': {
+                        'market_data': {
+                            'price': current_price,
+                            'daily_change': daily_change,
+                            'rsi_1d': rsi_1d
+                        }
+                    }
                 }
                 
         except Exception as e:

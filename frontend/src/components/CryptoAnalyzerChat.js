@@ -251,7 +251,10 @@ const Suggestions = ({ onSuggestionSelect }) => {
     "Should I enter a long position on ETH?",
     "Is Bitcoin a good short right now?",
     "Should I buy SOL for short term with low risk?",
-    "Analyze Cardano's price movement for long-term investment"
+    "Analyze Cardano's price movement for long-term investment",
+    "What leverage should I use for trading SOL?",
+  "Recommend futures leverage for low-risk trading",
+  "Futures trading strategy for ETH with low risk"
   ];
 
   return (
@@ -1116,6 +1119,7 @@ I can help you with:
   };
   
   return (
+
     <div className="flex flex-col h-screen w-full bg-black text-white shadow-lg">
       {/* Header */}
       <div className="flex justify-between items-center p-4 border-b border-gray-800">

@@ -7,7 +7,7 @@ import math
 import numpy as np
 from config.config import APIConfig, AppConfig
 from utils.logger import get_llm_logger
-
+from datetime import datetime, timezone, timedelta
 logger = get_llm_logger()
 
 class GrokLLM:
@@ -173,12 +173,12 @@ class GrokLLM:
         return "\n".join(result) if result else "No significant technical patterns detected"
     
     def generate_recommendation(self, 
-              coin: str, 
-              market_data: Dict[str, Any],
-              news_data: Dict[str, Any],
-              market_context: Dict[str, Any],
-              pattern_data: Dict[str, Any] = None,
-              action_type: str = "spot") -> Dict[str, Any]:
+          coin: str, 
+          market_data: Dict[str, Any],
+          news_data: Dict[str, Any],
+          market_context: Dict[str, Any],
+          pattern_data: Dict[str, Any] = None,
+          action_type: str = "spot") -> Dict[str, Any]:
         try:
             # Prepare data for the prompt
             current_price = market_data.get('current_price', 'Unknown')
@@ -187,27 +187,66 @@ class GrokLLM:
             # Get indicators from market data
             rsi_1d = market_data.get('indicators', {}).get('1d', {}).get('rsi', 'Unknown')
             
-            # Improved news sentiment extraction
-            news_sentiment = 'neutral'
-            sentiment_score = 0
-            headlines = "No recent headlines available"
-            
-            # More robust news sentiment extraction
-            if news_data and isinstance(news_data, dict):
-                news_sentiment = news_data.get('sentiment', {}).get('sentiment', 'neutral')
-                sentiment_score = news_data.get('sentiment', {}).get('sentiment_score', 0)
-                
-                # Extract headlines
-                recent_articles = news_data.get('recent_articles', [])
-                if recent_articles:
-                    headlines = "\n".join([
-                        f"  * {article.get('title', 'No title')} ({article.get('source', {}).get('name', 'Unknown')})" 
-                        for article in recent_articles[:3]
-                    ])
-            
             # Format pattern recognition data
             pattern_analysis = self._format_patterns(pattern_data) if pattern_data else "No pattern data available"
-        
+            
+            # Get current UTC time and determine if it's a weekend
+            now_utc = datetime.now(timezone.utc)
+            weekday = now_utc.weekday()  # 0-4 are Monday to Friday, 5-6 are weekend
+            is_weekend = weekday >= 5  # 5 = Saturday, 6 = Sunday
+            
+            # Current hour and minute in UTC for comparison
+            current_hour_utc = now_utc.hour
+            current_minute_utc = now_utc.minute
+            current_time_decimal = current_hour_utc + (current_minute_utc / 60)
+            
+            # Market hours in UTC (regardless of weekend)
+            us_market_start = 14.5  # 14:30 UTC (2:30 PM UTC)
+            us_market_end = 4.0    # 21:00 UTC (9:00 PM UTC)
+            
+            eu_market_start = 8.0   # 8:00 UTC (8:00 AM UTC)
+            eu_market_end = 22.5    # 16:30 UTC (4:30 PM UTC)
+            
+            china_market_start = 1.5  # 1:30 UTC (1:30 AM UTC)
+            china_market_end = 11.5    # 7:30 UTC (7:30 AM UTC)
+            
+            # Determine which market hours we're in (regardless of weekend)
+            in_us_market_hours = us_market_start <= current_time_decimal < us_market_end
+            in_eu_market_hours = eu_market_start <= current_time_decimal < eu_market_end
+            in_china_market_hours = china_market_start <= current_time_decimal < china_market_end
+            
+            # Create market hours context
+            market_hours_context = {
+                "current_utc_time": now_utc.strftime("%H:%M UTC %d-%b-%Y"),
+                "is_weekend": is_weekend,
+                "current_market_timezone": []
+            }
+            
+            if in_us_market_hours:
+                market_hours_context["current_market_timezone"].append("US")
+            if in_eu_market_hours:
+                market_hours_context["current_market_timezone"].append("European")
+            if in_china_market_hours:
+                market_hours_context["current_market_timezone"].append("Asian")
+                
+            if not market_hours_context["current_market_timezone"]:
+                market_hours_context["market_timezone_description"] = "Outside of major market hours"
+            else:
+                market_hours_context["market_timezone_description"] = f"During {', '.join(market_hours_context['current_market_timezone'])} market hours"
+            
+            # Create description of market conditions based on both timezone and weekend status
+            if is_weekend:
+                market_hours_context["market_conditions"] = "It's currently the weekend. While crypto markets operate 24/7, weekend trading typically has lower volume and potentially higher volatility, as traditional financial markets are closed and institutional participation is reduced."
+            else:
+                if in_us_market_hours:
+                    market_hours_context["market_conditions"] = "During US market hours. When US traditional markets are open on weekdays, crypto markets typically see highest volume and liquidity as US institutional investors are active."
+                elif in_eu_market_hours:
+                    market_hours_context["market_conditions"] = "During European market hours. When European traditional markets are open on weekdays, crypto markets typically see moderate to high volume and liquidity."
+                elif in_china_market_hours:
+                    market_hours_context["market_conditions"] = "During Asian market hours. When Asian traditional markets are open on weekdays, crypto markets typically see variable volume with potentially strong movements for Asian-focused projects."
+                else:
+                    market_hours_context["market_conditions"] = "Outside major traditional market hours. While crypto markets operate 24/7, this period typically sees lower volume and potentially wider spreads."
+            
             # Build the prompt with enhanced ICT OTE guidance
             system_prompt = """You are a cryptocurrency trading advisor specialized in providing recommendations based on technical analysis, news sentiment, and market conditions.
 Your task is to analyze the provided data and give a clear recommendation for the specified cryptocurrency.
@@ -235,6 +274,27 @@ OTE TRADE MANAGEMENT:
 - After second profit target: Trail stop below/above recent structure
 - Always maintain a small position for the final target
 
+TIME-BASED CONSIDERATIONS:
+- Crypto markets trade 24/7, but volume and liquidity vary by time of day:
+  * US market hours (9:30 AM - 4:00 PM ET / 14:30 - 21:00 UTC): Usually highest volume
+  * European market hours (8:00 AM - 4:30 PM CET / 7:00 - 15:30 UTC): Moderate to high volume
+  * Asian market hours (9:00 AM - 3:00 PM JST / 0:00 - 6:00 UTC): Variable volume
+- IMPORTANT: Identify which specific market hours are active at the time of analysis
+- SPECIFICALLY state whether we are currently in US, European, or Asian market hours
+- Note how the current market hours may affect trading conditions for this specific recommendation
+- Weekend trading tends to have lower volume and potentially higher volatility
+- For geopolitical analysis:
+  * ONLY include very recent (0-48 hours old) events that are still developing
+  * Focus on breaking news and fresh developments that haven't been fully priced in
+  * Explicitly state if there are no significant fresh geopolitical developments
+  * Older news (3+ days) has likely already been priced into the market and should be excluded
+- For upcoming events analysis:
+  * Prioritize events within the next 72 hours which will have immediate impact
+  * Include relevant events up to 7 days out that may influence trading decisions
+  * Focus on US Federal Reserve announcements, SEC decisions, major economic data releases
+  * Consider proximity to these events when making risk management recommendations
+- Adjust trading recommendations based on proximity to these events (e.g., lower position sizes, wider stops)
+
 Your recommendation should consider:
 1. Technical indicators from the 1-hour timeframe (RSI, MACD, etc.)
 2. Technical chart patterns from the 1-hour timeframe
@@ -242,6 +302,7 @@ Your recommendation should consider:
 4. ICT OTE setups from the 5-minute timeframe (HIGH PRIORITY WHEN PRESENT)
 5. Recent news sentiment
 6. Overall market context
+7. Current market hours and upcoming significant events
 
 For each recommendation:
 - Provide a clear BUY, SELL, or HOLD recommendation
@@ -252,9 +313,10 @@ For each recommendation:
 - If an OTE setup is identified, provide specific entry, stop-loss, and take-profit levels
 - Include relevant risk warnings
 - Reference important support/resistance levels from the 1-hour timeframe
+- Comment on any relevant time-based factors (weekends, market hours, upcoming events)
 
 LATEST NEWS SECTION:
-Always include a dedicated "LATEST NEWS" section at the beginning of your response, with the most recent 2-3 headlines or significant developments about the specific cryptocurrency being analyzed. Format this as "As of [current date], here's the latest news about [coin]:" followed by bullet points of recent developments. Focus on news from the past week that could impact price movement.
+Always include a dedicated "LATEST NEWS" section at the beginning of your response, with the most recent 2-3 headlines or significant developments about the specific cryptocurrency being analyzed. Format this as "As of {datetime.now().strftime('%Y-%m-%d')}, here's the latest news about [coin]:" followed by bullet points of recent developments. Focus on news from the past week that could impact price movement.
 
 Also leverage your direct access to Twitter data to include any relevant social sentiment around this cryptocurrency.
 """
@@ -270,20 +332,30 @@ MARKET DATA:
 TECHNICAL PATTERNS:
 {pattern_analysis}
 
-NEWS SENTIMENT:
-- Overall sentiment: {news_sentiment} ({sentiment_score})
-- Recent headlines: 
-{headlines}
+GEOPOLITICAL AND MARKET-WIDE CONTEXT:
+- ONLY include very recent (past 24-48 hours) geopolitical events that have NOT YET been fully priced into the market
+- Focus on DEVELOPING situations, NEW announcements, or BREAKING news that could affect crypto in the coming days
+- Ignore older events (3+ days) that have already impacted the market, as these are likely already priced in
+- If there are no significant fresh geopolitical developments in the past 48 hours, clearly state this
 
-MARKET CONTEXT:
-- General market sentiment: {market_context.get('market', {}).get('sentiment', {}).get('sentiment', 'neutral')}
-- Geopolitical sentiment: {market_context.get('geopolitical', {}).get('sentiment', {}).get('sentiment', 'neutral')}
-- Regulatory sentiment: {market_context.get('regulatory', {}).get('sentiment', {}).get('sentiment', 'neutral')}
+UPCOMING MARKET-WIDE EVENTS:
+- Identify imminent events (next 1-7 days) that could impact ALL cryptocurrencies (not just {coin})
+- Focus on SEC decisions, presidential actions, Federal Reserve announcements, congressional hearings
+- Include any upcoming elections, regulatory deadlines, or major economic data releases
+- Prioritize events that are scheduled within the next 72 hours as these will have the most immediate impact
+
+CURRENT MARKET HOURS:
+- Current time: {market_hours_context['current_utc_time']}
+- {"Weekend: Yes" if is_weekend else "Weekday: Yes"}
+- Market timezone: {market_hours_context['market_timezone_description']}
+- Market conditions: {market_hours_context['market_conditions']}
+- Consider how these current market conditions might impact trading decisions for {coin}
 
 Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) with explanation.
 Make sure to include the current price (${current_price} USD) in your analysis.
 If an ICT OTE setup is present in the data, prioritize this in your recommendation.
-IMPORTANT: Begin your response with a dedicated "LATEST NEWS" section showing the most recent developments for {coin}, using your access to real-time news sources and Twitter data.
+
+IMPORTANT: Begin your response with a dedicated "LATEST NEWS" section showing the most recent developments for {coin}, using your access to real-time news sources and Twitter data. For geopolitical events, ONLY include genuinely fresh developments that haven't fully impacted markets yet.
 Also include any relevant Twitter sentiment about {coin} that might impact the price.
 """
     
@@ -318,8 +390,6 @@ Also include any relevant Twitter sentiment about {coin} that might impact the p
                             'daily_change': daily_change,
                             'rsi_1d': rsi_1d
                         },
-                        'news_sentiment': news_sentiment,
-                        'sentiment_score': sentiment_score,
                         'patterns': pattern_data  # Add pattern data to the context
                     }
                 }

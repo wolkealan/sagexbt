@@ -6,49 +6,113 @@ from datetime import datetime
 from config.config import TradingConfig
 from utils.logger import get_logger
 from data.market_data import get_market_data_provider
-
+from decision.ote_analyzer import get_ote_analyzer  # Import the OTE analyzer
 logger = get_logger("pattern_recognition")
+
 
 class PatternRecognition:
     """Identifies technical patterns in cryptocurrency price data"""
     
     def __init__(self):
         self.market_data = get_market_data_provider()
-    
-    def identify_patterns(self, symbol: str, timeframe: str = '1h') -> Dict[str, Any]:
+        self.timeframes = ['1d', '4h', '1h', '30m', '15m']  # All analyzed timeframes
+        self.default_timeframe = '1h'  # Set 1h as default focus
+        self.ote_analyzer = get_ote_analyzer()  # Get OTE analyzer instance
+    def identify_patterns(self, symbol: str, focus_timeframe: str = None) -> Dict[str, Any]:
         """
-        Identify various technical patterns in the price data
+        Identify various technical patterns in the price data across multiple timeframes
         
         Args:
             symbol: Cryptocurrency symbol
-            timeframe: Time period for the analysis
+            focus_timeframe: Primary timeframe to focus on (defaults to 1h)
             
         Returns:
             Dictionary with identified patterns and their details
         """
+        # If no focus timeframe specified, use the default (1h)
+        if not focus_timeframe:
+            focus_timeframe = self.default_timeframe
+            
+        # Ensure focus_timeframe is in our list of timeframes
+        if focus_timeframe not in self.timeframes:
+            focus_timeframe = self.default_timeframe
+            
         try:
-            # Get historical data
-            df = self.market_data.get_historical_data(symbol, timeframe)
-            if df.empty:
-                logger.warning(f"No data available for pattern recognition for {symbol}")
-                return {"error": "No data available"}
+            patterns = {
+                "trend": {},
+                "support_resistance": {
+                    "timeframes": {},
+                    "current_price": 0
+                },
+                "candlestick": {},
+                "chart_patterns": {},
+                "focus_timeframe": focus_timeframe  # Store the focus timeframe
+            }
             
-            # Find patterns
-            patterns = {}
+            # Process each timeframe
+            for timeframe in self.timeframes:
+                try:
+                    # Get historical data for this timeframe
+                    df = self.market_data.get_historical_data(symbol, timeframe)
+                    if df.empty:
+                        logger.warning(f"No data available for {timeframe} timeframe for {symbol}")
+                        continue
+                    
+                    # Store current price (use the focus timeframe's price)
+                    if timeframe == focus_timeframe:
+                        current_price = df['close'].iloc[-1]
+                        patterns["support_resistance"]["current_price"] = current_price
+                        patterns["current_price"] = current_price
+                    
+                    # Analyze support/resistance for this timeframe
+                    sr_data = self._identify_support_resistance(df)
+                    if "error" not in sr_data:
+                        patterns["support_resistance"]["timeframes"][timeframe] = sr_data
+                    
+                    # Analyze trend for focus timeframe AND daily timeframe
+                    if timeframe == focus_timeframe or timeframe == '1d':
+                        trend_data = self._identify_trend(df)
+                        if timeframe == focus_timeframe:
+                            patterns["trend"] = trend_data  # Primary trend is from focus timeframe
+                        else:
+                            patterns[f"trend_{timeframe}"] = trend_data  # Store daily trend separately
+                    
+                    # Analyze candlestick patterns for focus timeframe
+                    if timeframe == focus_timeframe:
+                        patterns["candlestick"] = self._identify_candlestick_patterns(df)
+                        patterns["chart_patterns"] = self._identify_chart_patterns(df)
+                    
+                except Exception as e:
+                    logger.error(f"Error processing {timeframe} timeframe for {symbol}: {e}")
             
-            # Check for trend patterns
-            patterns["trend"] = self._identify_trend(df)
+            # If we have a current price, add it to the overall pattern data
+            if patterns["current_price"]:
+                # Already set above
+                pass
+            elif "1d" in patterns["support_resistance"]["timeframes"]:
+                # Fallback to daily if focus timeframe wasn't available
+                daily_sr = patterns["support_resistance"]["timeframes"]["1d"]
+                if "current_price" in daily_sr:
+                    patterns["current_price"] = daily_sr["current_price"]
             
-            # Check for support/resistance levels
-            patterns["support_resistance"] = self._identify_support_resistance(df)
+            # Add OTE analysis - this is the new part for ICT OTE integration
+            try:
+                ote_setup = self.ote_analyzer.identify_ote_setup(symbol)
+                if "error" not in ote_setup:
+                    patterns["ote_setup"] = ote_setup
+                    logger.info(f"OTE setup analysis added for {symbol}")
+                else:
+                    logger.warning(f"OTE analysis error for {symbol}: {ote_setup.get('error')}")
+                    patterns["ote_setup"] = {"error": ote_setup.get('error')}
+            except Exception as e:
+                logger.error(f"Error in OTE analysis for {symbol}: {e}")
+                patterns["ote_setup"] = {"error": f"OTE analysis failed: {str(e)}"}
             
-            # Check for candlestick patterns
-            patterns["candlestick"] = self._identify_candlestick_patterns(df)
+            # Check if we got any meaningful data
+            if not patterns["support_resistance"]["timeframes"]:
+                return {"error": "No data available across timeframes"}
             
-            # Check for chart patterns
-            patterns["chart_patterns"] = self._identify_chart_patterns(df)
-            
-            logger.info(f"Identified {sum(len(v) for v in patterns.values() if isinstance(v, dict))} patterns for {symbol}")
+            logger.info(f"Identified patterns for {symbol} across {len(patterns['support_resistance']['timeframes'])} timeframes with focus on {focus_timeframe}")
             return patterns
             
         except Exception as e:
@@ -541,6 +605,7 @@ class PatternRecognition:
         except Exception as e:
             logger.error(f"Error checking for inverse head and shoulders: {e}")
             return None
+
 
 # Singleton instance
 pattern_recognition = PatternRecognition()

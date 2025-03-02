@@ -14,6 +14,7 @@ from datetime import datetime  # If not already imported
 from config.config import TradingConfig, AppConfig
 from utils.logger import get_api_logger
 from decision.recommendation_engine import get_recommendation_engine
+from decision.pattern_recognition import get_pattern_recognition
 
 logger = get_api_logger()
 
@@ -141,6 +142,7 @@ async def get_supported_coins_api(refresh: bool = Query(False, description="Forc
 async def get_recommendation(
     coin: str,
     action_type: str = Query("spot", enum=["spot", "futures"]),
+    timeframe: str = Query("1h", description="Timeframe for analysis"),
     force_refresh: bool = Query(False, description="Force refresh data and recommendation")
 ):
     """
@@ -148,6 +150,7 @@ async def get_recommendation(
     
     - **coin**: Cryptocurrency symbol (e.g., BTC, ETH)
     - **action_type**: Type of trading (spot or futures)
+    - **timeframe**: Timeframe for analysis (e.g., 1h, 4h, 1d)
     - **force_refresh**: Force refresh data and recommendation
     """
     # Validate coin
@@ -178,6 +181,11 @@ async def get_recommendation(
                         cached_rec['explanation'] = f"Current price: ${price}\n\n" + cached_rec['explanation']
                 
                 return cached_rec
+        
+        # Get pattern recognition data
+        from decision.pattern_recognition import get_pattern_recognition
+        pattern_recognizer = get_pattern_recognition()
+        pattern_data = pattern_recognizer.identify_patterns(coin, focus_timeframe=timeframe)
         
         # Generate new recommendation
         recommendation = await recommendation_engine.generate_recommendation(
@@ -263,102 +271,103 @@ async def get_recommendation(
         logger.error(f"Error generating recommendation for {coin}: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
-@app.get("/recommendation/{coin}")
-async def get_recommendation(
-    coin: str,
-    action_type: str = Query("spot", enum=["spot", "futures"]),
-    force_refresh: bool = Query(False, description="Force refresh data and recommendation")
-):
-    """
-    Get trading recommendation for a specific coin
+# @app.get("/recommendation/{coin}")
+# async def get_recommendation(
+#     coin: str,
+#     action_type: str = Query("spot", enum=["spot", "futures"]),
+#     force_refresh: bool = Query(False, description="Force refresh data and recommendation")
+# ):
+#     """
+#     Get trading recommendation for a specific coin
     
-    - **coin**: Cryptocurrency symbol (e.g., BTC, ETH)
-    - **action_type**: Type of trading (spot or futures)
-    - **force_refresh**: Force refresh data and recommendation
-    """
-    # Validate coin
-    coin = coin.upper()
-    # Use dynamic coin list from TradingConfig
-    trading_config = TradingConfig()
-    if coin not in trading_config.SUPPORTED_COINS:
-        raise HTTPException(status_code=404, detail=f"Coin {coin} not supported")
+#     - **coin**: Cryptocurrency symbol (e.g., BTC, ETH)
+#     - **action_type**: Type of trading (spot or futures)
+#     - **force_refresh**: Force refresh data and recommendation
+#     """
+#     pattern_data = pattern_recognizer.identify_patterns(target_coin, focus_timeframe=timeframe)
+#     # Validate coin
+#     coin = coin.upper()
+#     # Use dynamic coin list from TradingConfig
+#     trading_config = TradingConfig()
+#     if coin not in trading_config.SUPPORTED_COINS:
+#         raise HTTPException(status_code=404, detail=f"Coin {coin} not supported")
     
-    try:
-        # Check if we have a cached recommendation
-        if not force_refresh:
-            cached_rec = recommendation_engine.get_cached_recommendation(coin, action_type)
-            if cached_rec:
-                logger.info(f"Returning cached recommendation for {coin}")
-                # Convert any ObjectId to string
-                cached_rec = convert_objectid_to_str(cached_rec)
+#     try:
+#         # Check if we have a cached recommendation
+#         if not force_refresh:
+#             cached_rec = recommendation_engine.get_cached_recommendation(coin, action_type)
+#             if cached_rec:
+#                 logger.info(f"Returning cached recommendation for {coin}")
+#                 # Convert any ObjectId to string
+#                 cached_rec = convert_objectid_to_str(cached_rec)
                 
-                # Sanitize pattern data if it exists
-                if 'context' in cached_rec and 'patterns' in cached_rec['context']:
-                    cached_rec['context']['patterns'] = sanitize_for_json(cached_rec['context']['patterns'])
+#                 # Sanitize pattern data if it exists
+#                 if 'context' in cached_rec and 'patterns' in cached_rec['context']:
+#                     cached_rec['context']['patterns'] = sanitize_for_json(cached_rec['context']['patterns'])
                 
-                # Ensure price is included in the explanation if not already there
-                if 'explanation' in cached_rec and 'context' in cached_rec and 'market_data' in cached_rec['context']:
-                    price = cached_rec['context']['market_data'].get('price', None)
+#                 # Ensure price is included in the explanation if not already there
+#                 if 'explanation' in cached_rec and 'context' in cached_rec and 'market_data' in cached_rec['context']:
+#                     price = cached_rec['context']['market_data'].get('price', None)
                     
-                    # Fix the "$0 USD" issue in the recommendation text
-                    if price and 'Current Price: $0 USD' in cached_rec['explanation']:
-                        cached_rec['explanation'] = cached_rec['explanation'].replace('Current Price: $0 USD', f'Current Price: ${price} USD')
+#                     # Fix the "$0 USD" issue in the recommendation text
+#                     if price and 'Current Price: $0 USD' in cached_rec['explanation']:
+#                         cached_rec['explanation'] = cached_rec['explanation'].replace('Current Price: $0 USD', f'Current Price: ${price} USD')
                     
-                    if price and 'current price' not in cached_rec['explanation'].lower() and 'price' not in cached_rec['explanation'].lower():
-                        # Add price info at the beginning of the explanation
-                        cached_rec['explanation'] = f"Current price: ${price}\n\n" + cached_rec['explanation']
+#                     if price and 'current price' not in cached_rec['explanation'].lower() and 'price' not in cached_rec['explanation'].lower():
+#                         # Add price info at the beginning of the explanation
+#                         cached_rec['explanation'] = f"Current price: ${price}\n\n" + cached_rec['explanation']
                 
-                return cached_rec
+#                 return cached_rec
         
-        # Get current price from market data (for fallback)
-        market_summary = await recommendation_engine.market_data.get_market_summary(coin)
-        current_price = market_summary.get('current_price', None)
+#         # Get current price from market data (for fallback)
+#         market_summary = await recommendation_engine.market_data.get_market_summary(coin)
+#         current_price = market_summary.get('current_price', None)
         
-        # Generate new recommendation
-        recommendation = await recommendation_engine.generate_recommendation(
-            coin=coin,
-            action_type=action_type,
-            force_refresh=force_refresh
-        )
+#         # Generate new recommendation
+#         recommendation = await recommendation_engine.generate_recommendation(
+#             coin=coin,
+#             action_type=action_type,
+#             force_refresh=force_refresh
+#         )
         
-        # Convert any ObjectId to string
-        recommendation = convert_objectid_to_str(recommendation)
+#         # Convert any ObjectId to string
+#         recommendation = convert_objectid_to_str(recommendation)
         
-        # Sanitize pattern data if it exists
-        if 'context' in recommendation and 'patterns' in recommendation['context']:
-            recommendation['context']['patterns'] = sanitize_for_json(recommendation['context']['patterns'])
+#         # Sanitize pattern data if it exists
+#         if 'context' in recommendation and 'patterns' in recommendation['context']:
+#             recommendation['context']['patterns'] = sanitize_for_json(recommendation['context']['patterns'])
         
-        # Ensure price is included in the explanation
-        if 'explanation' in recommendation and 'context' in recommendation and 'market_data' in recommendation['context']:
-            price = recommendation['context']['market_data'].get('price', None)
+#         # Ensure price is included in the explanation
+#         if 'explanation' in recommendation and 'context' in recommendation and 'market_data' in recommendation['context']:
+#             price = recommendation['context']['market_data'].get('price', None)
             
-            # If price is missing in context but we have it from direct market data request
-            if not price and current_price:
-                price = current_price
-                # Update the market_data context with the actual price
-                recommendation['context']['market_data']['price'] = current_price
+#             # If price is missing in context but we have it from direct market data request
+#             if not price and current_price:
+#                 price = current_price
+#                 # Update the market_data context with the actual price
+#                 recommendation['context']['market_data']['price'] = current_price
             
-            # Fix the "$0 USD" issue in the recommendation text
-            if price and 'Current Price: $0 USD' in recommendation['explanation']:
-                recommendation['explanation'] = recommendation['explanation'].replace('Current Price: $0 USD', f'Current Price: ${price} USD')
+#             # Fix the "$0 USD" issue in the recommendation text
+#             if price and 'Current Price: $0 USD' in recommendation['explanation']:
+#                 recommendation['explanation'] = recommendation['explanation'].replace('Current Price: $0 USD', f'Current Price: ${price} USD')
             
-            # Add price info at the beginning if not present
-            if price and 'current price' not in recommendation['explanation'].lower() and 'price' not in recommendation['explanation'].lower():
-                recommendation['explanation'] = f"Current price: ${price}\n\n" + recommendation['explanation']
+#             # Add price info at the beginning if not present
+#             if price and 'current price' not in recommendation['explanation'].lower() and 'price' not in recommendation['explanation'].lower():
+#                 recommendation['explanation'] = f"Current price: ${price}\n\n" + recommendation['explanation']
             
-            # Check if patterns data is available
-            patterns_data = recommendation.get('context', {}).get('patterns', None)
-            if patterns_data:
-                # Add pattern summary to explanation if not already included
-                if 'technical patterns' not in recommendation['explanation'].lower() and 'trend' not in recommendation['explanation'].lower():
-                    pattern_text = _format_pattern_data(patterns_data)
-                    recommendation['explanation'] += f"\n\n**Technical Patterns:**\n{pattern_text}"
+#             # Check if patterns data is available
+#             patterns_data = recommendation.get('context', {}).get('patterns', None)
+#             if patterns_data:
+#                 # Add pattern summary to explanation if not already included
+#                 if 'technical patterns' not in recommendation['explanation'].lower() and 'trend' not in recommendation['explanation'].lower():
+#                     pattern_text = _format_pattern_data(patterns_data)
+#                     recommendation['explanation'] += f"\n\n**Technical Patterns:**\n{pattern_text}"
         
-        return recommendation
+#         return recommendation
     
-    except Exception as e:
-        logger.error(f"Error generating recommendation for {coin}: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
+#     except Exception as e:
+#         logger.error(f"Error generating recommendation for {coin}: {e}")
+#         raise HTTPException(status_code=500, detail=str(e))
 
 def _sanitize_market_data(market_summary, news_summary, market_context):
     """
@@ -731,8 +740,9 @@ def format_news_headlines(news_data):
 # 5. Add helper function to format pattern data in the app.py file
 
 def _format_pattern_data(pattern_data: Dict[str, Any]) -> str:
-    """Format technical pattern data for the prompt"""
-    
+    """Format technical pattern data for the prompt with focus on 1-hour timeframe by default"""
+    import math
+    import numpy as np
     # Helper function to check if a value is NaN
     def is_not_nan(value):
         if isinstance(value, (float, np.float64, np.float32)):
@@ -750,61 +760,227 @@ def _format_pattern_data(pattern_data: Dict[str, Any]) -> str:
     
     result = []
     
-    # Format trend data
+    # Get the focus timeframe
+    focus_timeframe = pattern_data.get("focus_timeframe", "1h")
+    
+    # Add current price if available
+    if "current_price" in pattern_data and is_not_nan(pattern_data["current_price"]):
+        current_price = pattern_data["current_price"]
+        result.append(f"Current Price: ${float(current_price):.2f}")
+    
+    # Format trend data - specifically highlighting focus timeframe
     if "trend" in pattern_data and isinstance(pattern_data["trend"], dict) and "error" not in pattern_data["trend"]:
         trend = pattern_data["trend"]
+        # Note this is the trend for the focus timeframe
+        result.append(f"- Overall Trend ({focus_timeframe}):")
         if "overall" in trend:
-            result.append(f"- Overall Trend: {trend['overall'].replace('_', ' ').title()}")
+            result.append(f"  * Overall: {trend['overall'].replace('_', ' ').title()}")
         if "short_term" in trend:
-            result.append(f"  * Short-term trend: {trend['short_term']}")
+            result.append(f"  * Short-term: {trend['short_term']}")
         if "medium_term" in trend:
-            result.append(f"  * Medium-term trend: {trend['medium_term']}")
+            result.append(f"  * Medium-term: {trend['medium_term']}")
         if "long_term" in trend:
-            result.append(f"  * Long-term trend: {trend['long_term']}")
+            result.append(f"  * Long-term: {trend['long_term']}")
         if "special_event" in trend:
             result.append(f"  * Special event: {trend['special_event']}")
     
-    # Format support/resistance data
-    if "support_resistance" in pattern_data and isinstance(pattern_data["support_resistance"], dict) and "error" not in pattern_data["support_resistance"]:
-        sr = pattern_data["support_resistance"]
-        if "support" in sr and sr["support"]:
-            supports = sr["support"]
-            result.append("- Support Levels:")
-            for level in supports:
-                if isinstance(level, dict) and "level" in level and is_not_nan(level['level']):
-                    try:
-                        result.append(f"  * ${float(level['level']):.2f} (strength: {level.get('strength', 'N/A')})")
-                    except (ValueError, TypeError):
-                        pass
-        if "resistance" in sr and sr["resistance"]:
-            resistances = sr["resistance"]
-            result.append("- Resistance Levels:")
-            for level in resistances:
-                if isinstance(level, dict) and "level" in level and is_not_nan(level['level']):
-                    try:
-                        result.append(f"  * ${float(level['level']):.2f} (strength: {level.get('strength', 'N/A')})")
-                    except (ValueError, TypeError):
-                        pass
+    # Add daily trend as well if available
+    if "trend_1d" in pattern_data and isinstance(pattern_data["trend_1d"], dict) and "error" not in pattern_data["trend_1d"]:
+        trend_1d = pattern_data["trend_1d"]
+        result.append("- Daily Trend (1d):")
+        if "overall" in trend_1d:
+            result.append(f"  * Overall: {trend_1d['overall'].replace('_', ' ').title()}")
+        if "special_event" in trend_1d:
+            result.append(f"  * Special event: {trend_1d['special_event']}")
     
-    # Format candlestick patterns
+    # Format support/resistance data with priority to focus timeframe
+    if "support_resistance" in pattern_data and isinstance(pattern_data["support_resistance"], dict):
+        sr = pattern_data["support_resistance"]
+        
+        # Multi-timeframe support/resistance
+        if "timeframes" in sr and isinstance(sr["timeframes"], dict):
+            timeframes = sr["timeframes"]
+            
+            # Define timeframe display order - put focus timeframe first
+            timeframe_display = [focus_timeframe]
+            # Add remaining timeframes
+            for tf in ['1d', '4h', '1h', '30m', '15m', '5m']:
+                if tf != focus_timeframe:
+                    timeframe_display.append(tf)
+            
+            # Process timeframes in the defined order
+            for timeframe in timeframe_display:
+                if timeframe in timeframes:
+                    tf_data = timeframes[timeframe]
+                    
+                    # Support levels for this timeframe
+                    if "support" in tf_data and tf_data["support"]:
+                        supports = tf_data["support"]
+                        # Add special emphasis if it's the focus timeframe
+                        if timeframe == focus_timeframe:
+                            result.append(f"- Support Levels ({timeframe}) [FOCUS]:")
+                        else:
+                            result.append(f"- Support Levels ({timeframe}):")
+                            
+                        for level in supports[:3]:  # Show top 3 supports
+                            if isinstance(level, dict) and "level" in level and is_not_nan(level['level']):
+                                try:
+                                    level_val = float(level['level'])
+                                    strength = level.get('strength', 'N/A')
+                                    if not is_not_nan(strength):
+                                        strength = 'N/A'
+                                    result.append(f"  * ${level_val:.2f} (strength: {strength})")
+                                except (ValueError, TypeError):
+                                    pass
+                    
+                    # Resistance levels for this timeframe
+                    if "resistance" in tf_data and tf_data["resistance"]:
+                        resistances = tf_data["resistance"]
+                        # Add special emphasis if it's the focus timeframe
+                        if timeframe == focus_timeframe:
+                            result.append(f"- Resistance Levels ({timeframe}) [FOCUS]:")
+                        else:
+                            result.append(f"- Resistance Levels ({timeframe}):")
+                            
+                        for level in resistances[:3]:  # Show top 3 resistances
+                            if isinstance(level, dict) and "level" in level and is_not_nan(level['level']):
+                                try:
+                                    level_val = float(level['level'])
+                                    strength = level.get('strength', 'N/A')
+                                    if not is_not_nan(strength):
+                                        strength = 'N/A'
+                                    result.append(f"  * ${level_val:.2f} (strength: {strength})")
+                                except (ValueError, TypeError):
+                                    pass
+    
+    # Candlestick patterns are specifically for the focus timeframe
     if "candlestick" in pattern_data and pattern_data["candlestick"] and "error" not in pattern_data["candlestick"]:
         candles = pattern_data["candlestick"]
         if candles:
-            result.append("- Candlestick Patterns:")
+            result.append(f"- Candlestick Patterns ({focus_timeframe}):")
             for name, details in candles.items():
                 if isinstance(details, dict) and "significance" in details and "description" in details:
                     result.append(f"  * {details.get('type', name).replace('_', ' ').title()} ({details['significance']}): {details['description']}")
     
-    # Format chart patterns
+    # Chart patterns are specifically for the focus timeframe
     if "chart_patterns" in pattern_data and pattern_data["chart_patterns"] and "error" not in pattern_data["chart_patterns"]:
         charts = pattern_data["chart_patterns"]
         if charts:
-            result.append("- Chart Patterns:")
+            result.append(f"- Chart Patterns ({focus_timeframe}):")
             for name, details in charts.items():
                 if isinstance(details, dict) and "significance" in details and "description" in details:
                     result.append(f"  * {details.get('type', name).replace('_', ' ').title()} ({details['significance']}): {details['description']}")
     
+    # Format OTE setup if available - NEW SECTION FOR ICT OTE
+    if "ote_setup" in pattern_data and isinstance(pattern_data["ote_setup"], dict) and "error" not in pattern_data["ote_setup"]:
+        ote = pattern_data["ote_setup"]
+        result.append("\n=== ICT Optimal Trade Entry (OTE) Analysis ===")
+        
+        if "current_price" in ote and is_not_nan(ote["current_price"]):
+            result.append(f"Current Price: ${float(ote['current_price']):.2f}")
+        
+        if "prev_day_high" in ote and is_not_nan(ote["prev_day_high"]):
+            result.append(f"Previous Day's High: ${float(ote['prev_day_high']):.2f}")
+        
+        if "prev_day_low" in ote and is_not_nan(ote["prev_day_low"]):
+            result.append(f"Previous Day's Low: ${float(ote['prev_day_low']):.2f}")
+        
+        # Format bullish setup
+        if "bullish_setup" in ote and ote["bullish_setup"] and ote["bullish_setup"].get("valid", False):
+            bs = ote["bullish_setup"]
+            result.append("\n- BULLISH OTE SETUP (5m):")
+            result.append(f"  * In OTE Zone: {'YES - READY TO ENTER' if bs.get('in_ote_zone', False) else 'NO - WAITING FOR RETRACEMENT'}")
+            
+            # Show swing points
+            if "swing_low" in bs and is_not_nan(bs["swing_low"]):
+                result.append(f"  * Swing Low: ${float(bs['swing_low']):.2f}")
+            if "swing_high" in bs and is_not_nan(bs["swing_high"]):
+                result.append(f"  * Swing High: ${float(bs['swing_high']):.2f}")
+            
+            # Fibonacci levels
+            if "fibonacci_levels" in bs and isinstance(bs["fibonacci_levels"], dict):
+                fib = bs["fibonacci_levels"]
+                result.append("  * Fibonacci Retracement Levels:")
+                if "retracement_50" in fib and is_not_nan(fib["retracement_50"]):
+                    result.append(f"    - 50% Retracement: ${float(fib['retracement_50']):.2f}")
+                if "retracement_62" in fib and is_not_nan(fib["retracement_62"]):
+                    result.append(f"    - 62% Retracement (Entry): ${float(fib['retracement_62']):.2f}")
+                if "retracement_79" in fib and is_not_nan(fib["retracement_79"]):
+                    result.append(f"    - 79% Retracement: ${float(fib['retracement_79']):.2f}")
+            
+            # Entry, stop loss, and take profit
+            result.append("  * Trading Plan:")
+            if "entry" in bs and is_not_nan(bs["entry"]):
+                result.append(f"    - Entry: ${float(bs['entry']):.2f}")
+            if "stop_loss" in bs and is_not_nan(bs["stop_loss"]):
+                risk_pct = abs((bs["entry"] - bs["stop_loss"]) / bs["entry"] * 100) if is_not_nan(bs["entry"]) else 0
+                result.append(f"    - Stop Loss: ${float(bs['stop_loss']):.2f} ({risk_pct:.2f}% risk)")
+            if "take_profit_1" in bs and is_not_nan(bs["take_profit_1"]):
+                result.append(f"    - Take Profit 1 (0.5 Ext): ${float(bs['take_profit_1']):.2f}")
+            if "take_profit_2" in bs and is_not_nan(bs["take_profit_2"]):
+                result.append(f"    - Take Profit 2 (1.0 Ext): ${float(bs['take_profit_2']):.2f}")
+            if "take_profit_3" in bs and is_not_nan(bs["take_profit_3"]):
+                result.append(f"    - Take Profit 3 (2.0 Ext): ${float(bs['take_profit_3']):.2f}")
+            if "risk_reward" in bs and is_not_nan(bs["risk_reward"]):
+                result.append(f"    - Risk/Reward Ratio: {float(bs['risk_reward']):.2f}")
+            
+            # Stop management instructions
+            result.append("  * Stop Management:")
+            result.append("    - After TP1: Move stop to breakeven")
+            result.append("    - After TP2: Trail stop below recent structure")
+            result.append("    - Leave a small position for TP3")
+        
+        # Format bearish setup
+        if "bearish_setup" in ote and ote["bearish_setup"] and ote["bearish_setup"].get("valid", False):
+            bs = ote["bearish_setup"]
+            result.append("\n- BEARISH OTE SETUP (5m):")
+            result.append(f"  * In OTE Zone: {'YES - READY TO ENTER' if bs.get('in_ote_zone', False) else 'NO - WAITING FOR RETRACEMENT'}")
+            
+            # Show swing points
+            if "swing_high" in bs and is_not_nan(bs["swing_high"]):
+                result.append(f"  * Swing High: ${float(bs['swing_high']):.2f}")
+            if "swing_low" in bs and is_not_nan(bs["swing_low"]):
+                result.append(f"  * Swing Low: ${float(bs['swing_low']):.2f}")
+            
+            # Fibonacci levels
+            if "fibonacci_levels" in bs and isinstance(bs["fibonacci_levels"], dict):
+                fib = bs["fibonacci_levels"]
+                result.append("  * Fibonacci Retracement Levels:")
+                if "retracement_50" in fib and is_not_nan(fib["retracement_50"]):
+                    result.append(f"    - 50% Retracement: ${float(fib['retracement_50']):.2f}")
+                if "retracement_62" in fib and is_not_nan(fib["retracement_62"]):
+                    result.append(f"    - 62% Retracement (Entry): ${float(fib['retracement_62']):.2f}")
+                if "retracement_79" in fib and is_not_nan(fib["retracement_79"]):
+                    result.append(f"    - 79% Retracement: ${float(fib['retracement_79']):.2f}")
+            
+            # Entry, stop loss, and take profit
+            result.append("  * Trading Plan:")
+            if "entry" in bs and is_not_nan(bs["entry"]):
+                result.append(f"    - Entry: ${float(bs['entry']):.2f}")
+            if "stop_loss" in bs and is_not_nan(bs["stop_loss"]):
+                risk_pct = abs((bs["entry"] - bs["stop_loss"]) / bs["entry"] * 100) if is_not_nan(bs["entry"]) else 0
+                result.append(f"    - Stop Loss: ${float(bs['stop_loss']):.2f} ({risk_pct:.2f}% risk)")
+            if "take_profit_1" in bs and is_not_nan(bs["take_profit_1"]):
+                result.append(f"    - Take Profit 1 (0.5 Ext): ${float(bs['take_profit_1']):.2f}")
+            if "take_profit_2" in bs and is_not_nan(bs["take_profit_2"]):
+                result.append(f"    - Take Profit 2 (1.0 Ext): ${float(bs['take_profit_2']):.2f}")
+            if "take_profit_3" in bs and is_not_nan(bs["take_profit_3"]):
+                result.append(f"    - Take Profit 3 (2.0 Ext): ${float(bs['take_profit_3']):.2f}")
+            if "risk_reward" in bs and is_not_nan(bs["risk_reward"]):
+                result.append(f"    - Risk/Reward Ratio: {float(bs['risk_reward']):.2f}")
+            
+            # Stop management instructions
+            result.append("  * Stop Management:")
+            result.append("    - After TP1: Move stop to breakeven")
+            result.append("    - After TP2: Trail stop above recent structure")
+            result.append("    - Leave a small position for TP3")
+        
+        # If no valid setups found
+        if not (ote.get("bullish_setup", {}).get("valid", False) or ote.get("bearish_setup", {}).get("valid", False)):
+            result.append("No valid ICT OTE setups found at this time.")
+    
     return "\n".join(result) if result else "No significant technical patterns detected"
+
 
 @app.post("/analyze")
 async def analyze_custom_query(

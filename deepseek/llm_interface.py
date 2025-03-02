@@ -199,12 +199,12 @@ class DeepSeekLLM:
         return "\n".join(result) if result else "No significant technical patterns detected"
     
     def generate_recommendation(self, 
-                  coin: str, 
-                  market_data: Dict[str, Any],
-                  news_data: Dict[str, Any],
-                  market_context: Dict[str, Any],
-                  pattern_data: Dict[str, Any] = None,  # Add this parameter
-                  action_type: str = "spot") -> Dict[str, Any]:
+              coin: str, 
+              market_data: Dict[str, Any],
+              news_data: Dict[str, Any],
+              market_context: Dict[str, Any],
+              pattern_data: Dict[str, Any] = None,
+              action_type: str = "spot") -> Dict[str, Any]:
         try:
             # Prepare data for the prompt
             current_price = market_data.get('current_price', 'Unknown')
@@ -234,21 +234,40 @@ class DeepSeekLLM:
             # Format pattern recognition data
             pattern_analysis = self._format_patterns(pattern_data) if pattern_data else "No pattern data available"
         
-            # Build the prompt
+            # Build the prompt with enhanced ICT OTE guidance
             system_prompt = """You are a cryptocurrency trading advisor specialized in providing recommendations based on technical analysis, news sentiment, and market conditions.
 Your task is to analyze the provided data and give a clear recommendation for the specified cryptocurrency.
 
 IMPORTANT: 
 1. Always include the current price in your recommendation near the beginning of your analysis.
 2. ALWAYS mention the specific technical patterns identified (support/resistance levels, chart patterns, trend direction)
-3. If support and resistance levels are provided, ALWAYS include them in your recommendation 
+3. If support and resistance levels are provided, ALWAYS include them in your recommendation
+4. The primary timeframe is 1-hour (1h) - focus on this timeframe for your main analysis
+5. Shorter timeframes (30m, 15m, 5m) are useful for immediate entry/exit points
+6. Longer timeframes (4h, 1d) provide context for the overall trend direction
+
+ICT OPTIMAL TRADE ENTRY (OTE) STRATEGY:
+- Pay special attention to ICT OTE setups when present - these are high-probability trade setups
+- OTE setups identify precise entry points at the 62-79% Fibonacci retracement level
+- For BULLISH OTE: Price breaks above previous day's high, then retraces to 62-79% Fib zone
+- For BEARISH OTE: Price breaks below previous day's low, then retraces to 62-79% Fib zone
+- If an OTE setup is identified as "IN OTE ZONE: YES", it's a prime entry opportunity
+
+OTE TRADE MANAGEMENT:
+- Entry should be near the 62% Fibonacci retracement level
+- Stop loss should be placed just below/above the lowest/highest candle of the retracement
+- Take profit targets should be at Fibonacci extensions: -0.5, -1.0, and -2.0
+- After first profit target: Move stop to breakeven
+- After second profit target: Trail stop below/above recent structure
+- Always maintain a small position for the final target
 
 Your recommendation should consider:
-1. Technical indicators (RSI, moving averages, etc.)
-2. Technical chart patterns and trend analysis (ALWAYS mention these explicitly)
-3. Recent news sentiment
-4. Overall market context
-5. Support and resistance levels (ALWAYS mention these explicitly if available)
+1. Technical indicators from the 1-hour timeframe (RSI, MACD, etc.)
+2. Technical chart patterns from the 1-hour timeframe
+3. Support/resistance levels from the 1-hour timeframe (PRIMARY FOCUS)
+4. ICT OTE setups from the 5-minute timeframe (HIGH PRIORITY WHEN PRESENT)
+5. Recent news sentiment
+6. Overall market context
 
 For each recommendation:
 - Provide a clear BUY, SELL, or HOLD recommendation
@@ -256,11 +275,11 @@ For each recommendation:
 - Explicitly mention the current price in your analysis
 - Explain your reasoning in a concise manner
 - Mention key factors influencing your decision
-- If recommending futures trading, specify long or short position
+- If an OTE setup is identified, provide specific entry, stop-loss, and take-profit levels
 - Include relevant risk warnings
-- Reference important support/resistance levels when available
+- Reference important support/resistance levels from the 1-hour timeframe
 """
-        
+    
             user_prompt = f"""Please analyze the following data and provide a trading recommendation for {coin}:
 
 MARKET DATA:
@@ -284,9 +303,10 @@ MARKET CONTEXT:
 
 Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) with explanation.
 Make sure to include the current price (${current_price} USD) in your analysis.
+If an ICT OTE setup is present in the data, prioritize this in your recommendation.
 """
-        
-        # Prepare messages for the API
+    
+            # Prepare messages for the API
             messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}

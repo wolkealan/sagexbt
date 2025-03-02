@@ -14649,3 +14649,1357 @@
 2025-03-01 20:43:44,315 - pattern_recognition - INFO - Identified 15 patterns for ETH
 2025-03-01 20:43:44,316 - crypto_advisor.api - INFO - Pattern data retrieved for ETH
 2025-03-01 20:44:03,804 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 20:50:18,778 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 21:06:15,920 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 21:06:15,922 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [North Korea’s Lazarus Group strikes again, steali...
+2025-03-01 21:53:24,320 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 21:53:24,769 - database - INFO - Created MongoDB indexes
+2025-03-01 21:53:25,912 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 21:53:25,915 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 21:53:26,334 - main - INFO - Application started
+2025-03-01 21:53:26,334 - main - INFO - Database initialized: walletTracker
+2025-03-01 21:53:26,334 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 21:53:26,336 - main - INFO - Initializing database connection...
+2025-03-01 21:53:26,336 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 21:53:26,337 - main - INFO - Initializing data providers...
+2025-03-01 21:53:29,108 - main - INFO - Prefetched market data for BTC
+2025-03-01 21:53:29,491 - main - INFO - Prefetched market data for ETH
+2025-03-01 21:53:29,602 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 21:53:29,604 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.15
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.15,
+  "insights": [
+    {
+      "title": "[North Korea\u2019s Lazarus Group strikes again, stealing $3.1M from a Tron user. Funds were laundered...",
+      "description": "[North Korea\u2019s Lazarus Group strikes again, stealing $3.1M from a Tron user. Funds were laundered via Tornado Cash, with reused addresses tying the hack to past attacks. Onchain sleuth @zachxbt uncovered the trail. \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcbb - $3.1M stolen from Tron user on Feb 28, 2025.](https://x.com/BTCTN/status/1895859404957716670)\n\n North Korea\u2019s Lazarus Group strikes again, stealing $3.1M from a Tron user.\n Funds were laundered via Tornado Cash, with reused addresses tying the hack to\n past attacks. Onchain sleuth @zachxbt uncovered the trail. \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcbb\n \n - $3.1M stolen from Tron user on Feb 28, 2025.\n - Funds\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T15:36:16+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Which crypto will perform the best in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895851757361...",
+      "description": "[Which crypto will perform the best in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895851757361619219)\n\n Which crypto will perform the best in March? \ud83d\udc47\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T15:20:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/stablecoin-spr\u2026](https://x.com/BTCTN/status/18958481527...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/stablecoin-spr\u2026](https://x.com/BTCTN/status/1895848152709939221)\n\n Read more about it here\ud83d\udc47https://t.co/dtNE1ptnGP\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T14:58:07+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[February\u2019s stablecoin showdown: USDS rockets 63% ($1.6B gain) while DAI sheds $356M. Paypal\u2019s PY...",
+      "description": "[February\u2019s stablecoin showdown: USDS rockets 63% ($1.6B gain) while DAI sheds $356M. Paypal\u2019s PYUSD climbs 49%, nearing $1B. A tale of diverging fortunes in the race for crypto stability. \ud83d\udcc8\u2696\ufe0f - USDS and PYUSD lead February\u2019s growth with 63% and 49% gains, respectively. -\u2026](https://x.com/BTCTN/status/1895844565497585852)\n\n February\u2019s stablecoin showdown: USDS rockets 63% ($1.6B gain) while DAI sheds\n $356M. Paypal\u2019s PYUSD climbs 49%, nearing $1B. A tale of diverging fortunes in\n the race for crypto stability. \ud83d\udcc8\u2696\ufe0f\n \n - USDS and PYUSD lead February\u2019s growth with 63% and 49% gains, respectively.\n -\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T14:40:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[The last time investor sentiment dropped to similar levels was a month after Bitcoin fell to $17...",
+      "description": "[The last time investor sentiment dropped to similar levels was a month after Bitcoin fell to $17,500 in 2022. cointelegraph.com/news/bitcoin-b\u2026](https://x.com/Cointelegraph/status/1895836689278603593)\n\n The last time investor sentiment dropped to similar levels was a month after\n Bitcoin fell to $17,500 in 2022. https://t.co/BLzGbB55Pq\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T14:05:43+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 21:53:29"
+}
+2025-03-01 21:53:29,605 - main - INFO - Prefetched market context
+2025-03-01 21:53:29,751 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 21:53:29,772 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 21:53:29,773 - main - INFO - Prefetched news for BTC
+2025-03-01 21:53:29,857 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 21:53:29,884 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 21:53:29,884 - main - INFO - Prefetched news for ETH
+2025-03-01 21:53:29,885 - main - INFO - Data initialization complete
+2025-03-01 21:53:29,886 - main - INFO - Running in PRODUCTION mode
+2025-03-01 21:53:29,886 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 21:54:13,477 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 21:54:13,478 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy hbar now?', Coin: HBAR, Intent: buy
+2025-03-01 21:54:13,875 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-03-01 21:54:14,063 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-03-01 21:54:14,257 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-03-01 21:54:14,455 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-03-01 21:54:14,661 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-03-01 21:54:14,844 - crypto_advisor.market - WARNING - No data available for MA calculation for HBAR
+2025-03-01 21:54:14,869 - crypto_advisor.market - INFO - Generated market summary for HBAR
+2025-03-01 21:54:14,913 - crypto_advisor.news - INFO - Fetched 0 Telegram news articles for specific coin
+2025-03-01 21:54:14,961 - crypto_advisor.news - INFO - Generated news summary for HBAR with 0 Telegram articles and 0 market articles
+2025-03-01 21:54:15,033 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 21:54:15,035 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.15
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.15,
+  "insights": [
+    {
+      "title": "[North Korea\u2019s Lazarus Group strikes again, stealing $3.1M from a Tron user. Funds were laundered...",
+      "description": "[North Korea\u2019s Lazarus Group strikes again, stealing $3.1M from a Tron user. Funds were laundered via Tornado Cash, with reused addresses tying the hack to past attacks. Onchain sleuth @zachxbt uncovered the trail. \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcbb - $3.1M stolen from Tron user on Feb 28, 2025.](https://x.com/BTCTN/status/1895859404957716670)\n\n North Korea\u2019s Lazarus Group strikes again, stealing $3.1M from a Tron user.\n Funds were laundered via Tornado Cash, with reused addresses tying the hack to\n past attacks. Onchain sleuth @zachxbt uncovered the trail. \ud83d\udd75\ufe0f\u200d\u2642\ufe0f\ud83d\udcbb\n \n - $3.1M stolen from Tron user on Feb 28, 2025.\n - Funds\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T15:36:16+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Which crypto will perform the best in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895851757361...",
+      "description": "[Which crypto will perform the best in March? \ud83d\udc47](https://x.com/Cointelegraph/status/1895851757361619219)\n\n Which crypto will perform the best in March? \ud83d\udc47\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T15:20:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47news.bitcoin.com/stablecoin-spr\u2026](https://x.com/BTCTN/status/18958481527...",
+      "description": "[Read more about it here\ud83d\udc47news.bitcoin.com/stablecoin-spr\u2026](https://x.com/BTCTN/status/1895848152709939221)\n\n Read more about it here\ud83d\udc47https://t.co/dtNE1ptnGP\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T14:58:07+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[February\u2019s stablecoin showdown: USDS rockets 63% ($1.6B gain) while DAI sheds $356M. Paypal\u2019s PY...",
+      "description": "[February\u2019s stablecoin showdown: USDS rockets 63% ($1.6B gain) while DAI sheds $356M. Paypal\u2019s PYUSD climbs 49%, nearing $1B. A tale of diverging fortunes in the race for crypto stability. \ud83d\udcc8\u2696\ufe0f - USDS and PYUSD lead February\u2019s growth with 63% and 49% gains, respectively. -\u2026](https://x.com/BTCTN/status/1895844565497585852)\n\n February\u2019s stablecoin showdown: USDS rockets 63% ($1.6B gain) while DAI sheds\n $356M. Paypal\u2019s PYUSD climbs 49%, nearing $1B. A tale of diverging fortunes in\n the race for crypto stability. \ud83d\udcc8\u2696\ufe0f\n \n - USDS and PYUSD lead February\u2019s growth with 63% and 49% gains, respectively.\n -\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T14:40:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[The last time investor sentiment dropped to similar levels was a month after Bitcoin fell to $17...",
+      "description": "[The last time investor sentiment dropped to similar levels was a month after Bitcoin fell to $17,500 in 2022. cointelegraph.com/news/bitcoin-b\u2026](https://x.com/Cointelegraph/status/1895836689278603593)\n\n The last time investor sentiment dropped to similar levels was a month after\n Bitcoin fell to $17,500 in 2022. https://t.co/BLzGbB55Pq\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T14:05:43+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 21:54:15"
+}
+2025-03-01 21:54:15,052 - pattern_recognition - INFO - Identified 15 patterns for HBAR
+2025-03-01 21:54:15,053 - crypto_advisor.api - INFO - Pattern data retrieved for HBAR
+2025-03-01 21:54:38,510 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 22:02:16,961 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 22:02:16,963 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [NEW: Ethereum co-founder Vitalik Buterin amplifie...
+2025-03-01 22:06:25,128 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 22:06:25,129 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [BlackRock Brings Bitcoin to $150B Model Portfolio...
+2025-03-01 22:32:15,327 - news_provider - INFO - Stored general message in news_data
+2025-03-01 22:32:15,328 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Zelensky wants US to 'stand more firmly' on Ukrai...
+2025-03-01 22:32:15,403 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 22:32:15,404 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @BBCWorld: King Charles is due to meet Pres...
+2025-03-01 22:32:15,486 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 22:32:15,487 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [North Korea's Lazarus Group linked to a $3.1 mill...
+2025-03-01 22:50:06,508 - news_provider - INFO - Stored mixed message in news_data
+2025-03-01 22:52:55,897 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 23:11:17,932 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 23:11:17,933 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [A federal judge dismissed the SEC’s case against ...
+2025-03-01 23:16:48,321 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:16:48,504 - database - INFO - Created MongoDB indexes
+2025-03-01 23:16:49,462 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 23:16:49,465 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 23:16:49,927 - main - INFO - Application started
+2025-03-01 23:16:49,928 - main - INFO - Database initialized: walletTracker
+2025-03-01 23:16:49,928 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 23:16:49,929 - main - INFO - Initializing database connection...
+2025-03-01 23:16:49,930 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:16:49,931 - main - INFO - Initializing data providers...
+2025-03-01 23:16:52,565 - main - INFO - Prefetched market data for BTC
+2025-03-01 23:16:52,924 - main - INFO - Prefetched market data for ETH
+2025-03-01 23:16:53,002 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:16:53,004 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.21
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to...",
+        "description": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to the UK, the BBC understands \u2026](https://x.com/BBCWorld/status/1895877105520669176)\n\n King Charles is due to meet President Zelensky tomorrow as part of his visit\n to the UK, the BBC understands https://t.co/Cf6PztvSqq\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T16:42:44+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "election",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.21,
+  "insights": [
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    },
+    {
+      "title": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look int...",
+      "description": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look into the details of this heist. #cryptonews #cryptoheist #LazarusGroup](https://x.com/BTCTN/status/1895875836894413277)\n\n North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's\n wallet. A look into the details of this heist. #cryptonews #cryptoheist\n #LazarusGroup pic.twitter.com/0N3OJIf1UT\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:47:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to...",
+      "description": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to the UK, the BBC understands \u2026](https://x.com/BBCWorld/status/1895877105520669176)\n\n King Charles is due to meet President Zelensky tomorrow as part of his visit\n to the UK, the BBC understands https://t.co/Cf6PztvSqq\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:42:44+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:16:53"
+}
+2025-03-01 23:16:53,006 - main - INFO - Prefetched market context
+2025-03-01 23:16:53,084 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 23:16:53,106 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 23:16:53,107 - main - INFO - Prefetched news for BTC
+2025-03-01 23:16:53,161 - crypto_advisor.news - INFO - Fetched 29 Telegram news articles for specific coin
+2025-03-01 23:16:53,184 - crypto_advisor.news - INFO - Generated news summary for ETH with 29 Telegram articles and 0 market articles
+2025-03-01 23:16:53,185 - main - INFO - Prefetched news for ETH
+2025-03-01 23:16:53,185 - main - INFO - Data initialization complete
+2025-03-01 23:16:53,186 - main - INFO - Running in PRODUCTION mode
+2025-03-01 23:16:53,186 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 23:17:15,892 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 23:17:15,893 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy solana now?', Coin: SOL, Intent: buy
+2025-03-01 23:17:16,292 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:17:16,491 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:17:16,705 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:17:16,916 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:17:17,121 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:17:17,320 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:17:17,347 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-01 23:17:17,424 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 23:17:17,452 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 23:17:17,482 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:17:17,485 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.21
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to...",
+        "description": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to the UK, the BBC understands \u2026](https://x.com/BBCWorld/status/1895877105520669176)\n\n King Charles is due to meet President Zelensky tomorrow as part of his visit\n to the UK, the BBC understands https://t.co/Cf6PztvSqq\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T16:42:44+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "election",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.21,
+  "insights": [
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    },
+    {
+      "title": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look int...",
+      "description": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look into the details of this heist. #cryptonews #cryptoheist #LazarusGroup](https://x.com/BTCTN/status/1895875836894413277)\n\n North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's\n wallet. A look into the details of this heist. #cryptonews #cryptoheist\n #LazarusGroup pic.twitter.com/0N3OJIf1UT\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:47:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to...",
+      "description": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to the UK, the BBC understands \u2026](https://x.com/BBCWorld/status/1895877105520669176)\n\n King Charles is due to meet President Zelensky tomorrow as part of his visit\n to the UK, the BBC understands https://t.co/Cf6PztvSqq\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:42:44+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:17:17"
+}
+2025-03-01 23:17:17,487 - crypto_advisor.api - WARNING - Error analyzing patterns for SOL: name 'timeframe' is not defined
+2025-03-01 23:17:45,761 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 23:19:22,459 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 23:19:22,459 - crypto_advisor.api - INFO - Analysis query - Message: 'should I enter solana long now?', Coin: SOL, Intent: buy
+2025-03-01 23:19:22,483 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 23:19:22,567 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 23:19:22,595 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 23:19:22,627 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:19:22,630 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "positive",
+      "sentiment_score": 0.21
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to...",
+        "description": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to the UK, the BBC understands \u2026](https://x.com/BBCWorld/status/1895877105520669176)\n\n King Charles is due to meet President Zelensky tomorrow as part of his visit\n to the UK, the BBC understands https://t.co/Cf6PztvSqq\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T16:42:44+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "election",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.21,
+  "insights": [
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    },
+    {
+      "title": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look int...",
+      "description": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look into the details of this heist. #cryptonews #cryptoheist #LazarusGroup](https://x.com/BTCTN/status/1895875836894413277)\n\n North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's\n wallet. A look into the details of this heist. #cryptonews #cryptoheist\n #LazarusGroup pic.twitter.com/0N3OJIf1UT\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:47:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to...",
+      "description": "[RT by @BBCWorld: King Charles is due to meet President Zelensky tomorrow as part of his visit to the UK, the BBC understands \u2026](https://x.com/BBCWorld/status/1895877105520669176)\n\n King Charles is due to meet President Zelensky tomorrow as part of his visit\n to the UK, the BBC understands https://t.co/Cf6PztvSqq\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:42:44+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:19:22"
+}
+2025-03-01 23:19:22,631 - crypto_advisor.api - WARNING - Error analyzing patterns for SOL: name 'timeframe' is not defined
+2025-03-01 23:19:50,861 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 23:23:06,432 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-01 23:23:06,433 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [RT by @BBCWorld: Ukraine's President Zelensky emb...
+2025-03-01 23:27:20,479 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:27:20,643 - database - INFO - Created MongoDB indexes
+2025-03-01 23:27:21,347 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 23:27:21,351 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 23:35:26,359 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:35:26,541 - database - INFO - Created MongoDB indexes
+2025-03-01 23:35:27,220 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 23:35:27,224 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 23:35:27,594 - main - INFO - Application started
+2025-03-01 23:35:27,594 - main - INFO - Database initialized: walletTracker
+2025-03-01 23:35:27,595 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 23:35:27,596 - main - INFO - Initializing database connection...
+2025-03-01 23:35:27,596 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:35:27,597 - main - INFO - Initializing data providers...
+2025-03-01 23:35:30,169 - main - INFO - Prefetched market data for BTC
+2025-03-01 23:35:30,548 - main - INFO - Prefetched market data for ETH
+2025-03-01 23:35:30,630 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:35:30,631 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    },
+    {
+      "title": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look int...",
+      "description": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look into the details of this heist. #cryptonews #cryptoheist #LazarusGroup](https://x.com/BTCTN/status/1895875836894413277)\n\n North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's\n wallet. A look into the details of this heist. #cryptonews #cryptoheist\n #LazarusGroup pic.twitter.com/0N3OJIf1UT\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:47:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:35:30"
+}
+2025-03-01 23:35:30,632 - main - INFO - Prefetched market context
+2025-03-01 23:35:30,704 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 23:35:30,728 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 23:35:30,728 - main - INFO - Prefetched news for BTC
+2025-03-01 23:35:30,776 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 23:35:30,800 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 23:35:30,801 - main - INFO - Prefetched news for ETH
+2025-03-01 23:35:30,801 - main - INFO - Data initialization complete
+2025-03-01 23:35:30,802 - main - INFO - Running in PRODUCTION mode
+2025-03-01 23:35:30,802 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 23:36:10,401 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 23:36:10,402 - crypto_advisor.api - INFO - Analysis query - Message: 'should I enter solana long now?', Coin: SOL, Intent: buy
+2025-03-01 23:36:10,811 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:36:11,017 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:36:11,213 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:36:11,422 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:36:11,637 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:36:11,836 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-01 23:36:11,869 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-01 23:36:11,959 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 23:36:11,983 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 23:36:12,029 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:36:12,030 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    },
+    {
+      "title": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look int...",
+      "description": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look into the details of this heist. #cryptonews #cryptoheist #LazarusGroup](https://x.com/BTCTN/status/1895875836894413277)\n\n North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's\n wallet. A look into the details of this heist. #cryptonews #cryptoheist\n #LazarusGroup pic.twitter.com/0N3OJIf1UT\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:47:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:36:12"
+}
+2025-03-01 23:36:12,055 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-01 23:36:12,056 - crypto_advisor.api - INFO - Pattern data retrieved for SOL
+2025-03-01 23:36:50,966 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 23:37:09,966 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-01 23:37:10,034 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 23:37:10,247 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 23:37:10,385 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 23:37:10,416 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-01 23:37:10,417 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-01 23:37:10,454 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:37:10,457 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    },
+    {
+      "title": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look int...",
+      "description": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look into the details of this heist. #cryptonews #cryptoheist #LazarusGroup](https://x.com/BTCTN/status/1895875836894413277)\n\n North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's\n wallet. A look into the details of this heist. #cryptonews #cryptoheist\n #LazarusGroup pic.twitter.com/0N3OJIf1UT\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:47:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:37:10"
+}
+2025-03-01 23:37:10,460 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    },
+    {
+      "title": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look int...",
+      "description": "[North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's wallet. A look into the details of this heist. #cryptonews #cryptoheist #LazarusGroup](https://x.com/BTCTN/status/1895875836894413277)\n\n North Korea's Lazarus Group linked to a $3.1 million theft from a Tron user's\n wallet. A look into the details of this heist. #cryptonews #cryptoheist\n #LazarusGroup pic.twitter.com/0N3OJIf1UT\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T16:47:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:37:10"
+}
+2025-03-01 23:37:58,004 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 23:37:58,005 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-03-01 23:45:08,064 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 23:45:08,065 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Bitcoin struggles below key resistance at $87K, f...
+2025-03-01 23:47:52,374 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:47:52,531 - database - INFO - Created MongoDB indexes
+2025-03-01 23:47:53,310 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 23:47:53,314 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 23:47:53,701 - main - INFO - Application started
+2025-03-01 23:47:53,701 - main - INFO - Database initialized: walletTracker
+2025-03-01 23:47:53,702 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 23:47:53,703 - main - INFO - Initializing database connection...
+2025-03-01 23:47:53,703 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:47:53,704 - main - INFO - Initializing data providers...
+2025-03-01 23:47:53,751 - main - INFO - Prefetched market data for BTC
+2025-03-01 23:47:53,798 - main - INFO - Prefetched market data for ETH
+2025-03-01 23:47:53,845 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:47:53,846 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take...",
+      "description": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1 - RSI signals oversold conditions, but momentum remains bearish - Key support at $83K, resistance at $87K - A drop below $80K could\u2026](https://x.com/BTCTN/status/1895898782270660849)\n\n Bitcoin struggles below key resistance at $87K, facing strong selling pressure\n \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1\n \n - RSI signals oversold conditions, but momentum remains bearish\n - Key support at $83K, resistance at $87K\n - A drop below $80K could\u2026 pic.twitter.com/Pr9xKLmZaF\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:15:09+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:47:53"
+}
+2025-03-01 23:47:53,847 - main - INFO - Prefetched market context
+2025-03-01 23:47:53,908 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 23:47:53,927 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 23:47:53,928 - main - INFO - Prefetched news for BTC
+2025-03-01 23:47:53,970 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 23:47:53,989 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 23:47:53,990 - main - INFO - Prefetched news for ETH
+2025-03-01 23:47:53,990 - main - INFO - Data initialization complete
+2025-03-01 23:47:53,991 - main - INFO - Running in PRODUCTION mode
+2025-03-01 23:47:53,991 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 23:48:08,368 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 23:48:08,369 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy, Timeframe: 1h
+2025-03-01 23:48:08,389 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 23:48:08,459 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 23:48:08,480 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 23:48:08,510 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:48:08,512 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take...",
+      "description": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1 - RSI signals oversold conditions, but momentum remains bearish - Key support at $83K, resistance at $87K - A drop below $80K could\u2026](https://x.com/BTCTN/status/1895898782270660849)\n\n Bitcoin struggles below key resistance at $87K, facing strong selling pressure\n \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1\n \n - RSI signals oversold conditions, but momentum remains bearish\n - Key support at $83K, resistance at $87K\n - A drop below $80K could\u2026 pic.twitter.com/Pr9xKLmZaF\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:15:09+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)",
+      "description": "[Read more about it here\ud83d\udc47](https://x.com/BTCTN/status/1895864864566100141)\n\n Read more about it here\ud83d\udc47https://t.co/t0seVttHjK\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:22:56+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @...",
+      "description": "[\u26a1\ufe0f AI agents to add entertainment and real value to Web3? That's what we'll be discussing with @warstoken on our X Spaces on March 3. Tune in to learn more, plus why they are competing against The Onion and Alex Jones in the bankruptcy auction to purchase Infowars.](https://x.com/Cointelegraph/status/1895883201647726770)\n\n \u26a1\ufe0f AI agents to add entertainment and real value to Web3?\n \n That's what we'll be discussing with @warstoken on our X Spaces on March 3.\n \n Tune in to learn more, plus why they are competing against The Onion and Alex\n Jones in the bankruptcy auction to purchase Infowars.\n pic.twitter.com/iicikrDZL7\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:20:07+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "conflict",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:48:08"
+}
+2025-03-01 23:48:08,692 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-01 23:48:08,692 - crypto_advisor.api - INFO - Pattern data retrieved for SOL with timeframe 1h
+2025-03-01 23:48:35,662 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-01 23:49:59,545 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 23:50:01,045 - news_provider - INFO - Stored crypto message in news_data
+2025-03-01 23:50:01,046 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [More on what's happening in Asia's crypto landsca...
+2025-03-01 23:50:04,699 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:50:04,971 - database - INFO - Created MongoDB indexes
+2025-03-01 23:50:05,756 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-01 23:50:05,760 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-01 23:50:06,148 - main - INFO - Application started
+2025-03-01 23:50:06,148 - main - INFO - Database initialized: walletTracker
+2025-03-01 23:50:06,149 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-01 23:50:06,151 - main - INFO - Initializing database connection...
+2025-03-01 23:50:06,151 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-01 23:50:06,152 - main - INFO - Initializing data providers...
+2025-03-01 23:50:06,278 - main - INFO - Prefetched market data for BTC
+2025-03-01 23:50:06,326 - main - INFO - Prefetched market data for ETH
+2025-03-01 23:50:06,380 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:50:06,381 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[More on what's happening in Asia's crypto landscape here \ud83d\udc47](https://x.com/Cointelegraph/status/1...",
+      "description": "[More on what's happening in Asia's crypto landscape here \ud83d\udc47](https://x.com/Cointelegraph/status/1895794113372389602)\n\n More on what's happening in Asia's crypto landscape here \ud83d\udc47\n https://t.co/4sLUA6qcRk\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:20:02+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1 INSIGHT: New 3AC controversy as OX. FUN rejects claims its assets are mostly its own token, pl...",
+      "description": "[\u26a1 INSIGHT: New 3AC controversy as OX. FUN rejects claims its assets are mostly its own token, plus sleuths trace stolen Bybit funds. Asia Express via Cointelegraph Magazine](https://x.com/Cointelegraph/status/1895791349925880250)\n\n \u26a1 INSIGHT: New 3AC controversy as OX. FUN rejects claims its assets are mostly\n its own token, plus sleuths trace stolen Bybit funds.\n \n Asia Express via Cointelegraph Magazine pic.twitter.com/dOVrkhz3vr\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:20:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take...",
+      "description": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1 - RSI signals oversold conditions, but momentum remains bearish - Key support at $83K, resistance at $87K - A drop below $80K could\u2026](https://x.com/BTCTN/status/1895898782270660849)\n\n Bitcoin struggles below key resistance at $87K, facing strong selling pressure\n \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1\n \n - RSI signals oversold conditions, but momentum remains bearish\n - Key support at $83K, resistance at $87K\n - A drop below $80K could\u2026 pic.twitter.com/Pr9xKLmZaF\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:15:09+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:50:06"
+}
+2025-03-01 23:50:06,381 - main - INFO - Prefetched market context
+2025-03-01 23:50:06,454 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-01 23:50:06,577 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-01 23:50:06,577 - main - INFO - Prefetched news for BTC
+2025-03-01 23:50:06,625 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-01 23:50:06,647 - crypto_advisor.news - INFO - Generated news summary for ETH with 28 Telegram articles and 0 market articles
+2025-03-01 23:50:06,648 - main - INFO - Prefetched news for ETH
+2025-03-01 23:50:06,648 - main - INFO - Data initialization complete
+2025-03-01 23:50:06,649 - main - INFO - Running in PRODUCTION mode
+2025-03-01 23:50:06,649 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-01 23:50:16,827 - crypto_advisor.api - INFO - No context provided by user
+2025-03-01 23:50:16,828 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-03-01 23:50:16,855 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-01 23:50:16,934 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-01 23:50:16,970 - crypto_advisor.news - INFO - Generated news summary for SOL with 30 Telegram articles and 0 market articles
+2025-03-01 23:50:17,005 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-01 23:50:17,007 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.19
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+        "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-01T17:53:07+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "diplomacy",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.19,
+  "insights": [
+    {
+      "title": "[More on what's happening in Asia's crypto landscape here \ud83d\udc47](https://x.com/Cointelegraph/status/1...",
+      "description": "[More on what's happening in Asia's crypto landscape here \ud83d\udc47](https://x.com/Cointelegraph/status/1895794113372389602)\n\n More on what's happening in Asia's crypto landscape here \ud83d\udc47\n https://t.co/4sLUA6qcRk\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:20:02+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\u26a1 INSIGHT: New 3AC controversy as OX. FUN rejects claims its assets are mostly its own token, pl...",
+      "description": "[\u26a1 INSIGHT: New 3AC controversy as OX. FUN rejects claims its assets are mostly its own token, plus sleuths trace stolen Bybit funds. Asia Express via Cointelegraph Magazine](https://x.com/Cointelegraph/status/1895791349925880250)\n\n \u26a1 INSIGHT: New 3AC controversy as OX. FUN rejects claims its assets are mostly\n its own token, plus sleuths trace stolen Bybit funds.\n \n Asia Express via Cointelegraph Magazine pic.twitter.com/dOVrkhz3vr\n \n \u2014 Cointelegraph (@Cointelegraph) March 1, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:20:00+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take...",
+      "description": "[Bitcoin struggles below key resistance at $87K, facing strong selling pressure \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1 - RSI signals oversold conditions, but momentum remains bearish - Key support at $83K, resistance at $87K - A drop below $80K could\u2026](https://x.com/BTCTN/status/1895898782270660849)\n\n Bitcoin struggles below key resistance at $87K, facing strong selling pressure\n \ud83d\udcc9 Will bulls take control, or is more downside ahead? \u26a1\n \n - RSI signals oversold conditions, but momentum remains bearish\n - Key support at $83K, resistance at $87K\n - A drop below $80K could\u2026 pic.twitter.com/Pr9xKLmZaF\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T18:15:09+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrive...",
+      "description": "[RT by @BBCWorld: Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he arrives at No 10 for talks in wake of White House\u2026](https://x.com/BBCWorld/status/1895894809191293420)\n\n Ukraine's President Zelensky embraced by UK Prime Minister Starmer as he\n arrives at No 10 for talks in wake of White House clash with President Trump -\n follow live https://t.co/UlLoa0ywFW\n \n \u2014 BBC Breaking News (@BBCBreaking) March 1, 2025\n\n**@BBCBreaking**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:53:07+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "diplomacy",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction ...",
+      "description": "[A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart, citing jurisdiction issues. \ud83d\udea8 - Case tossed due to lack of U.S. targeting proof - SEC alleged $1B fraud, luxury fund misuse - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10](https://x.com/BTCTN/status/1895889856024216031)\n\n A federal judge dismissed the SEC\u2019s case against HEX founder Richard Heart,\n citing jurisdiction issues. \ud83d\udea8\n \n - Case tossed due to lack of U.S. targeting proof\n - SEC alleged $1B fraud, luxury fund misuse\n - Ruling curbs SEC\u2019s global crypto reach \ud83c\udf10\n \n \u2014 Bitcoin.com News (@BTCTN) March 1, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 1, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-01T17:41:19+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-01 23:50:17"
+}
+2025-03-01 23:50:17,360 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-01 23:50:17,361 - crypto_advisor.api - INFO - Pattern data retrieved for SOL
+2025-03-01 23:50:46,125 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-02 09:06:46,681 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:46,682 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Former Governor Andrew Cuomo announces run for Ne...
+2025-03-02 09:06:46,744 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:46,746 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [What did you buy in this last dip?](https://x.com...
+2025-03-02 09:06:46,809 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:46,811 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Gaza ceasefire deal at critical moment](https://x...
+2025-03-02 09:06:46,876 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:46,876 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Bus crash kills at least 37 in Bolivia](https://x...
+2025-03-02 09:06:46,938 - news_provider - INFO - Stored mixed message in news_data
+2025-03-02 09:06:47,010 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,011 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [JUST IN: Longtime Ethereum developer Danny Ryan j...
+2025-03-02 09:06:47,072 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,072 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [A crypto sleuth’s dream: Three minuscule BTC tran...
+2025-03-02 09:06:47,130 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:47,130 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Vance took the lead attacking Zelensky. Why?](htt...
+2025-03-02 09:06:47,186 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:47,186 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Republicans rally round Trump after White House s...
+2025-03-02 09:06:47,245 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,245 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Ethereum Foundation announces Hsiao-Wei Wang & To...
+2025-03-02 09:06:47,302 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:47,303 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [R&B hitmaker Angie Stone reported dead in car cra...
+2025-03-02 09:06:47,366 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,429 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,430 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [ICYMI: The Ethereum Foundation welcomes Hsiao-Wei...
+2025-03-02 09:06:47,485 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,553 - news_provider - INFO - Stored mixed message in news_data
+2025-03-02 09:06:47,623 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,623 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Is the Biden administration stifling crypto innov...
+2025-03-02 09:06:47,681 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,746 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:47,746 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [They lost their families in a plane crash - then ...
+2025-03-02 09:06:47,808 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:47,808 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [How Zelensky's clothing choice may have fuelled O...
+2025-03-02 09:06:47,874 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,874 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Microstrategy just locked in a $2.6B bitcoin gain...
+2025-03-02 09:06:47,931 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:47,932 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [His name was in a child abuse diary - now his fam...
+2025-03-02 09:06:47,995 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:47,995 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Is Ripple about to score the biggest win in crypt...
+2025-03-02 09:06:48,061 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:48,131 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:48,132 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [In the US, DEI is under attack. But under a diffe...
+2025-03-02 09:06:48,195 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:48,259 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:48,325 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:48,326 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Bitcoin is shaking weak hands again! CZ, the form...
+2025-03-02 09:06:48,386 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 09:06:48,448 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:48,449 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [How royal divorce papers have shaken the Zulu kin...
+2025-03-02 09:06:48,506 - news_provider - INFO - Stored general message in news_data
+2025-03-02 09:06:48,507 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [How royal divorce papers have shaken the Zulu kin...
+2025-03-02 09:15:47,465 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 10:12:12,913 - news_provider - INFO - Stored crypto message in news_data
+2025-03-02 10:12:12,913 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Russia’s digital ruble rollout has been delayed. ...

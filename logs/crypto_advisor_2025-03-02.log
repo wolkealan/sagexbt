@@ -1,0 +1,330 @@
+2025-03-02 10:28:17,380 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-02 10:28:17,536 - database - INFO - Created MongoDB indexes
+2025-03-02 10:28:22,863 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-02 10:28:22,867 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-02 10:28:24,532 - main - INFO - Application started
+2025-03-02 10:28:24,532 - main - INFO - Database initialized: walletTracker
+2025-03-02 10:28:24,533 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-02 10:28:24,534 - main - INFO - Initializing database connection...
+2025-03-02 10:28:24,534 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-02 10:28:24,535 - main - INFO - Initializing data providers...
+2025-03-02 10:28:27,442 - main - INFO - Prefetched market data for BTC
+2025-03-02 10:28:28,039 - main - INFO - Prefetched market data for ETH
+2025-03-02 10:28:28,107 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-02 10:28:28,108 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.1
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.1,
+  "insights": [
+    {
+      "title": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia...",
+      "description": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia is holding off on a full launch to refine its economic model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot, testing is in full swing. Smart contracts are\u2026](https://x.com/BTCTN/status/1896056007047946259)\n\n Russia\u2019s digital ruble rollout has been delayed. But interest is growing.\n \ud83d\ude80\ud83c\uddf7\ud83c\uddfa\n \n The Bank of Russia is holding off on a full launch to refine its economic\n model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot,\n testing is in full swing.\n \n Smart contracts are\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T04:42:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins,...",
+      "description": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins, calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins aren't just memes, but tools for market manipulation. \ud83d\udea8 With meme coins hitting billions in market cap,\u2026](https://x.com/BTCTN/status/1896040836728582598)\n\n The SEC is under fire! \ud83d\udd25\n \n Commissioner Caroline Crenshaw just slammed new guidance on meme coins,\n calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins\n aren't just memes, but tools for market manipulation. \ud83d\udea8\n \n With meme coins hitting billions in market cap,\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:45:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/C...",
+      "description": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/Cointelegraph/status/1896032940448002465)\n\n \ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in\n 2025. pic.twitter.com/H7dLdrRSSi\n \n \u2014 Cointelegraph (@Cointelegraph) March 2, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:11:04+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master ris...",
+      "description": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master risk and resilience will survive this market. BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026](https://x.com/BTCTN/status/1896026087139807259)\n\n Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only\n those who master risk and resilience will survive this market.\n \n BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff\n threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T02:36:32+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. doll...",
+      "description": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and silver. The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026](https://x.com/BTCTN/status/1896010685986787636)\n\n Robert Kiyosaki just shook the table again! \ud83c\udfc6\n \n He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even\n worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and\n silver.\n \n The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T01:57:07+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-02 10:28:28"
+}
+2025-03-02 10:28:28,110 - main - INFO - Prefetched market context
+2025-03-02 10:28:28,168 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-02 10:28:28,194 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-02 10:28:28,194 - main - INFO - Prefetched news for BTC
+2025-03-02 10:28:28,235 - crypto_advisor.news - INFO - Fetched 31 Telegram news articles for specific coin
+2025-03-02 10:28:28,255 - crypto_advisor.news - INFO - Generated news summary for ETH with 31 Telegram articles and 0 market articles
+2025-03-02 10:28:28,256 - main - INFO - Prefetched news for ETH
+2025-03-02 10:28:28,256 - main - INFO - Data initialization complete
+2025-03-02 10:28:28,257 - main - INFO - Running in PRODUCTION mode
+2025-03-02 10:28:28,258 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-02 10:28:46,857 - crypto_advisor.api - INFO - No context provided by user
+2025-03-02 10:28:46,858 - crypto_advisor.api - INFO - Analysis query - Message: 'should I buy sol now?', Coin: SOL, Intent: buy
+2025-03-02 10:28:47,239 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-02 10:28:47,432 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-02 10:28:47,619 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-02 10:28:47,813 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-02 10:28:48,005 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-02 10:28:48,193 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-02 10:28:48,214 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-02 10:28:48,275 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-02 10:28:48,296 - crypto_advisor.news - INFO - Generated news summary for SOL with 28 Telegram articles and 0 market articles
+2025-03-02 10:28:48,319 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-02 10:28:48,321 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.1
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.1,
+  "insights": [
+    {
+      "title": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia...",
+      "description": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia is holding off on a full launch to refine its economic model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot, testing is in full swing. Smart contracts are\u2026](https://x.com/BTCTN/status/1896056007047946259)\n\n Russia\u2019s digital ruble rollout has been delayed. But interest is growing.\n \ud83d\ude80\ud83c\uddf7\ud83c\uddfa\n \n The Bank of Russia is holding off on a full launch to refine its economic\n model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot,\n testing is in full swing.\n \n Smart contracts are\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T04:42:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins,...",
+      "description": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins, calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins aren't just memes, but tools for market manipulation. \ud83d\udea8 With meme coins hitting billions in market cap,\u2026](https://x.com/BTCTN/status/1896040836728582598)\n\n The SEC is under fire! \ud83d\udd25\n \n Commissioner Caroline Crenshaw just slammed new guidance on meme coins,\n calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins\n aren't just memes, but tools for market manipulation. \ud83d\udea8\n \n With meme coins hitting billions in market cap,\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:45:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/C...",
+      "description": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/Cointelegraph/status/1896032940448002465)\n\n \ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in\n 2025. pic.twitter.com/H7dLdrRSSi\n \n \u2014 Cointelegraph (@Cointelegraph) March 2, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:11:04+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master ris...",
+      "description": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master risk and resilience will survive this market. BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026](https://x.com/BTCTN/status/1896026087139807259)\n\n Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only\n those who master risk and resilience will survive this market.\n \n BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff\n threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T02:36:32+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. doll...",
+      "description": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and silver. The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026](https://x.com/BTCTN/status/1896010685986787636)\n\n Robert Kiyosaki just shook the table again! \ud83c\udfc6\n \n He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even\n worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and\n silver.\n \n The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T01:57:07+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-02 10:28:48"
+}
+2025-03-02 10:28:48,352 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-02 10:28:48,353 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-02 10:28:48,353 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-02 10:28:48,354 - crypto_advisor.api - INFO - Pattern data retrieved for SOL
+2025-03-02 10:28:48,354 - crypto_advisor.api - WARNING - Error analyzing patterns for SOL: 'NoneType' object has no attribute 'get'
+2025-03-02 10:29:06,029 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-02 10:29:39,922 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-02 10:29:39,922 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-02 10:29:39,923 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-02 10:29:39,948 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-02 10:29:40,030 - crypto_advisor.news - INFO - Fetched 28 Telegram news articles for specific coin
+2025-03-02 10:29:40,056 - crypto_advisor.news - INFO - Generated news summary for SOL with 28 Telegram articles and 0 market articles
+2025-03-02 10:29:40,076 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-02 10:29:40,076 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-02 10:29:40,077 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-02 10:29:40,077 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-02 10:29:40,113 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-02 10:29:40,115 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.1
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.1,
+  "insights": [
+    {
+      "title": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia...",
+      "description": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia is holding off on a full launch to refine its economic model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot, testing is in full swing. Smart contracts are\u2026](https://x.com/BTCTN/status/1896056007047946259)\n\n Russia\u2019s digital ruble rollout has been delayed. But interest is growing.\n \ud83d\ude80\ud83c\uddf7\ud83c\uddfa\n \n The Bank of Russia is holding off on a full launch to refine its economic\n model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot,\n testing is in full swing.\n \n Smart contracts are\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T04:42:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins,...",
+      "description": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins, calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins aren't just memes, but tools for market manipulation. \ud83d\udea8 With meme coins hitting billions in market cap,\u2026](https://x.com/BTCTN/status/1896040836728582598)\n\n The SEC is under fire! \ud83d\udd25\n \n Commissioner Caroline Crenshaw just slammed new guidance on meme coins,\n calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins\n aren't just memes, but tools for market manipulation. \ud83d\udea8\n \n With meme coins hitting billions in market cap,\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:45:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/C...",
+      "description": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/Cointelegraph/status/1896032940448002465)\n\n \ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in\n 2025. pic.twitter.com/H7dLdrRSSi\n \n \u2014 Cointelegraph (@Cointelegraph) March 2, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:11:04+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master ris...",
+      "description": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master risk and resilience will survive this market. BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026](https://x.com/BTCTN/status/1896026087139807259)\n\n Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only\n those who master risk and resilience will survive this market.\n \n BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff\n threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T02:36:32+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. doll...",
+      "description": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and silver. The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026](https://x.com/BTCTN/status/1896010685986787636)\n\n Robert Kiyosaki just shook the table again! \ud83c\udfc6\n \n He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even\n worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and\n silver.\n \n The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T01:57:07+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-02 10:29:40"
+}
+2025-03-02 10:29:40,118 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.1
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.1,
+  "insights": [
+    {
+      "title": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia...",
+      "description": "[Russia\u2019s digital ruble rollout has been delayed. But interest is growing. \ud83d\ude80\ud83c\uddf7\ud83c\uddfa The Bank of Russia is holding off on a full launch to refine its economic model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot, testing is in full swing. Smart contracts are\u2026](https://x.com/BTCTN/status/1896056007047946259)\n\n Russia\u2019s digital ruble rollout has been delayed. But interest is growing.\n \ud83d\ude80\ud83c\uddf7\ud83c\uddfa\n \n The Bank of Russia is holding off on a full launch to refine its economic\n model. With 15 banks, 1,700 citizens, and 30 businesses already in the pilot,\n testing is in full swing.\n \n Smart contracts are\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T04:42:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins,...",
+      "description": "[The SEC is under fire! \ud83d\udd25 Commissioner Caroline Crenshaw just slammed new guidance on meme coins, calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins aren't just memes, but tools for market manipulation. \ud83d\udea8 With meme coins hitting billions in market cap,\u2026](https://x.com/BTCTN/status/1896040836728582598)\n\n The SEC is under fire! \ud83d\udd25\n \n Commissioner Caroline Crenshaw just slammed new guidance on meme coins,\n calling it a \u201croadmap\u201d for issuers to dodge oversight. She says these coins\n aren't just memes, but tools for market manipulation. \ud83d\udea8\n \n With meme coins hitting billions in market cap,\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:45:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/C...",
+      "description": "[\ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in 2025.](https://x.com/Cointelegraph/status/1896032940448002465)\n\n \ud83d\udd25 NEW: Polymarket predicts a 15% chance that Bitcoin will hit $200,000 in\n 2025. pic.twitter.com/H7dLdrRSSi\n \n \u2014 Cointelegraph (@Cointelegraph) March 2, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T03:11:04+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master ris...",
+      "description": "[Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only those who master risk and resilience will survive this market. BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026](https://x.com/BTCTN/status/1896026087139807259)\n\n Bitcoin is shaking weak hands again! CZ, the former Binance boss, says only\n those who master risk and resilience will survive this market.\n \n BTC dipped hard, dropping below $80K, and panic set in. Trump\u2019s new tariff\n threats and a $1.5B Bybit hack hit the market at once. But CZ?\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T02:36:32+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. doll...",
+      "description": "[Robert Kiyosaki just shook the table again! \ud83c\udfc6 He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and silver. The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026](https://x.com/BTCTN/status/1896010685986787636)\n\n Robert Kiyosaki just shook the table again! \ud83c\udfc6\n \n He says bitcoin might be a scam\u2026 but the U.S. dollar and banking system? Even\n worse. And he\u2019s putting his money where his mouth is\u2014buying bitcoin, gold, and\n silver.\n \n The \"Rich Dad Poor Dad\" author predicts a total collapse of the\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 2, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 2, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-02T01:57:07+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-02 10:29:40"
+}
+2025-03-02 10:30:22,025 - crypto_advisor.llm - INFO - Successfully received response from DeepSeek API
+2025-03-02 10:30:22,026 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)

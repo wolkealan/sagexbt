@@ -1119,7 +1119,7 @@ I can help you with:
     <div className="flex flex-col h-screen w-full bg-black text-white shadow-lg">
       {/* Header */}
       <div className="flex justify-between items-center p-4 border-b border-gray-800">
-        <a href="/landing.html" className="text-2xl font-bold text-orange-500 cursor-pointer hover:text-orange-400">SageXbt</a>
+        <a href="/landing.html" className="text-2xl font-bold text-orange-500 cursor-pointer hover:text-orange-400">AionX</a>
         <div className="flex items-center">
           <button 
             onClick={() => setShowContextForm(true)}
@@ -1138,7 +1138,7 @@ I can help you with:
           {messages.length === 0 ? (
             <>
               <div className="mb-8 text-center">
-                <h2 className="text-3xl font-bold mb-2 text-orange-500">Welcome to SageXbt</h2>
+                <h2 className="text-3xl font-bold mb-2 text-orange-500">Welcome to AionX</h2>
                 <p className="text-gray-300 mb-4">
                   Get AI-powered cryptocurrency analysis and trading recommendations
                 </p>
@@ -1199,7 +1199,7 @@ messages.map((message, index) => (
       </div>
       
       <div className="text-xs text-gray-500 mt-2 text-right">
-        {message.timestamp}
+        {/* {message.timestamp} */}
       </div>
     </div>
   </div>

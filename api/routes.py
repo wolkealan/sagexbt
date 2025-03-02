@@ -30,6 +30,8 @@ class JSONEncoder(json.JSONEncoder):
             return str(obj)
         elif isinstance(obj, np.integer):
             return int(obj)
+        elif isinstance(obj, np.bool_):  # Add explicit handling for numpy.bool_ type
+            return bool(obj)            # Convert to Python's built-in bool
         elif isinstance(obj, np.floating):
             # Convert NaN/Infinity to None for JSON compatibility
             if math.isnan(obj) or math.isinf(obj):
@@ -56,6 +58,8 @@ def sanitize_for_json(obj):
         return float(obj)
     elif isinstance(obj, (np.int32, np.int64)):
         return int(obj)
+    elif isinstance(obj, np.bool_):  # Add this line to handle numpy boolean values
+        return bool(obj)            # Convert to Python's built-in bool
     elif isinstance(obj, np.ndarray):
         return sanitize_for_json(obj.tolist())
     elif isinstance(obj, ObjectId):
@@ -142,6 +146,7 @@ async def get_supported_coins_api(refresh: bool = Query(False, description="Forc
 async def get_recommendation(
     coin: str,
     action_type: str = Query("spot", enum=["spot", "futures"]),
+    risk_tolerance: Optional[str] = Query(None, enum=["low", "medium", "high"]),
     timeframe: str = Query("1h", description="Timeframe for analysis"),
     force_refresh: bool = Query(False, description="Force refresh data and recommendation")
 ):
@@ -150,6 +155,7 @@ async def get_recommendation(
     
     - **coin**: Cryptocurrency symbol (e.g., BTC, ETH)
     - **action_type**: Type of trading (spot or futures)
+    - **risk_tolerance**: User's risk tolerance (low, medium, high)
     - **timeframe**: Timeframe for analysis (e.g., 1h, 4h, 1d)
     - **force_refresh**: Force refresh data and recommendation
     """
@@ -191,6 +197,7 @@ async def get_recommendation(
         recommendation = await recommendation_engine.generate_recommendation(
             coin=coin,
             action_type=action_type,
+            risk_tolerance=risk_tolerance,
             force_refresh=force_refresh
         )
         
@@ -1005,6 +1012,17 @@ async def analyze_custom_query(
         # Extract necessary components
         message = query.get("message", "")
         context = query.get("context", {})
+        # Extract risk tolerance
+        risk_tolerance = context.get("risk_tolerance", None)
+        
+        # Check for risk mentions in the message itself
+        if "risk is low" in message.lower() or "low risk" in message.lower():
+            risk_tolerance = "low"
+        elif "risk is medium" in message.lower() or "medium risk" in message.lower():
+            risk_tolerance = "medium"
+        elif "risk is high" in message.lower() or "high risk" in message.lower():
+            risk_tolerance = "high"
+        
         
         # Validate input
         if not message:

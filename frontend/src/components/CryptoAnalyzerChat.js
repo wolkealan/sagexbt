@@ -252,9 +252,7 @@ const Suggestions = ({ onSuggestionSelect }) => {
     "Is Bitcoin a good short right now?",
     "Should I buy SOL for short term with low risk?",
     "Analyze Cardano's price movement for long-term investment",
-    "What leverage should I use for trading SOL?",
-  "Recommend futures leverage for low-risk trading",
-  "Futures trading strategy for ETH with low risk"
+    
   ];
 
   return (
@@ -275,6 +273,17 @@ const Suggestions = ({ onSuggestionSelect }) => {
 // Message formatting helper
 const formatMessage = (content) => {
   if (!content) return "No content available";
+  
+  // Check for leverage recommendations
+  const leverageMatch = content.match(/Recommended Leverage: (\d+(?:-\d+)?x)/i);
+  if (leverageMatch) {
+    const leverageText = leverageMatch[0];
+    // Highlight leverage recommendations
+    content = content.replace(
+      leverageText, 
+      `<span class="bg-amber-900 bg-opacity-40 text-amber-300 px-1 rounded">${leverageText}</span>`
+    );
+  }
   
   // Split by numbered sections with asterisks/numbers
   const parts = content.split(/(\d\.\s\*\*.*?\*\*:)/g);

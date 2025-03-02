@@ -89,6 +89,26 @@ class AppConfig:
 
 # Trading configuration
 class TradingConfig:
+    
+    X_ACCOUNT_URLS = [
+        'https://x.com/Cointelegraph',  # Primary crypto news source
+        'https://x.com/watcher_guru',   # Crypto market insights
+        'https://x.com/TheCryptoLark',  # Crypto analyst
+        'https://x.com/BinanceUS',      # Major exchange news
+        'https://x.com/coindesk',       # Another crypto news source
+        'https://x.com/DocumentingBTC'  # Bitcoin-focused account
+    ]
+    
+    # Supported coins for filtering news
+    SUPPORTED_COINS_CACHE = [
+        'BTC', 'ETH', 'BNB', 'SOL', 'XRP', 
+        'ADA', 'DOGE', 'SHIB', 'DOT', 'MATIC', 
+        'AVAX', 'UNI', 'LINK', 'LTC', 'XLM'
+    ]
+    
+    # News collection name (match with your existing database configuration)
+    NEWS_COLLECTION = 'news_data'
+    
     # Fallback supported cryptocurrencies - Comprehensive list from Binance
     DEFAULT_SUPPORTED_COINS = [
         # Major Cryptocurrencies

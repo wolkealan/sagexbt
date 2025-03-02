@@ -26,6 +26,7 @@ class RecommendationEngine:
         self.recommendations_cache = {}
     
     async def generate_recommendation(self, coin: str, action_type: str = "spot",
+                                      risk_tolerance: Optional[str] = None,
                              force_refresh: bool = False) -> Dict[str, Any]:
         try:
             # Fetch market data
@@ -78,7 +79,8 @@ class RecommendationEngine:
                 news_data=news_summary,
                 market_context=market_context,
                 pattern_data=pattern_data,  # Add pattern data
-                action_type=action_type
+                action_type=action_type,
+                risk_tolerance=risk_tolerance
             )
             
             return recommendation

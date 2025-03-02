@@ -172,13 +172,97 @@ class GrokLLM:
         
         return "\n".join(result) if result else "No significant technical patterns detected"
     
+    def _calculate_leverage_recommendation(self, 
+                                      risk_tolerance: str,
+                                      market_data: Dict[str, Any],
+                                      pattern_data: Dict[str, Any],
+                                      confidence: str) -> Dict[str, Any]:
+        """
+        Calculate appropriate leverage based on multiple factors
+        
+        Args:
+            risk_tolerance: User's risk tolerance (low, medium, high)
+            market_data: Market data including volatility
+            pattern_data: Technical patterns data
+            confidence: Recommendation confidence level
+            
+        Returns:
+            Dict with leverage recommendation and explanation
+        """
+        # Base leverage ranges by risk tolerance
+        leverage_ranges = {
+            "low": {"min": 1, "max": 2, "description": "very conservative"},
+            "medium": {"min": 2, "max": 5, "description": "moderate"},
+            "high": {"min": 5, "max": 20, "description": "aggressive"}
+        }
+        
+        # Get base range based on risk tolerance (default to medium if not specified)
+        base_range = leverage_ranges.get(risk_tolerance.lower(), leverage_ranges["medium"])
+        
+        # Adjust for market volatility
+        volatility_factor = 1.0
+        if "volatility" in market_data:
+            vol = market_data.get("volatility", 0)
+            if vol > 5:  # High volatility
+                volatility_factor = 0.5
+            elif vol > 3:  # Medium volatility
+                volatility_factor = 0.7
+        
+        # Adjust for confidence level
+        confidence_factor = 1.0
+        if confidence == "Low":
+            confidence_factor = 0.6
+        elif confidence == "High":
+            confidence_factor = 1.2
+        
+        # Adjust for proximity to support/resistance
+        proximity_factor = 1.0
+        if pattern_data and "support_resistance" in pattern_data:
+            sr_data = pattern_data.get("support_resistance", {})
+            if "proximity_to_level" in sr_data:
+                proximity = sr_data.get("proximity_to_level", 0)
+                if proximity < 0.05:  # Very close to a level (within 5%)
+                    proximity_factor = 0.7  # Reduce leverage near key levels
+        
+        # Calculate range
+        min_leverage = max(1, base_range["min"] * volatility_factor * confidence_factor * proximity_factor)
+        max_leverage = max(min_leverage, base_range["max"] * volatility_factor * confidence_factor * proximity_factor)
+        
+        # Round to clean numbers
+        min_leverage = round(min_leverage)
+        max_leverage = round(max_leverage)
+        
+        # Generate explanation
+        factors = []
+        factors.append(f"{risk_tolerance} risk tolerance suggesting {base_range['description']} leverage")
+        
+        if volatility_factor < 1:
+            factors.append("elevated market volatility (suggesting lower leverage)")
+        
+        if confidence_factor < 1:
+            factors.append("lower confidence in the trade direction")
+        elif confidence_factor > 1:
+            factors.append("higher confidence in the trade direction")
+        
+        if proximity_factor < 1:
+            factors.append("proximity to key support/resistance levels")
+        
+        explanation = f"Based on {', '.join(factors)}"
+        
+        return {
+            "min_leverage": min_leverage,
+            "max_leverage": max_leverage,
+            "explanation": explanation
+        }
+    
     def generate_recommendation(self, 
           coin: str, 
           market_data: Dict[str, Any],
           news_data: Dict[str, Any],
           market_context: Dict[str, Any],
           pattern_data: Dict[str, Any] = None,
-          action_type: str = "spot") -> Dict[str, Any]:
+          action_type: str = "spot",
+          risk_tolerance: Optional[str] = None) -> Dict[str, Any]:
         try:
             # Prepare data for the prompt
             current_price = market_data.get('current_price', 'Unknown')
@@ -295,6 +379,22 @@ TIME-BASED CONSIDERATIONS:
   * Consider proximity to these events when making risk management recommendations
 - Adjust trading recommendations based on proximity to these events (e.g., lower position sizes, wider stops)
 
+LEVERAGE RECOMMENDATION:
+- ALWAYS include a specific leverage recommendation when the user asks about leverage or mentions risk tolerance
+- Format it as "Recommended Leverage: X-Y×" on its own line for clear visibility
+- Base the leverage recommendation on the following factors:
+  * Risk tolerance: 
+    - Low risk: 1-2× leverage
+    - Medium risk: 2-5× leverage
+    - High risk: 5-10× leverage
+  * Adjust these ranges down for:
+    - High market volatility
+    - Bearish or uncertain market conditions
+    - Proximity to major support/resistance levels
+    - Low confidence in the trade direction
+    - Weekend trading or low liquidity periods
+- Explain the reasoning behind your leverage recommendation in a separate paragraph
+
 Your recommendation should consider:
 1. Technical indicators from the 1-hour timeframe (RSI, MACD, etc.)
 2. Technical chart patterns from the 1-hour timeframe
@@ -314,6 +414,14 @@ For each recommendation:
 - Include relevant risk warnings
 - Reference important support/resistance levels from the 1-hour timeframe
 - Comment on any relevant time-based factors (weekends, market hours, upcoming events)
+- If futures trading or leverage is mentioned:
+  * Provide a specific leverage recommendation (1x-125x) based on:
+    - User's risk tolerance (low: 1-2x, medium: 3-5x, high: 5-20x)
+    - Market volatility (higher volatility = lower leverage)
+    - Current trend strength and confidence level
+    - Support/resistance proximity
+  * Include clear risk warnings about liquidation
+  * Explain the specific reasoning for the leverage recommendation
 
 LATEST NEWS SECTION:
 Always include a dedicated "LATEST NEWS" section at the beginning of your response, with the most recent 2-3 headlines or significant developments about the specific cryptocurrency being analyzed. Format this as "As of {datetime.now().strftime('%Y-%m-%d')}, here's the latest news about [coin]:" followed by bullet points of recent developments. Focus on news from the past week that could impact price movement.
@@ -350,6 +458,9 @@ CURRENT MARKET HOURS:
 - Market timezone: {market_hours_context['market_timezone_description']}
 - Market conditions: {market_hours_context['market_conditions']}
 - Consider how these current market conditions might impact trading decisions for {coin}
+
+USER PROFILE:
+- Risk tolerance: {risk_tolerance if risk_tolerance else "not specified"}
 
 Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) with explanation.
 Make sure to include the current price (${current_price} USD) in your analysis.

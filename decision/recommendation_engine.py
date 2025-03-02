@@ -9,7 +9,7 @@ from utils.logger import get_logger
 from utils.database import get_database
 from data.market_data import get_market_data_provider
 from data.news_provider import get_news_provider
-from deepseek.llm_interface import get_deepseek_llm
+from deepseek.grok_interface import get_grok_llm
 # from deepseek.llm_factory import get_llm_provider
 
 from decision.pattern_recognition import get_pattern_recognition
@@ -21,7 +21,7 @@ class RecommendationEngine:
     def __init__(self):
         self.market_data = get_market_data_provider()
         self.news_provider = get_news_provider()
-        self.llm = get_deepseek_llm()
+        self.llm = get_grok_llm()
         self.db = get_database()
         self.recommendations_cache = {}
     

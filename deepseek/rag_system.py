@@ -8,7 +8,7 @@ from datetime import datetime, timedelta
 
 from config.config import AppConfig, BASE_DIR
 from utils.logger import get_logger
-from deepseek.llm_interface import get_deepseek_llm
+from deepseek.grok_interface import get_grok_llm
 
 logger = get_logger("rag_system")
 
@@ -19,7 +19,7 @@ class RAGSystem:
     """
     
     def __init__(self):
-        self.llm = get_deepseek_llm()
+        self.llm = get_grok_llm()
         self.vector_db_path = AppConfig.VECTOR_DB_PATH
         self.ensure_vector_db_dir()
         self.client = chromadb.PersistentClient(path=self.vector_db_path)

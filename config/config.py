@@ -46,6 +46,9 @@ class APIConfig:
     DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY")
     DEEPSEEK_API_BASE = os.getenv("DEEPSEEK_API_BASE", "https://api.deepseek.com")
     
+    # Grok LLM API
+    GROK_API_KEY = os.getenv("GROK_API_KEY", "")
+    GROK_API_BASE = os.getenv("GROK_API_BASE", "https://api.xai.com")
     # News API
     NEWS_API_KEY = os.getenv("NEWS_API_KEY")
     

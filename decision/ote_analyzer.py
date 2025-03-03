@@ -57,7 +57,9 @@ class OTEAnalyzer:
                 "prev_day_low": prev_day_low,
                 "bullish_setup": None,
                 "bearish_setup": None,
-                "timeframe": "5m"
+                "timeframe": "5m",
+                "has_valid_setup": False,  # Add a flag to make detection easier
+                "setup_type": "none"       # Add setup type for easy reference
             }
             
             # Check for bullish setup
@@ -103,6 +105,10 @@ class OTEAnalyzer:
                                 target=fib_levels["extension_1_0"]
                             )
                         }
+                        
+                        # Update main ote_setup properties
+                        ote_setup["has_valid_setup"] = True
+                        ote_setup["setup_type"] = "bullish"
             
             # Check for bearish setup
             bearish_breakout = self._check_bearish_breakout(df_5m, prev_day_low)
@@ -147,6 +153,15 @@ class OTEAnalyzer:
                                 target=fib_levels["extension_1_0"]
                             )
                         }
+                        
+                        # Update main ote_setup properties
+                        ote_setup["has_valid_setup"] = True
+                        ote_setup["setup_type"] = "bearish"
+            
+            # Even if we don't find a valid setup, add sensible default OTE values
+            # for entry/exit points based on Fibonacci retracements from recent high/low
+            if not ote_setup["has_valid_setup"]:
+                self._add_generic_fib_levels(ote_setup, df_1h)
             
             logger.info(f"OTE analysis completed for {symbol}")
             return ote_setup
@@ -154,6 +169,65 @@ class OTEAnalyzer:
         except Exception as e:
             logger.error(f"Error in OTE analysis for {symbol}: {e}")
             return {"error": f"Error in OTE analysis: {str(e)}"}
+    
+    def _add_generic_fib_levels(self, ote_setup: Dict[str, Any], df: pd.DataFrame) -> None:
+        """Add generic Fibonacci levels even when no valid OTE setup is found"""
+        try:
+            # Get high and low from recent price action
+            high = df['high'].max()
+            low = df['low'].min()
+            current_price = df['close'].iloc[-1]
+            
+            # Determine if we're in an uptrend or downtrend
+            ma_20 = df['close'].rolling(window=20).mean().iloc[-1]
+            ma_50 = df['close'].rolling(window=50).mean().iloc[-1]
+            
+            # Crude trend determination
+            is_uptrend = current_price > ma_20 > ma_50
+            
+            # Add potential entry points based on Fibonacci retracements
+            if is_uptrend:
+                # In uptrend, suggest buying on pullbacks
+                retracement_50 = high - (high - low) * 0.5
+                retracement_61 = high - (high - low) * 0.618
+                retracement_78 = high - (high - low) * 0.786
+                
+                ote_setup["suggested_entry"] = retracement_61
+                ote_setup["suggested_stop"] = low * 0.98  # 2% below low
+                ote_setup["suggested_take_profit"] = high * 1.1  # 10% above high
+                
+                ote_setup["generic_levels"] = {
+                    "trend": "uptrend",
+                    "recent_high": high,
+                    "recent_low": low,
+                    "retracement_50": retracement_50,
+                    "retracement_61": retracement_61,
+                    "retracement_78": retracement_78,
+                    "extension_1.0": high + (high - low),
+                    "extension_1.618": high + (high - low) * 1.618
+                }
+            else:
+                # In downtrend, suggest selling on pullbacks
+                retracement_50 = low + (high - low) * 0.5
+                retracement_61 = low + (high - low) * 0.618
+                retracement_78 = low + (high - low) * 0.786
+                
+                ote_setup["suggested_entry"] = retracement_61
+                ote_setup["suggested_stop"] = high * 1.02  # 2% above high
+                ote_setup["suggested_take_profit"] = low * 0.9  # 10% below low
+                
+                ote_setup["generic_levels"] = {
+                    "trend": "downtrend",
+                    "recent_high": high,
+                    "recent_low": low,
+                    "retracement_50": retracement_50,
+                    "retracement_61": retracement_61,
+                    "retracement_78": retracement_78,
+                    "extension_1.0": low - (high - low),
+                    "extension_1.618": low - (high - low) * 1.618
+                }
+        except Exception as e:
+            logger.warning(f"Error adding generic Fibonacci levels: {e}")
     
     def _check_bullish_breakout(self, df: pd.DataFrame, prev_day_high: float) -> Optional[Dict[str, Any]]:
         """
@@ -220,14 +294,6 @@ class OTEAnalyzer:
     def _find_recent_swing_points(self, df: pd.DataFrame, is_bullish: bool = True, window: int = 10) -> Tuple[float, float]:
         """
         Find recent swing points for Fibonacci retracement
-        
-        Args:
-            df: DataFrame with price data
-            is_bullish: True for bullish setup (find swing low to high), False for bearish (find swing high to low)
-            window: Window size for finding local extrema
-            
-        Returns:
-            Tuple of (start_price, end_price) - for bullish: (swing_low, swing_high), for bearish: (swing_high, swing_low)
         """
         try:
             # Use more recent data for swing point detection
@@ -288,14 +354,6 @@ class OTEAnalyzer:
     def _calculate_fibonacci_levels(self, start_price: float, end_price: float, is_bullish: bool = True) -> Dict[str, float]:
         """
         Calculate Fibonacci retracement and extension levels
-        
-        Args:
-            start_price: Start price for Fibonacci calculation (swing low for bullish, swing high for bearish)
-            end_price: End price for Fibonacci calculation (swing high for bullish, swing low for bearish)
-            is_bullish: True for bullish setup, False for bearish setup
-            
-        Returns:
-            Dictionary with Fibonacci levels
         """
         try:
             price_diff = abs(end_price - start_price)
@@ -336,14 +394,6 @@ class OTEAnalyzer:
     def _calculate_risk_reward(self, entry: float, stop: float, target: float) -> float:
         """
         Calculate risk to reward ratio
-        
-        Args:
-            entry: Entry price
-            stop: Stop loss price
-            target: Target price (usually take_profit_2)
-            
-        Returns:
-            Risk to reward ratio as a float
         """
         try:
             risk = abs(entry - stop)

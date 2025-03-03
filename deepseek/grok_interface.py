@@ -254,16 +254,166 @@ class GrokLLM:
             "max_leverage": max_leverage,
             "explanation": explanation
         }
+        
+        
+    def _format_ote_data(self, pattern_data: Dict[str, Any]) -> str:
+        """Format ICT OTE setup data for the prompt with detailed information"""
+        
+        if not pattern_data or not isinstance(pattern_data, dict) or "ote_setup" not in pattern_data:
+            return "No ICT OTE setup data available."
+        
+        ote_setup = pattern_data.get("ote_setup", {})
+        if not ote_setup or "error" in ote_setup:
+            return "No valid ICT OTE setup found at this time."
+        
+        result = []
+        
+        # Add current price from OTE data
+        current_price = ote_setup.get("current_price")
+        if current_price:
+            result.append(f"Current Price: ${current_price:.2f}")
+        
+        # Check if we have a valid ICT OTE setup
+        has_valid_setup = ote_setup.get("has_valid_setup", False)
+        setup_type = ote_setup.get("setup_type", "none")
+        
+        if has_valid_setup and setup_type == "bullish":
+            # Format bullish OTE setup
+            bullish = ote_setup.get("bullish_setup", {})
+            if bullish and bullish.get("valid", False):
+                in_zone = bullish.get("in_ote_zone", False)
+                result.append(f"ICT OTE BULLISH SETUP (5m):")
+                result.append(f"- In OTE Zone: {'YES - READY TO ENTER' if in_zone else 'NO - WAITING FOR RETRACEMENT'}")
+                
+                # Add swing points
+                if "swing_low" in bullish:
+                    result.append(f"- Swing Low: ${bullish['swing_low']:.2f}")
+                if "swing_high" in bullish:
+                    result.append(f"- Swing High: ${bullish['swing_high']:.2f}")
+                
+                # Add Fibonacci levels
+                if "fibonacci_levels" in bullish:
+                    fib = bullish["fibonacci_levels"]
+                    result.append("- Fibonacci Retracement Levels:")
+                    for level_name, level_value in fib.items():
+                        if level_name.startswith("retracement"):
+                            level_pct = level_name.split("_")[1]
+                            result.append(f"  * {level_pct}% Retracement: ${level_value:.2f}")
+                
+                # Add trading plan with high visibility
+                result.append("- ** ICT TRADING PLAN: **")
+                if "entry" in bullish:
+                    result.append(f"  * Entry Price: ${bullish['entry']:.2f}")
+                if "stop_loss" in bullish:
+                    risk_pct = abs((bullish.get("entry", 0) - bullish["stop_loss"]) / bullish.get("entry", 1) * 100)
+                    result.append(f"  * Stop Loss: ${bullish['stop_loss']:.2f} ({risk_pct:.2f}% risk)")
+                if "take_profit_1" in bullish:
+                    result.append(f"  * Take Profit 1 (0.5 Ext): ${bullish['take_profit_1']:.2f}")
+                if "take_profit_2" in bullish:
+                    result.append(f"  * Take Profit 2 (1.0 Ext): ${bullish['take_profit_2']:.2f}")
+                if "take_profit_3" in bullish:
+                    result.append(f"  * Take Profit 3 (2.0 Ext): ${bullish['take_profit_3']:.2f}")
+                if "risk_reward" in bullish:
+                    result.append(f"  * Risk/Reward Ratio: {bullish['risk_reward']:.2f}")
+        
+        elif has_valid_setup and setup_type == "bearish":
+            # Format bearish OTE setup
+            bearish = ote_setup.get("bearish_setup", {})
+            if bearish and bearish.get("valid", False):
+                in_zone = bearish.get("in_ote_zone", False)
+                result.append(f"ICT OTE BEARISH SETUP (5m):")
+                result.append(f"- In OTE Zone: {'YES - READY TO ENTER' if in_zone else 'NO - WAITING FOR RETRACEMENT'}")
+                
+                # Add swing points
+                if "swing_high" in bearish:
+                    result.append(f"- Swing High: ${bearish['swing_high']:.2f}")
+                if "swing_low" in bearish:
+                    result.append(f"- Swing Low: ${bearish['swing_low']:.2f}")
+                
+                # Add Fibonacci levels
+                if "fibonacci_levels" in bearish:
+                    fib = bearish["fibonacci_levels"]
+                    result.append("- Fibonacci Retracement Levels:")
+                    for level_name, level_value in fib.items():
+                        if level_name.startswith("retracement"):
+                            level_pct = level_name.split("_")[1]
+                            result.append(f"  * {level_pct}% Retracement: ${level_value:.2f}")
+                
+                # Add trading plan with high visibility
+                result.append("- ** ICT TRADING PLAN: **")
+                if "entry" in bearish:
+                    result.append(f"  * Entry Price: ${bearish['entry']:.2f}")
+                if "stop_loss" in bearish:
+                    risk_pct = abs((bearish.get("entry", 0) - bearish["stop_loss"]) / bearish.get("entry", 1) * 100)
+                    result.append(f"  * Stop Loss: ${bearish['stop_loss']:.2f} ({risk_pct:.2f}% risk)")
+                if "take_profit_1" in bearish:
+                    result.append(f"  * Take Profit 1 (0.5 Ext): ${bearish['take_profit_1']:.2f}")
+                if "take_profit_2" in bearish:
+                    result.append(f"  * Take Profit 2 (1.0 Ext): ${bearish['take_profit_2']:.2f}")
+                if "take_profit_3" in bearish:
+                    result.append(f"  * Take Profit 3 (2.0 Ext): ${bearish['take_profit_3']:.2f}")
+                if "risk_reward" in bearish:
+                    result.append(f"  * Risk/Reward Ratio: {bearish['risk_reward']:.2f}")
+        
+        else:
+            # No valid OTE setup, but provide generic Fibonacci levels as guidance
+            result.append("No valid ICT OTE setup found at this time.")
+            
+            # Add generic Fibonacci levels
+            if "generic_levels" in ote_setup:
+                gen = ote_setup["generic_levels"]
+                trend = gen.get("trend", "neutral")
+                
+                result.append(f"\nAlternative Fibonacci Analysis ({trend}):")
+                result.append(f"- Recent High: ${gen.get('recent_high', 0):.2f}")
+                result.append(f"- Recent Low: ${gen.get('recent_low', 0):.2f}")
+                
+                # Add fibonacci levels
+                if "retracement_50" in gen:
+                    result.append(f"- 50% Retracement: ${gen['retracement_50']:.2f}")
+                if "retracement_61" in gen:
+                    result.append(f"- 61.8% Retracement: ${gen['retracement_61']:.2f} (Potential entry)")
+                if "retracement_78" in gen:
+                    result.append(f"- 78.6% Retracement: ${gen['retracement_78']:.2f}")
+                    
+                # Add suggested levels
+                if "suggested_entry" in ote_setup:
+                    result.append(f"\nSuggested Entry Points:")
+                    result.append(f"- Entry: ${ote_setup['suggested_entry']:.2f}")
+                    result.append(f"- Stop Loss: ${ote_setup['suggested_stop']:.2f}")
+                    result.append(f"- Take Profit: ${ote_setup['suggested_take_profit']:.2f}")
+        
+        return "\n".join(result)
+
     
     def generate_recommendation(self, 
-          coin: str, 
-          market_data: Dict[str, Any],
-          news_data: Dict[str, Any],
-          market_context: Dict[str, Any],
-          pattern_data: Dict[str, Any] = None,
-          action_type: str = "spot",
-          risk_tolerance: Optional[str] = None) -> Dict[str, Any]:
+      coin: str, 
+      market_data: Dict[str, Any],
+      news_data: Dict[str, Any],
+      market_context: Dict[str, Any],
+      pattern_data: Dict[str, Any] = None,
+      action_type: str = "spot",
+      risk_tolerance: Optional[str] = None) -> Dict[str, Any]:
         try:
+            
+            # Improved news sentiment extraction
+            news_sentiment = 'neutral'
+            sentiment_score = 0
+            headlines = "No recent headlines available"
+            
+            # More robust news sentiment extraction
+            if news_data and isinstance(news_data, dict):
+                news_sentiment = news_data.get('sentiment', {}).get('sentiment', 'neutral')
+                sentiment_score = news_data.get('sentiment', {}).get('sentiment_score', 0)
+                
+                # Extract headlines
+                recent_articles = news_data.get('recent_articles', [])
+                if recent_articles:
+                    headlines = "\n".join([
+                        f"  * {article.get('title', 'No title')} ({article.get('source', {}).get('name', 'Unknown')})" 
+                        for article in recent_articles[:3]
+                    ])
+                    
             # Prepare data for the prompt
             current_price = market_data.get('current_price', 'Unknown')
             daily_change = market_data.get('daily_change_pct', 'Unknown')
@@ -274,11 +424,15 @@ class GrokLLM:
             # Format pattern recognition data
             pattern_analysis = self._format_patterns(pattern_data) if pattern_data else "No pattern data available"
             
+            # Format OTE setup data using dedicated method
+            ote_analysis = self._format_ote_data(pattern_data)
+            
             # Get current UTC time and determine if it's a weekend
             now_utc = datetime.now(timezone.utc)
             weekday = now_utc.weekday()  # 0-4 are Monday to Friday, 5-6 are weekend
             is_weekend = weekday >= 5  # 5 = Saturday, 6 = Sunday
             
+            # Current hour and minute in UTC for comparison
             # Current hour and minute in UTC for comparison
             current_hour_utc = now_utc.hour
             current_minute_utc = now_utc.minute
@@ -331,8 +485,8 @@ class GrokLLM:
                 else:
                     market_hours_context["market_conditions"] = "Outside major traditional market hours. While crypto markets operate 24/7, this period typically sees lower volume and potentially wider spreads."
             
-            # Build the prompt with enhanced ICT OTE guidance
-            system_prompt = """You are a cryptocurrency trading advisor specialized in providing recommendations based on technical analysis, news sentiment, and market conditions.
+            # Build the prompt with enhanced ICT OTE guidance and formatting
+            system_prompt = """You are a cryptocurrency trading advisor specialized in providing recommendations based on technical analysis, news sentiment, market conditions, and especially ICT OTE setups.
 Your task is to analyze the provided data and give a clear recommendation for the specified cryptocurrency.
 
 IMPORTANT: 
@@ -343,12 +497,15 @@ IMPORTANT:
 5. Shorter timeframes (30m, 15m, 5m) are useful for immediate entry/exit points
 6. Longer timeframes (4h, 1d) provide context for the overall trend direction
 
-ICT OPTIMAL TRADE ENTRY (OTE) STRATEGY:
-- Pay special attention to ICT OTE setups when present - these are high-probability trade setups
+ICT OPTIMAL TRADE ENTRY (OTE) STRATEGY - EXTREMELY IMPORTANT:
+- PAY SPECIAL ATTENTION to ICT OTE setups when present - these are high-probability trade setups
+- If ICT OTE setup information is provided, you MUST include it prominently in your analysis
 - OTE setups identify precise entry points at the 62-79% Fibonacci retracement level
 - For BULLISH OTE: Price breaks above previous day's high, then retraces to 62-79% Fib zone
 - For BEARISH OTE: Price breaks below previous day's low, then retraces to 62-79% Fib zone
 - If an OTE setup is identified as "IN OTE ZONE: YES", it's a prime entry opportunity
+- YOU MUST INCLUDE ALL PROVIDED FIBONACCI LEVELS, ENTRY POINTS, STOP LOSSES AND TAKE PROFIT TARGETS
+- DO NOT skip or ignore any ICT OTE setup details provided in the data
 
 OTE TRADE MANAGEMENT:
 - Entry should be near the 62% Fibonacci retracement level
@@ -428,7 +585,7 @@ Always include a dedicated "LATEST NEWS" section at the beginning of your respon
 
 Also leverage your direct access to Twitter data to include any relevant social sentiment around this cryptocurrency.
 """
-    
+
             user_prompt = f"""Please analyze the following data and provide a trading recommendation for {coin}:
 
 MARKET DATA:
@@ -439,6 +596,14 @@ MARKET DATA:
 
 TECHNICAL PATTERNS:
 {pattern_analysis}
+
+ICT OTE ANALYSIS (5m):
+{ote_analysis}
+
+NEWS SENTIMENT:
+- Overall sentiment: {news_sentiment} ({sentiment_score})
+- Recent headlines: 
+{headlines}
 
 GEOPOLITICAL AND MARKET-WIDE CONTEXT:
 - ONLY include very recent (past 24-48 hours) geopolitical events that have NOT YET been fully priced into the market
@@ -464,13 +629,17 @@ USER PROFILE:
 
 Please provide a {action_type.upper()} trading recommendation (BUY/SELL/HOLD) with explanation.
 Make sure to include the current price (${current_price} USD) in your analysis.
-If an ICT OTE setup is present in the data, prioritize this in your recommendation.
 
-IMPORTANT: Begin your response with a dedicated "LATEST NEWS" section showing the most recent developments for {coin}, using your access to real-time news sources and Twitter data. For geopolitical events, ONLY include genuinely fresh developments that haven't fully impacted markets yet.
+IMPORTANT REMINDERS:
+1. If an ICT OTE setup is present in the data, you MUST prioritize this in your recommendation
+2. Include ALL Fibonacci levels, entry points, stop losses, and take profit targets that are provided
+3. The ICT OTE Analysis section is EXTREMELY IMPORTANT - do not ignore any details from it
+
+Begin your response with a dedicated "LATEST NEWS" section showing the most recent developments for {coin}, using your access to real-time news sources and Twitter data. For geopolitical events, ONLY include genuinely fresh developments that haven't fully impacted markets yet.
 Also include any relevant Twitter sentiment about {coin} that might impact the price.
 """
-    
-            # Prepare messages for the API
+
+        # Prepare messages for the API
             messages = [
                 {"role": "system", "content": system_prompt},
                 {"role": "user", "content": user_prompt}
@@ -501,7 +670,10 @@ Also include any relevant Twitter sentiment about {coin} that might impact the p
                             'daily_change': daily_change,
                             'rsi_1d': rsi_1d
                         },
-                        'patterns': pattern_data  # Add pattern data to the context
+                        'news_sentiment': news_sentiment,
+                        'sentiment_score': sentiment_score,
+                        'patterns': pattern_data,  # Add pattern data to the context
+                        'ote_setup': pattern_data.get("ote_setup", {}) if pattern_data else {} # Add OTE setup data
                     }
                 }
                 

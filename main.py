@@ -1,38 +1,38 @@
 import uvicorn
 import asyncio
+import threading
 import os
 import sys
 from datetime import datetime
 from dotenv import load_dotenv
+import platform
+
+# For Windows compatibility
+if platform.system() == 'Windows':
+    import asyncio
+    asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+
 load_dotenv()  # Load environment variables from .env file
-# main.py
 
-# main.py
-
-from config.config import AppConfig, DatabaseConfig
 # Add the project root directory to the Python path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# Example usage
-print("AppConfig DEBUG:", AppConfig.DEBUG)
-print("DatabaseConfig DB_NAME:", DatabaseConfig.DB_NAME)
-# Import necessary modules
-# from config.config import AppConfig, DatabaseConfig
-# main.py
 
+from config.config import AppConfig, DatabaseConfig
+from discord.discord_bot import run_discord_bot
 from utils.logger import get_logger
 from utils.database import get_database
 from data.market_data import get_market_data_provider
 from data.news_provider import get_news_provider
-from api.routes import app
+from api.routes import app as api_app
+
 logger = get_logger("main")
-logger.info("Application started")
 
 # Initialize database
 db = get_database()
 logger.info(f"Database initialized: {DatabaseConfig.DB_NAME}")
-logger = get_logger("main")
-# Add this at the beginning of your main() function in main.py
+
 print("Starting Crypto Trading Advisor application...")
+
 async def initialize_database():
     """Initialize database connection"""
     logger.info("Initializing database connection...")
@@ -93,6 +93,22 @@ def create_app_dirs():
             os.makedirs(path)
             logger.info(f"Created directory: {path}")
 
+def run_combined_api():
+    """Run a single FastAPI instance that serves both the main API and Discord bot API"""
+    api_port = int(os.getenv("API_PORT", "8000"))
+    logger.info(f"Starting combined API server on {AppConfig.API_HOST}:{api_port}")
+    uvicorn.run(
+        "api.routes:app", 
+        host=AppConfig.API_HOST, 
+        port=api_port, 
+        reload=AppConfig.DEBUG, 
+        log_level=AppConfig.LOG_LEVEL.lower()
+    )
+
+def run_discord():
+    """Run the Discord bot"""
+    run_discord_bot()
+
 def start_background_tasks():
     """Start background tasks like data refreshing"""
     # This would typically use something like APScheduler or asyncio.create_task
@@ -115,18 +131,17 @@ def main():
     # Start background tasks
     start_background_tasks()
     
+    # Run Discord bot in a separate thread
+    discord_thread = threading.Thread(target=run_discord)
+    discord_thread.daemon = True
+    discord_thread.start()
+    
     # Log startup information
     logger.info(f"Running in {'DEBUG' if AppConfig.DEBUG else 'PRODUCTION'} mode")
-    logger.info(f"Starting API server on {AppConfig.API_HOST}:{AppConfig.API_PORT}")
     
-    # Start the FastAPI server
-    uvicorn.run(
-        "api.routes:app",
-        host=AppConfig.API_HOST,
-        port=AppConfig.API_PORT,
-        reload=AppConfig.DEBUG,
-        log_level=AppConfig.LOG_LEVEL.lower()
-    )
+    # Run the main API in the main thread
+    # This will handle both frontend and Discord bot requests
+    run_combined_api()
 
 if __name__ == "__main__":
     main()

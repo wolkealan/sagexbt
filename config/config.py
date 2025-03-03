@@ -89,6 +89,7 @@ class AppConfig:
 
 # Trading configuration
 class TradingConfig:
+    
     # Fallback supported cryptocurrencies - Comprehensive list from Binance
     DEFAULT_SUPPORTED_COINS = [
         # Major Cryptocurrencies

@@ -1737,3 +1737,1468 @@ The #SEC has delayed its decision on the #VanEck spot #Bitcoin ETF application u
 2025-03-03 10:29:48,081 - news_provider - INFO - Stored crypto message in news_data
 2025-03-03 10:29:48,339 - crypto_advisor.llm - INFO - Successfully received response from Grok API
 2025-03-03 10:29:48,341 - crypto_advisor.llm - INFO - Generated futures recommendation for XRP: BUY (High confidence)
+2025-03-03 10:34:09,998 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:34:10,223 - database - INFO - Created MongoDB indexes
+2025-03-03 10:34:10,985 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:34:10,988 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:34:11,323 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:34:11,324 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:34:11,326 - main - INFO - Initializing database connection...
+2025-03-03 10:34:11,326 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:34:11,327 - main - INFO - Initializing data providers...
+2025-03-03 10:34:11,388 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:34:11,446 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:34:11,507 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:34:11,508 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.07
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.07,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:34:11"
+}
+2025-03-03 10:34:11,509 - main - INFO - Prefetched market context
+2025-03-03 10:34:11,599 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:34:11,628 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:34:11,628 - main - INFO - Prefetched news for BTC
+2025-03-03 10:34:11,688 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:34:11,715 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:34:11,716 - main - INFO - Prefetched news for ETH
+2025-03-03 10:34:11,716 - main - INFO - Data initialization complete
+2025-03-03 10:34:11,717 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:34:11,717 - main - INFO - Starting Discord API server on 0.0.0.0:8001
+2025-03-03 10:35:21,893 - crypto_advisor.api - INFO - No context provided by user
+2025-03-03 10:35:21,894 - crypto_advisor.api - INFO - Analysis query - Message: 'Should I buy Ethereum now?', Coin: ETH, Intent: buy
+2025-03-03 10:35:21,922 - crypto_advisor.market - INFO - Using cached market summary for ETH
+2025-03-03 10:35:22,068 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:35:22,098 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:35:22,132 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:35:22,134 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.07
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.07,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:35:22"
+}
+2025-03-03 10:35:22,296 - ote_analyzer - INFO - OTE analysis completed for ETH
+2025-03-03 10:35:22,298 - pattern_recognition - INFO - OTE setup analysis added for ETH
+2025-03-03 10:35:22,299 - pattern_recognition - INFO - Identified patterns for ETH across 5 timeframes with focus on 1h
+2025-03-03 10:35:22,300 - crypto_advisor.api - INFO - Pattern data retrieved for ETH
+2025-03-03 10:35:22,301 - crypto_advisor.api - WARNING - Error analyzing patterns for ETH: 'NoneType' object has no attribute 'get'
+2025-03-03 10:35:29,796 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 10:38:42,343 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 10:38:42,344 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [HIVE Digital is eyeing a big leap—4x hash rate gr...
+2025-03-03 10:40:14,645 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 10:40:14,645 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 10:40:14,645 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 10:40:15,059 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:40:15,259 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:40:15,467 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:40:15,680 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:40:15,886 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:40:16,090 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:40:16,122 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-03 10:40:16,217 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 10:40:16,246 - crypto_advisor.news - INFO - Generated news summary for SOL with 21 Telegram articles and 0 market articles
+2025-03-03 10:40:16,256 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 10:40:16,256 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 10:40:16,257 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 10:40:16,257 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-03 10:40:16,290 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:40:16,292 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:40:16"
+}
+2025-03-03 10:40:16,294 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:40:16"
+}
+2025-03-03 10:40:33,572 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 10:40:33,574 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: SELL (High confidence)
+2025-03-03 10:56:25,190 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 10:56:25,191 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [West Bank documentary maker criticises US policy ...
+2025-03-03 10:57:01,737 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:57:01,949 - database - INFO - Created MongoDB indexes
+2025-03-03 10:57:02,862 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:57:02,868 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:57:03,293 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:57:03,294 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:57:03,295 - main - INFO - Initializing database connection...
+2025-03-03 10:57:03,296 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:57:03,297 - main - INFO - Initializing data providers...
+2025-03-03 10:57:06,255 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:57:06,671 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:57:06,765 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:57:06,766 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.07
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.07,
+  "insights": [
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:57:06"
+}
+2025-03-03 10:57:06,768 - main - INFO - Prefetched market context
+2025-03-03 10:57:06,859 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:57:06,887 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:57:06,888 - main - INFO - Prefetched news for BTC
+2025-03-03 10:57:06,949 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:57:06,978 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:57:06,979 - main - INFO - Prefetched news for ETH
+2025-03-03 10:57:06,979 - main - INFO - Data initialization complete
+2025-03-03 10:57:06,980 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:57:06,981 - main - INFO - Starting Discord API server on 0.0.0.0:8001
+2025-03-03 10:58:28,274 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 10:58:28,275 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 10:58:28,276 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 10:58:28,711 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:58:28,922 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:58:29,127 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:58:29,552 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:58:29,748 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:58:29,948 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 10:58:29,977 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-03 10:58:30,071 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 10:58:30,101 - crypto_advisor.news - INFO - Generated news summary for SOL with 21 Telegram articles and 0 market articles
+2025-03-03 10:58:30,115 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 10:58:30,116 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 10:58:30,116 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 10:58:30,116 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-03 10:58:30,153 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:58:30,155 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.07
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.07,
+  "insights": [
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:58:30"
+}
+2025-03-03 10:58:30,156 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.07
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.07,
+  "insights": [
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:58:30"
+}
+2025-03-03 10:58:50,206 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 10:58:50,208 - crypto_advisor.llm - INFO - Generated spot recommendation for SOL: BUY (High confidence)
+2025-03-03 10:59:01,765 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 10:59:01,765 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 10:59:01,766 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 10:59:01,931 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-03 10:59:02,053 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 10:59:02,085 - crypto_advisor.news - INFO - Generated news summary for SOL with 21 Telegram articles and 0 market articles
+2025-03-03 10:59:02,096 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 10:59:02,097 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 10:59:02,097 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 10:59:02,097 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-03 10:59:02,138 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:59:02,140 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.07
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.07,
+  "insights": [
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:59:02"
+}
+2025-03-03 10:59:02,142 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.07
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.07,
+  "insights": [
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:59:02"
+}
+2025-03-03 10:59:21,477 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 10:59:21,478 - crypto_advisor.llm - INFO - Generated spot recommendation for SOL: BUY (Low confidence)
+2025-03-03 11:00:12,809 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 11:00:19,546 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 11:00:19,738 - database - INFO - Created MongoDB indexes
+2025-03-03 11:00:19,748 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 11:00:19,752 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 11:00:22,220 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 11:00:22,293 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 11:00:22,293 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-03-03 11:01:20,345 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 11:05:24,548 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 11:05:24,763 - database - INFO - Created MongoDB indexes
+2025-03-03 11:05:25,578 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 11:05:25,585 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 11:05:25,939 - main - INFO - Database initialized: walletTracker
+2025-03-03 11:05:25,940 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 11:05:25,942 - main - INFO - Initializing database connection...
+2025-03-03 11:05:25,942 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 11:05:25,944 - main - INFO - Initializing data providers...
+2025-03-03 11:05:26,013 - main - INFO - Prefetched market data for BTC
+2025-03-03 11:05:26,082 - main - INFO - Prefetched market data for ETH
+2025-03-03 11:05:26,154 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 11:05:26,155 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](...",
+      "description": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](https://x.com/Cointelegraph/status/1896429076153237917)\n\n \ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto\n economy.\u201d\n \n Do you agree? \ud83d\udc47 pic.twitter.com/T7RKkJ8mxf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:31:20+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 11:05:26"
+}
+2025-03-03 11:05:26,157 - main - INFO - Prefetched market context
+2025-03-03 11:05:26,266 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 11:05:26,314 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 11:05:26,315 - main - INFO - Prefetched news for BTC
+2025-03-03 11:05:26,378 - crypto_advisor.news - INFO - Fetched 29 Telegram news articles for specific coin
+2025-03-03 11:05:26,413 - crypto_advisor.news - INFO - Generated news summary for ETH with 29 Telegram articles and 0 market articles
+2025-03-03 11:05:26,414 - main - INFO - Prefetched news for ETH
+2025-03-03 11:05:26,414 - main - INFO - Data initialization complete
+2025-03-03 11:05:26,415 - main - INFO - Running in PRODUCTION mode
+2025-03-03 11:05:26,416 - main - INFO - Starting combined API server on 0.0.0.0:8000
+2025-03-03 11:05:39,566 - ote_analyzer - INFO - OTE analysis completed for XRP
+2025-03-03 11:05:39,567 - pattern_recognition - INFO - OTE setup analysis added for XRP
+2025-03-03 11:05:39,568 - pattern_recognition - INFO - Identified patterns for XRP across 5 timeframes with focus on 1h
+2025-03-03 11:05:42,634 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 11:05:42,831 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 11:05:43,037 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 11:05:43,248 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 11:05:43,465 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 11:05:43,666 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 11:05:43,699 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-03-03 11:05:43,783 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 11:05:43,811 - crypto_advisor.news - INFO - Generated news summary for XRP with 21 Telegram articles and 0 market articles
+2025-03-03 11:05:43,823 - ote_analyzer - INFO - OTE analysis completed for XRP
+2025-03-03 11:05:43,823 - pattern_recognition - INFO - OTE setup analysis added for XRP
+2025-03-03 11:05:43,823 - pattern_recognition - INFO - Identified patterns for XRP across 5 timeframes with focus on 1h
+2025-03-03 11:05:43,824 - recommendation_engine - INFO - Pattern data retrieved for XRP
+2025-03-03 11:05:43,857 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 11:05:43,859 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](...",
+      "description": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](https://x.com/Cointelegraph/status/1896429076153237917)\n\n \ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto\n economy.\u201d\n \n Do you agree? \ud83d\udc47 pic.twitter.com/T7RKkJ8mxf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:31:20+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 11:05:43"
+}
+2025-03-03 11:05:43,861 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](...",
+      "description": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](https://x.com/Cointelegraph/status/1896429076153237917)\n\n \ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto\n economy.\u201d\n \n Do you agree? \ud83d\udc47 pic.twitter.com/T7RKkJ8mxf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:31:20+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 11:05:43"
+}
+2025-03-03 11:06:07,278 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 11:06:07,279 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 11:06:07,279 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 11:06:07,305 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-03 11:06:07,402 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 11:06:07,431 - crypto_advisor.news - INFO - Generated news summary for SOL with 21 Telegram articles and 0 market articles
+2025-03-03 11:06:07,442 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 11:06:07,442 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 11:06:07,442 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 11:06:07,442 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-03 11:06:07,480 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 11:06:07,481 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](...",
+      "description": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](https://x.com/Cointelegraph/status/1896429076153237917)\n\n \ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto\n economy.\u201d\n \n Do you agree? \ud83d\udc47 pic.twitter.com/T7RKkJ8mxf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:31:20+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 11:06:07"
+}
+2025-03-03 11:06:07,483 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](...",
+      "description": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](https://x.com/Cointelegraph/status/1896429076153237917)\n\n \ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto\n economy.\u201d\n \n Do you agree? \ud83d\udc47 pic.twitter.com/T7RKkJ8mxf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:31:20+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 11:06:07"
+}
+2025-03-03 11:06:08,310 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 11:06:08,313 - crypto_advisor.llm - INFO - Generated futures recommendation for XRP: SELL (High confidence)
+2025-03-03 11:06:08,573 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 11:06:08,574 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 11:06:08,574 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 11:06:08,603 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-03 11:06:08,687 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 11:06:08,713 - crypto_advisor.news - INFO - Generated news summary for SOL with 21 Telegram articles and 0 market articles
+2025-03-03 11:06:08,971 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 11:06:08,972 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 11:06:08,972 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 11:06:08,973 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-03 11:06:09,004 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 11:06:09,007 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](...",
+      "description": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](https://x.com/Cointelegraph/status/1896429076153237917)\n\n \ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto\n economy.\u201d\n \n Do you agree? \ud83d\udc47 pic.twitter.com/T7RKkJ8mxf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:31:20+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 11:06:09"
+}
+2025-03-03 11:06:09,010 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+        "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T05:26:25+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "regulation",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](...",
+      "description": "[\ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto economy.\u201d Do you agree? \ud83d\udc47](https://x.com/Cointelegraph/status/1896429076153237917)\n\n \ud83d\udd25 NEW: Michael Saylor says, \u201cBitcoin is the foundation of the crypto\n economy.\u201d\n \n Do you agree? \ud83d\udc47 pic.twitter.com/T7RKkJ8mxf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:31:20+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status...",
+      "description": "[West Bank documentary maker criticises US policy in Oscars speech](https://x.com/BBCWorld/status/1896429605436686702)\n\n West Bank documentary maker criticises US policy in Oscars speech\n https://t.co/sD80rqvHT3\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:26:25+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "regulation",
+      "impact_level": "low"
+    },
+    {
+      "title": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue targe...",
+      "description": "[HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25 - Expanding Bitcoin mining from 6 EH/s to 25 EH/s - Betting big on HPC with AI-focused GPU rentals](https://x.com/BTCTN/status/1896418090193240258)\n\n HIVE Digital is eyeing a big leap\u20144x hash rate growth by Sept 2025 and a $100M\n HPC revenue target! \ud83d\ude80 Will this small-cap miner break into the top 10? \ud83d\udd25\n \n - Expanding Bitcoin mining from 6 EH/s to 25 EH/s\n - Betting big on HPC with AI-focused GPU rentals\n - Paraguay site\u2026\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T05:08:42+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put mo...",
+      "description": "[\ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for investors to put money into Bitcoin.\u201d](https://x.com/Cointelegraph/status/1896421526628626873)\n\n \ud83d\udd25 BULLISH: Bitwise CEO Hunter Horsley says, \u201cQ1 has been the best moment for\n investors to put money into Bitcoin.\u201d pic.twitter.com/lMFU9Oa1nW\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:59:48+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 11:06:09"
+}
+2025-03-03 11:06:25,837 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 11:06:25,840 - crypto_advisor.llm - INFO - Generated spot recommendation for SOL: BUY (Low confidence)
+2025-03-03 11:06:29,976 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 11:06:29,978 - crypto_advisor.llm - INFO - Generated spot recommendation for SOL: BUY (High confidence)

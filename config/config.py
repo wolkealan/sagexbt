@@ -37,8 +37,8 @@ class DatabaseConfig:
 class TelegramConfig:
     API_ID = "20999811"  # You need to get this from my.telegram.org
     API_HASH = "2d8df81a847d782316cefe4a7f4b373a" # You need to get this from my.telegram.org  
-    PHONE_NUMBER = "+919849929099"
-    CHANNELS = ["sage_news_cg"]  # Add more channels as needed
+    PHONE_NUMBER = "+919440026070"
+    CHANNELS = ["redactedsystemsbot"]  # Add more channels as needed
     
 # API Keys and credentials
 class APIConfig:

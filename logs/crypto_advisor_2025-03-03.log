@@ -3202,3 +3202,345 @@ The #SEC has delayed its decision on the #VanEck spot #Bitcoin ETF application u
 2025-03-03 11:06:25,840 - crypto_advisor.llm - INFO - Generated spot recommendation for SOL: BUY (Low confidence)
 2025-03-03 11:06:29,976 - crypto_advisor.llm - INFO - Successfully received response from Grok API
 2025-03-03 11:06:29,978 - crypto_advisor.llm - INFO - Generated spot recommendation for SOL: BUY (High confidence)
+2025-03-03 21:40:53,996 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 21:40:54,247 - database - INFO - Created MongoDB indexes
+2025-03-03 21:40:55,082 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 21:40:55,085 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 21:40:55,576 - main - INFO - Database initialized: walletTracker
+2025-03-03 21:40:55,577 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 21:40:55,578 - main - INFO - Created directory: C:\Users\satya\sagexbt\data/vector_db
+2025-03-03 21:40:55,579 - main - INFO - Initializing database connection...
+2025-03-03 21:40:55,580 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 21:40:55,601 - main - INFO - Initializing data providers...
+2025-03-03 21:40:55,669 - main - INFO - Prefetched market data for BTC
+2025-03-03 21:40:55,745 - main - INFO - Prefetched market data for ETH
+2025-03-03 21:40:55,819 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 21:40:55,821 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.06,
+  "insights": [
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83c\uddfa\ud83c\uddf8 NEW: Representative Ritchie Torres and Representative Tom Emmer are launching a Congressional Crypto Caucus.\n\nTheir goal is to solidify \u201cAmerica\u2019s leadership in the future of digital assets and blockchain innovation.\u201d",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:45:55+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83d\udea8 BREAKING: Kraken has announced that the SEC has agreed to drop its lawsuit against the cryptocurrency exchange.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:20:03+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from WatcherGuru",
+      "description": "\ud83d\udcdd **Tweet** from **WatcherGuru**\n\nJUST IN: $120,000,000 liquidated from the cryptocurrency market in the past 60 minutes.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:19:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Crypto_Crib_",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Crypto_Crib_**\n\n\ud83c\uddfa\ud83c\uddf8 Kraken has reported that the SEC has agreed to drop its lawsuit against the crypto exchange, according to the Wall Street Journal. \ud83d\udc40",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:14:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\u26a1\ufe0f#CHAINREACTION: US Crypto Reserve  https://x.com/i/spaces/1OdKrDaqePAJX",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:06:32+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 21:40:55"
+}
+2025-03-03 21:40:55,822 - main - INFO - Prefetched market context
+2025-03-03 21:40:55,909 - crypto_advisor.news - INFO - Fetched 42 Telegram news articles for specific coin
+2025-03-03 21:40:55,940 - crypto_advisor.news - INFO - Generated news summary for BTC with 42 Telegram articles and 0 market articles
+2025-03-03 21:40:55,941 - main - INFO - Prefetched news for BTC
+2025-03-03 21:40:55,999 - crypto_advisor.news - INFO - Fetched 9 Telegram news articles for specific coin
+2025-03-03 21:40:56,030 - crypto_advisor.news - INFO - Generated news summary for ETH with 9 Telegram articles and 0 market articles
+2025-03-03 21:40:56,031 - main - INFO - Prefetched news for ETH
+2025-03-03 21:40:56,031 - main - INFO - Data initialization complete
+2025-03-03 21:40:56,032 - main - INFO - Running in PRODUCTION mode
+2025-03-03 21:40:56,032 - main - INFO - Starting combined API server on 0.0.0.0:8000
+2025-03-03 21:41:28,908 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 21:41:28,909 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 21:41:28,909 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 21:41:28,936 - crypto_advisor.market - INFO - Using cached market summary for SOL
+2025-03-03 21:41:28,991 - crypto_advisor.news - INFO - Fetched 5 Telegram news articles for specific coin
+2025-03-03 21:41:29,019 - crypto_advisor.news - INFO - Generated news summary for SOL with 5 Telegram articles and 0 market articles
+2025-03-03 21:41:29,265 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 21:41:29,266 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 21:41:29,266 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 21:41:29,267 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-03 21:41:29,335 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 21:41:29,336 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.06,
+  "insights": [
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83c\uddfa\ud83c\uddf8 NEW: Representative Ritchie Torres and Representative Tom Emmer are launching a Congressional Crypto Caucus.\n\nTheir goal is to solidify \u201cAmerica\u2019s leadership in the future of digital assets and blockchain innovation.\u201d",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:45:55+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83d\udea8 BREAKING: Kraken has announced that the SEC has agreed to drop its lawsuit against the cryptocurrency exchange.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:20:03+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from WatcherGuru",
+      "description": "\ud83d\udcdd **Tweet** from **WatcherGuru**\n\nJUST IN: $120,000,000 liquidated from the cryptocurrency market in the past 60 minutes.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:19:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Crypto_Crib_",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Crypto_Crib_**\n\n\ud83c\uddfa\ud83c\uddf8 Kraken has reported that the SEC has agreed to drop its lawsuit against the crypto exchange, according to the Wall Street Journal. \ud83d\udc40",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:14:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\u26a1\ufe0f#CHAINREACTION: US Crypto Reserve  https://x.com/i/spaces/1OdKrDaqePAJX",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:06:32+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 21:41:29"
+}
+2025-03-03 21:41:29,337 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.06,
+  "insights": [
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83c\uddfa\ud83c\uddf8 NEW: Representative Ritchie Torres and Representative Tom Emmer are launching a Congressional Crypto Caucus.\n\nTheir goal is to solidify \u201cAmerica\u2019s leadership in the future of digital assets and blockchain innovation.\u201d",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:45:55+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83d\udea8 BREAKING: Kraken has announced that the SEC has agreed to drop its lawsuit against the cryptocurrency exchange.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:20:03+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from WatcherGuru",
+      "description": "\ud83d\udcdd **Tweet** from **WatcherGuru**\n\nJUST IN: $120,000,000 liquidated from the cryptocurrency market in the past 60 minutes.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:19:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Crypto_Crib_",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Crypto_Crib_**\n\n\ud83c\uddfa\ud83c\uddf8 Kraken has reported that the SEC has agreed to drop its lawsuit against the crypto exchange, according to the Wall Street Journal. \ud83d\udc40",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:14:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\u26a1\ufe0f#CHAINREACTION: US Crypto Reserve  https://x.com/i/spaces/1OdKrDaqePAJX",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:06:32+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 21:41:29"
+}
+2025-03-03 21:41:47,572 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 21:41:47,574 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (Low confidence)
+2025-03-03 21:44:28,972 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 21:44:29,165 - database - INFO - Created MongoDB indexes
+2025-03-03 21:44:30,009 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 21:44:30,013 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 21:44:30,460 - main - INFO - Database initialized: walletTracker
+2025-03-03 21:44:30,461 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 21:44:30,462 - main - INFO - Initializing database connection...
+2025-03-03 21:44:30,462 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 21:44:30,463 - main - INFO - Initializing data providers...
+2025-03-03 21:44:33,086 - main - INFO - Prefetched market data for BTC
+2025-03-03 21:44:33,480 - main - INFO - Prefetched market data for ETH
+2025-03-03 21:44:33,550 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 21:44:33,551 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.06
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.06,
+  "insights": [
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83c\uddfa\ud83c\uddf8 NEW: Representative Ritchie Torres and Representative Tom Emmer are launching a Congressional Crypto Caucus.\n\nTheir goal is to solidify \u201cAmerica\u2019s leadership in the future of digital assets and blockchain innovation.\u201d",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:45:55+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83d\udea8 BREAKING: Kraken has announced that the SEC has agreed to drop its lawsuit against the cryptocurrency exchange.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:20:03+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from WatcherGuru",
+      "description": "\ud83d\udcdd **Tweet** from **WatcherGuru**\n\nJUST IN: $120,000,000 liquidated from the cryptocurrency market in the past 60 minutes.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:19:19+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Crypto_Crib_",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Crypto_Crib_**\n\n\ud83c\uddfa\ud83c\uddf8 Kraken has reported that the SEC has agreed to drop its lawsuit against the crypto exchange, according to the Wall Street Journal. \ud83d\udc40",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:14:47+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\u26a1\ufe0f#CHAINREACTION: US Crypto Reserve  https://x.com/i/spaces/1OdKrDaqePAJX",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:06:32+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 21:44:33"
+}
+2025-03-03 21:44:33,552 - main - INFO - Prefetched market context
+2025-03-03 21:44:33,645 - crypto_advisor.news - INFO - Fetched 42 Telegram news articles for specific coin
+2025-03-03 21:44:33,674 - crypto_advisor.news - INFO - Generated news summary for BTC with 42 Telegram articles and 0 market articles
+2025-03-03 21:44:33,674 - main - INFO - Prefetched news for BTC
+2025-03-03 21:44:33,731 - crypto_advisor.news - INFO - Fetched 9 Telegram news articles for specific coin
+2025-03-03 21:44:33,761 - crypto_advisor.news - INFO - Generated news summary for ETH with 9 Telegram articles and 0 market articles
+2025-03-03 21:44:33,762 - main - INFO - Prefetched news for ETH
+2025-03-03 21:44:33,762 - main - INFO - Data initialization complete
+2025-03-03 21:44:33,762 - main - INFO - Running in PRODUCTION mode
+2025-03-03 21:44:33,763 - main - INFO - Starting combined API server on 0.0.0.0:8000
+2025-03-03 21:45:21,119 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 21:45:21,307 - database - INFO - Created MongoDB indexes
+2025-03-03 21:45:21,316 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 21:45:21,319 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 21:45:22,356 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 21:45:22,414 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 21:45:22,415 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 21:45:41,262 - telegram_scraper - INFO - Telegram client disconnected

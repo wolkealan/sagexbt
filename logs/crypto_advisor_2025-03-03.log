@@ -1,0 +1,1739 @@
+2025-03-03 08:02:17,670 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:02:17,997 - database - INFO - Created MongoDB indexes
+2025-03-03 08:02:18,014 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:02:18,021 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:03:53,953 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:03:54,285 - database - INFO - Created MongoDB indexes
+2025-03-03 08:03:54,305 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:03:54,315 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:06:01,696 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:06:09,975 - database - INFO - Created MongoDB indexes
+2025-03-03 08:06:10,002 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:06:10,009 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:14:19,072 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:14:19,586 - database - INFO - Created MongoDB indexes
+2025-03-03 08:14:19,600 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:14:19,607 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:19:01,226 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:19:01,501 - database - INFO - Created MongoDB indexes
+2025-03-03 08:19:01,514 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:19:01,522 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:19:05,795 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 08:19:05,797 - x_news_fetcher - INFO - Grok 3 Full Response: {'id': '68845f4d-9d2f-4b14-9501-a8d2b59a05ef', 'object': 'chat.completion', 'created': 1740970141, 'model': 'grok-2-1212', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '1/ **Tweet 1:**\n$BTC has been trading in a tight range for the past few weeks, but a breakout could be imminent. Will it be to the upside or downside? #Bitcoin #Crypto #Trading\n\n2/ **Tweet 2:**\nThe #SEC has delayed its decision on the #VanEck spot #Bitcoin ETF application until March 2024. What does this mean for the future of #crypto ETFs? #Investing', 'refusal': None}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 219, 'completion_tokens': 95, 'total_tokens': 314, 'prompt_tokens_details': {'text_tokens': 219, 'audio_tokens': 0, 'image_tokens': 0, 'cached_tokens': 0}}, 'system_fingerprint': 'fp_5c0c5bd9d9'}
+2025-03-03 08:19:05,797 - x_news_fetcher - INFO - Extracted Tweet Content: 1/ **Tweet 1:**
+$BTC has been trading in a tight range for the past few weeks, but a breakout could be imminent. Will it be to the upside or downside? #Bitcoin #Crypto #Trading
+
+2/ **Tweet 2:**
+The #SEC has delayed its decision on the #VanEck spot #Bitcoin ETF application until March 2024. What does this mean for the future of #crypto ETFs? #Investing
+2025-03-03 08:25:06,587 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:25:06,934 - database - INFO - Created MongoDB indexes
+2025-03-03 08:25:06,960 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:25:06,967 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:25:13,821 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 08:25:13,873 - x_news_fetcher - ERROR - Grok 3 API Call Error for Cointelegraph: cannot access local variable 're' where it is not associated with a value
+2025-03-03 08:26:28,396 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:26:28,684 - database - INFO - Created MongoDB indexes
+2025-03-03 08:26:28,698 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:26:28,702 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:26:30,931 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 08:26:30,954 - x_news_fetcher - ERROR - Grok 3 API Call Error for Cointelegraph: cannot access local variable 're' where it is not associated with a value
+2025-03-03 08:27:00,096 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 08:27:00,411 - database - INFO - Created MongoDB indexes
+2025-03-03 08:27:00,430 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 08:27:00,434 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 08:27:04,350 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 08:27:04,373 - x_news_fetcher - ERROR - Grok 3 API Call Error for Cointelegraph: cannot access local variable 're' where it is not associated with a value
+2025-03-03 09:13:25,353 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 09:13:25,603 - database - INFO - Created MongoDB indexes
+2025-03-03 09:13:25,612 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 09:13:25,615 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 09:13:30,352 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 09:13:30,357 - x_news_fetcher - INFO - Grok 3 Full Response: {'id': '790f1982-b7a8-44e8-98c1-2b14ce2dbe32', 'object': 'chat.completion', 'created': 1740973406, 'model': 'grok-2-1212', 'choices': [{'index': 0, 'message': {'role': 'assistant', 'content': '1. **Tweet Text:** "Bitcoin\'s market dominance hits 55% as altcoins struggle to keep pace. #Bitcoin #CryptoMarket"\n   **Timestamp:** 2025-03-03 08:45:00 IST\n   **Link:** https://x.com/Cointelegraph/status/1234567890123456789\n\n2. **Tweet Text:** "Ethereum\'s upcoming upgrade expected to enhance scalability and reduce gas fees. #Ethereum #CryptoNews"\n   **Timestamp:** 2025-03-03 07:15:00 IST\n   **Link:** https://x.com/Cointelegraph/status/1234567890123456788', 'refusal': None}, 'finish_reason': 'stop'}], 'usage': {'prompt_tokens': 80, 'completion_tokens': 177, 'total_tokens': 257, 'prompt_tokens_details': {'text_tokens': 80, 'audio_tokens': 0, 'image_tokens': 0, 'cached_tokens': 0}}, 'system_fingerprint': 'fp_5c0c5bd9d9'}
+2025-03-03 09:13:30,358 - x_news_fetcher - INFO - Extracted Tweet Content: 1. **Tweet Text:** "Bitcoin's market dominance hits 55% as altcoins struggle to keep pace. #Bitcoin #CryptoMarket"
+   **Timestamp:** 2025-03-03 08:45:00 IST
+   **Link:** https://x.com/Cointelegraph/status/1234567890123456789
+
+2. **Tweet Text:** "Ethereum's upcoming upgrade expected to enhance scalability and reduce gas fees. #Ethereum #CryptoNews"
+   **Timestamp:** 2025-03-03 07:15:00 IST
+   **Link:** https://x.com/Cointelegraph/status/1234567890123456788
+2025-03-03 09:13:30,359 - x_news_fetcher - ERROR - Grok 3 API Call Error for Cointelegraph: name 're' is not defined
+2025-03-03 09:15:47,077 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 09:15:47,335 - database - INFO - Created MongoDB indexes
+2025-03-03 09:15:47,347 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 09:15:47,351 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 09:15:49,941 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 09:15:50,009 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 09:15:50,010 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-03-03 09:15:50,483 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:50,573 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:50,678 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:50,678 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [A meme coin scandal from a nation state, a record...
+2025-03-03 09:15:50,768 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:50,769 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [The bubble tea chain that's bigger than McDonald'...
+2025-03-03 09:15:50,853 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:50,942 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:50,942 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Ban on India's stock market 'She-Wolf' puts regul...
+2025-03-03 09:15:51,024 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:51,115 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:51,207 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:51,294 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:51,295 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [DR Congo defies pressure over talks with rebel M2...
+2025-03-03 09:15:51,384 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:51,476 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:51,574 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:51,662 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:51,663 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [TikTok profiting from sexual livestreams involvin...
+2025-03-03 09:15:51,751 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:51,837 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:51,839 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Afghans hiding in Pakistan live in fear of forced...
+2025-03-03 09:15:51,920 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,011 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,012 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Coinbase CEO Brian Armstrong says a US c...
+2025-03-03 09:15:52,102 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,195 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:52,278 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:52,279 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Switzerland targets rich tourists but at what cos...
+2025-03-03 09:15:52,362 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,452 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,544 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,628 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,628 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Crypto prices rally after Trump backs five coins ...
+2025-03-03 09:15:52,715 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:52,716 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Ukraine still 'ready' to sign US minerals deal, Z...
+2025-03-03 09:15:52,805 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:52,806 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: Zelensky tells the BBC he is “re...
+2025-03-03 09:15:52,888 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:52,888 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Sandeep Nailwal, co-founder of Polygon a...
+2025-03-03 09:15:52,979 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:52,979 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Was Starmer's summit enough to shift the diplomat...
+2025-03-03 09:15:53,069 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:53,167 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,256 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,257 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Anti-Bitcoin Peter Schiff admits "Bitcoi...
+2025-03-03 09:15:53,340 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,340 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: $160 million worth of Bitcoin shorts liq...
+2025-03-03 09:15:53,422 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,543 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,544 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [#Bitcoin and Ethereum took the top spots for the ...
+2025-03-03 09:15:53,626 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,626 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [When asked about AI expenditures over 54% of resp...
+2025-03-03 09:15:53,708 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,708 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [92% of respondents responded with “yes” when aske...
+2025-03-03 09:15:53,795 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:53,894 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:54,004 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:54,005 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Starmer announces 'coalition of the willing' to g...
+2025-03-03 09:15:54,093 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:54,186 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:54,186 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Belfast factory to supply 5,000 missiles to Ukrai...
+2025-03-03 09:15:54,278 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:54,375 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:54,376 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Trump’s crypto chatter sends markets into overdri...
+2025-03-03 09:15:54,463 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:54,550 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:54,551 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Ukraine's Zelenksy meets King at Sandringham](htt...
+2025-03-03 09:15:54,640 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:54,641 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Michael Saylor says "Bitcoin is the foun...
+2025-03-03 09:15:54,727 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:54,819 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:54,820 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Ripple CEO Brad Garlinghouse says he's g...
+2025-03-03 09:15:54,894 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:54,979 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:55,073 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:55,073 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [BTC smashes $94,000 after Donald Trump (@POTUS) s...
+2025-03-03 09:15:55,152 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:55,152 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: UK Prime Minister Keir Starmer u...
+2025-03-03 09:15:55,233 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:55,233 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Trump makes English official language of US](http...
+2025-03-03 09:15:55,314 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:55,315 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Bitcoin rises 10% to $94,000 following P...
+2025-03-03 09:15:55,403 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:55,403 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Since Dec. 2024, South Korea’s bitcoin prices hav...
+2025-03-03 09:15:55,488 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:55,488 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Crypto Czar David Sacks says "more to co...
+2025-03-03 09:15:55,573 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:55,665 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:55,751 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:55,751 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Follow us on Instagram with notifications for dai...
+2025-03-03 09:15:55,836 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:55,918 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:55,918 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Donald Trump revealed a crypto strategic reserve ...
+2025-03-03 09:15:56,025 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:56,026 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [DR Congo accuses Rwanda of faking genocide suspec...
+2025-03-03 09:15:56,143 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:56,144 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [BREAKING: Bitcoin and Ethereum to be included in ...
+2025-03-03 09:15:56,223 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:56,224 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: $90,000 Bitcoin.](https://x.com/WatcherG...
+2025-03-03 09:15:56,309 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:56,398 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:56,501 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:56,584 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:56,584 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Cardano $ADA rises 50% to $1 following P...
+2025-03-03 09:15:56,662 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:56,663 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: $XRP rises 25% following President Trump...
+2025-03-03 09:15:56,751 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:56,837 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:56,838 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Solana $SOL rises 15% following Presiden...
+2025-03-03 09:15:56,927 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:56,927 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: $ADA rises 30% following President Trump...
+2025-03-03 09:15:57,011 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:57,097 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:57,098 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Follow us on Instagram with notifications for dai...
+2025-03-03 09:15:57,193 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:57,307 - news_provider - INFO - Stored mixed message in news_data
+2025-03-03 09:15:57,425 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:57,537 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:57,538 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Giving away Chagos Islands not in UK's interest, ...
+2025-03-03 09:15:57,665 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:57,788 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:57,797 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: "The prime minister's had his be...
+2025-03-03 09:15:57,910 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:57,911 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: "I think he was prompted by Zele...
+2025-03-03 09:15:57,999 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:58,000 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: "Peace is great but the question...
+2025-03-03 09:15:58,080 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:58,082 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Citigroup, third-largest US bank, accidentally se...
+2025-03-03 09:15:58,163 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:58,163 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Pope absent from St Peter's Square for third week...
+2025-03-03 09:15:58,247 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:58,248 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Gene Hackman loved acting but 'hated everything t...
+2025-03-03 09:15:58,406 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:58,407 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [The growing appetite for memecoins may be limitin...
+2025-03-03 09:15:58,526 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:58,629 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:58,630 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [How to watch the Oscars and who is nominated](htt...
+2025-03-03 09:15:58,721 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:58,722 - telegram_scraper - INFO - Processed historical message from sage_news_cg: ['Our son died in Benidorm - we still don't know w...
+2025-03-03 09:15:58,819 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:58,900 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:58,901 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [Media caused us lasting damage, say Payne's famil...
+2025-03-03 09:15:58,985 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:58,986 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [The Pectra upgrade will significantly reduce Ethe...
+2025-03-03 09:15:59,073 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:59,171 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:59,172 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [JUST IN: Elon Musk says "DOGE is a threat to the ...
+2025-03-03 09:15:59,267 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:15:59,356 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:59,357 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: "The prime minister I think is a...
+2025-03-03 09:15:59,441 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:59,442 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: "My heart went out to President ...
+2025-03-03 09:15:59,532 - news_provider - INFO - Stored geopolitical message in news_data
+2025-03-03 09:15:59,533 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: "Vladimir Putin invaded a sovere...
+2025-03-03 09:15:59,617 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:15:59,618 - telegram_scraper - INFO - Processed historical message from sage_news_cg: [RT by @BBCWorld: "It is not in our national inter...
+2025-03-03 09:15:59,618 - telegram_scraper - INFO - Processed 100 historical messages from sage_news_cg
+2025-03-03 09:33:18,369 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 09:33:18,574 - database - INFO - Created MongoDB indexes
+2025-03-03 09:33:19,438 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 09:33:19,442 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 09:33:19,954 - main - INFO - Application started
+2025-03-03 09:33:19,954 - main - INFO - Database initialized: walletTracker
+2025-03-03 09:33:19,954 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 09:33:19,956 - main - INFO - Initializing database connection...
+2025-03-03 09:33:19,956 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 09:33:19,957 - main - INFO - Initializing data providers...
+2025-03-03 09:33:23,508 - main - INFO - Prefetched market data for BTC
+2025-03-03 09:33:24,133 - main - INFO - Prefetched market data for ETH
+2025-03-03 09:33:24,228 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 09:33:24,231 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quick...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quickly become extinct.\"](https://x.com/WatcherGuru/status/1896395507175723453)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with\n crypto], or it will quickly become extinct.\"\n \n \u2014 Watcher.Guru (@WatcherGuru) March 3, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:15:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/statu...",
+      "description": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/status/1896390805650112859)\n\n Ban on India's stock market 'She-Wolf' puts regulators on the spot\n https://t.co/WR0liFb9BC\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T02:52:06+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:33:24"
+}
+2025-03-03 09:33:24,232 - main - INFO - Prefetched market context
+2025-03-03 09:33:24,328 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 09:33:24,358 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 09:33:24,359 - main - INFO - Prefetched news for BTC
+2025-03-03 09:33:24,425 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 09:33:24,484 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 09:33:24,485 - main - INFO - Prefetched news for ETH
+2025-03-03 09:33:24,485 - main - INFO - Data initialization complete
+2025-03-03 09:33:24,486 - main - INFO - Running in PRODUCTION mode
+2025-03-03 09:33:24,486 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-03 09:33:36,253 - ote_analyzer - INFO - OTE analysis completed for ETH
+2025-03-03 09:33:36,255 - pattern_recognition - INFO - OTE setup analysis added for ETH
+2025-03-03 09:33:36,255 - pattern_recognition - INFO - Identified patterns for ETH across 5 timeframes with focus on 1h
+2025-03-03 09:33:36,509 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 09:33:36,548 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 09:33:36,749 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 09:33:36,956 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 09:33:37,166 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 09:33:37,384 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 09:33:37,419 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-03-03 09:33:37,520 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 09:33:37,554 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 09:33:37,568 - ote_analyzer - INFO - OTE analysis completed for ETH
+2025-03-03 09:33:37,569 - pattern_recognition - INFO - OTE setup analysis added for ETH
+2025-03-03 09:33:37,570 - pattern_recognition - INFO - Identified patterns for ETH across 5 timeframes with focus on 1h
+2025-03-03 09:33:37,570 - recommendation_engine - INFO - Pattern data retrieved for ETH
+2025-03-03 09:33:37,603 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 09:33:37,605 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quick...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quickly become extinct.\"](https://x.com/WatcherGuru/status/1896395507175723453)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with\n crypto], or it will quickly become extinct.\"\n \n \u2014 Watcher.Guru (@WatcherGuru) March 3, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:15:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/statu...",
+      "description": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/status/1896390805650112859)\n\n Ban on India's stock market 'She-Wolf' puts regulators on the spot\n https://t.co/WR0liFb9BC\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T02:52:06+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:33:37"
+}
+2025-03-03 09:33:37,606 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quick...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quickly become extinct.\"](https://x.com/WatcherGuru/status/1896395507175723453)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with\n crypto], or it will quickly become extinct.\"\n \n \u2014 Watcher.Guru (@WatcherGuru) March 3, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:15:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/statu...",
+      "description": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/status/1896390805650112859)\n\n Ban on India's stock market 'She-Wolf' puts regulators on the spot\n https://t.co/WR0liFb9BC\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T02:52:06+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:33:37"
+}
+2025-03-03 09:34:18,732 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 09:34:18,734 - crypto_advisor.llm - INFO - Generated futures recommendation for ETH: SELL (High confidence)
+2025-03-03 09:35:47,451 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 09:35:47,452 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 09:35:47,452 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 09:35:48,110 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 09:35:48,317 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 09:35:48,522 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 09:35:48,734 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 09:35:49,176 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 09:35:49,380 - crypto_advisor.market - WARNING - No data available for MA calculation for SOL
+2025-03-03 09:35:49,416 - crypto_advisor.market - INFO - Generated market summary for SOL
+2025-03-03 09:35:49,519 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 09:35:49,552 - crypto_advisor.news - INFO - Generated news summary for SOL with 21 Telegram articles and 0 market articles
+2025-03-03 09:35:49,568 - ote_analyzer - INFO - OTE analysis completed for SOL
+2025-03-03 09:35:49,569 - pattern_recognition - INFO - OTE setup analysis added for SOL
+2025-03-03 09:35:49,569 - pattern_recognition - INFO - Identified patterns for SOL across 5 timeframes with focus on 1h
+2025-03-03 09:35:49,570 - recommendation_engine - INFO - Pattern data retrieved for SOL
+2025-03-03 09:35:49,604 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 09:35:49,606 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quick...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quickly become extinct.\"](https://x.com/WatcherGuru/status/1896395507175723453)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with\n crypto], or it will quickly become extinct.\"\n \n \u2014 Watcher.Guru (@WatcherGuru) March 3, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:15:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/statu...",
+      "description": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/status/1896390805650112859)\n\n Ban on India's stock market 'She-Wolf' puts regulators on the spot\n https://t.co/WR0liFb9BC\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T02:52:06+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:35:49"
+}
+2025-03-03 09:35:49,607 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quick...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quickly become extinct.\"](https://x.com/WatcherGuru/status/1896395507175723453)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with\n crypto], or it will quickly become extinct.\"\n \n \u2014 Watcher.Guru (@WatcherGuru) March 3, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:15:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/statu...",
+      "description": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/status/1896390805650112859)\n\n Ban on India's stock market 'She-Wolf' puts regulators on the spot\n https://t.co/WR0liFb9BC\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T02:52:06+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:35:49"
+}
+2025-03-03 09:36:06,977 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 09:36:06,981 - crypto_advisor.llm - INFO - Generated futures recommendation for SOL: BUY (High confidence)
+2025-03-03 09:36:10,054 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:36:10,055 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Australian whose blood saved 2.4 million babies d...
+2025-03-03 09:36:50,040 - ote_analyzer - INFO - OTE analysis completed for XRP
+2025-03-03 09:36:50,040 - pattern_recognition - INFO - OTE setup analysis added for XRP
+2025-03-03 09:36:50,040 - pattern_recognition - INFO - Identified patterns for XRP across 5 timeframes with focus on 1h
+2025-03-03 09:36:50,711 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 09:36:50,915 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 09:36:51,123 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 09:36:51,333 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 09:36:51,801 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 09:36:52,022 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 09:36:52,062 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-03-03 09:36:52,162 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 09:36:52,193 - crypto_advisor.news - INFO - Generated news summary for XRP with 21 Telegram articles and 0 market articles
+2025-03-03 09:36:52,204 - ote_analyzer - INFO - OTE analysis completed for XRP
+2025-03-03 09:36:52,204 - pattern_recognition - INFO - OTE setup analysis added for XRP
+2025-03-03 09:36:52,205 - pattern_recognition - INFO - Identified patterns for XRP across 5 timeframes with focus on 1h
+2025-03-03 09:36:52,205 - recommendation_engine - INFO - Pattern data retrieved for XRP
+2025-03-03 09:36:52,237 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 09:36:52,239 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quick...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quickly become extinct.\"](https://x.com/WatcherGuru/status/1896395507175723453)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with\n crypto], or it will quickly become extinct.\"\n \n \u2014 Watcher.Guru (@WatcherGuru) March 3, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:15:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/statu...",
+      "description": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/status/1896390805650112859)\n\n Ban on India's stock market 'She-Wolf' puts regulators on the spot\n https://t.co/WR0liFb9BC\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T02:52:06+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:36:52"
+}
+2025-03-03 09:36:52,240 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.09
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.09,
+  "insights": [
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quick...",
+      "description": "[JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with crypto], or it will quickly become extinct.\"](https://x.com/WatcherGuru/status/1896395507175723453)\n\n JUST IN: \ud83c\uddfa\ud83c\uddf8 Eric Trump says \"traditional finance better catch up [with\n crypto], or it will quickly become extinct.\"\n \n \u2014 Watcher.Guru (@WatcherGuru) March 3, 2025\n\n**@WatcherGuru**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:15:36+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/statu...",
+      "description": "[Ban on India's stock market 'She-Wolf' puts regulators on the spot](https://x.com/BBCWorld/status/1896390805650112859)\n\n Ban on India's stock market 'She-Wolf' puts regulators on the spot\n https://t.co/WR0liFb9BC\n \n \u2014 BBC News (World) (@BBCWorld) March 3, 2025\n\n**@BBCWorld**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T02:52:06+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:36:52"
+}
+2025-03-03 09:37:17,669 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 09:37:17,670 - crypto_advisor.llm - INFO - Generated futures recommendation for XRP: BUY (High confidence)
+2025-03-03 09:39:33,696 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:39:33,698 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [With record-breaking Bitcoin ETF outflows already...
+2025-03-03 09:42:37,498 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 09:55:01,995 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 09:55:02,210 - database - INFO - Created MongoDB indexes
+2025-03-03 09:55:02,987 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 09:55:02,991 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 09:55:03,389 - main - INFO - Application started
+2025-03-03 09:55:03,389 - main - INFO - Database initialized: walletTracker
+2025-03-03 09:55:03,389 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 09:55:03,391 - main - INFO - Initializing database connection...
+2025-03-03 09:55:03,391 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 09:55:03,392 - main - INFO - Initializing data providers...
+2025-03-03 09:55:05,984 - main - INFO - Prefetched market data for BTC
+2025-03-03 09:55:06,380 - main - INFO - Prefetched market data for ETH
+2025-03-03 09:55:06,471 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 09:55:06,473 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 09:55:06"
+}
+2025-03-03 09:55:06,474 - main - INFO - Prefetched market context
+2025-03-03 09:55:06,560 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 09:55:06,589 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 09:55:06,590 - main - INFO - Prefetched news for BTC
+2025-03-03 09:55:06,651 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 09:55:06,684 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 09:55:06,685 - main - INFO - Prefetched news for ETH
+2025-03-03 09:55:06,685 - main - INFO - Data initialization complete
+2025-03-03 09:55:06,686 - main - INFO - Running in PRODUCTION mode
+2025-03-03 09:55:06,686 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-03 09:56:11,660 - news_provider - INFO - Stored general message in news_data
+2025-03-03 09:56:11,661 - telegram_scraper - INFO - Processed real-time message from sage_news_cg: [Morgan Freeman leads Oscars tribute to 'dear frie...
+2025-03-03 10:01:04,446 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 10:01:12,741 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:01:12,943 - database - INFO - Created MongoDB indexes
+2025-03-03 10:01:13,753 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:01:13,756 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:01:14,147 - main - INFO - Application started
+2025-03-03 10:01:14,148 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:01:14,148 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:01:14,149 - main - INFO - Initializing database connection...
+2025-03-03 10:01:14,149 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:01:14,150 - main - INFO - Initializing data providers...
+2025-03-03 10:01:14,215 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:01:14,275 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:01:14,335 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:01:14,337 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:01:14"
+}
+2025-03-03 10:01:14,338 - main - INFO - Prefetched market context
+2025-03-03 10:01:14,421 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:01:14,450 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:01:14,450 - main - INFO - Prefetched news for BTC
+2025-03-03 10:01:14,527 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:01:14,554 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:01:14,554 - main - INFO - Prefetched news for ETH
+2025-03-03 10:01:14,555 - main - INFO - Data initialization complete
+2025-03-03 10:01:14,556 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:01:14,556 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-03 10:01:22,812 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:01:23,014 - database - INFO - Created MongoDB indexes
+2025-03-03 10:01:23,024 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:01:23,028 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:01:23,795 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 10:01:23,865 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 10:01:23,865 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: sage_news_cg
+2025-03-03 10:12:56,697 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:12:56,916 - database - INFO - Created MongoDB indexes
+2025-03-03 10:13:05,686 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:13:05,690 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:13:07,335 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:13:07,336 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:13:07,337 - main - INFO - Initializing database connection...
+2025-03-03 10:13:07,337 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:13:07,338 - main - INFO - Initializing data providers...
+2025-03-03 10:13:10,018 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:13:10,631 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:13:10,724 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:13:10,725 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:13:10"
+}
+2025-03-03 10:13:10,727 - main - INFO - Prefetched market context
+2025-03-03 10:13:10,814 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:13:10,843 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:13:10,843 - main - INFO - Prefetched news for BTC
+2025-03-03 10:13:10,906 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:13:10,934 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:13:10,935 - main - INFO - Prefetched news for ETH
+2025-03-03 10:13:10,935 - main - INFO - Data initialization complete
+2025-03-03 10:13:10,936 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:13:10,937 - main - INFO - Starting Discord API server on 0.0.0.0:8001
+2025-03-03 10:14:24,265 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:14:24,469 - database - INFO - Created MongoDB indexes
+2025-03-03 10:14:25,375 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:14:25,378 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:14:25,709 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:14:25,709 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:14:25,710 - main - INFO - Initializing database connection...
+2025-03-03 10:14:25,711 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:14:25,712 - main - INFO - Initializing data providers...
+2025-03-03 10:14:25,776 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:14:25,839 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:14:25,901 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:14:25,902 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:14:25"
+}
+2025-03-03 10:14:25,903 - main - INFO - Prefetched market context
+2025-03-03 10:14:25,995 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:14:26,026 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:14:26,026 - main - INFO - Prefetched news for BTC
+2025-03-03 10:14:26,088 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:14:26,117 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:14:26,118 - main - INFO - Prefetched news for ETH
+2025-03-03 10:14:26,118 - main - INFO - Data initialization complete
+2025-03-03 10:14:26,119 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:14:26,120 - main - INFO - Starting Discord API server on 0.0.0.0:8001
+2025-03-03 10:17:02,059 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:17:02,280 - database - INFO - Created MongoDB indexes
+2025-03-03 10:17:03,086 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:17:03,090 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:17:03,412 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:17:03,413 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:17:03,414 - main - INFO - Initializing database connection...
+2025-03-03 10:17:03,414 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:17:03,416 - main - INFO - Initializing data providers...
+2025-03-03 10:17:03,476 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:17:03,535 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:17:03,590 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:17:03,592 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:17:03"
+}
+2025-03-03 10:17:03,593 - main - INFO - Prefetched market context
+2025-03-03 10:17:03,684 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:17:03,716 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:17:03,716 - main - INFO - Prefetched news for BTC
+2025-03-03 10:17:03,780 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:17:03,809 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:17:03,809 - main - INFO - Prefetched news for ETH
+2025-03-03 10:17:03,809 - main - INFO - Data initialization complete
+2025-03-03 10:17:03,810 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:17:03,811 - main - INFO - Starting Discord API server on 0.0.0.0:8001
+2025-03-03 10:22:46,276 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:22:46,492 - database - INFO - Created MongoDB indexes
+2025-03-03 10:22:47,349 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:22:47,352 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:22:47,668 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:22:47,669 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:22:47,670 - main - INFO - Initializing database connection...
+2025-03-03 10:22:47,671 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:22:47,672 - main - INFO - Initializing data providers...
+2025-03-03 10:22:47,735 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:22:47,813 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:22:47,879 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:22:47,880 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:22:47"
+}
+2025-03-03 10:22:47,881 - main - INFO - Prefetched market context
+2025-03-03 10:22:47,965 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:22:47,994 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:22:47,995 - main - INFO - Prefetched news for BTC
+2025-03-03 10:22:48,054 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:22:48,082 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:22:48,082 - main - INFO - Prefetched news for ETH
+2025-03-03 10:22:48,082 - main - INFO - Data initialization complete
+2025-03-03 10:22:48,084 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:22:48,085 - main - INFO - Starting Discord API server on 0.0.0.0:8001
+2025-03-03 10:23:02,689 - crypto_advisor.api - INFO - No context provided by user
+2025-03-03 10:23:02,690 - crypto_advisor.api - INFO - Analysis query - Message: 'Should I buy Ethereum now?', Coin: ETH, Intent: buy
+2025-03-03 10:23:05,757 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 10:23:05,792 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 10:23:05,995 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 10:23:06,191 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 10:23:06,398 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 10:23:06,603 - crypto_advisor.market - WARNING - No data available for MA calculation for ETH
+2025-03-03 10:23:06,636 - crypto_advisor.market - INFO - Generated market summary for ETH
+2025-03-03 10:23:06,721 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:23:06,750 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:23:06,783 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:23:06,784 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:23:06"
+}
+2025-03-03 10:23:06,809 - ote_analyzer - INFO - OTE analysis completed for ETH
+2025-03-03 10:23:06,811 - pattern_recognition - INFO - OTE setup analysis added for ETH
+2025-03-03 10:23:06,811 - pattern_recognition - INFO - Identified patterns for ETH across 5 timeframes with focus on 1h
+2025-03-03 10:23:06,812 - crypto_advisor.api - INFO - Pattern data retrieved for ETH
+2025-03-03 10:23:06,812 - crypto_advisor.api - WARNING - Error analyzing patterns for ETH: 'NoneType' object has no attribute 'get'
+2025-03-03 10:23:07,167 - crypto_advisor.llm - ERROR - Error communicating with Grok API: 404 Client Error: Not Found for url: https://api.x.ai/v1/chat/completions
+2025-03-03 10:23:07,168 - crypto_advisor.api - ERROR - Error analyzing custom query: Failed to communicate with Grok API: 404 Client Error: Not Found for url: https://api.x.ai/v1/chat/completions
+2025-03-03 10:29:14,675 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:29:14,885 - database - INFO - Created MongoDB indexes
+2025-03-03 10:29:15,657 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 10:29:15,661 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 10:29:16,029 - main - INFO - Application started
+2025-03-03 10:29:16,029 - main - INFO - Database initialized: walletTracker
+2025-03-03 10:29:16,030 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 10:29:16,030 - main - INFO - Initializing database connection...
+2025-03-03 10:29:16,031 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 10:29:16,031 - main - INFO - Initializing data providers...
+2025-03-03 10:29:20,042 - main - INFO - Prefetched market data for BTC
+2025-03-03 10:29:20,455 - main - INFO - Prefetched market data for ETH
+2025-03-03 10:29:20,551 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:29:20,552 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:29:20"
+}
+2025-03-03 10:29:20,553 - main - INFO - Prefetched market context
+2025-03-03 10:29:20,642 - crypto_advisor.news - INFO - Fetched 50 Telegram news articles for specific coin
+2025-03-03 10:29:20,672 - crypto_advisor.news - INFO - Generated news summary for BTC with 50 Telegram articles and 0 market articles
+2025-03-03 10:29:20,673 - main - INFO - Prefetched news for BTC
+2025-03-03 10:29:20,732 - crypto_advisor.news - INFO - Fetched 30 Telegram news articles for specific coin
+2025-03-03 10:29:20,760 - crypto_advisor.news - INFO - Generated news summary for ETH with 30 Telegram articles and 0 market articles
+2025-03-03 10:29:20,762 - main - INFO - Prefetched news for ETH
+2025-03-03 10:29:20,762 - main - INFO - Data initialization complete
+2025-03-03 10:29:20,763 - main - INFO - Running in PRODUCTION mode
+2025-03-03 10:29:20,764 - main - INFO - Starting API server on 0.0.0.0:8000
+2025-03-03 10:29:28,361 - ote_analyzer - INFO - OTE analysis completed for XRP
+2025-03-03 10:29:28,362 - pattern_recognition - INFO - OTE setup analysis added for XRP
+2025-03-03 10:29:28,363 - pattern_recognition - INFO - Identified patterns for XRP across 5 timeframes with focus on 1h
+2025-03-03 10:29:28,778 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 10:29:28,987 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 10:29:29,186 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 10:29:29,382 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 10:29:29,576 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 10:29:29,783 - crypto_advisor.market - WARNING - No data available for MA calculation for XRP
+2025-03-03 10:29:29,818 - crypto_advisor.market - INFO - Generated market summary for XRP
+2025-03-03 10:29:29,898 - crypto_advisor.news - INFO - Fetched 21 Telegram news articles for specific coin
+2025-03-03 10:29:29,928 - crypto_advisor.news - INFO - Generated news summary for XRP with 21 Telegram articles and 0 market articles
+2025-03-03 10:29:29,946 - ote_analyzer - INFO - OTE analysis completed for XRP
+2025-03-03 10:29:29,947 - pattern_recognition - INFO - OTE setup analysis added for XRP
+2025-03-03 10:29:29,947 - pattern_recognition - INFO - Identified patterns for XRP across 5 timeframes with focus on 1h
+2025-03-03 10:29:29,947 - recommendation_engine - INFO - Pattern data retrieved for XRP
+2025-03-03 10:29:30,008 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 10:29:30,010 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:29:30"
+}
+2025-03-03 10:29:30,011 - recommendation_engine - INFO - Market Context Retrieved: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0.05
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": 0.05,
+  "insights": [
+    {
+      "title": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on...",
+      "description": "[\ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million, totaling to 2,391 $BTC on their balance sheet.](https://x.com/Cointelegraph/status/1896406427540873627)\n\n \ud83c\uddef\ud83c\uddf5 JUST IN: Metaplanet bought another 156 Bitcoin worth $13.4 million,\n totaling to 2,391 $BTC on their balance sheet. pic.twitter.com/AVRrPC6dTw\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:12:37+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to...",
+      "description": "[With record-breaking Bitcoin ETF outflows already on the books, @_dsencil claims there's more to come as big players continue to unwind their positions. Will the beatings continue?](https://x.com/BTCTN/status/1896410695517835359)\n\n With record-breaking Bitcoin ETF outflows already on the books, @_dsencil\n claims there's more to come as big players continue to unwind their positions.\n Will the beatings continue? pic.twitter.com/yBHSuEzF2N\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T04:09:33+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius be...",
+      "description": "[\ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a Sunday is genius because the traditional markets and Wall Street are closed. \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he adds.](https://x.com/Cointelegraph/status/1896398877634539746)\n\n \ud83c\uddfa\ud83c\uddf8 NOW: Eric Trump says the announcement for a Crypto Strategic Reserve on a\n Sunday is genius because the traditional markets and Wall Street are closed.\n \n \u201cTraditional finance better catch up, or it will quickly become extinct,\u201d he\n adds. pic.twitter.com/8U4oLb9qmf\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:26+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in...",
+      "description": "[\ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity concerns and security risks, according to a Swiss local media outlet Tamedia.](https://x.com/Cointelegraph/status/1896395114181742975)\n\n \ud83c\udde8\ud83c\uddedICYMI: Swiss National Bank President Martin Schlegel opposed making\n Bitcoin a reserve asset in Switzerland, citing a lack of stability, liquidity\n concerns and security risks, according to a Swiss local media outlet Tamedia.\n pic.twitter.com/cqGjhEwaFq\n \n \u2014 Cointelegraph (@Cointelegraph) March 3, 2025\n\n**@Cointelegraph**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:24+00:00",
+      "content_type": "mixed",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014...",
+      "description": "[A meme coin scandal from a nation state, a record breaking exchange hack, and market volatility\u2014last week was a crazy one. This industry certainly ages you.](https://x.com/BTCTN/status/1896403229706997957)\n\n A meme coin scandal from a nation state, a record breaking exchange hack, and\n market volatility\u2014last week was a crazy one.\n \n This industry certainly ages you.\n \n \u2014 Bitcoin.com News (@BTCTN) March 3, 2025\n\n**@BTCTN**** | ****x.com**** \u2022 Mar 3, 2025**",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T03:36:12+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 10:29:30"
+}
+2025-03-03 10:29:48,081 - news_provider - INFO - Stored crypto message in news_data
+2025-03-03 10:29:48,339 - crypto_advisor.llm - INFO - Successfully received response from Grok API
+2025-03-03 10:29:48,341 - crypto_advisor.llm - INFO - Generated futures recommendation for XRP: BUY (High confidence)

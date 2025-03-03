@@ -1,7 +1,5 @@
-from .llm_interface import get_deepseek_llm
-# from .news_provider import get_news_provider
+from .grok_interface import get_grok_llm
 
 __all__ = [
-    "get_deepseek_llm"
-    # "get_news_provider"
+    "get_grok_llm"
 ]

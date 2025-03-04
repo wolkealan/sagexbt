@@ -117,8 +117,41 @@ class EnhancedTelegramScraper:
             logger.error(f"Error initializing Telegram client: {e}")
             raise
     
+    def _clean_message_text(self, text):
+        """
+        Clean message text by removing 'Tweet from X' prefix more aggressively
+        Uses multiple methods to ensure we catch all variations
+        """
+        if not text:
+            return ""
+        
+        # Split into lines
+        lines = text.split('\n')
+        if not lines:
+            return ""
+        
+        # Multiple detection methods for "Tweet from" patterns
+        first_line = lines[0].lower()
+        
+        # Method 1: Simple text detection
+        contains_tweet = "tweet" in first_line or "tweets" in first_line
+        contains_from = "from" in first_line
+        
+        # Method 2: Check for emoji followed by "Tweet from" pattern
+        emoji_followed_by_tweet = re.search(r'[📝📊🐦📰📈💬🗣️📣🔊🗞️].*(?:tweet|tweets).*from', first_line, re.IGNORECASE)
+        
+        # Method 3: Check for formatted text with asterisks
+        formatted_tweet_pattern = re.search(r'\*\*?tweet\*\*?.*\*\*?from\*\*?', first_line, re.IGNORECASE)
+        
+        if (contains_tweet and contains_from) or emoji_followed_by_tweet or formatted_tweet_pattern:
+            # Skip the first line if it matches any of our patterns
+            return '\n'.join(lines[1:]).strip()
+        
+        return text
+
+
     async def handle_new_message(self, event):
-        """Handle new messages from monitored channels in real-time"""
+        """Handle new messages from monitored channels in real-time with aggressive cleaning"""
         try:
             # Skip messages without text
             if not event.message.text:
@@ -127,13 +160,25 @@ class EnhancedTelegramScraper:
             # Get chat entity
             chat = await event.get_chat()
             
-            # Create document structure (match the format from your existing scraper)
+            # Clean the message text by removing "Tweet from X" prefix
+            original_text = event.message.text
+            
+            # Log the original text for debugging
+            logger.debug(f"Original text: {original_text[:100]}")
+            
+            # Clean text using our improved method
+            cleaned_text = self._clean_message_text(original_text)
+            
+            # Log the cleaned text for debugging
+            logger.debug(f"Cleaned text: {cleaned_text[:100]}")
+            
+            # Create document structure
             document = {
                 'channel_id': chat.id,
                 'channel_name': getattr(chat, 'title', chat.username),
                 'username': chat.username,
                 'message_id': event.message.id,
-                'text': event.message.text,
+                'text': cleaned_text,  # Use the cleaned text
                 'date': event.message.date.isoformat(),
                 'processed_date': datetime.now().isoformat(),
                 'has_media': event.message.media is not None,
@@ -144,16 +189,16 @@ class EnhancedTelegramScraper:
                 'source_type': 'telegram'
             }
             
-            # Extract title from message
-            document['title'] = self._extract_title(event.message.text)
+            # Extract title from cleaned message
+            document['title'] = self._extract_title(cleaned_text)
             
             # Make the document compatible with NewsAPI format for LLM
-            document['description'] = event.message.text
+            document['description'] = cleaned_text  # Use cleaned text for description
             document['url'] = f"https://t.me/{chat.username}/{event.message.id}" if chat.username else ""
             document['publishedAt'] = event.message.date.isoformat()
             
             # Extract and add relevant crypto mentions
-            document['coins_mentioned'] = self._extract_crypto_mentions(document['text'])
+            document['coins_mentioned'] = self._extract_crypto_mentions(cleaned_text)
             
             # Store in original telegram_news collection
             await self._store_telegram_message(document)
@@ -166,6 +211,9 @@ class EnhancedTelegramScraper:
             
         except Exception as e:
             logger.error(f"Error processing real-time message: {e}")
+            # Log the full error traceback for easier debugging
+            import traceback
+            logger.error(traceback.format_exc())
     
     def _extract_title(self, text):
         """Extract a title from the message text"""

@@ -3544,3 +3544,173 @@ The #SEC has delayed its decision on the #VanEck spot #Bitcoin ETF application u
 2025-03-03 21:45:22,414 - telegram_scraper - INFO - Logged in as: Millionaire Boi
 2025-03-03 21:45:22,415 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
 2025-03-03 21:45:41,262 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 21:59:43,997 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 21:59:44,215 - database - INFO - Created MongoDB indexes
+2025-03-03 21:59:45,116 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 21:59:45,120 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 21:59:45,450 - main - INFO - Database initialized: walletTracker
+2025-03-03 21:59:45,450 - main - INFO - Starting Crypto Trading Advisor application
+2025-03-03 21:59:45,452 - main - INFO - Initializing database connection...
+2025-03-03 21:59:45,452 - main - INFO - Connected to MongoDB: walletTracker
+2025-03-03 21:59:45,453 - main - INFO - Initializing data providers...
+2025-03-03 21:59:47,926 - main - INFO - Prefetched market data for BTC
+2025-03-03 21:59:48,348 - main - INFO - Prefetched market data for ETH
+2025-03-03 21:59:48,423 - crypto_advisor.news - INFO - Found 50 news documents for market context
+2025-03-03 21:59:48,425 - crypto_advisor.news - INFO - Market Context Details: {
+  "market": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": -0.1
+    }
+  },
+  "geopolitical": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": [
+      {
+        "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from WatcherGuru",
+        "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **WatcherGuru**\n\nJUST IN: \ud83c\uddfa\ud83c\uddf8 Congressman Brandon Gill introduces bill to put President Trump on the $100 bill.",
+        "source": "Unknown",
+        "publishedAt": "2025-03-03T16:16:10+00:00",
+        "content_type": "geopolitical",
+        "region": "North America",
+        "event_type": "election",
+        "impact_level": "low"
+      }
+    ]
+  },
+  "regulatory": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "economic": {
+    "sentiment": {
+      "sentiment": "neutral",
+      "sentiment_score": 0
+    },
+    "insights": []
+  },
+  "overall_sentiment": -0.1,
+  "insights": [
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from WatcherGuru",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **WatcherGuru**\n\nJUST IN: \ud83c\uddfa\ud83c\uddf8 Congressman Brandon Gill introduces bill to put President Trump on the $100 bill.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T16:16:10+00:00",
+      "content_type": "geopolitical",
+      "region": "North America",
+      "event_type": "election",
+      "impact_level": "low"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83d\udd25 TODAY: Trump and TSMC are set to announce a $100 billion investment to boost U.S. semiconductor manufacturing.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T16:15:55+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83c\uddfa\ud83c\uddf8 NEW: Representative Ritchie Torres and Representative Tom Emmer are launching a Congressional Crypto Caucus.\n\nTheir goal is to solidify \u201cAmerica\u2019s leadership in the future of digital assets and blockchain innovation.\u201d",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:45:55+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd Tweet from Cointelegraph",
+      "description": "\ud83d\uddbc\ufe0f\ud83d\uddbc\ufe0f\ud83d\udcdd **Tweet** from **Cointelegraph**\n\n\ud83d\udea8 BREAKING: Kraken has announced that the SEC has agreed to drop its lawsuit against the cryptocurrency exchange.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:20:03+00:00",
+      "content_type": "crypto"
+    },
+    {
+      "title": "\ud83d\udcdd Tweet from WatcherGuru",
+      "description": "\ud83d\udcdd **Tweet** from **WatcherGuru**\n\nJUST IN: $120,000,000 liquidated from the cryptocurrency market in the past 60 minutes.",
+      "source": "Unknown",
+      "publishedAt": "2025-03-03T15:19:19+00:00",
+      "content_type": "crypto"
+    }
+  ],
+  "total_news_count": 50,
+  "last_updated": "2025-03-03 21:59:48"
+}
+2025-03-03 21:59:48,426 - main - INFO - Prefetched market context
+2025-03-03 21:59:48,524 - crypto_advisor.news - INFO - Fetched 42 Telegram news articles for specific coin
+2025-03-03 21:59:48,554 - crypto_advisor.news - INFO - Generated news summary for BTC with 42 Telegram articles and 0 market articles
+2025-03-03 21:59:48,554 - main - INFO - Prefetched news for BTC
+2025-03-03 21:59:48,620 - crypto_advisor.news - INFO - Fetched 9 Telegram news articles for specific coin
+2025-03-03 21:59:48,650 - crypto_advisor.news - INFO - Generated news summary for ETH with 9 Telegram articles and 0 market articles
+2025-03-03 21:59:48,650 - main - INFO - Prefetched news for ETH
+2025-03-03 21:59:48,651 - main - INFO - Data initialization complete
+2025-03-03 21:59:48,652 - main - INFO - Running in PRODUCTION mode
+2025-03-03 21:59:48,652 - main - INFO - Starting combined API server on 0.0.0.0:8000
+2025-03-03 22:00:15,671 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:00:15,868 - database - INFO - Created MongoDB indexes
+2025-03-03 22:00:15,881 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:00:15,885 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:00:16,950 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:00:17,029 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:00:17,029 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 22:01:13,135 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 22:01:19,933 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:01:20,131 - database - INFO - Created MongoDB indexes
+2025-03-03 22:01:20,141 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:01:20,144 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:01:20,930 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:01:21,004 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:01:21,005 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 22:01:48,521 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 22:01:56,464 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:01:56,686 - database - INFO - Created MongoDB indexes
+2025-03-03 22:01:56,696 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:01:56,700 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:01:57,439 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:01:57,501 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:01:57,502 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 22:02:38,218 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 22:02:46,166 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:02:46,389 - database - INFO - Created MongoDB indexes
+2025-03-03 22:02:46,398 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:02:46,401 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:02:47,257 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:02:47,369 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:02:47,370 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 22:03:17,744 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 22:03:24,442 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:03:24,664 - database - INFO - Created MongoDB indexes
+2025-03-03 22:03:24,673 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:03:24,678 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:03:25,436 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:03:25,520 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:03:25,522 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 22:04:20,349 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 22:04:29,223 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:04:29,423 - database - INFO - Created MongoDB indexes
+2025-03-03 22:04:29,433 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:04:29,436 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:04:30,206 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:04:30,271 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:04:30,272 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 22:06:47,544 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 22:06:59,284 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:06:59,485 - database - INFO - Created MongoDB indexes
+2025-03-03 22:06:59,493 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:06:59,496 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:07:00,318 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:07:00,383 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:07:00,383 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-03 22:12:16,291 - telegram_scraper - INFO - Telegram client disconnected
+2025-03-03 22:12:59,300 - database - INFO - Connected to MongoDB: walletTracker
+2025-03-03 22:12:59,523 - database - INFO - Created MongoDB indexes
+2025-03-03 22:12:59,531 - crypto_advisor.market - INFO - Binance exchange initialized
+2025-03-03 22:12:59,535 - crypto_advisor.market - INFO - Coinbase exchange initialized
+2025-03-03 22:13:00,358 - telegram_scraper - INFO - Telegram client started with user account
+2025-03-03 22:13:00,445 - telegram_scraper - INFO - Logged in as: Millionaire Boi
+2025-03-03 22:13:00,447 - telegram_scraper - INFO - Monitoring channels in REAL-TIME: redactedsystemsbot
+2025-03-04 09:57:53,898 - telegram_scraper - ERROR - Telegram scraper error: Connection to Telegram failed 5 time(s)
+2025-03-04 09:57:53,914 - telegram_scraper - INFO - Telegram client disconnected
